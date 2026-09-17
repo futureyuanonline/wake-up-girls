@@ -1,0 +1,66 @@
+# 每周五自动出刊：采集 → LLM 成稿 → 繁简同步 → 提交 → 部署 → 邮件投递
+# 需要的仓库 Secrets / Variables（Settings → Secrets and variables → Actions）：
+#   Secrets:   LLM_API_KEY      大模型 API Key（OpenAI 兼容接口）
+#              MAIL_API_KEY     邮件服务 API Key（Resend / SendGrid 任一）
+#   Variables: LLM_BASE_URL     如 https://api.deepseek.com/v1 或 https://api.openai.com/v1
+#              LLM_MODEL        如 deepseek-chat / gpt-4o-mini
+#              MAIL_FROM        发件人，如 Wake Up Girls <news@yuanxiuzhong.com>
+#              SITE_URL         如 https://yuanxiuzhong.com
+name: Weekly Issue (Friday)
+
+on:
+  schedule:
+    - cron: '0 1 * * 5'      # 每周五 09:00（北京时间 UTC+8）
+  workflow_dispatch:          # 也可在 Actions 页面手动触发
+
+permissions:
+  contents: write
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: 安装依赖
+        run: npm ci --omit=dev || npm install --omit=dev
+
+      - name: ① 采集全球候选（按地区 × 当地语言）
+        run: python tools/fetch_news.py
+
+      - name: ② 生成新一期（LLM 撰写，含校验）
+        env:
+          LLM_API_KEY: ${{ secrets.LLM_API_KEY }}
+          LLM_BASE_URL: ${{ vars.LLM_BASE_URL || 'https://api.deepseek.com/v1' }}
+          LLM_MODEL: ${{ vars.LLM_MODEL || 'deepseek-chat' }}
+        run: python tools/generate_issue.py
+
+      - name: ③ 同步繁体版
+        run: node build_i18n.mjs
+
+      - name: ④ 提交（触发部署）
+        run: |
+          git config user.name  "wake-up-girls-bot"
+          git config user.email "bot@users.noreply.github.com"
+          git add -A
+          if git diff --cached --quiet; then
+            echo "本期无变更，跳过提交"
+          else
+            git commit -m "issue: $(date -u +%F) 自动出刊"
+            git push
+          fi
+
+      - name: ⑤ 邮件投递
+        env:
+          MAIL_API_KEY: ${{ secrets.MAIL_API_KEY }}
+          MAIL_FROM: ${{ vars.MAIL_FROM }}
+          SITE_URL: ${{ vars.SITE_URL || 'https://yuanxiuzhong.com' }}
+        run: python tools/send_newsletter.py

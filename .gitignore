@@ -1,0 +1,33 @@
+# 依赖与临时文件
+node_modules/
+package-lock.json
+__pycache__/
+*.pyc
+
+# 采集中间产物（CI 每次重新生成，不入库）
+drafts/
+
+# 本地临时脚本与预览
+_*.py
+_*.js
+_*.cjs
+_*.mjs
+_*.html
+_*.txt
+_*.json.bak
+_cv_preview.pdf
+
+# 系统文件
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# 移动端自检产物
+tools/mobile-report.json
+tools/cache/
+
+# 豆瓣抓取残留
+_douban*.json
+
+# 订阅者名单（含邮箱，属隐私数据，不入公开仓库；格式见 data/subscribers.example.json）
+data/subscribers.json

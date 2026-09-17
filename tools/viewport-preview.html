@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="zh-CN"><head><meta charset="utf-8"><title>viewport preview</title>
+<style>
+  html,body{margin:0;background:#5a5a5a}
+  .frame{margin:0;padding:0}
+  iframe{border:0;display:block;background:#fff}
+  .tag{font:12px/1.6 monospace;color:#fff;padding:4px 8px}
+</style></head>
+<body>
+<div class="tag" id="tag"></div>
+<div class="frame"><iframe id="f"></iframe></div>
+<script>
+  var q = new URLSearchParams(location.search);
+  var p = q.get('p') || 'index.html';
+  var w = parseInt(q.get('w') || '375', 10);
+  var h = parseInt(q.get('h') || '1400', 10);
+  var clickBurger = q.get('menu') === '1';
+  var scrollTo = parseInt(q.get('scroll') || '0', 10);
+  var f = document.getElementById('f');
+  f.style.width = w + 'px';
+  f.style.height = h + 'px';
+  f.src = '../' + p;
+  document.getElementById('tag').textContent = p + '  @ ' + w + '×' + h + (clickBurger ? '  [菜单展开]' : '') + (scrollTo ? '  [滚动 ' + scrollTo + 'px]' : '');
+  f.addEventListener('load', function () {
+    setTimeout(function () {
+      try {
+        var d = f.contentDocument;
+        if (clickBurger) {
+          var b = d.getElementById('navBurger');
+          if (b) b.click();
+        }
+        if (scrollTo) f.contentWindow.scrollTo(0, scrollTo);
+      } catch (e) { document.getElementById('tag').textContent = 'ERR ' + e.message; }
+    }, 1000);
+  });
+</script>
+</body></html>

@@ -1,0 +1,155 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <meta name="theme-color" content="#F4F1EB" />
+  <meta name="format-detection" content="telephone=no" />
+  <title data-zh="Wake Up Girls — 全球女性议题周报" data-en="Wake Up Girls — Global Women's Issues Weekly" data-hant="Wake Up Girls — 全球女性議題週報">Wake Up Girls — 全球女性议题周报</title>
+  <meta name="description" content="每周精选全球女性权益、性别平等与社会变革重要新闻；检索女性电影、图书与艺术作品。视角在她，规则由她。" />
+  <link rel="icon" type="image/svg+xml" href="assets/img/logo.svg" />
+  <link rel="apple-touch-icon" href="assets/img/logo-180.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@700;800;900&family=Noto+Serif+SC:wght@600;700;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body data-page="home">
+  <header class="site">
+    <div class="wrap nav">
+      <a class="brand" href="index.html">
+        <span class="logo">Wake Up <em>Girls</em></span>
+        <span class="tag" data-i18n="brand.tag">全球女性议题周报</span>
+      </a>
+      <div class="nav-right">
+        <button class="nav-burger" id="navBurger" aria-label="菜单"><span></span><span></span><span></span></button>
+        <nav class="menu" id="navMenu">
+          <a data-nav="home" href="index.html" data-i18n="nav.latest">最新</a>
+          <a data-nav="archive" href="archive.html" data-i18n="nav.archive">往期</a>
+          <a data-nav="works" href="works.html" data-i18n="nav.works">作品检索</a>
+          <a data-nav="about" href="about.html" data-i18n="nav.about">关于</a>
+          <a data-nav="submit" href="submit.html" data-i18n="nav.submit">投稿</a>
+        
+          <a class="menu-cta" data-nav="subscribe" href="subscribe.html" data-i18n="nav.cta">订阅周刊</a>
+        </nav>
+        <div class="lang-switch" id="langSwitch">
+          <button data-lang="en">EN</button>
+          <button data-lang="zh-CN">简</button>
+          <button data-lang="zh-Hant">繁</button>
+        </div>
+        <a class="nav-cta" href="subscribe.html" data-i18n="nav.cta">订阅周刊</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero：白墙 + 画框照片 + 画作色块 -->
+  <section class="hero-ed">
+    <div class="wrap">
+      <div class="hero-gallery">
+        <div class="hero-inner">
+          <div class="hero-eyebrow" id="heroLabel">VOL. 001 · 2026年9月第三周</div>
+          <h1 class="hero-head">
+            <span class="l1" data-i18n="hero.line1">视角在她，</span>
+            <span class="l2"><em data-i18n="hero.line2">规则由她。</em></span>
+          </h1>
+          <p class="hero-sub" data-i18n="hero.lead">每周，我们为你筛选来自全球的女性权益、性别平等与社会变革重要新闻；建立女性电影、图书、艺术作品检索库——让每一位女性创作者被看见、被找到。</p>
+          <div class="hero-btns">
+            <a class="pill" href="issue.html?id=001"><span data-i18n="hero.btn.read">阅读本期</span><i>→</i></a>
+            <a class="pill ghost" href="works.html"><span data-i18n="hero.btn.works">进入作品检索库</span><i>→</i></a>
+          </div>
+        </div>
+        <figure class="hero-frame">
+          <div class="frame">
+            <img src="assets/img/women-power.png" alt="女性议题现场（示意图）" />
+            <figcaption data-i18n="hero.img_caption">配图 · 示意图</figcaption>
+          </div>
+          <span class="block-chip chip-1"></span>
+          <span class="block-chip chip-2"></span>
+          <span class="block-chip chip-3"></span>
+        </figure>
+      </div>
+    </div>
+    <div class="wrap">
+      <div class="hero-foot">
+        <div class="hero-foot-in">
+          <a href="about.html" data-i18n="nav.about">关于我们</a>
+          <a href="works.html" data-i18n="nav.works">作品检索</a>
+          <a href="archive.html" data-i18n="nav.archive">往期周报</a>
+          <a href="submit.html" data-i18n="nav.submit">投稿</a>
+          <span class="vol">VOL. 001 — 2026.09</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="ticker" id="regionTicker" aria-hidden="true"></div>
+
+  <!-- digest 区（排版 1:1 对齐 yuanxiuzhong.com/#digest） -->
+  <section class="band band-yellow" id="digest">
+    <div class="wrap">
+      <div class="digest-head">
+        <div class="digest-head-left">
+          <span class="digest-label" data-i18n="sec.digest_label">The Digest · 本期精选</span>
+          <span class="digest-issue">第 001 期</span>
+        </div>
+        <a class="digest-archive" href="archive.html" data-i18n="sec.more_archive">往期全部 →</a>
+      </div>
+      <div class="digest-grid" id="latest"><p class="muted">…</p></div>
+    </div>
+  </section>
+
+  <!-- 色块带 2：青蓝 -->
+  <section class="band band-teal" id="featured-sec">
+    <div class="wrap">
+      <div class="sec-label reveal"><i>02</i><span data-i18n="sec.featured_label">Featured · 她的作品</span></div>
+      <div class="block-head reveal">
+        <h2 data-i18n="sec.featured_title">本周推荐</h2>
+        <a class="more" href="works.html" data-i18n="sec.more_works">进入完整检索库 →</a>
+      </div>
+      <div class="mini-grid" id="featured"><p class="muted">…</p></div>
+    </div>
+  </section>
+
+  <footer class="site">
+    <div class="wrap">
+      <div class="f-grid">
+        <div>
+          <div class="f-logo">Wake Up <em>Girls</em></div>
+          <p class="f-tag" data-i18n="footer.tagline">全球女性议题周报 · 每周五更新</p>
+        </div>
+        <div class="f-col">
+          <div class="f-label" data-i18n="footer.col1">栏目</div>
+          <a href="index.html" data-i18n="nav.latest">最新</a>
+          <a href="archive.html" data-i18n="nav.archive">往期</a>
+          <a href="works.html" data-i18n="nav.works">作品检索</a>
+        </div>
+        <div class="f-col">
+          <div class="f-label" data-i18n="footer.col2">关于</div>
+          <a href="about.html" data-i18n="nav.about">关于</a>
+          <a href="subscribe.html" data-i18n="nav.subscribe">订阅</a>
+          <a href="submit.html" data-i18n="nav.submit">投稿</a>
+        </div>
+        <div class="f-col">
+          <div class="f-label" data-i18n="footer.col3">使命</div>
+          <p class="f-mission"><span data-i18n="footer.mission1">视角在她，规则由她。</span><br /><span data-i18n="footer.mission2">每周为你筛选全球女性权益、性别平等与社会变革重要新闻。</span></p>
+          <p class="f-contact" data-i18n="footer.contact">联系：futureyuan39@gmail.com</p>
+        </div>
+      </div>
+      <div class="f-bottom">
+        <span data-i18n="footer.copyright">© 2026 Wake Up Girls</span>
+        <span data-i18n="footer.note">内容仅供参考 · 欢迎勘误与投稿</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="data/issues.js"></script>
+  <script src="data/issues.hant.js"></script>
+  <script src="data/works.js"></script>
+  <script src="data/works.hant.js"></script>
+  <script src="data/works_en.js"></script>
+  <script src="data/posters.js"></script>
+  <script src="data/covers.js"></script>
+  <script src="data/initials.js"></script>
+  <script src="assets/js/app.js"></script>
+</body>
+</html>

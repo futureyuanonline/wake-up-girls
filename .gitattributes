@@ -1,0 +1,15 @@
+# 统一换行符：仓库内一律 LF，工作区按平台自动转换，避免 Windows 上刷出成片 CRLF 警告
+* text=auto eol=lf
+
+# 二进制资源不要做换行转换
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.gif binary
+*.webp binary
+*.ico binary
+*.pdf binary
+*.ttf binary
+*.otf binary
+*.woff binary
+*.woff2 binary

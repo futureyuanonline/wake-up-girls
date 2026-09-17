@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <meta name="theme-color" content="#F4F1EB" />
+  <meta name="format-detection" content="telephone=no" />
+  <title data-zh="作品检索 | Wake Up Girls" data-en="Directory | Wake Up Girls" data-hant="作品檢索 | Wake Up Girls">作品检索 | Wake Up Girls</title>
+  <link rel="icon" type="image/svg+xml" href="assets/img/logo.svg" />
+  <link rel="apple-touch-icon" href="assets/img/logo-180.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@700;800;900&family=Noto+Serif+SC:wght@600;700;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body data-page="works">
+  <header class="site">
+    <div class="wrap nav">
+      <a class="brand" href="index.html">
+        <span class="logo">Wake Up <em>Girls</em></span>
+        <span class="tag" data-i18n="brand.tag">全球女性议题周报</span>
+      </a>
+      <div class="nav-right">
+        <button class="nav-burger" id="navBurger" aria-label="菜单"><span></span><span></span><span></span></button>
+        <nav class="menu" id="navMenu">
+          <a data-nav="home" href="index.html" data-i18n="nav.latest">最新</a>
+          <a data-nav="archive" href="archive.html" data-i18n="nav.archive">往期</a>
+          <a data-nav="works" href="works.html" data-i18n="nav.works">作品检索</a>
+          <a data-nav="about" href="about.html" data-i18n="nav.about">关于</a>
+          <a data-nav="submit" href="submit.html" data-i18n="nav.submit">投稿</a>
+        
+          <a class="menu-cta" data-nav="subscribe" href="subscribe.html" data-i18n="nav.cta">订阅周刊</a>
+        </nav>
+        <div class="lang-switch" id="langSwitch">
+          <button data-lang="en">EN</button>
+          <button data-lang="zh-CN">简</button>
+          <button data-lang="zh-Hant">繁</button>
+        </div>
+        <a class="nav-cta" href="subscribe.html" data-i18n="nav.cta">订阅周刊</a>
+      </div>
+    </div>
+  </header>
+
+  <main class="wrap">
+  <section class="band band-yellow">
+    <div class="wrap">
+      <div class="sec-label" data-i18n="works.label">Directory · 她的作品</div>
+      <div class="block-head">
+        <h2 data-i18n="works.title">作品检索库</h2>
+      </div>
+      <p class="muted" style="margin-bottom:20px;" data-i18n="works.intro">收录女性导演的电影、女性作家的图书、女性艺术家的创作，以及以女性处境为核心的「女性题材」作品。点击卡片进入站内详情页。</p>
+      <div class="toolbar">
+        <input id="kw" type="text" data-i18n-ph="works.placeholder" placeholder="搜索：作品名 / 创作者 / 国家 / 关键词…" />
+        <div class="tabs" id="catTabs">
+          <button class="on" data-cat="all" data-i18n="works.all">全部</button>
+          <button data-cat="film" data-i18n="works.film">电影</button>
+          <button data-cat="book" data-i18n="works.book">图书</button>
+          <button data-cat="art" data-i18n="works.art">艺术</button>
+          <button data-cat="theme" data-i18n="works.theme">女性题材</button>
+        </div>
+      </div>
+      <div class="toolbar">
+        <div class="tabs regions" id="regionTabs">
+          <button class="on" data-region="all" data-i18n="works.region_all">全部地区</button>
+          <button data-region="东亚">东亚</button>
+          <button data-region="东南亚">东南亚</button>
+          <button data-region="南亚">南亚</button>
+          <button data-region="中东">中东</button>
+          <button data-region="非洲">非洲</button>
+          <button data-region="欧洲">欧洲</button>
+          <button data-region="北美">北美</button>
+          <button data-region="拉美">拉美</button>
+          <button data-region="大洋洲">大洋洲</button>
+        </div>
+      </div>
+      <div class="toolbar filters">
+        <label class="filter"><span data-i18n="works.f_country">国家</span><select id="fCountry"></select></label>
+        <label class="filter"><span data-i18n="works.f_decade">年代</span><select id="fDecade"></select></label>
+        <label class="filter"><span data-i18n="works.f_letter">字母</span><select id="fLetter"></select></label>
+        <label class="filter"><span data-i18n="works.f_sort">排序</span><select id="fSort"></select></label>
+      </div>
+    </div>
+  </section>
+
+  <section class="block">
+    <div class="wrap">
+<div class="count" id="count"></div>
+      <div class="grid works-grid" id="works"><p class="muted">…</p></div>
+    </div>
+  </section>
+  </main>
+
+  <footer class="site">
+    <div class="wrap">
+      <div class="f-grid">
+        <div>
+          <div class="f-logo">Wake Up <em>Girls</em></div>
+          <p class="f-tag" data-i18n="footer.tagline">全球女性议题周报 · 每周五更新</p>
+        </div>
+        <div class="f-col">
+          <div class="f-label" data-i18n="footer.col1">栏目</div>
+          <a href="index.html" data-i18n="nav.latest">最新</a>
+          <a href="archive.html" data-i18n="nav.archive">往期</a>
+          <a href="works.html" data-i18n="nav.works">作品检索</a>
+        </div>
+        <div class="f-col">
+          <div class="f-label" data-i18n="footer.col2">关于</div>
+          <a href="about.html" data-i18n="nav.about">关于</a>
+          <a href="subscribe.html" data-i18n="nav.subscribe">订阅</a>
+          <a href="submit.html" data-i18n="nav.submit">投稿</a>
+        </div>
+        <div class="f-col">
+          <div class="f-label" data-i18n="footer.col3">使命</div>
+          <p class="f-mission"><span data-i18n="footer.mission1">视角在她，规则由她。</span><br /><span data-i18n="footer.mission2">每周为你筛选全球女性权益、性别平等与社会变革重要新闻。</span></p>
+          <p class="f-contact" data-i18n="footer.contact">联系：futureyuan39@gmail.com</p>
+        </div>
+      </div>
+      <div class="f-bottom">
+        <span data-i18n="footer.copyright">© 2026 Wake Up Girls</span>
+        <span data-i18n="footer.note">内容仅供参考 · 欢迎勘误与投稿</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="data/issues.js"></script>
+  <script src="data/issues.hant.js"></script>
+  <script src="data/works.js"></script>
+  <script src="data/works.hant.js"></script>
+  <script src="data/works_en.js"></script>
+  <script src="data/posters.js"></script>
+  <script src="data/covers.js"></script>
+  <script src="data/initials.js"></script>
+  <script src="assets/js/app.js"></script>
+</body>
+</html>

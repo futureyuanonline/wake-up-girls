@@ -1,0 +1,150 @@
+<!doctype html>
+<html lang="zh-CN"><head><meta charset="utf-8"><title>mtest</title>
+<style>body{font:13px/1.6 monospace;margin:0}#frames iframe{width:0;height:0;border:0;position:absolute;left:-9999px}</style></head>
+<body>
+<pre id="out">running…</pre>
+<div id="frames"></div>
+<script>
+var W = parseInt(new URLSearchParams(location.search).get('w') || '375', 10);
+var REPORT = 'http://127.0.0.1:8766/report';
+var PAGES = [
+  ['index.html', ''],
+  ['works.html', ''],
+  ['archive.html', ''],
+  ['about.html', ''],
+  ['subscribe.html', ''],
+  ['submit.html', ''],
+  ['news.html', '?issue=001&n=0'],
+  ['issue.html', '?id=001'],
+  ['work.html', '?i=0']
+];
+var pages = [], meta = {};
+
+function scrollingAncestor(el, doc) {
+  var p = el.parentElement;
+  while (p && p !== doc.documentElement) {
+    var ox = getComputedStyle(p).overflowX;
+    if (ox === 'auto' || ox === 'scroll' || ox === 'hidden') return p;
+    p = p.parentElement;
+  }
+  return null;
+}
+function cls(el) {
+  var c = el.className;
+  if (c && typeof c === 'object' && c.baseVal !== undefined) c = c.baseVal;
+  c = (c || '').toString().trim().split(/\s+/).slice(0, 3).join('.');
+  return el.tagName.toLowerCase() + (el.id ? '#' + el.id : '') + (c ? '.' + c : '');
+}
+
+function next(i) {
+  if (i >= PAGES.length) {
+    fetch(REPORT, { method: 'POST', headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ width: W, meta: meta, pages: pages }) })
+      .then(function () { document.getElementById('out').textContent = 'SENT'; document.title = 'SENT'; })
+      .catch(function (e) { document.getElementById('out').textContent = 'POSTFAIL ' + e; document.title = 'POSTFAIL'; });
+    return;
+  }
+  var page = PAGES[i];
+  var f = document.createElement('iframe');
+  f.style.width = W + 'px';
+  f.style.height = '1400px';
+  var done = false;
+  function finish() {
+    if (done) return; done = true;
+    setTimeout(function () { measure(page[0], f); next(i + 1); }, 1500);
+  }
+  f.onload = finish;
+  setTimeout(finish, 12000);
+  f.src = '../' + page[0] + page[1];
+  document.getElementById('frames').appendChild(f);
+}
+
+function measure(name, f) {
+  try {
+    var d = f.contentDocument, win = f.contentWindow;
+    if (!d) { pages.push({ page: name, error: 'no document' }); return; }
+    var de = d.documentElement;
+    var rec = {
+      page: name,
+      innerWidth: win.innerWidth,
+      clientWidth: de.clientWidth,
+      dpr: win.devicePixelRatio,
+      scrollW: Math.max(de.scrollWidth, d.body ? d.body.scrollWidth : 0),
+      overflow: []
+    };
+    var all = d.querySelectorAll('body *');
+    for (var i = 0; i < all.length; i++) {
+      var el = all[i];
+      var r = el.getBoundingClientRect();
+      if (r.width < 1 && r.height < 1) continue;
+      if (scrollingAncestor(el, d)) continue;
+      if (r.right > W + 1 || r.left < -1) {
+        rec.overflow.push(cls(el) + ' L=' + Math.round(r.left) + ' R=' + Math.round(r.right) + ' W=' + Math.round(r.width));
+        if (rec.overflow.length > 12) break;
+      }
+    }
+    var small = [], aaFail = 0, aaa = 0;
+    var tappable = d.querySelectorAll('a, button, select, input');
+    for (var j = 0; j < tappable.length; j++) {
+      var t = tappable[j], tr = t.getBoundingClientRect();
+      if (tr.width < 1 || tr.height < 1) continue;
+      // 整卡可点：卡片内文字链接由铺满卡片的覆盖层承载，实际点击区域 = 整张卡
+      var stretched = t.closest ? t.closest('.card.work-card, .mini-cell') : null;
+      var effH = stretched ? stretched.getBoundingClientRect().height : tr.height;
+      if (effH < 24) aaFail++;
+      else if (effH < 44) aaa++;
+      if (tr.height < 44 && !stretched) {
+        var host = t.parentElement, guard = 0;
+        while (host && guard++ < 6 && !(host.className && host.className.toString().trim())) host = host.parentElement;
+        small.push(cls(t) + ' ' + Math.round(tr.width) + 'x' + Math.round(tr.height) +
+          ' <' + (effH < 24 ? 'AA不达标' : 'AA达标/AAA偏小') + '>' +
+          ' in[' + (host ? cls(host) : '?') + ']' +
+          ' "' + (t.textContent || '').trim().slice(0, 14) + '"');
+      }
+    }
+    rec.smallTargets = small.slice(0, 14);
+    rec.smallCount = small.length;
+    rec.aaFail = aaFail;
+    rec.aaaSmall = aaa;
+    var nav = d.querySelector('.nav'), hdr = d.querySelector('header.site');
+    if (nav) rec.nav = { h: Math.round(nav.getBoundingClientRect().height), scrollW: nav.scrollWidth, clientW: nav.clientWidth };
+    if (hdr) {
+      var cta = d.querySelector('.nav-cta'), ls = d.querySelector('.lang-switch'), bg = d.querySelector('.nav-burger');
+      rec.header = {
+        ctaVisible: cta ? (cta.getBoundingClientRect().right <= W + 1 && cta.getBoundingClientRect().width > 0) : null,
+        ctaRight: cta ? Math.round(cta.getBoundingClientRect().right) : null,
+        langRight: ls ? Math.round(ls.getBoundingClientRect().right) : null,
+        burgerRight: bg ? Math.round(bg.getBoundingClientRect().right) : null,
+        menuDisplay: d.querySelector('nav.menu') ? getComputedStyle(d.querySelector('nav.menu')).display : null
+      };
+    }
+    function gridSel(sel) {
+      var g = d.querySelector(sel);
+      if (!g) return null;
+      return getComputedStyle(g).gridTemplateColumns.split(' ').length + ' cols [' + getComputedStyle(g).gridTemplateColumns + ']';
+    }
+    rec.grids = {
+      works: gridSel('.grid.works-grid'),
+      mini: gridSel('.mini-grid'),
+      digest: gridSel('.digest-grid'),
+      value: gridSel('.value-grid'),
+      footer: gridSel('.f-grid'),
+      heroGallery: gridSel('.hero-gallery')
+    };
+    var p = d.querySelector('.news-body p') || d.querySelector('.hero-sub') || d.querySelector('.about-lead');
+    if (p) {
+      var cs = getComputedStyle(p);
+      rec.type = { font: cs.fontSize, lineHeight: cs.lineHeight, align: cs.textAlign, width: Math.round(p.getBoundingClientRect().width) };
+    }
+    var h1 = d.querySelector('.hero-head') || d.querySelector('.news-title') || d.querySelector('.about-title');
+    if (h1) rec.h1 = { sel: cls(h1), font: getComputedStyle(h1).fontSize, w: Math.round(h1.getBoundingClientRect().width) };
+    pages.push(rec);
+  } catch (e) {
+    pages.push({ page: name, error: (e && e.message) || String(e) });
+  }
+}
+meta.windowInner = window.innerWidth;
+meta.dpr = window.devicePixelRatio;
+next(0);
+</script>
+</body></html>
