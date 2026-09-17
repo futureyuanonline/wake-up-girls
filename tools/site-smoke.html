@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="zh-CN"><head><meta charset="utf-8"><title>site smoke test</title>
+<style>#frames iframe{width:0;height:0;border:0;position:absolute;left:-9999px}</style></head>
+<body>
+<pre id="out">running…</pre>
+<div id="frames"></div>
+<script>
+/* 渲染后功能冒烟测试：确认 app.js 真的跑起来、各页关键区域渲染出内容。
+   结果 POST 到 tools/mobile_report_server.py（默认 8766），由 site_smoke_summary.py 打印。 */
+var REPORT = 'http://127.0.0.1:8766/report';
+var W = parseInt(new URLSearchParams(location.search).get('w') || '375', 10);
+var PAGES = [
+  ['index.html', '', [['#latest .dg-item, #latest .dg-lead', 5, '本周精选条目'],
+                      ['#featured .mini-cell', 3, '精选网格'],
+                      ['footer.site .f-col a', 6, '页脚链接'],
+                      ['nav.menu a', 6, '导航链接']]],
+  ['works.html', '', [['#works .card.work-card', 100, '作品卡片'],
+                      ['#catTabs button', 5, '分类标签'],
+                      ['#fCountry option', 2, '国家下拉']]],
+  ['archive.html', '', [['#archive-list a, #archive-list .card', 1, '往期列表']]],
+  ['issue.html', '?id=001', [['#issue .issue-item', 15, '本期条目'],
+                             ['#issue .sec-heading', 1, '分类小标题']]],
+  ['news.html', '?id=001-1', [['#news .news-body p', 3, '正文段落'],
+                              ['#news .news-source', 1, '来源框'],
+                              ['#news .news-title', 1, '标题']]],
+  ['work.html', '?i=0', [['#work .work-detail', 1, '作品详情'],
+                         ['#work .work-link', 1, '外链按钮']]],
+  ['about.html', '', [['.value-card', 4, '价值卡片'], ['.team-card', 2, '团队卡片']]],
+  ['subscribe.html', '', [['.panel', 1, '订阅面板'], ['form.inline input', 1, '邮箱输入框']]],
+  ['submit.html', '', [['.panel', 1, '投稿面板']]],
+  ['404.html', '', [['.panel', 1, '404 面板'], ['.pill', 2, '404 按钮']]]
+];
+var results = [];
+
+function next(i) {
+  if (i >= PAGES.length) {
+    fetch(REPORT, { method: 'POST', headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ kind: 'smoke', width: W, pages: results }) })
+      .then(function () { document.title = 'SENT'; document.getElementById('out').textContent = 'SENT'; })
+      .catch(function (e) { document.title = 'POSTFAIL'; document.getElementById('out').textContent = 'POSTFAIL ' + e; });
+    return;
+  }
+  var page = PAGES[i];
+  var f = document.createElement('iframe');
+  f.style.width = W + 'px'; f.style.height = '1200px';
+  var done = false;
+  function finish() {
+    if (done) return; done = true;
+    setTimeout(function () { check(page, f); next(i + 1); }, 1800);
+  }
+  f.onload = finish;
+  setTimeout(finish, 12000);
+  f.src = '../' + page[0] + page[1];
+  document.getElementById('frames').appendChild(f);
+}
+
+function check(page, f) {
+  var rec = { page: page[0] + page[1], errors: [], checks: [] };
+  try {
+    var d = f.contentDocument;
+    var win = f.contentWindow;
+    rec.errors = (win.__errs || []).slice(0, 3);
+    /* app.js 若解析失败，全局函数不会存在——这是最强的信号 */
+    rec.globals = {
+      appJs: typeof win.renderAll === 'function',
+      data: typeof win.ISSUES !== 'undefined' && typeof win.WORKS !== 'undefined'
+    };
+    if (!rec.globals.appJs) rec.errors.push('app.js 未生效（renderAll 未定义）');
+    if (!d) { rec.errors.push('iframe 无 document'); }
+    else {
+      if (!d.body || !d.body.children.length) rec.errors.push('body 为空');
+      page[2].forEach(function (c) {
+        var n = d.querySelectorAll(c[0]).length;
+        rec.checks.push({ what: c[2], sel: c[0], got: n, want: c[1], ok: n >= c[1] });
+      });
+    }
+  } catch (e) { rec.errors.push('异常: ' + ((e && e.message) || e)); }
+  results.push(rec);
+}
+next(0);
+</script>
+</body></html>

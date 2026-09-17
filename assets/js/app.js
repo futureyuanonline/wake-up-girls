@@ -286,7 +286,7 @@ var UI = {
     'work.notfound': 'Work not found',
     'err.label': '404 · Page not found',
     'err.title': 'This page went missing',
-    'err.desc': 'The link may have expired, or the address was mistyped. Head back home for this week\\'s picks, or browse the directory.',
+    'err.desc': "The link may have expired, or the address was mistyped. Head back home for this week's picks, or browse the directory.",
     'err.home': 'Back home',
     'err.works': 'Directory',
     'work.label': 'Directory · Detail',
