@@ -1,0 +1,17 @@
+{
+  // Cloudflare Worker（静态资源模式）配置
+  // 项目的 Deploy command 是 `npx wrangler deploy`，由本文件告诉它发布什么。
+  // 发布目录 = dist/，由 Build command `node tools/build_site.mjs` 生成（白名单，只含站点公开文件）。
+  // 实测：若把 directory 设为 "."（仓库根目录），wrangler 会读入 1619 个文件（含 .git 历史与
+  // node_modules），既臃肿又会公开仓库历史，故必须走 dist/。
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "wake-up-girls",
+  "compatibility_date": "2025-01-01",
+  "assets": {
+    "directory": "./dist",
+    // 未匹配到文件时返回 404.html（404 状态码），配合站点自定义 404 页
+    "not_found_handling": "404-page",
+    // 访问 /about 自动对应 about.html
+    "html_handling": "auto-trailing-slash"
+  }
+}

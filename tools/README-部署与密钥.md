@@ -22,7 +22,33 @@ pwsh -File tools\preflight.ps1      # 提交前预检：语法 + 冒烟测试 + 
 git add -A && git commit -m "..." && git push
 ```
 
-### 2) 部署到 yuanxiuzhong.com（Cloudflare Pages）
+### 2) 部署到 yuanxiuzhong.com（Cloudflare Worker 静态资源）
+
+> **实测情况**：在 Cloudflare 新建项目时，现在默认建出来的是 **Worker 项目**（不是经典 Pages）。
+> 它的 Build command 默认为空、Deploy command 是 `npx wrangler deploy`，若仓库里没有 wrangler 配置，
+> 构建会在 **Deploying 阶段失败**（`Build #862232b8` 就是这个原因）。
+> 仓库现在已补好 `wrangler.jsonc`，**你只需要改一个字段**。
+
+**2.0 需要你改的那一个字段**
+Worker 项目 → **Settings → Build** → 把 **Build command** 设为：
+
+```
+node tools/build_site.mjs
+```
+
+| 字段 | 值 |
+|---|---|
+| Root directory | `/`（不变） |
+| Build command | `node tools/build_site.mjs` ← **只改这里** |
+| Deploy command | `npx wrangler deploy`（不变） |
+
+保存后回 **Deployments → 最新那条失败的 → Retry build**。
+
+**为什么要这一步**：`wrangler` 需要一个「发布目录」。若直接指向仓库根目录，实测它会读入
+**1619 个文件**（含 `.git` 全部历史对象、`node_modules`、开发脚本），既臃肿又会把仓库历史公开出去。
+`tools/build_site.mjs` 用白名单只把网站该公开的文件（首页等 10 个页面 + `assets/` + `data/` +
+`404.html` + `_headers` + `robots.txt`）复制到 `dist/`，实测发布集合为 309 个文件 / 26.6 MB，
+且会主动剔除 `data/subscribers.json`。`wrangler.jsonc` 里的 `assets.directory` 指向 `./dist`。
 
 **2.1 先把域名接入 Cloudflare（免费套餐即可）**
 1. 注册/登录 <https://dash.cloudflare.com> → **Add a site** → 输入 `yuanxiuzhong.com` → 选 **Free**
@@ -46,14 +72,14 @@ git add -A && git commit -m "..." && git push
    | Build output directory | **`/`**（若界面不接受，改填 `.`） |
 4. **Save and Deploy** → 先访问分配到的 `https://wake-up-girls.pages.dev`，确认站点正常（这一步不碰域名，安全）
 
-**2.3 绑定自定义域名**
-1. Pages 项目 → **Custom domains → Set up a custom domain**
+**2.2 绑自定义域名**
+域名在 Cloudflare 变为 Active 之后：
+1. Worker 项目 → **Domains** 标签页 → **Add → Custom Domain**
 2. 输入 `yuanxiuzhong.com` → Cloudflare 自动创建 DNS 记录并签发免费证书
 3. 再添加 `www.yuanxiuzhong.com`
-4. 建议把 `www` 301 跳到裸域（或反之），避免两个地址内容重复：Pages 项目里加 **Redirect Rules**，
-   或用仓库里的 `_redirects` 文件
+4. 建议把 `www` 301 跳到裸域（或反之），避免两个地址内容重复（用 Redirect Rules，或仓库里的 `_redirects`）
 
-**2.4 验证**
+**2.3 验证**
 ```powershell
 nslookup -type=ns yuanxiuzhong.com 1.1.1.1     # 应显示 *.ns.cloudflare.com
 curl.exe -I https://yuanxiuzhong.com           # 应为 200，且 server: cloudflare
@@ -61,9 +87,13 @@ curl.exe -I https://yuanxiuzhong.com           # 应为 200，且 server: cloudf
 > 注意：你本机有代理会把 DNS 解析成 `198.18.x.x`（fake-IP），所以**本机 `Resolve-DnsName` 看到的地址不可信**，
 > 用上面的 `1.1.1.1` 直查，或到 <https://dnschecker.org> 查。
 
-**替代方案（不迁 NS）**：在 Cloudflare 之外托管 DNS 时，只能较顺地给 `www` 加 CNAME → `wake-up-girls.pages.dev`；
+**替代方案（不迁 NS）**：在 Cloudflare 之外托管 DNS 时，只能较顺地给 `www` 加 CNAME → 该 Worker 的地址；
 裸域 `yuanxiuzhong.com` 需要 DNS 商支持 CNAME 展平（GoDaddy 不支持），只能靠转发，不推荐。
 将来 `news@yuanxiuzhong.com` 要发信（Resend 的 SPF/DKIM）也是迁到 Cloudflare 后一次配好最省事。
+
+**如果你更想用经典 Pages**：删掉现在这个 Worker 项目，在 **Workers & Pages → Create → Pages →
+Connect to Git** 重新建（Framework preset = None、Build command 留空、输出目录 `/`），
+此时 `wrangler.jsonc` 会被忽略、不影响。但既然 Worker 这条路已经跑通，没必要折腾。
 
 ### 3) 大模型 API Key（成稿用）
 任选其一并在 GitHub 仓库 **Settings → Secrets and variables → Actions** 里配置：
@@ -107,7 +137,9 @@ curl.exe -I https://yuanxiuzhong.com           # 应为 200，且 server: cloudf
 | `tools/generate_issue.py` | ② 成稿：调用 LLM 生成中文正文 + 英文版，**校验不通过则拒绝发布**（条目<10、地区<7、单区>3、字段缺失、链接异常） |
 | `tools/send_newsletter.py` | ⑤ 投递：Resend / SendGrid 发 HTML 邮件（无名单则跳过，缺密钥则报错） |
 | `build_i18n.mjs` | ③ 繁简同步（opencc） |
-| `404.html` / `_headers` / `robots.txt` | Cloudflare Pages 用的 404 页、缓存与安全响应头、抓取规则 |
+| `404.html` / `_headers` / `robots.txt` | 自定义 404 页、缓存与安全响应头、抓取规则 |
+| `wrangler.jsonc` | Worker 静态资源发布配置（发布目录 `dist/`、404 处理、URL 处理） |
+| `tools/build_site.mjs` | 生成发布目录 `dist/`（白名单，剔除 `.git`/`node_modules`/开发文件/隐私数据） |
 | `tools/preflight.ps1` | 提交前预检：JS 语法 + 渲染后冒烟测试（10 页）+ 移动端 320–1280 版式审计 |
 | `tools/mobile-check.ps1` | 移动端专项自检（横向溢出 / 触控目标 AA 达标） |
 | `.gitattributes` | 仓库内统一 LF，避免 Windows 上产生成片换行符差异 |

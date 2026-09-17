@@ -17,12 +17,16 @@ _*.txt
 _*.json.bak
 _cv_preview.pdf
 
+# 本地发布预览产物（线上不依赖，由 tools/preview_publish.mjs 生成）
+dist/
+.wrangler*/
+
 # 系统文件
 .DS_Store
 Thumbs.db
 desktop.ini
 
-# 移动端自检产物
+# 移动端自检与冒烟测试产物
 tools/mobile-report.json
 tools/cache/
 
