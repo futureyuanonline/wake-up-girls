@@ -1,0 +1,6 @@
+User-agent: *
+Allow: /
+
+# 开发用页面不必被收录
+Disallow: /tools/
+Disallow: /404.html
