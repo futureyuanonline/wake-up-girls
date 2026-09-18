@@ -2,7 +2,7 @@
 """② 用 LLM 把候选写成新一期周报（OpenAI 兼容接口）
    - 输入：drafts/week-*.json（最新）
    - 输出：追加到 data/issues.js 数组最前面（最新期在最上）
-          同时把每条新闻的「为什么值得关注」备选句写到 drafts/why-<期号>.md，供主理人选句/改写
+          同时把每条新闻的「为什么值得关注」备选句写到 tools/why/why-<期号>.md（入库）
    - 校验：条目 8–12、覆盖地区 ≥4、覆盖分类 ≥4、单区 ≤3、每条必须有 t/d/body/why_candidates/src/url/region；
            不达标即失败退出（不发布）
    - 环境变量：LLM_API_KEY（必填）、LLM_BASE_URL、LLM_MODEL
@@ -225,7 +225,9 @@ def write_why_sheet(issue_id, items, period, issue):
         lines.append('')
         lines.append('→ 选定/改写：______________________')
         lines.append('')
-    path = os.path.join(ROOT, 'drafts', 'why-%s.md' % issue_id)
+    outdir = os.path.join(ROOT, 'tools', 'why')
+    os.makedirs(outdir, exist_ok=True)
+    path = os.path.join(outdir, 'why-%s.md' % issue_id)
     wt = issue.get('watch') or {}
     if wt.get('name'):
         lines += ['---', '', '## WOMEN TO WATCH（待定稿）', '',

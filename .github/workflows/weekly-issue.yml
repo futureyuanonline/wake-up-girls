@@ -126,8 +126,8 @@ jobs:
       - name: ⑥ 存档「为什么值得关注」备选句清单
         if: always() && env.LLM_API_KEY != ''
         run: |
-          if ls drafts/why-*.md >/dev/null 2>&1; then
-            for f in drafts/why-*.md; do
+          if ls tools/why/why-*.md >/dev/null 2>&1; then
+            for f in tools/why/why-*.md; do
               echo "## 📝 $(basename "$f")" >> "$GITHUB_STEP_SUMMARY"
               echo "" >> "$GITHUB_STEP_SUMMARY"
               cat "$f" >> "$GITHUB_STEP_SUMMARY"
@@ -142,7 +142,7 @@ jobs:
         if: always() && env.LLM_API_KEY != ''
         with:
           name: why-candidates
-          path: drafts/why-*.md
+          path: tools/why/why-*.md
           if-no-files-found: ignore
           retention-days: 90
 

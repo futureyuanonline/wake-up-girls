@@ -108,7 +108,7 @@ if ok:
     check('watch 已写入', '测试人物' in js)
     check('picks 已写入', '《芭比》' in js)
     check('why 取了第一句备选', '事实角度 0' in js)
-    sheets = list((tmp / 'drafts').glob('why-*.md'))
+    sheets = list((tmp / 'tools' / 'why').glob('why-*.md'))
     check('备选句清单已生成', len(sheets) == 1, sheets)
     if sheets:
         sheet = sheets[0].read_text(encoding='utf-8')
