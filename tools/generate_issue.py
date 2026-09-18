@@ -187,7 +187,7 @@ def next_issue_id(js_text):
     return '%03d' % ((max(ids) + 1) if ids else 1)
 
 
-def write_why_sheet(issue_id, items, period):
+def write_why_sheet(issue_id, items, period, issue):
     """把每条的备选句写成待选清单，供主理人选句/改写后再定稿。"""
     lines = ['# 第 %s 期 ·「为什么值得关注」备选句（%s）' % (issue_id, period), '',
              '> 用法：从每条的 3 句里选一句，或直接改写；把你选定的句子回填到 `data/issues.js`',
@@ -278,7 +278,7 @@ def main():
     js = js.replace('window.ISSUES = [', 'window.ISSUES = [\n' + json.dumps(obj, ensure_ascii=False, indent=2) + ',', 1)
     io.open(js_path, 'w', encoding='utf-8', newline='').write(js)
 
-    sheet = write_why_sheet(issue_id, flat, period)
+    sheet = write_why_sheet(issue_id, flat, period, issue)
     n = len(flat)
     print('已生成第 %s 期：%d 条，覆盖 %d 个地区 / %d 个分类'
           % (issue_id, n, len({i['region'] for i in flat}), len({s['cat'] for s in sections})))

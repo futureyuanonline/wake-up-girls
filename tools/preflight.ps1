@@ -1,4 +1,4 @@
-﻿# 提交 / 部署前预检
+# 提交 / 部署前预检
 #   用法：pwsh -File tools\preflight.ps1
 #   内容：① JS 语法硬校验（不通过立即中止）② 渲染后功能冒烟测试 ③ 移动端 320–1280 版式审计
 # 说明：冒烟测试会真正用无头浏览器打开 10 个页面，检查 app.js 是否生效、关键区域是否渲染出内容，
@@ -27,6 +27,13 @@ Get-ChildItem data\*.js | ForEach-Object {
   if ($LASTEXITCODE -ne 0) { Write-Host "✗ $($_.Name) 语法错误，已中止" -ForegroundColor Red; exit 1 }
 }
 Write-Host "✓ app.js 与 data/*.js 语法通过" -ForegroundColor Green
+
+Write-Host "`n【1.5/3】出刊脚本离线回归测试（用假 LLM 跑一遍 main()，不花 API 费用）" -ForegroundColor Cyan
+python tools\test_generate_issue.py
+if ($LASTEXITCODE -ne 0) {
+  Write-Host "✗ 出刊脚本测试未通过，已中止（这类 bug 会让每周自动出刊失败）" -ForegroundColor Red
+  exit 1
+}
 
 # 预览服务
 $site = $null
