@@ -1,11 +1,28 @@
 # 每周五自动出刊：采集 → LLM 成稿 → 繁简同步 → 提交 → 部署 → 邮件投递
-# 需要的仓库 Secrets / Variables（Settings → Secrets and variables → Actions）：
-#   Secrets:   LLM_API_KEY      大模型 API Key（OpenAI 兼容接口）
-#              MAIL_API_KEY     邮件服务 API Key（Resend / SendGrid 任一）
-#   Variables: LLM_BASE_URL     如 https://api.deepseek.com/v1 或 https://api.openai.com/v1
-#              LLM_MODEL        如 deepseek-chat / gpt-4o-mini
-#              MAIL_FROM        发件人，如 Wake Up Girls <news@yuanxiuzhong.com>
-#              SITE_URL         如 https://yuanxiuzhong.com
+#
+# ── 需要的仓库 Secrets / Variables ──
+#   位置：GitHub 仓库 → Settings → Secrets and variables → Actions
+#   Secrets:
+#     LLM_API_KEY        大模型 API Key（OpenAI 兼容接口）
+#     MAIL_API_KEY       邮件服务 API Key（Resend / SendGrid 任一）—— 未配置则跳过投递
+#     SUBSCRIBERS_JSON   订阅名单内容（整个 JSON 文本，形如 {"subscribers":[{"email":"a@b.com","lang":"zh-CN"}]}）
+#                        —— 名单含邮箱属隐私，不入库，改成放这里，流水线运行时才写到 data/subscribers.json
+#   Variables:
+#     LLM_BASE_URL       如 https://api.deepseek.com/v1 或 https://api.openai.com/v1
+#     LLM_MODEL          如 deepseek-chat / gpt-4o-mini
+#     MAIL_FROM          发件人，如 Wake Up Girls <news@yuanxiuzhong.com>
+#     SITE_URL           如 https://yuanxiuzhong.com
+#
+# ── 行为说明 ──
+#   * 未配置 LLM_API_KEY 时：整个流水线**优雅跳过**（记录一条 notice，运行显示成功），
+#     不会每周给你发失败邮件；配置好之后自动恢复出刊。
+#   * 未配置 MAIL_API_KEY 或订阅名单为空时：只跳过邮件投递，网站照常更新。
+#   * 网站更新靠「提交 → Cloudflare 自动重新部署」完成，无需额外步骤。
+#
+# ── 可选：发布前人工审核 ──
+#   若希望每期先人工过一眼再上线：仓库 Settings → Environments 新建 production 并添加
+#   Required reviewers（填你自己），然后把下面 job 里的 `environment: production` 取消注释。
+#   之后每周五流水线会停在「等待批准」，你在 Actions 页面点一下 Approve 才发布。
 name: Weekly Issue (Friday)
 
 on:
@@ -16,37 +33,68 @@ on:
 permissions:
   contents: write
 
+# 同一时间只跑一个，避免手动触发与定时任务撞车
+concurrency:
+  group: weekly-issue
+  cancel-in-progress: false
+
 jobs:
   publish:
     runs-on: ubuntu-latest
+    # environment: production   # ← 想开启「发布前人工审核」就取消本行注释（见文件顶部说明）
+    env:
+      LLM_API_KEY: ${{ secrets.LLM_API_KEY }}
+      MAIL_API_KEY: ${{ secrets.MAIL_API_KEY }}
+      SUBSCRIBERS_JSON: ${{ secrets.SUBSCRIBERS_JSON }}
+      LLM_BASE_URL: ${{ vars.LLM_BASE_URL || 'https://api.deepseek.com/v1' }}
+      LLM_MODEL: ${{ vars.LLM_MODEL || 'deepseek-chat' }}
+      MAIL_FROM: ${{ vars.MAIL_FROM }}
+      SITE_URL: ${{ vars.SITE_URL || 'https://yuanxiuzhong.com' }}
     steps:
+      # ── 未配置密钥时的优雅跳过（只提示，不算失败） ──
+      - name: 检查密钥配置
+        if: env.LLM_API_KEY == ''
+        run: |
+          echo "::notice title=未配置 LLM_API_KEY，本次跳过出刊::在仓库 Settings → Secrets and variables → Actions 配置 LLM_API_KEY 后，下周五自动恢复出刊。网站本身不受影响。"
+          {
+            echo "### ⏭️ 本次跳过出刊"
+            echo ""
+            echo "未检测到 \`LLM_API_KEY\`，流水线已优雅跳过，**网站与部署不受影响**。"
+            echo ""
+            echo "配置方式：Settings → Secrets and variables → Actions → New repository secret"
+          } >> "$GITHUB_STEP_SUMMARY"
+
       - uses: actions/checkout@v4
+        if: env.LLM_API_KEY != ''
 
       - uses: actions/setup-node@v4
+        if: env.LLM_API_KEY != ''
         with:
           node-version: '20'
 
       - uses: actions/setup-python@v5
+        if: env.LLM_API_KEY != ''
         with:
           python-version: '3.11'
 
       - name: 安装依赖
-        run: npm ci --omit=dev || npm install --omit=dev
+        if: env.LLM_API_KEY != ''
+        run: npm install --omit=dev     # package-lock.json 不入库，故用 install（脚本只依赖标准库与 opencc-js）
 
       - name: ① 采集全球候选（按地区 × 当地语言）
+        if: env.LLM_API_KEY != ''
         run: python tools/fetch_news.py
 
       - name: ② 生成新一期（LLM 撰写，含校验）
-        env:
-          LLM_API_KEY: ${{ secrets.LLM_API_KEY }}
-          LLM_BASE_URL: ${{ vars.LLM_BASE_URL || 'https://api.deepseek.com/v1' }}
-          LLM_MODEL: ${{ vars.LLM_MODEL || 'deepseek-chat' }}
+        if: env.LLM_API_KEY != ''
         run: python tools/generate_issue.py
 
       - name: ③ 同步繁体版
+        if: env.LLM_API_KEY != ''
         run: node build_i18n.mjs
 
-      - name: ④ 提交（触发部署）
+      - name: ④ 提交（触发 Cloudflare 自动部署）
+        if: env.LLM_API_KEY != ''
         run: |
           git config user.name  "wake-up-girls-bot"
           git config user.email "bot@users.noreply.github.com"
@@ -58,9 +106,12 @@ jobs:
             git push
           fi
 
-      - name: ⑤ 邮件投递
-        env:
-          MAIL_API_KEY: ${{ secrets.MAIL_API_KEY }}
-          MAIL_FROM: ${{ vars.MAIL_FROM }}
-          SITE_URL: ${{ vars.SITE_URL || 'https://yuanxiuzhong.com' }}
+      - name: ⑤ 写入订阅名单（来自 Secret，不入库）
+        if: env.LLM_API_KEY != '' && env.MAIL_API_KEY != '' && env.SUBSCRIBERS_JSON != ''
+        run: |
+          printf '%s' "$SUBSCRIBERS_JSON" > data/subscribers.json
+          echo "已写入订阅名单，条目数：$(node -e "console.log(require('./data/subscribers.json').subscribers.length)")"
+
+      - name: ⑥ 邮件投递
+        if: env.LLM_API_KEY != '' && env.MAIL_API_KEY != ''
         run: python tools/send_newsletter.py
