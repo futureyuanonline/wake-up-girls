@@ -172,6 +172,15 @@ check('正文为空 → 报错', err_empty is not None and '空正文' in err_em
 out_ok, err_ok = run_call_llm({'model': 'm', 'choices': [{'finish_reason': 'stop', 'message': {'content': '{"ok":1}'}}], 'usage': {}})
 check('正常返回 → 不报错且取到 content', err_ok is None and out_ok == '{"ok":1}', (out_ok, err_ok))
 
+print('\n【5】期号生成（曾导致「每周都生成重复 002」的 bug）')
+gi5 = load_generator(setup_tmp())
+check('JS 风格 id 可识别（id: "009"）', gi5.next_issue_id('window.ISSUES=[{id: "009"}]') == '010')
+check('JSON 风格 id 可识别（"id": "012"）', gi5.next_issue_id('window.ISSUES=[{"id": "012"}]') == '013')
+check('期号被占用会自动跳过', gi5.next_issue_id('[{"id": "001"},{"id": "003"}]') == '004')
+check('空数据从 001 起', gi5.next_issue_id('window.ISSUES=[]') == '001')
+_real_next = gi5.next_issue_id((ROOT / 'data' / 'issues.js').read_text(encoding='utf-8'))
+check('真实数据的下一期号不与已有重复', _real_next not in ('001', '002'), _real_next)
+
 shutil.rmtree(tmp, ignore_errors=True)
 
 print('\n' + '=' * 56)

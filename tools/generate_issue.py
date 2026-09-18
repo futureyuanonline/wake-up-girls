@@ -183,8 +183,17 @@ def validate(issue):
 
 
 def next_issue_id(js_text):
-    ids = [int(m) for m in re.findall(r'id:\s*"(\d{3})"', js_text)]
-    return '%03d' % ((max(ids) + 1) if ids else 1)
+    """取下一个可用期号。
+
+    注意：手工写的第一期是 JS 风格 `id: "001"`，而生成器写入的是 JSON 风格 `"id": "002"`，
+    两种都要认——历史上这里只匹配前者，导致每次生成都算出同一个号（无限重复的 002）。
+    同时跳过已被占用的号，避免任何情况下产生重复期号。
+    """
+    ids = set(int(m) for m in re.findall(r'"?id"?\s*:\s*"(\d{3})"', js_text))
+    nxt = (max(ids) + 1) if ids else 1
+    while nxt in ids:            # 兜底：号被占用就往后找
+        nxt += 1
+    return '%03d' % nxt
 
 
 def write_why_sheet(issue_id, items, period, issue):
@@ -238,6 +247,7 @@ def main():
         sys.exit('校验未通过，已阻止发布：\n- ' + '\n- '.join(errs))
 
     now = datetime.now(CST)
+    _existing = io.open(os.path.join(ROOT, 'data', 'issues.js'), encoding='utf-8').read()
     issue_id = next_issue_id(io.open(os.path.join(ROOT, 'data', 'issues.js'), encoding='utf-8').read())
     monday = now - timedelta(days=now.weekday())
     sunday = monday + timedelta(days=6)
