@@ -43,3 +43,6 @@ data/subscribers.json
 
 # 手工邮件草稿（含收件人邮箱，不入库）
 outbox/
+
+# 分享视觉包（个人分发素材，不入库）
+share/
