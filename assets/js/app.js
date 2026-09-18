@@ -45,6 +45,9 @@ var UI = {
     'issue.back': '← 返回往期列表',
     'issue.src': '来源',
     'item.why': '为什么值得关注　',
+    'item.vpn_hint': '可能需科学上网',
+    'item.search_cn': '搜中文报道',
+    'item.agg_note': '原文为聚合跳转，站内已附完整摘要',
     'issue.read_more': '阅读完整报道 →',
     'news.notfound': '未找到该报道',
     'news.origin': '本文由 Wake Up Girls 编辑部综合整理。原文来源：',
@@ -167,6 +170,9 @@ var UI = {
     'issue.back': '← 返回往期列表',
     'issue.src': '來源',
     'item.why': '為什麼值得關注　',
+    'item.vpn_hint': '可能需科學上網',
+    'item.search_cn': '搜中文報導',
+    'item.agg_note': '原文為聚合跳轉，站內已附完整摘要',
     'issue.read_more': '閱讀完整報導 →',
     'news.notfound': '未找到該報導',
     'news.origin': '本文由 Wake Up Girls 編輯部綜合整理。原文來源：',
@@ -289,6 +295,9 @@ var UI = {
     'issue.back': '← Back to archive',
     'issue.src': 'Source',
     'item.why': 'Why it matters　',
+    'item.vpn_hint': 'may need a VPN',
+    'item.search_cn': 'Search Chinese coverage',
+    'item.agg_note': 'Original link is an aggregator redirect; full summary is on this page',
     'issue.read_more': 'Read the full story →',
     'news.notfound': 'Story not found',
     'news.origin': 'This article was compiled by the Wake Up Girls editorial team. Original source: ',
@@ -862,7 +871,7 @@ function renderNews() {
     "<figcaption>" + esc(t('news.img_caption')) + "　·　" + esc(t('news.img_note')) + "</figcaption></figure>" +
     '<div class="news-body">' + body + "</div>" +
     '<div class="news-source">' +
-    "<p>" + esc(t('news.origin')) + '<a href="' + esc(item.url) + '" target="_blank" rel="noopener" style="color:var(--accent);">' + esc(item.src) + "</a></p>" +
+    sourceBlock(item, L(item, 't')) +
     '<p class="muted" style="font-size:12.5px;">' + esc(t('news.disclaimer')) + "</p>" +
     "</div>" +
     '<p style="margin-top:24px;"><a class="more" href="issue.html?id=' + esc(issue.id) + '" style="color:var(--accent);">' + esc(t('news.back_issue')) + '</a>　|　<a class="more" href="index.html" style="color:var(--accent);">' + esc(t('news.back_home')) + "</a></p>";
@@ -1034,6 +1043,33 @@ function renderWork() {
     links +
     "</div></div>" +
     '<p><a class="more" href="works.html" style="color:var(--accent);">' + esc(t('work.back')) + "</a></p>";
+}
+
+
+/* ---------- 出站链接可用性（面向中国大陆读者） ----------
+   1) news.google.com 是聚合跳转，点了只会到 Google 中介页 → 不作为可点链接
+   2) 常见被墙域名加「可能需科学上网」提示
+   3) 每条都提供「搜中文报道」入口（百度，墙内可用） */
+var CN_BLOCKED = /(^|\.)(google\.[a-z.]+|news\.google\.com|youtube\.com|facebook\.com|instagram\.com|twitter\.com|x\.com|wikipedia\.org|bbc\.(com|co\.uk)|nytimes\.com|washingtonpost\.com|theguardian\.com|economist\.com|ft\.com|bloomberg\.com|wsj\.com|reddit\.com|medium\.com|dw\.com|rfi\.fr|aljazeera\.com|apnews\.com|newyorker\.com|theatlantic\.com|gutenberg\.org)$/i;
+function isAggLink(u) { return /news\.google\.com/.test(String(u || "")); }
+function mayBlock(u) { var h = ""; try { h = new URL(u).hostname; } catch (e) { return false; } return CN_BLOCKED.test(h); }
+function cnSearch(q) { return "https://www.baidu.com/s?wd=" + encodeURIComponent(String(q || "").replace(/[《》]/g, "")); }
+
+/* 生成「原文来源」区块：聚合链接只显示来源名，其余为可点链接，并附中文搜索入口 */
+function sourceBlock(item, title) {
+  var url = String(item.url || "");
+  var agg = isAggLink(url);
+  var h = '<p>' + esc(t('news.origin'));
+  if (url && !agg) {
+    h += '<a href="' + esc(url) + '" target="_blank" rel="noopener" style="color:var(--accent);">' + esc(item.src) + "</a>";
+  } else {
+    h += "<span>" + esc(item.src) + "</span>";
+  }
+  if (agg || mayBlock(url)) h += ' <span class="link-tag">' + esc(t('item.vpn_hint')) + "</span>";
+  h += ' · <a href="' + esc(cnSearch(title)) + '" target="_blank" rel="noopener" style="color:var(--accent);">' + esc(t('item.search_cn')) + "</a>";
+  h += "</p>";
+  if (agg) h += '<p class="muted" style="font-size:12.5px;">' + esc(t('item.agg_note')) + "</p>";
+  return h;
 }
 
 /* ---------- 策展人手记（首页） ----------
