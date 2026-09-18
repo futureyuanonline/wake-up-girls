@@ -58,10 +58,18 @@ PROMPT = '''你是「Wake Up Girls 全球女性议题周报」的主编。请根
      第 1 句讲事实的特别之处（哪里反常、哪里被忽略），第 2 句讲结构性问题（制度/权力/行业惯性），
      第 3 句讲它与你我处境的关系。**不要金句、不要口号、不要「我们应该」**，写成一个具体的人的观察。
    - 英文版 en.t / en.d / en.body（2 段，简洁）
+6. 另外从候选里挑 **一位值得认识的女性**（可以是新闻中的人物，也可以是被报道的普通女性），输出 watch：
+   {"name":"姓名","name_en":"拉丁字母名（无则留空）","role":"身份（如：建筑师 / 研究者 / 行动者 / 工程师）",
+    "role_en":"Role in English","region":"地区","why":"为什么值得认识，中文 40–80 字，写她具体做了什么，不要吹捧、不要煽情",
+    "why_en":"English, 1–2 sentences","url":"与该人物相关的原文链接","img":""}
+7. 再为「她的作品」各推荐 1 件（**必须从下面给出的站内作品库里选，标题要一字不差**），输出 picks：
+   {"film":"电影标题","book":"书名","art":"艺术家或作品名"}
 3. 分类 cat 只能取这些之一：国际 / 政策与法律 / 健康与权益 / 职场平等 / 生育权利 / 社会 / 文化 / 科技与公益 / 体育
 4. 每条保留其原始 src（来源名）与 url（原链接）。**region 要根据新闻实际发生地判定**（候选里的 region 是抓取时按来源媒体所在地标的，常有误，仅作参考）；可选值：东亚 / 东南亚 / 南亚 / 中东 / 非洲 / 欧洲 / 北美 / 拉美 / 大洋洲 / 全球（跨国机构或综述类用「全球」）。
 5. 输出 JSON（不要任何解释文字、不要 markdown 代码块），结构：
 {"title":"本期标题","summary":"本期摘要（60–90字）","en":{"title":"...","summary":"..."},
+ "watch":{"name":"","name_en":"","role":"","role_en":"","region":"","why":"","why_en":"","url":"","img":""},
+ "picks":{"film":"","book":"","art":""},
  "sections":[{"cat":"国际","en_cat":"International","items":[{"t":"","d":"","body":["","",""],
    "why_candidates":["","",""],"en":{"t":"","d":"","body":["",""]},"src":"","url":"","region":"欧洲"}]}]}
 
@@ -112,6 +120,28 @@ def call_llm(prompt):
     return content
 
 
+def load_works_hint():
+    """把站内作品库的标题按类型整理成提示词片段，让 picks 只能选到库里真实存在的作品。"""
+    try:
+        txt = io.open(os.path.join(ROOT, 'data', 'works.js'), encoding='utf-8').read()
+    except Exception as e:
+        print('  读取作品库失败（picks 将退回自动挑选）：%s' % e)
+        return ''
+    by_type = {'film': [], 'book': [], 'art': []}
+    for line in txt.splitlines():
+        mc = re.search(r"c:\s*['\"](film|book|art)['\"]", line)
+        mt = re.search(r"title:\s*['\"]([^'\"]+)['\"]", line)
+        if mc and mt:
+            by_type[mc.group(1)].append(mt.group(1))
+    if not any(by_type.values()):
+        return ''
+    out = ['\n\n【站内作品库（picks 只能从中选，标题要一字不差）】']
+    label = {'film': '电影', 'book': '图书', 'art': '艺术'}
+    for k in ('film', 'book', 'art'):
+        out.append('%s：%s' % (label[k], '、'.join(by_type[k])))
+    return '\n'.join(out)
+
+
 def validate(issue):
     errs = []
     items = [it for s in issue.get('sections', []) for it in s.get('items', [])]
@@ -141,6 +171,14 @@ def validate(issue):
             errs.append('「为什么值得关注」备选句不足 2 句：%s' % str(it.get('t', '?'))[:20])
         if not str(it.get('url', '')).startswith('http'):
             errs.append('链接异常：%s' % it.get('url'))
+    wt = issue.get('watch') or {}
+    for k in ('name', 'role', 'why'):
+        if not str(wt.get(k, '')).strip():
+            errs.append('watch 缺字段 %s' % k)
+    pk = issue.get('picks') or {}
+    miss = [k for k in ('film', 'book', 'art') if not str(pk.get(k, '')).strip()]
+    if miss:
+        print('  提示：picks 缺少 %s，前端对该类型将回退为自动挑选' % '/'.join(miss))
     return errs
 
 
@@ -165,6 +203,18 @@ def write_why_sheet(issue_id, items, period):
         lines.append('→ 选定/改写：______________________')
         lines.append('')
     path = os.path.join(ROOT, 'drafts', 'why-%s.md' % issue_id)
+    wt = issue.get('watch') or {}
+    if wt.get('name'):
+        lines += ['---', '', '## WOMEN TO WATCH（待定稿）', '',
+                  '**%s**（%s，%s）' % (wt.get('name', ''), wt.get('role', ''), wt.get('region', '')),
+                  '', 'AI 草稿：%s' % wt.get('why', ''), '', '→ 你的定稿：______________________', '']
+    pk = issue.get('picks') or {}
+    if any(pk.values()):
+        lines += ['## 她的作品（每周 1 电影 + 1 书 + 1 艺术，待你确认）', '',
+                  '- 电影：%s' % pk.get('film', '（未选）'),
+                  '- 图书：%s' % pk.get('book', '（未选）'),
+                  '- 艺术：%s' % pk.get('art', '（未选）'), '',
+                  '→ 确认或改写在 data/issues.js 的 `picks` 字段里。', '']
     io.open(path, 'w', encoding='utf-8', newline='\n').write('\n'.join(lines))
     return path
 
@@ -175,7 +225,8 @@ def main():
     if len(cand) < MIN_ITEMS:
         sys.exit('候选不足（%d < %d），本期跳过' % (len(cand), MIN_ITEMS))
     print('候选 %d 条，调用 %s（max_tokens=%d）…' % (len(cand), MODEL, MAX_TOKENS))
-    raw = call_llm(PROMPT + json.dumps(cand, ensure_ascii=False))
+    works_hint = load_works_hint()
+    raw = call_llm(PROMPT + json.dumps(cand, ensure_ascii=False) + works_hint)
     raw = re.sub(r'^```(?:json)?|```$', '', raw.strip(), flags=re.M).strip()
     try:
         issue = json.loads(raw)
@@ -217,6 +268,8 @@ def main():
         'title': issue['title'], 'summary': issue['summary'],
         'en': issue.get('en', {}),
         'img': 'assets/img/womens-rights.png',
+        'watch': issue.get('watch') or {},
+        'picks': issue.get('picks') or {},
         'sections': sections,
     }
 

@@ -15,6 +15,9 @@ var UI = {
     'hero.mission': '记录女性正在经历的世界，也记录女性正在创造的世界。',
     'note.label': '策展人手记',
     'note.week': '第 {n} 周',
+    'watch.label': '本周，一位值得你认识的女性',
+    'watch.sub': '每期一位 · 她可能不是名人',
+    'watch.more': '关于她 →',
     'hero.lead': '每周，我们为你筛选来自全球的女性权益、性别平等与社会变革重要新闻；建立女性电影、图书、艺术作品检索库——让每一位女性创作者被看见、被找到。',
     'hero.img_caption': '配图 · 示意图',
     'hero.btn.read': '阅读本期 →',
@@ -134,6 +137,9 @@ var UI = {
     'hero.mission': '記錄女性正在經歷的世界，也記錄女性正在創造的世界。',
     'note.label': '策展人手記',
     'note.week': '第 {n} 週',
+    'watch.label': '本週，一位值得你認識的女性',
+    'watch.sub': '每期一位 · 她可能不是名人',
+    'watch.more': '關於她 →',
     'hero.lead': '每週，我們為你篩選來自全球的女性權益、性別平等與社會變革重要新聞；建立女性電影、圖書、藝術作品檢索庫——讓每一位女性創作者被看見、被找到。',
     'hero.img_caption': '配圖 · 示意圖',
     'hero.btn.read': '閱讀本期 →',
@@ -253,6 +259,9 @@ var UI = {
     'hero.mission': 'Recording the world women are living through — and the world women are creating.',
     'note.label': "Curator's Note",
     'note.week': 'Week {n}',
+    'watch.label': 'Woman to Watch',
+    'watch.sub': 'One woman each issue — not always a household name',
+    'watch.more': 'About her →',
     'hero.lead': 'Every week we curate the world\'s most important news on women\'s rights, gender equality and social change — and build a searchable directory of films, books and art by women, so every woman creator can be seen and found.',
     'hero.img_caption': 'Illustrative image',
     'hero.btn.read': 'Read this issue →',
@@ -689,15 +698,27 @@ function renderLatest() {
   el.innerHTML = html;
 }
 
+/* 每期「她的作品」选品：优先用本期 issue.picks（主理人选品，存作品标题而非下标，避免数据变动后错位）；
+   没有 picks 时回退为「按类型各取一件」（旧行为）。 */
+function featuredPicks() {
+  var all = dataWorks();
+  var latest = (dataIssues() || [])[0] || {};
+  var p = latest.picks || {};
+  var out = [];
+  ["film", "book", "art"].forEach(function (c) {
+    var want = p[c];
+    var idx = -1;
+    if (want) idx = all.findIndex(function (w) { return w.c === c && w.title === want; });
+    if (idx < 0) idx = all.findIndex(function (w) { return w.c === c; });
+    if (idx >= 0) out.push({ w: all[idx], i: idx });
+  });
+  return out;
+}
+
 function renderFeatured() {
   var el = document.getElementById("featured");
   if (!el || !dataWorks()) return;
-  var all = dataWorks();
-  var picks = [];
-  ["film", "book", "art"].forEach(function (c) {
-    var idx = all.findIndex(function (w) { return w.c === c; });
-    if (idx >= 0) picks.push({ w: all[idx], i: idx });
-  });
+  var picks = featuredPicks();
   el.innerHTML = picks.map(function (o) {
     var img = coverFor(o.i);
     var meta = [workCreator(o.w), o.w.year].filter(Boolean).join(" · ");
@@ -712,6 +733,42 @@ function renderFeatured() {
       (o.w.a ? '<div class="award">★ ' + esc(o.w.a) + "</div>" : "") +
       "</div></div>";
   }).join("");
+}
+
+/* ---------- 本周，一位值得你认识的女性（issue.watch） ----------
+   数据在最新一期里：{ name, name_en, role, role_en, region, why, why_en, url, img }
+   没有该字段时整块隐藏。 */
+function renderWatch() {
+  var sec = document.getElementById("watchSec");
+  if (!sec) return;
+  var latest = (dataIssues() || [])[0] || {};
+  var w = latest.watch;
+  if (!w || !w.name) { sec.hidden = true; return; }
+  sec.hidden = false;
+  var isEn = state.lang === 'en';
+  var name = (isEn && w.name_en) ? w.name_en : w.name;
+  var role = (isEn && w.role_en) ? w.role_en : w.role;
+  var why = (isEn && w.why_en) ? w.why_en : L(w, 'why');
+  var host = document.getElementById("watchImg");
+  if (host) {
+    host.innerHTML = w.img
+      ? '<img src="' + esc(w.img) + '" alt="' + esc(name) + '" loading="lazy" />'
+      : '<span class="watch-initial">' + esc(String(name).slice(0, 1)) + "</span>";
+  }
+  var nameEl = document.getElementById("watchName");
+  if (nameEl) nameEl.textContent = name;
+  var roleEl = document.getElementById("watchRole");
+  if (roleEl) roleEl.textContent = [role, regionName(w.region)].filter(Boolean).join(" · ");
+  var whyEl = document.getElementById("watchWhy");
+  if (whyEl) whyEl.textContent = why || "";
+  var linkEl = document.getElementById("watchLink");
+  if (linkEl) {
+    if (w.url) {
+      linkEl.href = w.url;
+      linkEl.textContent = t('watch.more');
+      linkEl.hidden = false;
+    } else { linkEl.hidden = true; }
+  }
 }
 
 /* ---------- 往期 ---------- */
@@ -1049,6 +1106,7 @@ function renderAll() {
   renderNote();
   renderLatest();
   renderFeatured();
+  renderWatch();
   syncIssueMeta();
   renderArchive();
   renderIssue();

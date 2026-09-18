@@ -12,7 +12,7 @@
  *   text  正文，简体，段落之间用 \n\n 分隔
  *   hant  可选繁体版 { title, text }（不写则繁体读者看到简体）
  *   en    可选英文版 { title, text }
- *   by    署名
+ *   by    署名（职务用「主编/创始人」，「策展人」是描述做的事，不作头衔）
  */
 window.NOTES = [
   {
@@ -27,6 +27,6 @@ window.NOTES = [
       title: 'Two sentences about her architecture',
       text: 'This week I read a news story about a woman architect. She had won an award, but the report spent a great deal of space on her family, and gave only two sentences to her architectural work.\n\nI think this deserves to be recorded.'
     },
-    by: "策展人 · 袁秀中"
+    by: "主编 · 袁秀中"
   }
 ];
