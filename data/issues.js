@@ -7,6 +7,308 @@
    - region：全球/欧洲/北美/拉美/中东/非洲/南亚/东亚/大洋洲/中国 */
 window.ISSUES = [
 {
+  "id": "003",
+  "date": "2026-09-18",
+  "period": "2026.09.14 – 2026.09.20",
+  "title": "性别平等倒计时与女性行动",
+  "summary": "联合国警告性别平等仍需171年，韩国拟批准堕胎药，美国得州与南非案件凸显女性健康与安全危机；埃及、法国、巴西等地从职场、世俗性与地方治理推进权利讨论。",
+  "en": {
+    "title": "Gender Equality Countdown and Women's Actions",
+    "summary": "UN warns gender parity is still 171 years away, South Korea plans to approve abortion pills, cases in Texas and South Africa expose health and safety crises; Egypt, France and Brazil advance rights debates."
+  },
+  "img": "assets/img/womens-rights.png",
+  "watch": {
+    "name": "Michèle Vianès",
+    "name_en": "Michèle Vianès",
+    "role": "女性权利与世俗主义评论者",
+    "role_en": "Commentator on women's rights and secularism",
+    "region": "欧洲",
+    "why": "她在里昂媒体访谈中提出，世俗性是女性自主的必要条件而非充分条件，将宗教约束与制度支持放在同一分析框架里，为法国争论提供更平衡的视角。",
+    "why_en": "She argued that secularism is necessary but not sufficient for women's autonomy, linking religious constraints with institutional support.",
+    "url": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxQQlhGbWs4S3VZWC15WmF2YXQ2a0l0eGh0YTVCT2VwMjUzZmRwOVNvRjkxTjAwYVFycmFXdFRDQjNuOXlwZkFrbHBmQXVqaS12Tm1EY090Nl9ETWR6TVlqRDQwS0ZkTFh6STJtcGpzRXhwRVd4ZVVKSmEzdEg0TDVBcFdnWkVyMFUwVWtob2YzRWs3bzZYeGxtOEozb3BuS3h3bTRRYm9pakxnRUIxWWh2NzRlbnBZSU5GaDdxSlBBSDNBclBkWmF2Y3Q3b0VZTWZHallBc2dLdWJjZVdVai12ZE9ITWw?oc=5",
+    "img": ""
+  },
+  "picks": {
+    "film": "出走的决心",
+    "book": "第二性",
+    "art": "弗里达·卡罗"
+  },
+  "sections": [
+    {
+      "cat": "国际",
+      "en_cat": "International",
+      "items": [
+        {
+          "id": "003-1",
+          "t": "联合国警告：性别平等仍须171年",
+          "d": "联合国新报告警告，女性权力正被削减，按当前速度实现全面性别平等还需171年，多个领域出现倒退。",
+          "body": [
+            "联合国最新报告警示，女性在领导职位与公共领域的权力正在被削减，按当前速度实现全面性别平等还需171年。报告指出多个国家女性政治和经济参与度下降，制度性承诺出现倒退。",
+            "报告将倒退归因于部分国家削弱妇女权利机构、反性别议程抬头以及气候与冲突危机中对女性的忽视。过去几年女性在议会、企业高管和司法系统的比例增长缓慢，某些地区甚至回落。",
+            "这一倒计时并非抽象数字；它意味着出生在今天的女孩在其有生之年仍可能面对法律、薪资与安全的不平等。报告呼吁把女性权利纳入财政与社会政策核心，而非作为边缘议题。"
+          ],
+          "why": "171年的推算把遥远的不平等变成一个可感知的时间长度，暴露承诺与行动的巨大落差。",
+          "en": {
+            "t": "UN: Gender Equality Still 171 Years Away",
+            "d": "A new UN report warns women's power is being cut back, and at current pace full gender parity will take 171 years.",
+            "body": [
+              "The UN says women's power in leadership and public life is being cut back, with full gender equality 171 years away at the current pace. Several countries saw declines in women's political and economic participation.",
+              "The report blames weakened women's rights institutions, rising anti-gender agendas, and the neglect of women in climate and conflict crises. It calls for women's rights to be central to fiscal and social policy."
+            ]
+          },
+          "img": "assets/img/podium.png",
+          "src": "Devdiscourse",
+          "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxOM3JCYklQUm53TWd3VDFHYkR5aldBVlA1WGdxWE5iYklzd21oT3p4U25wQ2hQV09DWTBjd0ZwN3k1MHF0T0F1eEpUYzVRYmtvdThTWEI5ZGtPcUxpWF9HRVppTEVRUGxCTG04SWhSTEl4b3R1NGZ1MW80YmtmZDVKMUNvUzFHZG4xSTlvRDZyeUtVZWRqTVUxUDJGdEVoUXNlTGdRUDFpWTh4SlVSbDRwUVdkNS1FcWZ3US01cmt4aTVZS1ZnSERKd9IBzgFBVV95cUxObVAxTjNCeG43WW9qb0NjYVJVc0JOV29qdThWWS0zdFZlNUZMNGh4RGE3QWJJSG9sY1B4YWxDaWJ5Wk5jdXdUS1hWd3o4dVNXbmpXWFpFNkFQVVowcmtiTGJYTnZrdnBSbUlhTVE3MGtidHVIMENVY0FfWDZFdmV5WVRYY3lvQVBDaDdkZDJvdTJVOEx5UWJ4VWQ2di1OaXd2eG8xV3dRem1Dd3Q0SV9pSERBUUIzaGRJZm50QS1CYTdXZ1lZdkxCa0ZYbmE1QQ?oc=5",
+          "region": "全球"
+        }
+      ]
+    },
+    {
+      "cat": "生育权利",
+      "en_cat": "Reproductive Rights",
+      "items": [
+        {
+          "id": "003-2",
+          "t": "韩国拟明年批准堕胎药",
+          "d": "韩国计划明年批准药物堕胎，结束多年仅允许手术堕胎的限制，改善女性终止妊娠的可及性与隐私。",
+          "body": [
+            "韩国政府计划在明年批准堕胎药的使用。此前药物堕胎在韩国长期未获正式许可，有需要的女性多依赖手术或其他路径，在时间与费用上承受额外负担。",
+            "韩国宪法法院此前已裁定将堕胎全面入罪违宪，但配套立法与药品审批推进缓慢。医学上，药物终止妊娠常用于孕早期，侵入性较低且隐私性更高，但其合法化需要配套的处方与随访制度。",
+            "若获批，韩国女性将多一种不必进入手术室的选择，这在医疗资源集中在都市的地区尤其重要。争议在于药品上市后的费用是否纳入医保，以及偏远地区能否获得规范用药指导。"
+          ],
+          "why": "韩国堕胎早已非罪，药物堕胎却拖到明年才可能获批，法律与医疗选项长期脱节。",
+          "en": {
+            "t": "South Korea Expected to Approve Abortion Pills Next Year",
+            "d": "Seoul plans to approve medication abortion, expanding options beyond surgery after years of delay.",
+            "body": [
+              "South Korea plans to approve abortion pills next year, giving women a non-surgical option after long delays. The move follows a court ruling that criminalizing abortion was unconstitutional.",
+              "Medication abortion is used for early pregnancy and offers more privacy, but approval requires prescription and follow-up systems. Cost coverage and access outside major cities remain contentious."
+            ]
+          },
+          "img": "assets/img/body-choice.png",
+          "src": "yahoo.com",
+          "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxPbmw2cVFack9UMnBpcXFwaU9jMzYyTkttZV9ya3MxR3VEdHlGcmJsYVdyUmN6OElqLUpUckdYM0tCNUpKLURvd1hnN2ZSMFJKUTNZMW9yX1ByRWtqRFkyRWxid2xlR0I0aE9rYm5lQVJNNXhyNGdnQ0o2bVlYY0ZZRGNSSHFSODZ6OG8xVnhIWFpTaFE?oc=5",
+          "region": "东亚"
+        }
+      ]
+    },
+    {
+      "cat": "健康与权益",
+      "en_cat": "Health & Rights",
+      "items": [
+        {
+          "id": "003-3",
+          "t": "诉讼：得州堕胎禁令导致孕妇死亡",
+          "d": "美国得州一名孕妇据称因堕胎禁令延误救治而死亡，其家属提起诉讼，再度引发对孕产健康与限制性法律冲突的关注。",
+          "body": [
+            "一项在美国得州提起的诉讼称，该州堕胎禁令导致一名孕妇死亡。原告主张医疗人员因法律风险未能及时提供终止妊娠处理，延误了必要治疗，最终造成悲剧。",
+            "得州实施严格的堕胎限制，许多医生在高额罚则与刑事风险下，即使面对健康受威胁的孕妇也趋于保守，孕产急救面临不确定性。",
+            "这类案件将抽象的堕胎法律转化为可验证的医疗后果，可能影响后续司法审查与立法辩论。它也促使公众关注：在限制堕胎的州，妊娠并发症和产科急症是否得到同等保护。"
+          ],
+          "why": "死亡诉讼把堕胎争论从道德立场拉回到医疗现实，法律可能正在产生直接伤害。",
+          "en": {
+            "t": "Lawsuit: Texas Abortion Ban Caused Pregnant Woman's Death",
+            "d": "A lawsuit in Texas claims the state's abortion ban led to a pregnant woman's death by delaying necessary care.",
+            "body": [
+              "The suit says medical providers feared legal consequences and failed to provide timely termination, leading to the woman's death. Texas has strict abortion limits with high penalties.",
+              "The case turns abstract abortion law into measurable health outcomes and may influence judicial review. It raises questions about equal protection for pregnancy complications in restrictive states."
+            ]
+          },
+          "img": "assets/img/body-choice.png",
+          "src": "NBC News",
+          "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxQUTYxZUUxVi1hZmFZQVRKYllTNGdyOXMwNmJfa3VyRTlkNTVGTHhxS2dpNGJBa0dhcmpJQkZ2dVlYZ0FJRE9QLUFQV0Z1d05BR1J1Tlh3OExQZXRnd01MSmR4Yms3Q2YwdzlCc1hSOXFkQTlaMFg2WDhkUTZXR3E2RUZLcWxpLThrSFgtckdNdXdXNHRESTFRMWxLYUFsQ3hDeGpETlNORklsdEtOd0FyekVvSndDZw?oc=5",
+          "region": "北美"
+        }
+      ]
+    },
+    {
+      "cat": "社会",
+      "en_cat": "Society",
+      "items": [
+        {
+          "id": "003-4",
+          "t": "南非系列杀害女性案发现第九具遗体",
+          "d": "南非调查针对女性的连环杀害案时，发现第九具女性遗体，性别暴力问题再度成为全国焦点。",
+          "body": [
+            "南非警方在调查一系列以女性为目标的杀害案件时，发现第九具女性遗体。尸体被发现地点与先前案件存在关联，警方尚未确认是否同一凶手，但已成立专案组。",
+            "南非长期面临高发的基于性别的暴力与杀害。犯罪率高企、执法资源不足和贫困使女性处于风险之中，家暴与陌生人暴力交织，许多案件未能及时侦破。",
+            "连续发现遗体暴露出女性人身安全的系统性危机，民间组织呼吁将性别暴力视为国家紧急状态。案件也促使公众质疑警方在早期是否忽视失踪报案与社区线索。"
+          ],
+          "why": "九具遗体并非孤立凶案，而是同一地区女性不断遇害的连续信号。",
+          "en": {
+            "t": "Ninth Body Found in South Africa Serial Killings of Women",
+            "d": "South African police found a ninth body while probing a series of killings targeting women, intensifying focus on gender-based violence.",
+            "body": [
+              "The body was found in an area linked to previous cases, and police have formed a task team. South Africa faces high rates of gender-based violence, with many cases unsolved.",
+              "The deaths expose a systemic crisis in women's safety, and activists demand that gender violence be treated as a national emergency. Questions are raised about early police response to missing women."
+            ]
+          },
+          "img": "assets/img/women-power.png",
+          "src": "Al Jazeera",
+          "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxPbkpjbG9sSFdwSDJyRDdQX1FVX3JHbWtTbUR4bWZSN2xxWWFlbXdHTG56SzZXM2VOaFUxRHdPLVdxZ3lMNGhyRjQwLVkxNndISU9BTFJ1VHhydUVqMXNabFoxTGNVcG5nbldjRU4yNUpRZGNBdWgzY3gxdnBuc1BVem1zWDJEVmNSR2piQ0tQdUkxcUF1dklXRlRZTHBzdzVyOHZybjdDajNCQdIBrwFBVV95cUxNb2Z5MDNtYk5SUzVyRjRsV2RZSDZWbUd0U3pwU1lweFpnb1dmelduRkNDbjJkcW11b1V1blkzbU9McHpfcURWWk0zN25jM0Z5RDhMOVBMX0RxV203SFVqcTNpWHZEeGVUM0kzS0hNSFRBVjNuUm1IaTRvSHAtemRuZkFnMmlxOU8za2F5NnNhUzQzdS1aMFdvdFZzM3FjQjhqODhRMzVScVBsQ0xrUWw4?oc=5",
+          "region": "非洲"
+        },
+        {
+          "id": "003-5",
+          "t": "法国评论：世俗性是女性自主的必要条件而非充分条件",
+          "d": "里昂媒体刊出Michèle Vianès访谈，认为世俗性保护女性免受宗教约束，但不是女性自主的充分条件，还需制度与教育支持。",
+          "body": [
+            "法国评论者Michèle Vianès在里昂媒体访谈中表示，世俗性本身不足以让女性成为自主个体，但它是不可或缺的条件。她认为剥离宗教对公共生活的控制，为女性独立选择创造了空间。",
+            "在法国，围绕穆斯林头巾、性别平等与共和价值观的争论持续多年。世俗主义常被不同阵营用作工具，或强调个体自由，或强调公共秩序，女性权益处于交叉地带。",
+            "该观点提出一个平衡点：反对宗教对女性的强制，但也要警惕用世俗主义压制文化身份或忽视经济结构。女性自主需要教育、就业和反歧视法律的共同支撑。"
+          ],
+          "why": "把世俗性定位为条件而非答案，跳出了宗教自由与女性权利非此即彼的简单对立。",
+          "en": {
+            "t": "French Commentator: Secularism Is Necessary but Not Sufficient for Women's Autonomy",
+            "d": "Michèle Vianès argues in Lyon Capitale that secularism is an indispensable condition but not a complete answer for women's autonomy.",
+            "body": [
+              "She says removing religion from public life creates space for women's independent choices. In France, debates over headscarves and republican values often use secularism as a political tool.",
+              "Her position balances opposition to religious coercion with concern about using secularism to suppress cultural identity. Autonomy requires education, employment and anti-discrimination law."
+            ]
+          },
+          "img": "assets/img/women-power.png",
+          "src": "Lyon Capitale",
+          "url": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxQQlhGbWs4S3VZWC15WmF2YXQ2a0l0eGh0YTVCT2VwMjUzZmRwOVNvRjkxTjAwYVFycmFXdFRDQjNuOXlwZkFrbHBmQXVqaS12Tm1EY090Nl9ETWR6TVlqRDQwS0ZkTFh6STJtcGpzRXhwRVd4ZVVKSmEzdEg0TDVBcFdnWkVyMFUwVWtob2YzRWs3bzZYeGxtOEozb3BuS3h3bTRRYm9pakxnRUIxWWh2NzRlbnBZSU5GaDdxSlBBSDNBclBkWmF2Y3Q3b0VZTWZHallBc2dLdWJjZVdVai12ZE9ITWw?oc=5",
+          "region": "欧洲"
+        },
+        {
+          "id": "003-6",
+          "t": "澳大利亚性别平等排名创史上最高",
+          "d": "澳大利亚在最新性别平等排名中取得有史以来最好成绩，男女在教育、就业与政治领域的差距缩小，但仍未完全消除。",
+          "body": [
+            "澳大利亚在最新发布的性别平等排名中，男女平等程度创下有记录以来最高。报道显示，该国在教育程度、劳动参与和政治代表性上的性别差距有所缩小。",
+            "澳大利亚在女性教育水平上长期领先，但职场隔离、无偿照料负担和薪资差距仍存在。排名提升更多反映部分领域改善，而非结构性障碍的全面消除。",
+            "排名可作为政策参考，但也可能掩盖边缘群体中差距扩大的现实。移民、原住民和低收入女性的处境未必与平均值同步改善，需要更细化的数据评估。"
+          ],
+          "why": "排名提升容易制造乐观，但平均值会掩盖特定女性群体的停滞甚至倒退。",
+          "en": {
+            "t": "Australia Records Best-Ever Gender Equality Ranking",
+            "d": "Australia achieved its highest gender equality ranking, but structural gaps in work and care remain hidden by averages.",
+            "body": [
+              "Improvements in education, participation and political representation drove the ranking, but job segregation and pay gaps persist.",
+              "The average may mask widening inequality for migrants, Indigenous and low-income women, requiring more granular data."
+            ]
+          },
+          "img": "assets/img/women-power.png",
+          "src": "Yahoo News Australia",
+          "url": "https://news.google.com/rss/articles/CBMiekFVX3lxTE5sRnp6UHV3R2FISnRQbklMWTVOOG9RZTZJeDlkaFA0UEQxdWhocFVwUGVscGhRWDZ2Q3VmNkhjbWhoelJoTkwyS0FNYThnV2xteXBQWDBVUnJ6RkwzUm45Z0RobHFKUldyWjhuOEthQmo4OWlQUmdIWU93?oc=5",
+          "region": "大洋洲"
+        }
+      ]
+    },
+    {
+      "cat": "职场平等",
+      "en_cat": "Workplace Equality",
+      "items": [
+        {
+          "id": "003-7",
+          "t": "埃及媒体讨论女性薪酬权与决策参与",
+          "d": "埃及官方媒体刊文讨论女性获得同等报酬与参与决策的权利，呼吁在经济与治理中推动性别平等。",
+          "body": [
+            "埃及国家媒体发表文章，讨论女性在职场获得同等报酬和参与决策的权利。文章指出，女性经济参与虽有进展，但薪资差距和决策层中的缺席仍限制其影响力。",
+            "中东多国女性劳动参与率低于全球水平，文化规范和育儿责任常将女性挤出正式就业。决策结构中的男性主导使涉及女性利益的政策难以被优先考虑。",
+            "文章将薪酬与决策权联系起来，强调经济赋权不仅关乎个人收入，也改变家庭和社会中的权力分配。实现这些权利需要法律执行与企业治理的持续压力。"
+          ],
+          "why": "官方媒体主动讨论薪酬与决策权，说明该议题已进入体制话语，但仍停留在呼吁层面。",
+          "en": {
+            "t": "Egyptian Media Discuss Women's Right to Equal Pay and Decision-Making",
+            "d": "Egypt's state media published an article on women's equal pay and participation in decision-making, urging progress in the economy and governance.",
+            "body": [
+              "The article notes that despite women's economic advancement, wage gaps and absence from decision-making limit their influence. Cultural norms and care responsibilities push women out of formal employment.",
+              "Linking pay with decision-making shows economic empowerment changes power in family and society. Progress requires legal enforcement and corporate governance pressure."
+            ]
+          },
+          "img": "assets/img/workplace.png",
+          "src": "الهيئة الوطنية للإعلام",
+          "url": "https://news.google.com/rss/articles/CBMi4AJBVV95cUxORzdlZXR0eXh4SkQ2aEc3U1ZQRW9DUU8zdTVxRy1yRi03NmUtNTNqWXlqYkxkV0NGVVlWXzhYbTJqa2dmTjFVZU1NSEJPOVlocjhYTlFvR3Z2aUstS2ZwbUpyZi1sakVUdnBmVkN4Ump4cHEtY0laWDRlWTBteGlqRkYzSjBZWGZRRXd4QUgwYXAzSjJXV2ZGQWNwUlFHTmwya0UydDhIQThuQTltWjMwQXhPa0Y5WmZ6OExpcGdQVHU4d29WRXVlWkQ0RjRxbFhSbTBTT0Q1ZnNjeVRObkxDWWNBclJjS2pHbmo2YzBKUkJUbDNaOXRkeVRVYjZqQUhvTDZVbzlvQXVjTU5CZGdVSDZfazdud3dELVVMNWVoaGZvUWRhSHc3Ql9EcVhNY1VNOE9BTVRMS1FzWEtKb25LZnVRaFB4enhFRnNvQWNTV1lReUdUT1kya1lWdGdKeVow?oc=5",
+          "region": "中东"
+        }
+      ]
+    },
+    {
+      "cat": "政策与法律",
+      "en_cat": "Policy & Law",
+      "items": [
+        {
+          "id": "003-8",
+          "t": "巴西马利利亚扩大妇女权利委员会社会参与",
+          "d": "巴西马利利亚市扩大妇女权利委员会的社会参与，加强民间组织在政策制定中的角色，提升性别议题地方治理代表性。",
+          "body": [
+            "巴西马利利亚市政府宣布扩大妇女权利委员会的社会参与，吸纳更多民间组织与女性代表进入咨询与决策过程。该举措旨在让地方性别政策更贴近实际需求。",
+            "巴西在妇女权利和反家暴领域有较高法律标准，但政策执行常受地方财政与保守势力影响。市政委员会是连接法律与社区的重要机制，此前常因代表性不足而功能有限。",
+            "扩大参与有利于将分散的妇女服务与诉求纳入制度化渠道，但真正的挑战在于委员会建议能否转化为预算与行动。地方治理的透明度与执行承诺决定其成效。"
+          ],
+          "why": "妇女委员会扩权看似程序性调整，实则改变谁能在地方政策中发声的权力分布。",
+          "en": {
+            "t": "Marília Expands Social Participation in Women's Rights Council",
+            "d": "The Brazilian city of Marília expanded social participation in its Municipal Council for Women's Rights, strengthening civil society's role in policy.",
+            "body": [
+              "The move brings more civil organizations and women representatives into consultation and decision-making, aiming to align local gender policy with needs.",
+              "The challenge is translating council recommendations into budget and action. Local transparency and enforcement will determine whether participation leads to real change."
+            ]
+          },
+          "img": "assets/img/womens-rights.png",
+          "src": "conexaomarilia.com.br",
+          "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxNTEpIdU9hRFkyeTlITkczWXIzNEFwbXo0eWsxZ0taUEJNSV83cmZ6ekxWQ2Z5TElOZnNlTGFoWWgzMUJSbm85UWJqOFBDS1lLLV9CUFNydjZQWHd5aTBvcEREMHp3ZTJWbjd0dnZlc0NGaEI5d0FXd3lnWjl1LTc3ZnI1U2hDUVpHSGthRWUxOV9ldTNkWWcybXMtNWZ0WHhSdnRBdGkxYVZobUlUdHdwSHZSVEhuaTRROXd3aVQyckcwd2Z4?oc=5",
+          "region": "拉美"
+        },
+        {
+          "id": "003-9",
+          "t": "斯里兰卡评论：女性权利关乎实质平等",
+          "d": "斯里兰卡媒体刊文指出，女性权利的核心是实质平等而非仅形式平等，需消除结果上的差距和结构性障碍。",
+          "body": [
+            "斯里兰卡媒体评论指出，女性权利不能停留在法律条文的形式平等，而应追求实质平等。作者强调，即使法律禁止歧视，资源和机会分配上的差距仍使女性处于不利地位。",
+            "南亚多国在宪法与劳动法中都有平等条款，但土地继承、非正式就业和家庭照料的不平等使女性难以实现经济独立。性别配额等政策往往面临实施软化和地方阻力。",
+            "实质平等的概念要求正视历史累积的不利，并在就业、教育、社会保障等方面采取积极措施。这对政策制定者提出更高标准，也引发关于特殊措施是否造成反向歧视的争论。"
+          ],
+          "why": "把焦点从权利义务拉向结果差距，暴露了纸面平等与实际生活之间的脱节。",
+          "en": {
+            "t": "Sri Lankan Commentary: Women's Rights Are About Substantive Equality",
+            "d": "A Sri Lankan article argues that women's rights require substantive equality, not just formal legal provisions, to close outcome gaps.",
+            "body": [
+              "Even where discrimination is banned, gaps in resources and opportunity keep women disadvantaged. South Asian legal equality often fails against unequal land, informal work and care burdens.",
+              "Substantive equality demands positive measures in employment, education and social protection, but also raises debate about reverse discrimination."
+            ]
+          },
+          "img": "assets/img/womens-rights.png",
+          "src": "themorning.lk",
+          "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE1xRk12UURFUzFyVW1PTHJLanlRQ0FNWXhjcVJQaXFQcDZLa3BKN1B5UHVtXzNTc0pZV3JNN2U4aUZhTWd4MFNOaWk3ZGV5dERyZkdTem9pY2g1cTRfMzVremxHdjVMZw?oc=5",
+          "region": "南亚"
+        }
+      ]
+    },
+    {
+      "cat": "体育",
+      "en_cat": "Sports",
+      "items": [
+        {
+          "id": "003-10",
+          "t": "菲律宾女篮亚运会首战力克哈萨克斯坦",
+          "d": "菲律宾Gilas女篮在亚运会首场比赛中大胜哈萨克斯坦，为赛事取得开门红，团队表现亮眼。",
+          "body": [
+            "菲律宾Gilas女篮在亚运会首场比赛中击败哈萨克斯坦队，以强势表现开启赛事征程。球队在攻防两端占据主动，为晋级目标奠定基础。",
+            "东南亚女子篮球长期缺乏曝光与资源，菲律宾近年通过海外训练和联赛改革提升竞争力。国家队成绩被视为推动女性参与体育和争取职业机会的重要窗口。",
+            "女子比赛的成绩能吸引更多年轻女性投身运动，但奖牌之外，薪酬、转播和赞助的不平等仍是区域女篮面临的共同困境。赛事曝光带来的关注度能否转化为长期投入仍需观察。"
+          ],
+          "why": "女篮国家队大胜不易，但这类消息通常只在综合运动会期间得到短暂关注。",
+          "en": {
+            "t": "Philippines' Gilas Women Dominate Kazakhstan in Asian Games Opener",
+            "d": "The Philippine women's basketball team beat Kazakhstan in its first Asian Games match, starting the campaign strongly.",
+            "body": [
+              "The team controlled both ends and set a foundation for advancing. Southeast Asian women's basketball has lacked exposure and resources, with recent reforms boosting competitiveness.",
+              "Sustained funding and media visibility remain challenges beyond medals. The performance may inspire young women but needs institutional support to translate into long-term change."
+            ]
+          },
+          "img": "assets/img/women-power.png",
+          "src": "ABS-CBN",
+          "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxNb1NuTFpPN2NwaWVpTWZKaXhHcjJ0aFdKbFc0enpmMk13T0hvUXN3aEhfMlBMSk9mNV96Z2lvU2VYTzJsVk00R0tvOVM0Q2RQUHVOOHB6NzFVM3JyWWtrWkllQ3ZZaHlYUkltN2RWQThSSGU0bHhCSHlHOGVFRlpaakdqYk5ERmFub0x4LVQ2eXlPdkNoYTNhR1IxN0M2WXRUVF9kbkp0VGxCY2wwVE9hVFJCTFd1dTJ6aDlWVjB2clNfYzQ?oc=5",
+          "region": "东南亚"
+        }
+      ]
+    }
+  ]
+},
+{
   "id": "002",
   "date": "2026-09-18",
   "period": "2026.09.14 – 2026.09.20",
