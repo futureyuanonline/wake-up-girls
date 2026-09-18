@@ -1,5 +1,8 @@
 # Wake Up Girls — 全球女性议题周报（本地版）
 
+**线上地址：<https://yuanxiuzhong.com>** ｜ 仓库：<https://github.com/futureyuanonline/wake-up-girls>
+部署方式：Cloudflare Worker 静态资源（`dist/` 白名单构建）；每周五由 GitHub Actions 自动出刊并触发重新部署。
+
 公益信息类网站：每周全球女性议题新闻精选（站内完整报道）+ 女性电影/图书/艺术作品检索库。
 设计语言「浅色画廊 + 大胆色块」：暖白墙 `#F4F1EB`、墨黑 `#1D1715`、芥末黄 `#E1B62A`、砖红 `#A12627`、珊瑚粉 `#DC876F`、青绿 `#0E7587`；
 标题 Playfair Display + Noto Serif SC，正文 Inter + 系统黑体；三语切换（EN / 简 / 繁）；全站响应式，已适配手机端。

@@ -3,9 +3,12 @@
 你选择的是：**① GitHub Actions 云端定时 ② LLM 自动成稿 ③ 自动发布**，并需要**真实邮件投递**，
 网站目标域名：**https://yuanxiuzhong.com/**
 
-> 现状（已核实）：仓库已建好并推送 → <https://github.com/futureyuanonline/wake-up-girls>
-> **域名的 DNS 托管在 GoDaddy**（NS = `ns23.domaincontrol.com` / `ns24.domaincontrol.com`），**不在 Cloudflare**，
-> 且当前没有 MX 记录。域名现在指向的是之前的 AI 建站 demo。因此第 2 步需要**先把域名接入 Cloudflare**。
+> 现状（已核实）：
+> - **网站已上线：<https://yuanxiuzhong.com>**（Cloudflare Worker 静态资源，2026-09 完成部署，旧的 GoDaddy Airo demo 已被替换）
+> - 仓库：<https://github.com/futureyuanonline/wake-up-girls>
+> - 域名 DNS 已于 2026-09 从 **GoDaddy** 迁到 **Cloudflare**（NS = `summer.ns.cloudflare.com` / `toby.ns.cloudflare.com`），
+>   迁移前确认无 DNSSEC（无 DS 记录）、无 MX 记录，因此无解析/邮件风险
+> - 待办：`www.yuanxiuzhong.com` 绑定、自动出刊密钥、图片版权
 
 ---
 
