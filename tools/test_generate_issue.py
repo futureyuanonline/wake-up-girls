@@ -88,6 +88,7 @@ for t in ('电影：', '图书：', '艺术：'):
     check('  含「%s」分组' % t, t in hint)
 
 print('\n【2】正常路径：跑完整 main()（LLM 用假数据替代）')
+gi.FORCE = True          # 测试环境里临时数据含本周日期，需显式绕过同周护栏
 gi.call_llm = lambda prompt: json.dumps(fake_issue(), ensure_ascii=False)
 try:
     gi.main()
@@ -180,6 +181,41 @@ check('期号被占用会自动跳过', gi5.next_issue_id('[{"id": "001"},{"id":
 check('空数据从 001 起', gi5.next_issue_id('window.ISSUES=[]') == '001')
 _real_next = gi5.next_issue_id((ROOT / 'data' / 'issues.js').read_text(encoding='utf-8'))
 check('真实数据的下一期号不与已有重复', _real_next not in ('001', '002'), _real_next)
+
+print('\n【6】同周护栏（防重复出刊）')
+tmp6 = setup_tmp()
+gi6 = load_generator(tmp6)
+gi6.FORCE = False
+_js6 = (tmp6 / 'data' / 'issues.js').read_text(encoding='utf-8')
+_before6 = len(gi6.issue_dates(_js6))
+_called = {'n': 0}
+
+
+def _boom(prompt):
+    _called['n'] += 1
+    raise AssertionError('不该调用 LLM：护栏必须在调用前生效')
+
+
+gi6.call_llm = _boom
+_code = None
+try:
+    gi6.main()
+except SystemExit as e:
+    _code = e.code
+check('本周已有期数 → 优雅跳过（退出码 0）', _code == 0, _code)
+check('  跳过时不调用 LLM（不浪费费用）', _called['n'] == 0, _called['n'])
+_after6 = len(gi6.issue_dates((tmp6 / 'data' / 'issues.js').read_text(encoding='utf-8')))
+check('  跳过时不写入新期', _after6 == _before6, (_before6, _after6))
+
+gi6b = load_generator(setup_tmp())
+gi6b.FORCE = True
+gi6b.call_llm = lambda prompt: json.dumps(fake_issue(), ensure_ascii=False)
+_ok6 = True
+try:
+    gi6b.main()
+except Exception as e:
+    _ok6 = False
+check('  加 --force 后仍能正常出刊', _ok6)
 
 shutil.rmtree(tmp, ignore_errors=True)
 

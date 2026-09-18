@@ -29,6 +29,11 @@ on:
   schedule:
     - cron: '0 1 * * 5'      # 每周五 09:00（北京时间 UTC+8）
   workflow_dispatch:          # 也可在 Actions 页面手动触发
+    inputs:
+      force:
+        description: '本周已有期数时仍强制再出一期（默认关闭，防止重复出刊）'
+        type: boolean
+        default: false
 
 permissions:
   contents: write
@@ -88,7 +93,7 @@ jobs:
 
       - name: ② 生成新一期（LLM 撰写，含校验）
         if: env.LLM_API_KEY != ''
-        run: python tools/generate_issue.py
+        run: python tools/generate_issue.py ${{ inputs.force && '--force' || '' }}
 
       - name: ③ 同步繁体版
         if: env.LLM_API_KEY != ''

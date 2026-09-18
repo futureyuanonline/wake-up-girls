@@ -20,7 +20,8 @@ CST = timezone(timedelta(hours=8))
 API_KEY = os.environ.get('LLM_API_KEY', '').strip()
 BASE = os.environ.get('LLM_BASE_URL', 'https://api.deepseek.com/v1').rstrip('/')
 MODEL = os.environ.get('LLM_MODEL', 'deepseek-v4-pro')
-MAX_TOKENS = int(os.environ.get('LLM_MAX_TOKENS', '16000'))
+FORCE = '--force' in sys.argv          # 同周已有期数时仍强制再出一期
+MAX_TOKENS = int(os.environ.get('LLM_MAX_TOKENS', '32000'))
 
 MIN_ITEMS, MAX_ITEMS = 8, 12
 MIN_REGIONS = 4
@@ -118,6 +119,19 @@ def call_llm(prompt):
         sys.exit('LLM 返回空正文（推理模型常见原因：max_tokens=%d 被 reasoning_content 吃光）。'
                  '请调大 LLM_MAX_TOKENS。' % MAX_TOKENS)
     return content
+
+
+def current_week_span(now=None):
+    """返回本周的 (周一, 周日) 日期字符串。"""
+    now = now or datetime.now(CST)
+    monday = now - timedelta(days=now.weekday())
+    sunday = monday + timedelta(days=6)
+    return monday.strftime('%Y-%m-%d'), sunday.strftime('%Y-%m-%d')
+
+
+def issue_dates(js_text):
+    """从 issues.js 里取出所有期数的 date（两种键写法都要认）。"""
+    return re.findall(r'"?date"?\s*:\s*"(\d{4}-\d{2}-\d{2})"', js_text)
 
 
 def load_works_hint():
@@ -229,6 +243,15 @@ def write_why_sheet(issue_id, items, period, issue):
 
 
 def main():
+    # ── 同周护栏（必须在调用 LLM 之前，否则每周仍会先花一次 API 费用）──
+    _js_now = io.open(os.path.join(ROOT, 'data', 'issues.js'), encoding='utf-8').read()
+    mon, sun = current_week_span()
+    dup_dates = [d for d in issue_dates(_js_now) if mon <= d <= sun]
+    if dup_dates and not FORCE:
+        print('本周（%s ~ %s）已有期数（%s），按「同周不重复」规则跳过。' % (mon, sun, '、'.join(sorted(set(dup_dates)))))
+        print('如需强制再出一期（例如补跑测试），加参数：--force')
+        sys.exit(0)
+
     draft = json.load(io.open(latest_draft(), encoding='utf-8'))
     cand = draft.get('picks', [])[:40]
     if len(cand) < MIN_ITEMS:
@@ -253,6 +276,7 @@ def main():
     sunday = monday + timedelta(days=6)
     period = '%s.%02d.%02d – %s.%02d.%02d' % (monday.year, monday.month, monday.day,
                                               sunday.year, sunday.month, sunday.day)
+
 
     # 生成站内格式对象（why 先放第一句备选，主理人可改）
     sections = []
