@@ -31,6 +31,7 @@ var UI = {
     'footer.contact': '联系：futureyuan39@gmail.com',
     'footer.copyright': '© 2026 Wake Up Girls',
     'footer.note': '内容仅供参考 · 欢迎勘误与投稿',
+    'footer.images': '图片来源：作品封面与部分配图来自豆瓣、维基共享资源等公开渠道，版权归原作者及权利方所有；本站仅用于作品介绍与资讯检索，不作商业用途。如涉侵权或异议请联系：',
     'archive.label': 'Archive · 往期周报',
     'archive.title': '往期周报',
     'archive.empty': '暂无往期内容。',
@@ -66,6 +67,8 @@ var UI = {
     'err.home': '回首页',
     'err.works': '作品检索库',
     'work.label': 'Directory · 作品详情',
+    'work.coverSrc': '封面图片来自豆瓣 / 维基共享资源等公开渠道，版权归权利人所有，此处仅用于作品介绍。',
+    'work.ownPoster': '海报为本站原创设计。',
     'work.award': '荣誉',
     'work.tags': '标签',
     'work.links': '相关链接',
@@ -143,6 +146,7 @@ var UI = {
     'footer.contact': '聯繫：futureyuan39@gmail.com',
     'footer.copyright': '© 2026 Wake Up Girls',
     'footer.note': '內容僅供參考 · 歡迎勘誤與投稿',
+    'footer.images': '圖片來源：作品封面與部分配圖來自豆瓣、維基共享資源等公開渠道，版權歸原作者及權利方所有；本站僅用於作品介紹與資訊檢索，不作商業用途。如涉侵權或異議請聯繫：',
     'archive.label': 'Archive · 往期週報',
     'archive.title': '往期週報',
     'archive.empty': '暫無往期內容。',
@@ -178,6 +182,8 @@ var UI = {
     'err.home': '回首頁',
     'err.works': '作品檢索庫',
     'work.label': 'Directory · 作品詳情',
+    'work.coverSrc': '封面圖片來自豆瓣／維基共享資源等公開渠道，版權歸權利人所有，此處僅用於作品介紹。',
+    'work.ownPoster': '海報為本站原創設計。',
     'work.award': '榮譽',
     'work.tags': '標籤',
     'work.links': '相關連結',
@@ -255,6 +261,7 @@ var UI = {
     'footer.contact': 'Contact: futureyuan39@gmail.com',
     'footer.copyright': '© 2026 Wake Up Girls',
     'footer.note': 'For reference only · Corrections & submissions welcome',
+    'footer.images': 'Image credits: covers and some illustrations come from public sources such as Douban and Wikimedia Commons; all rights remain with their original owners. They are shown here for reference and discovery only, not for commercial use. Takedown or objections:',
     'archive.label': 'Archive · Past Issues',
     'archive.title': 'Past Issues',
     'archive.empty': 'No past issues yet.',
@@ -290,6 +297,8 @@ var UI = {
     'err.home': 'Back home',
     'err.works': 'Directory',
     'work.label': 'Directory · Detail',
+    'work.coverSrc': 'Cover image sourced from public channels such as Douban / Wikimedia Commons; rights belong to their owners. Shown here for reference only.',
+    'work.ownPoster': 'Poster designed by Wake Up Girls.',
     'work.award': 'Recognition',
     'work.tags': 'Tags',
     'work.links': 'Links',
@@ -921,9 +930,12 @@ function renderWork() {
   }
   document.title = workTitle(w) + " | Wake Up Girls";
   var idx = (idxParam !== null && !isNaN(+idxParam)) ? +idxParam : (dataWorks() || []).findIndex(function (x) { return x.title === w.title; });
+  var coverImg = (window.COVERS && window.COVERS[idx]) || "";
   var posterImg = coverFor(idx);
+  var credit = coverImg ? t('work.coverSrc') : t('work.ownPoster');
   var poster = posterImg
-    ? '<div class="work-poster"><img src="' + esc(posterImg) + '" alt="' + esc(workTitle(w)) + '" /></div>'
+    ? '<div class="work-poster"><img src="' + esc(posterImg) + '" alt="' + esc(workTitle(w)) + '" />' +
+      (credit ? '<p class="work-credit">' + esc(credit) + "</p>" : "") + "</div>"
     : "";
   var meta = [workCreator(w), String(w.year), countryName(w.country)].filter(Boolean).join(" · ");
   var links =

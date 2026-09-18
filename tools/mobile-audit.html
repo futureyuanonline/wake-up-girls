@@ -83,11 +83,17 @@ function measure(name, f) {
         if (rec.overflow.length > 12) break;
       }
     }
-    var small = [], aaFail = 0, aaa = 0;
+    var small = [], aaFail = 0, aaa = 0, inlineExempt = 0;
     var tappable = d.querySelectorAll('a, button, select, input');
     for (var j = 0; j < tappable.length; j++) {
       var t = tappable[j], tr = t.getBoundingClientRect();
       if (tr.width < 1 || tr.height < 1) continue;
+      // WCAG 2.5.8 豁免：夹在句子/段落文字中间的内联链接（强制放大尺寸会破坏排版）
+      var pe = t.parentElement, own = (t.textContent || '').trim();
+      var pTxt = pe ? (pe.textContent || '').trim() : '';
+      if (pe && /^(P|LI|SPAN|EM|STRONG|B|I|FIGCAPTION)$/.test(pe.tagName) && pTxt.length > own.length + 8) {
+        inlineExempt++; continue;
+      }
       // 整卡可点：卡片内文字链接由铺满卡片的覆盖层承载，实际点击区域 = 整张卡
       var stretched = t.closest ? t.closest('.card.work-card, .mini-cell') : null;
       var effH = stretched ? stretched.getBoundingClientRect().height : tr.height;
@@ -106,6 +112,7 @@ function measure(name, f) {
     rec.smallCount = small.length;
     rec.aaFail = aaFail;
     rec.aaaSmall = aaa;
+    rec.inlineExempt = inlineExempt;
     var nav = d.querySelector('.nav'), hdr = d.querySelector('header.site');
     if (nav) rec.nav = { h: Math.round(nav.getBoundingClientRect().height), scrollW: nav.scrollWidth, clientW: nav.clientWidth };
     if (hdr) {
