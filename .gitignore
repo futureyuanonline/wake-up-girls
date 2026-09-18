@@ -40,3 +40,6 @@ _douban*.json
 
 # 订阅者名单（含邮箱，属隐私数据，不入公开仓库；格式见 data/subscribers.example.json）
 data/subscribers.json
+
+# 手工邮件草稿（含收件人邮箱，不入库）
+outbox/

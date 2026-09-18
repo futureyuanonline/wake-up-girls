@@ -118,8 +118,9 @@ var UI = {
     'subscribe.title': '不错过每一个她的故事',
     'subscribe.p': '每周五，一封邮件，带你了解全球女性议题最新动态。免费订阅，随时退订。',
     'subscribe.placeholder': '你的邮箱地址',
-    'subscribe.btn': '发邮件订阅',
-    'subscribe.note': '订阅功能正在搭建中。现在想订阅，请直接发邮件到 futureyuan39@gmail.com，标题写「订阅」，我会把你加入名单。',
+    'subscribe.btn': '一键订阅（邮件已预填）',
+    'subscribe.note': '点按钮会打开你的邮件程序，主题和正文已经写好——只需按发送。也可以直接发邮件到 futureyuan39@gmail.com，标题写「订阅」。',
+    'subscribe.privacy': '隐私说明：你留下的邮箱只会用于发送每周周报，不会用于其他用途，也不会提供给任何第三方。想退订随时回信写「退订」即可，我会立即从名单中移除。',
     'submit.label': 'Submit · 投稿与勘误',
     'submit.title': '把她的故事交给我们',
     'submit.p': '欢迎投稿：新闻线索、选题建议、作品条目（女性创作者的电影 / 图书 / 艺术作品），以及内容勘误。',
@@ -243,8 +244,9 @@ var UI = {
     'subscribe.title': '不錯過每一個她的故事',
     'subscribe.p': '每週五，一封郵件，帶你了解全球女性議題最新動態。免費訂閱，隨時退訂。',
     'subscribe.placeholder': '你的郵箱地址',
-    'subscribe.btn': '寄信訂閱',
-    'subscribe.note': '訂閱功能正在搭建中。現在想訂閱，請直接寄信到 futureyuan39@gmail.com，標題寫「訂閱」，我會把你加入名單。',
+    'subscribe.btn': '一鍵訂閱（郵件已預填）',
+    'subscribe.note': '點按鈕會開啟你的郵件程式，主旨與內文已經寫好——只需按傳送。也可以直接寄信到 futureyuan39@gmail.com，標題寫「訂閱」。',
+    'subscribe.privacy': '隱私說明：你留下的郵箱只會用於寄送每週週報，不會用於其他用途，也不會提供給任何第三方。想退訂隨時回信寫「退訂」即可，我會立即從名單中移除。',
     'submit.label': 'Submit · 投稿與勘誤',
     'submit.title': '把她的故事交給我們',
     'submit.p': '歡迎投稿：新聞線索、選題建議、作品條目（女性創作者的電影 / 圖書 / 藝術作品），以及內容勘誤。',
@@ -368,8 +370,9 @@ var UI = {
     'subscribe.title': 'Never Miss Her Story',
     'subscribe.p': 'One email every Friday, bringing you the latest on global women\'s issues. Free to subscribe, unsubscribe anytime.',
     'subscribe.placeholder': 'Your email address',
-    'subscribe.btn': 'Subscribe by email',
-    'subscribe.note': 'Email subscriptions are being set up. To subscribe now, write to futureyuan39@gmail.com with the subject \"subscribe\" and I will add you to the list.',
+    'subscribe.btn': 'Subscribe in one click (email prefilled)',
+    'subscribe.note': 'The button opens your mail app with the subject and body already written — just hit send. Or email futureyuan39@gmail.com with the subject "subscribe".',
+    'subscribe.privacy': "Privacy: your email is used only to send the weekly digest, never for anything else and never shared with third parties. Reply 'unsubscribe' at any time and I will remove you immediately.",
     'submit.label': 'Submit · Tips & Corrections',
     'submit.title': 'Send Us Her Story',
     'submit.p': 'Welcome: news tips, story ideas, directory entries (films / books / art by women), and corrections.',
@@ -1150,6 +1153,21 @@ function renderAll() {
   renderWorks();
   renderWork();
 }
+
+/* ---------- 订阅页：一键订阅（邮件预填） ---------- */
+(function () {
+  var form = document.getElementById("subForm");
+  if (!form) return;
+  var input = form.querySelector('input[type="email"]');
+  form.addEventListener("submit", function (e) {
+    e.preventDefault();
+    var addr = (input && input.value || "").trim();
+    var subject = state.lang === 'en' ? "Subscribe to Wake Up Girls weekly" : "订阅 Wake Up Girls 周报";
+    var body = (state.lang === 'en' ? "Please add this address to the list: " : "我的邮箱：") + addr;
+    location.href = "mailto:futureyuan39@gmail.com?subject=" + encodeURIComponent(subject) + "&body=" + encodeURIComponent(body);
+  });
+})();
+
 document.addEventListener("DOMContentLoaded", function () {
   initChrome();
   initTransitions();
