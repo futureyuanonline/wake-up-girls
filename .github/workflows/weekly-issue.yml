@@ -47,7 +47,8 @@ jobs:
       MAIL_API_KEY: ${{ secrets.MAIL_API_KEY }}
       SUBSCRIBERS_JSON: ${{ secrets.SUBSCRIBERS_JSON }}
       LLM_BASE_URL: ${{ vars.LLM_BASE_URL || 'https://api.deepseek.com/v1' }}
-      LLM_MODEL: ${{ vars.LLM_MODEL || 'deepseek-chat' }}
+      LLM_MODEL: ${{ vars.LLM_MODEL || 'deepseek-v4-pro' }}
+      LLM_MAX_TOKENS: ${{ vars.LLM_MAX_TOKENS || '32000' }}
       MAIL_FROM: ${{ vars.MAIL_FROM }}
       SITE_URL: ${{ vars.SITE_URL || 'https://yuanxiuzhong.com' }}
     steps:
@@ -112,6 +113,30 @@ jobs:
           printf '%s' "$SUBSCRIBERS_JSON" > data/subscribers.json
           echo "已写入订阅名单，条目数：$(node -e "console.log(require('./data/subscribers.json').subscribers.length)")"
 
-      - name: ⑥ 邮件投递
+      # 备选句清单默认只存在于运行环境里，运行结束即消失 —— 存档 + 写进运行摘要，方便选句/改写
+      - name: ⑥ 存档「为什么值得关注」备选句清单
+        if: always() && env.LLM_API_KEY != ''
+        run: |
+          if ls drafts/why-*.md >/dev/null 2>&1; then
+            for f in drafts/why-*.md; do
+              echo "## 📝 $(basename "$f")" >> "$GITHUB_STEP_SUMMARY"
+              echo "" >> "$GITHUB_STEP_SUMMARY"
+              cat "$f" >> "$GITHUB_STEP_SUMMARY"
+              echo "" >> "$GITHUB_STEP_SUMMARY"
+            done
+            echo "已把备选句清单写入本次运行摘要（Actions 页面该次运行底部）"
+          else
+            echo "本次没有生成备选句清单（可能校验未通过或未走到成稿步骤）"
+          fi
+
+      - uses: actions/upload-artifact@v4
+        if: always() && env.LLM_API_KEY != ''
+        with:
+          name: why-candidates
+          path: drafts/why-*.md
+          if-no-files-found: ignore
+          retention-days: 90
+
+      - name: ⑦ 邮件投递
         if: env.LLM_API_KEY != '' && env.MAIL_API_KEY != ''
         run: python tools/send_newsletter.py
