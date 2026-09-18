@@ -63,32 +63,42 @@ BLOCK_SETS = [
 
 
 def make_topic(fname, chars, en, sub, blocks):
-    W, H = 1200, 900
+    """正方形 1000x1000、构图居中：同一张图被裁成 4:5 / 16:9 / 1:1 都不会丢主体。"""
+    W = H = 1000
     im = Image.new('RGB', (W, H), WALL)
     d = ImageDraw.Draw(im)
 
-    # 色块构图（右上两个、左下一条）
-    d.rectangle([W - 300, 0, W - 90, 210], fill=blocks[0])
-    d.rectangle([W - 78, 0, W, 300], fill=blocks[1])
-    d.rectangle([0, H - 96, 340, H - 30], fill=blocks[2])
+    # 四角色块（裁切时只损失边角，不影响主体）
+    d.rectangle([0, 0, 210, 120], fill=blocks[0])
+    d.rectangle([W - 150, 0, W, 260], fill=blocks[1])
+    d.rectangle([0, H - 110, 260, H - 40], fill=blocks[2])
 
-    # 英文小标签
-    f_en = font(SERIF_EN_B, 30)
-    draw_tracked(d, (86, 250), en, f_en, INK_3, spacing=6)
+    # 英文小标签（居中上方）
+    f_en = font(SERIF_EN_B, 34)
+    w_en = text_w(d, en, f_en, 7)
+    draw_tracked(d, ((W - w_en) / 2, 196), en, f_en, INK_3, spacing=7)
 
-    # 中文大字（竖排式两字，主视觉）
-    f_cn = font(SERIF_CN_B, 210)
-    for i, ch in enumerate(chars):
-        d.text((80, 300 + i * 230), ch, font=f_cn, fill=INK)
+    # 中文大字：两字并排居中，主视觉居中
+    f_cn = font(SERIF_CN_B, 240)
+    cw = d.textlength(chars[0], font=f_cn)
+    gap = 24
+    total = cw * len(chars) + gap * (len(chars) - 1)
+    x = (W - total) / 2
+    for ch in chars:
+        d.text((x, 300), ch, font=f_cn, fill=INK)
+        x += cw + gap
 
-    # 主题说明
-    f_sub = font(SANS_CN, 34)
-    d.text((400, 700), sub, font=f_sub, fill=(90, 79, 73))
+    # 中央细线 + 主题说明
+    d.rectangle([W / 2 - 42, 600, W / 2 + 42, 604], fill=blocks[0])
+    f_sub = font(SANS_CN, 38)
+    w_sub = d.textlength(sub, font=f_sub)
+    d.text(((W - w_sub) / 2, 640), sub, font=f_sub, fill=(90, 79, 73))
 
-    # 页脚标记
-    f_foot = font(SANS_CN, 24)
-    d.text((86, H - 74), '示意图 · 本站原创插画', font=f_foot, fill=INK_3)
-    d.text((W - 300, H - 74), 'WAKE UP GIRLS', font=font(SERIF_EN_B, 24), fill=INK_3)
+    # 页脚
+    f_foot = font(SANS_CN, 26)
+    d.text((72, H - 92), '示意图 · 本站原创插画', font=f_foot, fill=INK_3)
+    f_mark = font(SERIF_EN_B, 26)
+    d.text((W - 72 - text_w(d, 'WAKE UP GIRLS', f_mark), H - 92), 'WAKE UP GIRLS', font=f_mark, fill=INK_3)
 
     out = os.path.join(IMG, fname)
     im.save(out, 'PNG', optimize=True)
