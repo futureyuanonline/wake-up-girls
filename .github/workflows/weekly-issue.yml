@@ -99,6 +99,10 @@ jobs:
         if: env.LLM_API_KEY != ''
         run: node build_i18n.mjs
 
+      - name: ③.5 重新生成 sitemap（把新一期加进搜索引擎索引）
+        if: env.LLM_API_KEY != ''
+        run: node tools/build_sitemap.mjs
+
       - name: ④ 提交（触发 Cloudflare 自动部署）
         if: env.LLM_API_KEY != ''
         run: |
