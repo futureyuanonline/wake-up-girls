@@ -22,7 +22,7 @@ const DIST = path.join(ROOT, 'dist')
 const FILES = [
   'index.html', 'archive.html', 'issue.html', 'news.html',
   'works.html', 'work.html', 'about.html', 'subscribe.html', 'submit.html',
-  '404.html', '_headers', '_redirects', 'robots.txt',
+  '404.html', '_headers', '_redirects', 'robots.txt', 'sitemap.xml',
 ]
 
 /* 要整目录发布的资源 */
