@@ -12,13 +12,15 @@
   Cache-Control: public, max-age=0, must-revalidate
 
 /data/*
-  Cache-Control: public, max-age=600
+  Cache-Control: public, max-age=300
 
+# CSS/JS 曾经设 1 小时，导致改版后访客最长 1 小时仍看到旧页面（含期号显示错）
+# 站点很小（CSS+JS 约 100KB），改为 5 分钟，保证改版能较快生效
 /assets/css/*
-  Cache-Control: public, max-age=3600
+  Cache-Control: public, max-age=300
 
 /assets/js/*
-  Cache-Control: public, max-age=3600
+  Cache-Control: public, max-age=300
 
 /assets/img/*
   Cache-Control: public, max-age=604800
