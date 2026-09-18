@@ -52,6 +52,7 @@
             <span class="l1" data-i18n="hero.line1">视角在她，</span>
             <span class="l2"><em data-i18n="hero.line2">规则由她。</em></span>
           </h1>
+          <p class="hero-mission" data-i18n="hero.mission">记录女性正在经历的世界，也记录女性正在创造的世界。</p>
           <p class="hero-sub" data-i18n="hero.lead">每周，我们为你筛选来自全球的女性权益、性别平等与社会变革重要新闻；建立女性电影、图书、艺术作品检索库——让每一位女性创作者被看见、被找到。</p>
           <div class="hero-btns">
             <a class="pill" href="issue.html?id=001"><span data-i18n="hero.btn.read">阅读本期</span><i>→</i></a>
@@ -83,6 +84,21 @@
   </section>
 
   <div class="ticker" id="regionTicker" aria-hidden="true"></div>
+
+  <!-- 策展人手记（个人声音；data/notes.js 为空时自动隐藏） -->
+  <section class="note-sec" id="noteSec" hidden>
+    <div class="wrap">
+      <div class="note-card reveal">
+        <div class="note-head">
+          <span class="sec-label"><i>✦</i><span data-i18n="note.label">策展人手记</span></span>
+          <span class="note-week" id="noteWeek"></span>
+        </div>
+        <h2 class="note-title" id="noteTitle" hidden></h2>
+        <div class="note-body" id="noteBody"></div>
+        <div class="note-by" id="noteBy" hidden></div>
+      </div>
+    </div>
+  </section>
 
   <!-- digest 区（排版 1:1 对齐 yuanxiuzhong.com/#digest） -->
   <section class="band band-yellow" id="digest">
@@ -145,6 +161,7 @@
 
   <script src="data/issues.js"></script>
   <script src="data/issues.hant.js"></script>
+  <script src="data/notes.js"></script>
   <script src="data/works.js"></script>
   <script src="data/works.hant.js"></script>
   <script src="data/works_en.js"></script>

@@ -12,6 +12,9 @@ var UI = {
     'hero.label': 'VOL. 001 · 2026年9月第三周',
     'hero.line1': '视角在她，',
     'hero.line2': '规则由她。',
+    'hero.mission': '记录女性正在经历的世界，也记录女性正在创造的世界。',
+    'note.label': '策展人手记',
+    'note.week': '第 {n} 周',
     'hero.lead': '每周，我们为你筛选来自全球的女性权益、性别平等与社会变革重要新闻；建立女性电影、图书、艺术作品检索库——让每一位女性创作者被看见、被找到。',
     'hero.img_caption': '配图 · 示意图',
     'hero.btn.read': '阅读本期 →',
@@ -27,7 +30,7 @@ var UI = {
     'footer.tagline': '全球女性议题周报 · 每周五更新',
     'footer.col1': '栏目', 'footer.col2': '关于', 'footer.col3': '使命',
     'footer.mission1': '视角在她，规则由她。',
-    'footer.mission2': '每周为你筛选全球女性权益、性别平等与社会变革重要新闻。',
+    'footer.mission2': '记录女性正在经历的世界，也记录女性正在创造的世界。',
     'footer.contact': '联系：futureyuan39@gmail.com',
     'footer.copyright': '© 2026 Wake Up Girls',
     'footer.note': '内容仅供参考 · 欢迎勘误与投稿',
@@ -127,6 +130,9 @@ var UI = {
     'hero.label': 'VOL. 001 · 2026年9月第三週',
     'hero.line1': '視角在她，',
     'hero.line2': '規則由她。',
+    'hero.mission': '記錄女性正在經歷的世界，也記錄女性正在創造的世界。',
+    'note.label': '策展人手記',
+    'note.week': '第 {n} 週',
     'hero.lead': '每週，我們為你篩選來自全球的女性權益、性別平等與社會變革重要新聞；建立女性電影、圖書、藝術作品檢索庫——讓每一位女性創作者被看見、被找到。',
     'hero.img_caption': '配圖 · 示意圖',
     'hero.btn.read': '閱讀本期 →',
@@ -142,7 +148,7 @@ var UI = {
     'footer.tagline': '全球女性議題週報 · 每週五更新',
     'footer.col1': '欄目', 'footer.col2': '關於', 'footer.col3': '使命',
     'footer.mission1': '視角在她，規則由她。',
-    'footer.mission2': '每週為你篩選全球女性權益、性別平等與社會變革重要新聞。',
+    'footer.mission2': '記錄女性正在經歷的世界，也記錄女性正在創造的世界。',
     'footer.contact': '聯繫：futureyuan39@gmail.com',
     'footer.copyright': '© 2026 Wake Up Girls',
     'footer.note': '內容僅供參考 · 歡迎勘誤與投稿',
@@ -242,6 +248,9 @@ var UI = {
     'hero.label': 'VOL. 001 · THIRD WEEK OF SEPTEMBER 2026',
     'hero.line1': 'Her lens.',
     'hero.line2': 'Her rules.',
+    'hero.mission': 'Recording the world women are living through — and the world women are creating.',
+    'note.label': "Curator's Note",
+    'note.week': 'Week {n}',
     'hero.lead': 'Every week we curate the world\'s most important news on women\'s rights, gender equality and social change — and build a searchable directory of films, books and art by women, so every woman creator can be seen and found.',
     'hero.img_caption': 'Illustrative image',
     'hero.btn.read': 'Read this issue →',
@@ -257,7 +266,7 @@ var UI = {
     'footer.tagline': 'Global Women\'s Issues Weekly · Every Friday',
     'footer.col1': 'Sections', 'footer.col2': 'About', 'footer.col3': 'Mission',
     'footer.mission1': 'Her lens. Her rules.',
-    'footer.mission2': 'Every week we curate the most important news on women\'s rights, gender equality and social change.',
+    'footer.mission2': 'Recording the world women are living through — and the world women are creating.',
     'footer.contact': 'Contact: futureyuan39@gmail.com',
     'footer.copyright': '© 2026 Wake Up Girls',
     'footer.note': 'For reference only · Corrections & submissions welcome',
@@ -965,8 +974,53 @@ function renderWork() {
     '<p><a class="more" href="works.html" style="color:var(--accent);">' + esc(t('work.back')) + "</a></p>";
 }
 
+/* ---------- 策展人手记（首页） ----------
+   数据在 data/notes.js：数组为空则整块不显示。
+   { id, week, date, title, text, hant:{title,text}, en:{title,text}, by } */
+function dataNotes() {
+  var list = (state.lang === 'zh-Hant' && window.NOTES_HANT && window.NOTES_HANT.length)
+    ? window.NOTES_HANT : (window.NOTES || []);
+  return list.slice().sort(function (a, b) { return String(b.id || '').localeCompare(String(a.id || '')); });
+}
+function noteField(n, k) {
+  if (state.lang === 'en') return (n.en && n.en[k]) || n[k] || '';
+  if (state.lang === 'zh-Hant') return (n.hant && n.hant[k]) || n[k] || '';
+  return n[k] || '';
+}
+function renderNote() {
+  var sec = document.getElementById("noteSec");
+  if (!sec) return;
+  var list = dataNotes();
+  if (!list.length) { sec.hidden = true; return; }
+  var n = list[0];                       // 最新一则在最前
+  sec.hidden = false;
+  var weekEl = document.getElementById("noteWeek");
+  if (weekEl) weekEl.textContent = n.week ? t("note.week").replace("{n}", n.week) : (n.date || "");
+  var titleEl = document.getElementById("noteTitle");
+  if (titleEl) {
+    var ti = noteField(n, "title");
+    titleEl.textContent = ti;
+    titleEl.hidden = !ti;
+  }
+  var bodyEl = document.getElementById("noteBody");
+  if (bodyEl) {
+    bodyEl.innerHTML = String(noteField(n, "text") || "")
+      .split(/\n{2,}/)
+      .filter(function (p) { return p.trim(); })
+      .map(function (p) { return "<p>" + esc(p.replace(/\n/g, " ").trim()) + "</p>"; })
+      .join("");
+  }
+  var byEl = document.getElementById("noteBy");
+  if (byEl) {
+    var by = noteField(n, "by");
+    byEl.textContent = by;
+    byEl.hidden = !by;
+  }
+}
+
 /* ---------- 入口 ---------- */
 function renderAll() {
+  renderNote();
   renderLatest();
   renderFeatured();
   renderArchive();

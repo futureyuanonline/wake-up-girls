@@ -127,6 +127,29 @@ nav.menu a:hover { color: var(--ink); }
   background: var(--gold); z-index: -1;
 }
 .hero-sub { max-width: 560px; font-size: 16px; line-height: 1.95; color: var(--ink-2); margin-bottom: 30px; }
+
+/* 使命句：主标语负责被记住，这一句负责被理解（首页首屏） */
+.hero-mission {
+  font-family: var(--serif); font-size: 17.5px; font-weight: 600; line-height: 1.85;
+  color: var(--ink); max-width: 520px; margin: 0 0 18px;
+  border-left: 3px solid var(--gold); padding-left: 16px;
+}
+
+/* ---------- 策展人手记（首页的个人声音） ---------- */
+.note-sec { padding: 46px 0 6px; }
+.note-card {
+  position: relative; max-width: 860px; background: var(--beige);
+  border: 1px solid var(--line); border-left: 6px solid var(--brick);
+  border-radius: 4px; padding: 30px 34px 26px; box-shadow: var(--shadow-card);
+}
+.note-head { display: flex; align-items: baseline; justify-content: space-between; gap: 12px; flex-wrap: wrap; }
+.note-head .sec-label { margin-bottom: 6px; }
+.note-head .sec-label i { color: var(--brick); font-style: normal; }
+.note-week { font-size: 12px; color: var(--ink-3); letter-spacing: 1px; }
+.note-title { font-family: var(--serif); font-size: 23px; font-weight: 800; line-height: 1.45; color: var(--ink); margin: 8px 0 14px; }
+.note-body p { font-family: var(--serif); font-size: 16.5px; line-height: 2.05; color: var(--ink); margin-bottom: 14px; }
+.note-body p:last-child { margin-bottom: 0; }
+.note-by { margin-top: 18px; font-size: 12.5px; color: var(--ink-3); letter-spacing: 1px; }
 .hero-btns { display: flex; gap: 14px; flex-wrap: wrap; }
 .hero-gallery { display: grid; grid-template-columns: 1.05fr .95fr; gap: 44px; align-items: center; }
 @media (max-width: 900px) { .hero-gallery { grid-template-columns: 1fr; gap: 28px; } }
@@ -599,6 +622,7 @@ nav.menu a.menu-cta { display: none; }
   .hero-ed { padding: 34px 0 30px; }
   .hero-eyebrow { font-size: 11px; letter-spacing: 3px; margin-bottom: 12px; }
   .hero-head { font-size: clamp(29px, 8.6vw, 46px); line-height: 1.14; margin-bottom: 16px; }
+  .hero-mission { font-size: 16px; padding-left: 13px; margin-bottom: 14px; max-width: none; }
   .hero-sub { font-size: 15.5px; line-height: 1.9; max-width: 620px; margin-bottom: 22px; }
   .hero-btns { gap: 10px; }
   .pill { padding: 9px 10px 9px 20px; font-size: 14px; gap: 10px; }
@@ -618,6 +642,12 @@ nav.menu a.menu-cta { display: none; }
   /* ---------- 跑马灯 ---------- */
   .ticker { padding: 12px 0; }
   .tick { font-size: 13.5px; letter-spacing: 2px; padding: 0 10px; }
+
+  /* 策展人手记 */
+  .note-sec { padding: 34px 0 4px; }
+  .note-card { padding: 22px 18px 20px; border-left-width: 5px; }
+  .note-title { font-size: 19px; margin: 6px 0 10px; }
+  .note-body p { font-size: 15.5px; line-height: 1.95; }
 
   /* ---------- 本周精选（digest） ---------- */
   .digest-head { flex-wrap: wrap; gap: 4px 12px; margin-bottom: 16px; padding-bottom: 12px; }
