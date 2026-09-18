@@ -41,6 +41,12 @@ if ($loaded -notcontains 'LLM_API_KEY') {
   Write-Host "✗ .env.local 里没有 LLM_API_KEY" -ForegroundColor Red
   exit 1
 }
+if ($env:LLM_API_KEY -notmatch '^sk-' -or $env:LLM_API_KEY.Length -lt 20) {
+  Write-Host "✗ .env.local 里的 LLM_API_KEY 还没替换成真实 Key（当前长度 $($env:LLM_API_KEY.Length)）" -ForegroundColor Red
+  Write-Host "  请用记事本打开：$envFile" -ForegroundColor Yellow
+  Write-Host "  把 PASTE_YOUR_KEY_HERE 换成你的 DeepSeek Key（sk- 开头那串），保存后重试。" -ForegroundColor Yellow
+  exit 1
+}
 $keyLen = $env:LLM_API_KEY.Length
 Write-Host "✓ 已载入密钥：$($loaded -join ', ')（LLM_API_KEY 长度 $keyLen，结尾 …$($env:LLM_API_KEY.Substring([Math]::Max(0,$keyLen-4)))）" -ForegroundColor Green
 Write-Host "  模型：$($env:LLM_BASE_URL) / $($env:LLM_MODEL)"
