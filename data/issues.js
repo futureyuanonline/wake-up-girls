@@ -6,6 +6,332 @@
    - src / url：来源与原文链接（报道页结尾注明）
    - region：全球/欧洲/北美/拉美/中东/非洲/南亚/东亚/大洋洲/中国 */
 window.ISSUES = [
+{
+  "id": "002",
+  "date": "2026-09-18",
+  "period": "2026.09.14 – 2026.09.20",
+  "title": "全球女性权益周报：堕胎诉讼、性别暴力与政策倒退中的进展",
+  "summary": "本期聚焦日本性别平等停滞、美韩堕胎争议、南非性别暴力、联合国与地区政策动态，以及科技产品中的性别设计，呈现全球女性权益的多重挑战与局部进展。",
+  "en": {
+    "title": "Global Women's Rights Weekly: Abortion Lawsuits, Gender Violence, and Policy Shifts",
+    "summary": "This edition covers Japan's gender equality stagnation, abortion debates in the US and South Korea, South Africa's gender violence, UN dialogues, and gender design in tech products."
+  },
+  "img": "assets/img/womens-rights.png",
+  "sections": [
+    {
+      "cat": "国际",
+      "en_cat": "International",
+      "items": [
+        {
+          "id": "002-1",
+          "t": "日本高层缺性别平等危机感 专家称平等是经济增长必需",
+          "d": "日本经济新闻刊登学者伊藤公雄观点，指出性别平等是经济增长的必要条件，但日本政经界高层对此危机感不足，需正视结构性障碍。",
+          "body": [
+            "日本経済新聞刊登学者伊藤公雄的评论，明确提出性别平等是实现经济可持续增长的必要前提。文章指出，日本政治与财经界领导人对此缺乏紧迫感，仍将性别议题视为次要问题。这一观点基于日本长期在全球性别差距指数中排名靠后，女性在管理层和政治参与中比例明显偏低。",
+            "日本女性在劳动力市场面临明显的性别分工，许多高学历女性被迫在事业与家庭之间二选一。育儿和照护责任不成比例地落在女性肩上，导致大量女性退出正式就业或只能从事非正规工作。这种结构性问题不仅限制个人发展，也造成国家层面的人力资源浪费。",
+            "如果日本继续忽视性别平等，可能加剧人才流失和经济停滞。将性别视角纳入宏观经济政策，不仅关乎公平，也是提升竞争力的现实选择。高层缺乏危机感，意味着制度改革难以启动，社会整体将为这种迟滞付出代价。"
+          ],
+          "why": "日本经济规模居前但性别差距排名长期垫底，这种反差很少被主流讨论。",
+          "en": {
+            "t": "Gender equality essential for growth, Japan's leaders lack urgency, expert says",
+            "d": "An expert warns Japan's top decision-makers lack a sense of urgency on gender equality, despite it being a prerequisite for economic growth.",
+            "body": [
+              "A Nikkei commentary argues that gender equality is indispensable for economic growth, yet Japan's political and business leaders show little urgency, according to scholar Kimio Ito.",
+              "Japan consistently ranks low in global gender gap indexes, with low female representation in management and politics, and persistent gender division in the labor market."
+            ]
+          },
+          "img": "assets/img/podium.png",
+          "src": "日本経済新聞",
+          "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE1tZnJuNnpseG1JdGFfbmpsTmJseWRNTFpzRUlQV21BUHNaaXJmYWxXel9qZmMtZllMUUxOOEZjanVjNUJrMGlJcll2Vkw1QXUzalljd003Zlg0aFliTFNNdjMtel96VnZsVXNrTw?oc=5",
+          "region": "东亚"
+        },
+        {
+          "id": "002-2",
+          "t": "卡塔尔参与联合国对话 聚焦冲突中妇女儿童权利",
+          "d": "卡塔尔常驻日内瓦代表参加联合国互动对话，讨论冲突和冲突后局势下妇女与儿童的人权保护。",
+          "body": [
+            "卡塔尔常驻日内瓦代表参与关于冲突中及冲突后妇女儿童人权的互动对话，在联合国框架内表达卡塔尔立场。此类对话旨在推动成员国关注武装冲突对弱势群体的影响，并加强国际保护机制。",
+            "武装冲突对妇女儿童造成不成比例的影响，包括性暴力、流离失所、家庭分离和基本服务中断。冲突后重建进程中，女性的政治参与和经济恢复往往被忽视，导致长期边缘化。",
+            "小国参与国际人权机制具有象征意义，但能否转化为实际援助和国内政策调整仍有待观察。国际社会在讨论冲突受害者时，具体保护措施往往滞后于声明，需要持续监督和问责。"
+          ],
+          "why": "冲突地区的妇女儿童常被当作附带损害，很少进入外交优先议程。",
+          "en": {
+            "t": "Qatar joins UN dialogue on women and children in conflict",
+            "d": "Qatar's permanent representative in Geneva took part in an interactive dialogue on the human rights of women and children in conflict.",
+            "body": [
+              "Qatar participated in a UN interactive dialogue on the human rights of women and children in conflict and post-conflict situations.",
+              "Armed conflicts disproportionately affect women and children, with heightened risks of violence and displacement."
+            ]
+          },
+          "img": "assets/img/podium.png",
+          "src": "mofa.gov.qa",
+          "url": "https://news.google.com/rss/articles/CBMizghBVV95cUxQc1o0VGYzN2xDMHd2cFpCMkxPR0pkSDhXUU0tTlNsUkFIZVFRTExvWlJQalh6WXZhRmQwQ2gzUjVVeHZBVFlSTV83Y29HSTRxd0ZiMFIzQzIwckxNa1pUUnQ4OGpUYVlfc3M0VXNGU3FyTmNXLTU0QVo5QXo5S25IV1VkRWFoenBicF83Y3FpSExHWDZNdk9SRHFBUkJjWnFKYno0ZkpXVEFtNFRGVFplSGx1QUl6SjUxdm0tb3M2VkhJVGVnZ3hDNnNmXzhWeU8tNDl0NG1xTTBlVm92LVp5b2tPbVNPbl9rRjdzdUhidGZ3YVMzbkZkUzg2T2EyYW1uY1hKQWdUS2ZXS1Q5V1Npb0lLc090REsxcVI2bURjekgwbHRRT2RMc0czVzlsdEJqM3NuU2pmRExwSDVMemNIc1NIcjUtWHp6di1LYzV4bERXZFExNWpOQmg4N19ic0ZIbHZNa2YwN1dUN3JxWXNzeTNpbHV0WkNvT25va1p4QUZHc1ExNWYwZncwSHBrcEFvaHJKckc4N3JFdGtOSHN0NjVsc180R3JfUnd3SlFmS3FNUTVwNENLT1FIU0J5ZHg0X3VFLXhiVEVYbFJOc096TFNKRWQ1dlJROWwwaTRzczRiWnVfalI2OGprVWg2S2pManR3NFhvRWxBSDBIYmF4TWlnZ2FRZ2xWYXgwSmVSem1JS01Mb2lMdFJoUTdfTlJ3YlVkYmptamMxMVdoU3JEdnpvdXN3Rzd5anFhU0hQcnBGZWd3dGhlUHVoclZRMDY3LXQ1alNidVNNVTJVSThNRWo3NzNsYU01eUVuUzZqVHVmY3ZCeHpiQnBiTzdiamhXWkhXdEFqNGdCNVZPRGxEZFNrbDFBUGNRYlpxYUVnZlQtOHdxU1pQVURhczN3S0FLb1pmWjltZUpCLWJjMjRMd1Iwd01JXzEyLWM2SkItb3hfRWxUeTVZbVZjWEExb1RzRjJBcXJlOE45NUR5ZHd3VGVYXzVVNUFMeERQRGhrV2k4R2I0NU85VDNFOE1BZ1FVWlZ0S0V3OE9TY3ptd0pCUm5jR2w5d2VVLXU3Q1Z2U2pwaERXWHNQM1VrNENYOW9COEFpSmRtUXhYbEliUVNzQnlZQ1J5cUZTb2F2ekJnZjRHU1Y2dWM3OGoyT3RCaUp3RjFwNkFLV2ZGeVBBenlXYlFlMG5oTWNYbW9YRFJ2SnlRWXotLUhwbXlyb0tpUjFCMUJtWHpMTWhYZzVhYnA5N1V0UkRCMW10MVQ0TEdNemhkbm4zTThOMnd3Nk1QXzZERHdBMWdlYXBha0oyZ3RNaUpBOXJycEIxRno5cjAtRHZDLWVsNGU4TU5ZOS0tc3JKQWlGZHRVWWtYRTNNM1VqaHB3cThDdUpfSjlITkhYUFprODRVNmdGZGRiSXpja0g3SU05LWJlOS1WMU84ODc0V0JyRzVYQ3ZPRWo5bzJ3?oc=5",
+          "region": "全球"
+        },
+        {
+          "id": "002-3",
+          "t": "伊朗战争使女性权利沦为隐形牺牲品",
+          "d": "新西兰媒体报道，中东冲突使女性及其权利成为“看不见的受害者”，暴力与流离失所加剧既有性别压迫。",
+          "body": [
+            "新西兰媒体报道，伊朗战争使女性及其权利成为“看不见的受害者”。冲突导致女性面临性暴力、家庭分离和基本医疗缺失，原有权利保障进一步削弱。",
+            "在战争环境下，性别暴力往往急剧上升，而女性组织在紧急状态中更难发声和提供支持。国际社会的援助通常优先考虑军事和人道主义物资，忽略性别专项服务。",
+            "国际社会关注地缘政治时，女性的具体遭遇常被边缘化。将性别视角纳入和平谈判和重建规划，是避免女性权利进一步倒退的必要条件。"
+          ],
+          "why": "战争报道聚焦军事和地缘，女性受害往往仅作为背景数字。",
+          "en": {
+            "t": "Women's rights become unseen casualties of Iran war",
+            "d": "Women and their rights have been overlooked as casualties in the Iran conflict.",
+            "body": [
+              "A report states that women and their rights have become unseen casualties of the Iran war.",
+              "The conflict has heightened risks for women including violence, displacement, and loss of basic services."
+            ]
+          },
+          "img": "assets/img/podium.png",
+          "src": "thepost.co.nz",
+          "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxNQzNoLVdnU2NJV1VrUEdzT3lVaUlKSEF0ZUVQVXBXbDRYb1d3QlN0YUYyUnhzeUpPSjFOU1lTcDZVSXFzR3hKQ2w2Z0lWYmtrLWtRa2ExWlJhcXRZZ2lTbVJPb0R0QUNTb2pWR1A4MU1qdlNENW1sSVZCWGN2R1A4LUhQaDlLNWlUbWNfV0J5WmlsTkhSNWZrWEFNazIxV3Rpd3RfVVhDYlY?oc=5",
+          "region": "中东"
+        }
+      ]
+    },
+    {
+      "cat": "社会",
+      "en_cat": "Society",
+      "items": [
+        {
+          "id": "002-4",
+          "t": "日本女性高官炫耀假日熨烫 性别平等排名再度垫底",
+          "d": "韩国媒体报道日本女性政治人物公开炫耀假日做家务，与日本性别平等指数处于全球最低水平形成讽刺，凸显性别角色固化。",
+          "body": [
+            "韩媒报道日本一名女性高层政治人物在假日熨烫衣物并公开提及，被视为对传统性别角色的宣传。这一行为在日本社会引发讨论，许多人认为女性精英展示家务劳动反而强化了性别分工期待。",
+            "日本在全球性别差距指数中排名常年处于最低区间，女性在政治、经济参与方面指标落后。传统文化和制度惯性使得女性的家务和育儿责任被视为理所当然，即使位居高位的女性也难以摆脱。",
+            "女性精英的公开展示可能反向浪漫化性别不平等，延缓平等进程。批评者指出，当女性领导人也被期待呈现“贤妻良母”形象，普通女性更难摆脱双重标准和社会压力。"
+          ],
+          "why": "女性领导人公开炫耀家务劳动，被批评为将性别不平等反向浪漫化。",
+          "en": {
+            "t": "Female politician's ironing boast highlights Japan's poor gender equality ranking",
+            "d": "A female Japanese politician's public mention of holiday ironing draws criticism, contrasting with Japan's low gender equality ranking.",
+            "body": [
+              "South Korean media report that a female Japanese political figure publicly mentioned ironing on holidays, which is seen as reinforcing traditional gender roles.",
+              "Japan consistently sits in the bottom tier of global gender gap rankings, with poor scores in female political and economic participation."
+            ]
+          },
+          "img": "assets/img/women-power.png",
+          "src": "매일경제",
+          "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE05anJpTnJfZEdBZnpJQ1pQR2doOExVUFdWMVQ0UHdKZnlJRVotX1lwMEVhcE16X1FzRG9RSFpsek8tOXo4WVNoZDlNbnFrYlVXX1E?oc=5",
+          "region": "东亚"
+        },
+        {
+          "id": "002-5",
+          "t": "南非又现女性被害 总统呼吁全社会捍卫女性权利",
+          "d": "南非埃库鲁莱尼发现又一具女性尸体，总统拉马福萨呼吁采取行动，该国性别暴力问题持续恶化。",
+          "body": [
+            "南非埃库鲁莱尼发现一名女性尸体，总统拉马福萨公开呼吁“站出来维护女性权利”。这起案件是该国性别暴力危机的又一例证，引发社会强烈反应。",
+            "南非是世界上性别暴力最严重的国家之一，女性被杀率居高不下。尽管政府出台了多项政策和法律框架，但执法资源不足、社会态度未同步改变，导致暴力循环难以打破。",
+            "屡禁不止的暴力暴露社会深层厌女文化与司法失效。女性安全感持续下降，许多女性在日常生活中不得不采取额外防范措施，这种恐惧本身就是不平等的结果。"
+          ],
+          "why": "几乎每天都有女性遇害，新闻却常被当作孤立案件而非系统危机。",
+          "en": {
+            "t": "Another body found as Ramaphosa urges action on gender-based violence",
+            "d": "A woman's body has been found in Ekurhuleni, prompting South Africa's president to call for defending women's rights.",
+            "body": [
+              "The body of a woman has been found in Ekurhuleni, and President Ramaphosa has urged South Africans to stand up for women's rights.",
+              "South Africa has one of the highest rates of gender-based violence in the world, despite legal frameworks intended to protect women."
+            ]
+          },
+          "img": "assets/img/women-power.png",
+          "src": "Daily Maverick",
+          "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxPTGk1XzY0eU91STNiSW9waU0xOENzYng2YVBjZHVsSjNEeXdOWElzWWtsSDVVVTNzcmdPeGVTOUtHdERfQ3NHU2xqU1U2aGs4dDM4eWQ4anBLckR6T0hxNHh5dHUyNEFzSFZDRnEtd1JnUUxJcG13Q1lzVzE5ZnA4cExXLXpiaVMwRWROMWlhVDBlb2N4ODZsVHNJSkdvYU1ycUhEaUdQVVNrNERqOC1FNXJCVDV0bkYxSkJlTV9ZRzEtb1d5MV9EWWgwZjludw?oc=5",
+          "region": "非洲"
+        }
+      ]
+    },
+    {
+      "cat": "生育权利",
+      "en_cat": "Reproductive Rights",
+      "items": [
+        {
+          "id": "002-6",
+          "t": "韩国拟明年批准堕胎药 药物流产合法化迈进一步",
+          "d": "韩国计划明年批准使用堕胎药，结束数十年对药物流产的限制，为女性提供更多生育健康选择。",
+          "body": [
+            "韩国政府计划明年批准堕胎药物，这将使药物流产在韩国合法可用。此举旨在落实2019年宪法法院要求修订堕胎法律的裁决，弥补政策空白。",
+            "韩国宪法法院2019年裁定堕胎罪违宪，要求政府修改法律，但药物流产一直未获批准。许多女性只能依赖手术流产或寻求海外药品，面临健康风险和法律不确定性。",
+            "批准堕胎药被视为韩国落实生殖权利的重要一步，可能影响周边国家的政策讨论。然而，药品审批仍面临宗教、医疗和政治阻力，实际可及性取决于后续执行。"
+          ],
+          "why": "韩国堕胎罪违宪已数年，但药物批准迟缓，行政拖延值得注意。",
+          "en": {
+            "t": "South Korea set to approve abortion pills next year",
+            "d": "South Korea plans to approve abortion medications next year, moving to align with its constitutional court ruling.",
+            "body": [
+              "The South Korean government is expected to approve abortion pills next year, making medical abortion legally available.",
+              "The country's constitutional court ruled the abortion ban unconstitutional in 2019, but drug approval has lagged behind legal changes."
+            ]
+          },
+          "img": "assets/img/body-choice.png",
+          "src": "Yahoo",
+          "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxPbmw2cVFack9UMnBpcXFwaU9jMzYyTkttZV9ya3MxR3VEdHlGcmJsYVdyUmN6OElqLUpUckdYM0tCNUpKLURvd1hnN2ZSMFJKUTNZMW9yX1ByRWtqRFkyRWxid2xlR0I0aE9rYm5lQVJNNXhyNGdnQ0o2bVlYY0ZZRGNSSHFSODZ6OG8xVnhIWFpTaFE?oc=5",
+          "region": "东亚"
+        },
+        {
+          "id": "002-7",
+          "t": "致命胎儿诊断女性被迫离开俄州堕胎 诉讼挑战禁令",
+          "d": "美国俄克拉荷马州禁止堕胎，多名因胎儿致命异常的孕妇被迫跨州堕胎，新诉讼指控该禁令违宪。",
+          "body": [
+            "一项诉讼代表因致命胎儿诊断而被迫离开俄克拉荷马州进行堕胎的女性，挑战该州严格的堕胎禁令。这些女性因胎儿无法存活而需要终止妊娠，但州法律将几乎所有堕胎定为非法。",
+            "在俄克拉荷马州，堕胎禁令未包含足够的医疗例外条款，导致医生即使在胎儿无存活希望时也拒绝提供终止妊娠服务。孕妇不得不前往其他州寻求医疗帮助，承担额外的身心和经济负担。",
+            "案件凸显堕胎禁令对医疗紧急情况的漠视，可能推动司法审查。女性在面临致命胎儿诊断时，本应获得同情和医疗支持，而非被法律强制增加痛苦。"
+          ],
+          "why": "即使胎儿注定无法存活，女性仍被剥夺在本州终止妊娠的权利，这超出常识。",
+          "en": {
+            "t": "Oklahoma women with fatal fetal diagnoses sue over forced out-of-state abortions",
+            "d": "A new lawsuit challenges Oklahoma's abortion ban on behalf of women with fatal fetal diagnoses who had to leave the state for care.",
+            "body": [
+              "A lawsuit has been filed on behalf of women facing fatal fetal diagnoses who were forced to leave Oklahoma to obtain abortions.",
+              "These women needed pregnancy termination because the fetus could not survive, but the state's near-total abortion ban left no exceptions."
+            ]
+          },
+          "img": "assets/img/body-choice.png",
+          "src": "KOCO",
+          "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxQdUo1ZTlFRGs0UmN4UzNiS1ZjU19VXy1lOGM0TWEtSDdDYVNVMjRhdWdDMTlKQ2N3S2w1ZFlkMGVQcC14MFhOZ190QTdhU2kyMVNROS1KdmU2NThGVlVkSG84eFhPQUhwdms3TFc4NGJUMUZjYzhjOGROZElZTHpMWkY1S0gtTWRlQTJpQVdlVGtablRsUFJiWWx2WG8yQnpibU1PWXozbzdDMlFKaWUtbms3Sm5YSE0?oc=5",
+          "region": "北美"
+        }
+      ]
+    },
+    {
+      "cat": "政策与法律",
+      "en_cat": "Policy & Law",
+      "items": [
+        {
+          "id": "002-8",
+          "t": "澳大利亚部长称性别平等排名提升绝非偶然",
+          "d": "澳大利亚在性别平等指数中排名改善，部长表示这是政策努力结果，而非运气。",
+          "body": [
+            "澳大利亚一名部长表示，该国性别平等排名提升“并非偶然”，而是持续政策投入的结果。官方将这一进步归因于近年推动女性经济参与和反家暴等措施。",
+            "澳大利亚在带薪育儿假、女性董事会比例和性别薪酬报告方面有所进展，尽管性别薪酬差距仍然存在。就业隔离和照护责任分配等结构性问题尚未根本解决。",
+            "排名改善可能鼓舞士气，但专家提醒需关注政策落地与弱势群体差异，特别是原住民女性、移民女性和单亲母亲。排名作为指标有局限性，不能替代实质性平等。"
+          ],
+          "why": "官方将排名改善归功于政策，但很少公开讨论统计口径变化。",
+          "en": {
+            "t": "Australia's improved gender ranking 'not an accident', minister says",
+            "d": "A minister credits deliberate policy for Australia's improved gender equality ranking.",
+            "body": [
+              "An Australian minister has said the country's improved gender equality ranking is not an accident but the result of policy efforts.",
+              "Australia has implemented measures on women's economic participation, paid parental leave, and domestic violence prevention, though the gender pay gap persists."
+            ]
+          },
+          "img": "assets/img/womens-rights.png",
+          "src": "The Mandarin",
+          "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxNeVJiaGxoS0o2b0lUQkozX0lzQlJkRGJBY3FIUEVkbEdnb1lsNXFaUERyOHI5UkQ0cHRrMXJHaVlueGx3TjctVV82Nlg5dVllNlR0R0JLY0xidS1Bd09vWnVjUFR0ZHc3aEJScktjeC1md0NtOTVLUVlrdVNXVS1UNGhsNTdSVk5SZHd1VDFQdGlrODFGQkxVQnVtRjhRRmYzY0pj?oc=5",
+          "region": "大洋洲"
+        },
+        {
+          "id": "002-9",
+          "t": "墨西哥参议院推动农村妇女土地权 缩小性别差距",
+          "d": "墨西哥参议院提出法案，保障农村妇女获得土地所有权，以改善农业领域的性别不平等。",
+          "body": [
+            "墨西哥参议院推动一项举措，旨在让农村妇女更容易获得土地所有权。该法案回应了农村地区长期存在的土地分配性别失衡问题。",
+            "在拉美许多地区，土地分配长期偏向男性，妇女难以获得生产资源，制约经济独立。继承法律、社区习俗和行政程序中的歧视，使得妇女的土地权利难以实现。",
+            "土地权是农村女性赋权的关键，但实施需要配套的登记、信贷和培训支持。只有解决制度性障碍，才能真正缩小农业领域的性别差距。"
+          ],
+          "why": "农村妇女拥有土地的比例极低，但这个问题很少出现在城市媒体议程。",
+          "en": {
+            "t": "Mexico's Senate promotes land rights for rural women",
+            "d": "The Mexican Senate is advancing measures to help rural women access land tenure.",
+            "body": [
+              "Mexico's Senate is pushing for rural women's access to land ownership as part of gender equality efforts.",
+              "In many Latin American regions, land distribution has historically favored men, limiting women's economic independence."
+            ]
+          },
+          "img": "assets/img/womens-rights.png",
+          "src": "Línea Política",
+          "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxOY1RHR1pJU0VILXhIcG9oQ1VwQXlhTDdDcGMweXFNdHZzcjNxT2wzSzlJQkZvTTc5LWpxWVFEMHRGdnBqc3FGVVgxNVVQU2VoYXN5WVJSQ3RCbXc2elJyT1pWdXMtb3QzQ2J2NjBsTzFfWlJHeG83YkJOal9rdHg1Tmo3LXcwLThibTJjMmhBRk5FZzN4RC1JY29iNjZzZnlCbDNSTHNxZTZKZ3ZuV0FPb2ktRHo0R29KclE?oc=5",
+          "region": "拉美"
+        },
+        {
+          "id": "002-10",
+          "t": "印度人权机构指示地方保护妇女儿童老人权利",
+          "d": "印度国家人权委员会监督员要求帕蒂亚拉官员采取措施，保护儿童、老人和妇女的权利。",
+          "body": [
+            "印度国家人权委员会监督员向帕蒂亚拉地方官员发出指示，要求确保妇女、儿童和老人的权益得到保护。该指示针对当地在弱势群体保护方面的不足。",
+            "印度妇女面临家暴、性侵和人口贩卖等风险，地方执法常存在漏洞。儿童和老人同样容易遭受忽视和虐待，但往往被合并为“弱势群体”归类处理。",
+            "高层指示能否转化为基层行动，取决于资源投入和问责机制。缺乏具体执行计划和监督，指令可能流于形式，无法改善实际处境。"
+          ],
+          "why": "人权机构向地方发布指示，说明基层保护机制运行不畅。",
+          "en": {
+            "t": "India's rights monitor directs officials to protect women, children, elderly",
+            "d": "An NHRC monitor has directed Patiala officials to protect the rights of children, elderly, and women.",
+            "body": [
+              "India's National Human Rights Commission monitor has instructed officials in Patiala to ensure protection for women, children, and the elderly.",
+              "Women in India face risks including domestic violence and sexual assault, with gaps in local law enforcement."
+            ]
+          },
+          "img": "assets/img/womens-rights.png",
+          "src": "The Times of India",
+          "url": "https://news.google.com/rss/articles/CBMi8gFBVV95cUxQVVp6TG0tcC1NSE9pSTY1U0xtMHZXdERFa1FacHVSbHQyTW93RnJNcUQ1WlM0cjQ0QjEyOFRDdUFMM2RqMVpjSHAzNEZ6bWRLdUw4UmVBSWlIXy1EaGFLZVQ4R3l1NnRveDRLeGg1cVM1MDJ4b2dKcVN2YWhVRU05dUs0SkZNSWJ6blRhQk9WTE4yNHB2cE52aGw4Rk9hNElUUlV4b0NIcWlJTWxVTGp1UU82dE4tNXltc0ozTjhzWkg3UUFiaFB2QWk5a052em1KU2Vxc1BDLVNPV2JMdWpiSmMtOGFlYlAyR0VTaFdzR0FvZ9IB9wFBVV95cUxONi14RHZJeHJqMHlyOFpoemVURTFTakg4OVRLWE8zQmtKXzQ0bnhNSW5GWnlpM2Q1ci1Sb01RZFlDOG9tZ3czZDNwYnZCZXRRd2pHSlR3S1g3ZUo4RjNpQ2pkcllFTjFlNHluaXp5eURZMmM3UElGUkZpSnNLV2NWSDZIbGZLQm04ckFwVHlTMW5fLUFfZ1RjMU9Cdy1aLVFnYVdlQ1U4M0hrUWlwQlZmRFo4Q21tYVp3eHBtOW9GNDNiX3ktWTBIbUZJRUw2VmpPQ0JUZVE1eXRzTXNmRVYxNWw1TS1kUUExaTRjLUVzckFEUUR1c0k0?oc=5",
+          "region": "南亚"
+        }
+      ]
+    },
+    {
+      "cat": "科技与公益",
+      "en_cat": "Tech & Philanthropy",
+      "items": [
+        {
+          "id": "002-11",
+          "t": "Bumble取消女性优先发起对话 重新审视“赋权”设计",
+          "d": "约会应用Bumble放弃女性必须先发消息的规则，引发关于数字产品中女权设计是否有效的讨论。",
+          "body": [
+            "约会应用Bumble宣布取消女性必须首先发起对话的规则，该规则曾是产品核心卖点。公司表示这一调整基于用户反馈和市场变化。",
+            "Bumble曾以“女性赋权”为营销，但用户反馈显示单一规则并未真正改变互动中的权力失衡。女性仍面临骚扰和不平等，男性则可能感到挫败。",
+            "产品设计中的性别化策略面临商业与价值观的张力。取消规则可能吸引更多用户，但也引发对“赋权”标签是否只是营销工具的质疑。"
+          ],
+          "why": "一个被视为女权标志的产品功能被取消，说明符号化赋权易被商业逻辑侵蚀。",
+          "en": {
+            "t": "Bumble drops women-first message rule, sparking debate on empowerment",
+            "d": "Dating app Bumble has removed its signature rule requiring women to initiate conversations, raising questions about design and empowerment.",
+            "body": [
+              "Dating app Bumble has announced it will no longer require women to send the first message, reversing a key feature.",
+              "The rule was marketed as female empowerment, but user feedback suggested it did not fundamentally alter gender dynamics in online dating."
+            ]
+          },
+          "img": "assets/img/workplace.png",
+          "src": "uol.com.br",
+          "url": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxNSm5CRWlpc2VROWRVaDZKMjVQUTAxQkNuWUd6NUhjN1JnT0ljd2FtUzJxbDA1X0taNmI2YUxJT0NOU0RYOXRLUzJ2b1daLXl3d2l4X2djeVVDWlpvemZ6bGVtMlhOcDZPaDhLb3BGczNfcVd3SEJzVUFpS3ZYWFFiTXAzcTlScFo1VEpGdGg5MWt2b3FtUjdGRE40OUt6a3Y5aU5KYk5Oa3ZmanpuejlNVUxGOVdLOGdjUEtJcTZaTFowNjFYYkZnSFlvMXJMTk55d0E?oc=5",
+          "region": "全球"
+        }
+      ]
+    },
+    {
+      "cat": "文化",
+      "en_cat": "Culture",
+      "items": [
+        {
+          "id": "002-12",
+          "t": "为何更多欧洲女性投身极右运动？性别话语成新战线",
+          "d": "欧洲极右政党中女性成员和选民比例上升，引发对性别议题被极右策略收编的讨论。",
+          "body": [
+            "欧洲媒体报道，越来越多女性加入极右运动，这一现象引发对极右翼性别叙事的关注。极右政党通过招募女性发言人和强调女性安全议题吸引支持。",
+            "极右政党利用女性候选人反对移民文化、强调本土家庭价值等话语吸引女性选民，同时并未放弃传统家庭观和性别角色期待。这种策略模糊了进步与保守的界限。",
+            "女性参与极右政治挑战了“进步”与“女性主义”的简单对应。右翼并非铁板一块，性别议题已成为不同政治力量争夺的新战线，需要细致分析。"
+          ],
+          "why": "女性通常是进步政治的想象主体，极右吸引女性打破惯性认知。",
+          "en": {
+            "t": "Why are more women joining Europe's hard-right movements?",
+            "d": "A growing number of women are engaging with Europe's far-right parties, prompting analysis of gendered strategies.",
+            "body": [
+              "European media are asking why more women are joining hard-right movements across the continent.",
+              "Far-right parties have recruited female spokespeople and framed issues around safety and culture to appeal to women voters while retaining conservative family policies."
+            ]
+          },
+          "img": "assets/img/womens-rights.png",
+          "src": "Sky News",
+          "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxQak9CYlNucDJwWjd6YzZ0cElZbFVidUVDNDhLUm1ybXM1YnpaRTdSSElNTTVzT0VzWWFEZGJYMFNpQWM0cUVNRHMxX1NfOUdQd3djTXBDM3gtcjZhOGdPd3lmUzFkbUhINEF5UnoxQ3NsenZvNzdwRWEwcE1XazU5MWtoMHpMSVJiSmlaY2sxSWo5MS1uY0dr?oc=5",
+          "region": "欧洲"
+        }
+      ]
+    }
+  ]
+},
   {
     id: "001",
     img: "assets/img/womens-rights.png",

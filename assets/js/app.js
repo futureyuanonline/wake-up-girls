@@ -41,6 +41,7 @@ var UI = {
     'issue.notfound': '未找到该期',
     'issue.back': '← 返回往期列表',
     'issue.src': '来源',
+    'item.why': '为什么值得关注　',
     'issue.read_more': '阅读完整报道 →',
     'news.notfound': '未找到该报道',
     'news.origin': '本文由 Wake Up Girls 编辑部综合整理。原文来源：',
@@ -159,6 +160,7 @@ var UI = {
     'issue.notfound': '未找到該期',
     'issue.back': '← 返回往期列表',
     'issue.src': '來源',
+    'item.why': '為什麼值得關注　',
     'issue.read_more': '閱讀完整報導 →',
     'news.notfound': '未找到該報導',
     'news.origin': '本文由 Wake Up Girls 編輯部綜合整理。原文來源：',
@@ -277,6 +279,7 @@ var UI = {
     'issue.notfound': 'Issue not found',
     'issue.back': '← Back to archive',
     'issue.src': 'Source',
+    'item.why': 'Why it matters　',
     'issue.read_more': 'Read the full story →',
     'news.notfound': 'Story not found',
     'news.origin': 'This article was compiled by the Wake Up Girls editorial team. Original source: ',
@@ -763,6 +766,7 @@ function renderIssue() {
         '<div class="issue-item' + (it.img ? ' has-thumb' : '') + '">' + thumb +
         '<h3><a href="news.html?id=' + esc(it.id) + '">' + esc(L(it, 't')) + "</a></h3>" +
         "<p>" + esc(L(it, 'd')) + "</p>" +
+        (it.why ? '<p class="why-line"><span class="why-tag">' + esc(t('item.why')) + "</span>" + esc(L(it, 'why')) + "</p>" : "") +
         '<div class="src">' + esc(regionName(it.region)) + " · " + esc(t('issue.src')) + "：" + esc(it.src) + " · " +
         '<a href="news.html?id=' + esc(it.id) + '" style="color:var(--accent);">' + esc(t('issue.read_more')) + "</a></div>" +
         "</div>";
@@ -796,6 +800,7 @@ function renderNews() {
     '<h1 class="news-title">' + esc(L(item, 't')) + "</h1>" +
     '<p class="news-lead">' + esc(L(item, 'd')) + "</p>" +
     "</div>" +
+    (item.why ? '<div class="why-box"><span class="why-tag">' + esc(t('item.why')) + "</span><p>" + esc(L(item, 'why')) + "</p></div>" : "") +
     '<figure class="news-figure">' + imgBlock(item, catName(sec), "news-img") +
     "<figcaption>" + esc(t('news.img_caption')) + "　·　" + esc(t('news.img_note')) + "</figcaption></figure>" +
     '<div class="news-body">' + body + "</div>" +
@@ -1018,11 +1023,33 @@ function renderNote() {
   }
 }
 
+/* ---------- 首屏/精选区的期号与链接跟随最新一期 ----------
+   这些位置原来写死在 HTML 里，导致每周自动出刊后首页仍显示旧期号。
+   （heroLabel 的静态文案只作为无数据时的兜底） */
+function syncIssueMeta() {
+  var latest = (dataIssues() || [])[0];
+  if (!latest) return;
+  var isEn = state.lang === 'en';
+  var period = latest.period || latest.date || "";
+  var hl = document.getElementById("heroLabel");
+  if (hl) hl.textContent = (isEn ? "Vol. " : "VOL. ") + latest.id + " · " + period;
+  var read = document.querySelector('.hero-btns a[href*="issue.html"]');
+  if (read) read.setAttribute("href", "issue.html?id=" + latest.id);
+  var vol = document.querySelector(".hero-foot-in .vol");
+  if (vol) {
+    var ym = String(latest.date || "").slice(0, 7).replace("-", ".");
+    vol.textContent = (isEn ? "Vol. " : "VOL. ") + latest.id + (ym ? " — " + ym : "");
+  }
+  var di = document.querySelector(".digest-issue");
+  if (di) di.textContent = isEn ? ("Issue " + latest.id) : ("第 " + latest.id + " 期");
+}
+
 /* ---------- 入口 ---------- */
 function renderAll() {
   renderNote();
   renderLatest();
   renderFeatured();
+  syncIssueMeta();
   renderArchive();
   renderIssue();
   renderNews();
