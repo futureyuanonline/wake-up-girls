@@ -63,12 +63,15 @@
       <div class="panel">
         <h2 data-i18n="submit.title">把她的故事交给我们</h2>
         <p data-i18n="submit.p">欢迎投稿：新闻线索、选题建议、作品条目（女性创作者的电影 / 图书 / 艺术作品），以及内容勘误。</p>
-        <form class="inline" action="mailto:futureyuan39@gmail.com" method="post" enctype="text/plain">
+        <form class="inline" id="submitForm">
           <input type="text" name="name" data-i18n-ph="submit.name" placeholder="你的称呼（可不填）" />
           <input type="text" name="topic" data-i18n-ph="submit.topic" placeholder="主题（新闻线索 / 作品条目 / 勘误）" required />
           <textarea name="content" data-i18n-ph="submit.content" placeholder="写下内容与来源链接…" required></textarea>
           <button class="btn" type="submit" data-i18n="submit.btn">发送投稿邮件</button>
         </form>
+        <p class="note fallback-mail" style="margin-top:12px;">如果没有自动打开邮件程序，请直接发到
+          <a href="mailto:futureyuan39@gmail.com" style="color:var(--accent);">futureyuan39@gmail.com</a>
+          （标题写「投稿」）。</p>
         <p class="note" style="margin-top:14px;" data-i18n="submit.note">点击按钮会打开你的邮件程序，内容会自动填好并发送到 futureyuan39@gmail.com；我们会在 7 天内回复，无论是否采用。</p>
       </div>
 

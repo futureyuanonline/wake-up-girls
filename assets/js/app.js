@@ -1359,18 +1359,48 @@ function renderAll() {
   renderWork();
 }
 
-/* ---------- 订阅页：一键订阅（邮件预填） ---------- */
+
+
+/* ---------- 表单提交：组装标准 mailto（不依赖邮件处理器是否配置好） ---------- */
+function mailtoFor(to, subject, body) {
+  return "mailto:" + to +
+    "?subject=" + encodeURIComponent(subject) +
+    "&body=" + encodeURIComponent(body);
+}
 (function () {
-  var form = document.getElementById("subForm");
-  if (!form) return;
-  var input = form.querySelector('input[type="email"]');
-  form.addEventListener("submit", function (e) {
-    e.preventDefault();
-    var addr = (input && input.value || "").trim();
-    var subject = state.lang === 'en' ? "Subscribe to Wake Up Girls weekly" : "订阅 Wake Up Girls 周报";
-    var body = (state.lang === 'en' ? "Please add this address to the list: " : "我的邮箱：") + addr;
-    location.href = "mailto:futureyuan39@gmail.com?subject=" + encodeURIComponent(subject) + "&body=" + encodeURIComponent(body);
-  });
+  var MAIL = "futureyuan39@gmail.com";
+  /* 投稿页 */
+  var sf = document.getElementById("submitForm");
+  if (sf) {
+    sf.addEventListener("submit", function (e) {
+      e.preventDefault();
+      var val = function (n) {
+        var el = sf.querySelector('[name="' + n + '"]');
+        return el && el.value ? el.value.trim() : "";
+      };
+      var topic = val("topic") || "投稿";
+      var body = "称呼：" + (val("name") || "（未填）") +
+                 "\n主题：" + topic +
+                 "\n\n" + val("content");
+      var url = mailtoFor(MAIL, "投稿：" + topic, body);
+      sf.setAttribute("data-mailto", url);   /* 便于自检 */
+      window.location.href = url;
+    });
+  }
+  /* 订阅页（复用同一套组装逻辑） */
+  var bf = document.getElementById("subForm");
+  if (bf) {
+    bf.addEventListener("submit", function (e) {
+      e.preventDefault();
+      var input = bf.querySelector('input[type="email"]');
+      var addr = input && input.value ? input.value.trim() : "";
+      var subject = state.lang === "en" ? "Subscribe to Wake Up Girls weekly" : "订阅 Wake Up Girls 周报";
+      var body2 = (state.lang === "en" ? "Please add this address to the list: " : "我的邮箱：") + addr;
+      var url2 = mailtoFor(MAIL, subject, body2);
+      bf.setAttribute("data-mailto", url2);
+      window.location.href = url2;
+    });
+  }
 })();
 
 document.addEventListener("DOMContentLoaded", function () {
