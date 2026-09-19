@@ -141,6 +141,19 @@
     </div>
   </section>
 
+
+  <!-- 细节：每期一个问题（data/details.js 为空时整块隐藏） -->
+  <section class="detail-sec" id="detailSec" hidden>
+    <div class="wrap">
+      <div class="detail-card reveal">
+        <div class="detail-kicker" data-i18n="detail.home_label">每期一个问题</div>
+        <h2 id="detailQ"></h2>
+        <p id="detailLede"></p>
+        <a class="detail-more" id="detailLink" href="detail.html" data-i18n="detail.read">读这一期的问题 →</a>
+      </div>
+    </div>
+  </section>
+
   <!-- 04 WOMEN TO WATCH · 本周，一位值得你认识的女性（数据来自最新一期 issue.watch，无则整块隐藏） -->
   <section class="watch-sec" id="watchSec" hidden>
     <div class="wrap">
@@ -210,6 +223,8 @@
   <script src="data/posters.js"></script>
   <script src="data/covers.js"></script>
   <script src="data/initials.js"></script>
+  <script src="data/details.js"></script>
+
   <script src="assets/js/app.js"></script>
 </body>
 </html>

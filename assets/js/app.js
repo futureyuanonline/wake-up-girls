@@ -7,6 +7,17 @@ var UI = {
   'zh-CN': {
     'nav.latest': '最新', 'nav.archive': '往期', 'nav.works': '作品检索',
     'nav.about': '关于', 'nav.subscribe': '订阅', 'nav.submit': '投稿', 'nav.shop': '好物',
+    'detail.label': 'Detail · 细节',
+    'detail.home_label': '每期一个问题',
+    'detail.read': '读这一期的问题 →',
+    'detail.sources': '资料来源',
+    'detail.related': '本站相关的女性艺术家与作品',
+    'detail.author_label': '本期作者',
+    'detail.more': '往期细节',
+    'detail.empty': '「细节」栏目即将开始：每期一个问题，把它拆到可核查的细节里。',
+    'detail.notfound': '未找到这一篇',
+    'detail.back': '返回往期',
+    'detail.works_link': '在作品库中查看',
     'submit.guide_label': '投稿与约稿规范',
     'submit.g1_t': '征稿方向',
     'submit.g1_d': '与周报同一批议题：劳动与无偿照护、身体与医疗、教育与职业中断、公共空间、艺术史中的缺失、女性知识如何被命名、AI 与性别偏见等。也欢迎人物访谈与田野记录。',
@@ -157,6 +168,17 @@ var UI = {
   'zh-Hant': {
     'nav.latest': '最新', 'nav.archive': '往期', 'nav.works': '作品檢索',
     'nav.about': '關於', 'nav.subscribe': '訂閱', 'nav.submit': '投稿', 'nav.shop': '好物',
+    'detail.label': 'Detail · 細節',
+    'detail.home_label': '每期一個問題',
+    'detail.read': '讀這一期的問題 →',
+    'detail.sources': '資料來源',
+    'detail.related': '本站相關的女性藝術家與作品',
+    'detail.author_label': '本期作者',
+    'detail.more': '往期細節',
+    'detail.empty': '「細節」欄目即將開始：每期一個問題，把它拆到可核查的細節裡。',
+    'detail.notfound': '未找到這一篇',
+    'detail.back': '返回往期',
+    'detail.works_link': '在作品庫中查看',
     'submit.guide_label': '投稿與約稿規範',
     'submit.g1_t': '徵稿方向',
     'submit.g1_d': '與週報同一批議題：勞動與無償照護、身體與醫療、教育與職業中斷、公共空間、藝術史中的缺失、女性知識如何被命名、AI 與性別偏見等。也歡迎人物訪談與田野記錄。',
@@ -307,6 +329,17 @@ var UI = {
   en: {
     'nav.latest': 'Latest', 'nav.archive': 'Archive', 'nav.works': 'Directory',
     'nav.about': 'About', 'nav.subscribe': 'Subscribe', 'nav.submit': 'Submit', 'nav.shop': 'Shop',
+    'detail.label': 'Detail',
+    'detail.home_label': 'One question per issue',
+    'detail.read': 'Read this issue’s question →',
+    'detail.sources': 'Sources',
+    'detail.related': 'Related artists in our library',
+    'detail.author_label': 'Written by',
+    'detail.more': 'Previous questions',
+    'detail.empty': 'Coming soon: one question each issue, broken down into checkable detail.',
+    'detail.notfound': 'Not found',
+    'detail.back': 'Back to archive',
+    'detail.works_link': 'View in the directory',
     'submit.guide_label': 'Submission guidelines',
     'submit.g1_t': 'What we want',
     'submit.g1_d': 'Themes aligned with our weekly digest: unpaid care work, bodies and healthcare, career interruptions, public space, what is missing from art history, how women’s knowledge gets named, AI and gender bias — plus interviews and field notes.',
@@ -1212,9 +1245,109 @@ function syncIssueMeta() {
   if (di) di.textContent = isEn ? ("Issue " + latest.id) : ("第 " + latest.id + " 期");
 }
 
+
+/* ---------- 细节（每期一个问题） ---------- */
+function dataDetails() {
+  var list = (state.lang === 'zh-Hant' && window.DETAILS_HANT && window.DETAILS_HANT.length)
+    ? window.DETAILS_HANT : (window.DETAILS || []);
+  return list.slice().sort(function (a, b) { return String(b.id || '').localeCompare(String(a.id || '')); });
+}
+function detailField(x, k) {
+  if (state.lang === 'en') return (x.en && x.en[k]) || x[k] || '';
+  return x[k] || '';
+}
+
+/* 首页预告 + 往期列表（同一函数处理两处容器，缺一个就跳过） */
+function renderDetails() {
+  var list = dataDetails();
+  var sec = document.getElementById("detailSec");
+  if (sec) {
+    if (!list.length) { sec.hidden = true; }
+    else {
+      var x = list[0];
+      sec.hidden = false;
+      var q = document.getElementById("detailQ");
+      if (q) q.textContent = detailField(x, 'q');
+      var l = document.getElementById("detailLede");
+      if (l) l.textContent = detailField(x, 'lede');
+      var a = document.getElementById("detailLink");
+      if (a) a.setAttribute("href", "detail.html?id=" + x.id);
+    }
+  }
+  var host = document.getElementById("detail-list");
+  if (host) {
+    if (!list.length) {
+      host.innerHTML = '<p class="muted">' + esc(t('detail.empty')) + "</p>";
+    } else {
+      host.innerHTML = list.map(function (x) {
+        return '<div class="card" style="margin-bottom:12px;">' +
+          '<div class="card-top"><span class="cat">' + esc(t('detail.label')) + "</span>" +
+          '<span class="region">' + esc(x.date || "") + " · 第 " + esc(x.issue || "") + " 期同期</span></div>" +
+          '<h3><a href="detail.html?id=' + esc(x.id) + '">' + esc(detailField(x, 'q')) + "</a></h3>" +
+          "<p>" + esc(detailField(x, 'lede')) + "</p></div>";
+      }).join("");
+    }
+  }
+}
+
+/* 单篇 */
+function renderDetail() {
+  var el = document.getElementById("detail");
+  if (!el) return;
+  var id = new URLSearchParams(location.search).get("id");
+  var list = dataDetails();
+  var x = null;
+  if (id) x = list.filter(function (y) { return y.id === id; })[0];
+  if (!x) x = list[0];
+  if (!x) {
+    el.innerHTML = '<div class="panel"><h2>' + esc(t('detail.notfound')) + '</h2>' +
+      '<p class="muted"><a href="archive.html">' + esc(t('detail.back')) + "</a></p></div>";
+    return;
+  }
+  document.title = detailField(x, 'q') + " | Wake Up Girls";
+  var body = (x.sections || []).map(function (sec2) {
+    return '<h2 class="sec-heading">' + esc(sec2.h) + "</h2>" +
+      (sec2.p || []).map(function (p) { return "<p>" + esc(p) + "</p>"; }).join("");
+  }).join("");
+  var meta = '<div class="card-top"><span class="cat">' + esc(t('detail.label')) + "</span>" +
+    '<span class="region">' + esc(x.date || "") + " · 第 " + esc(x.issue || "") + " 期同期</span></div>";
+  var srcs = (x.sources || []).length
+    ? '<div class="news-source"><p>' + esc(t('detail.sources')) + "</p><ul>" +
+      x.sources.map(function (s) {
+        return '<li><a href="' + esc(s.url) + '" target="_blank" rel="noopener">' + esc(s.t) + "</a></li>";
+      }).join("") + "</ul></div>"
+    : "";
+  var rel = (x.works || []).length ? relatedWorks(x.works) : "";
+  el.innerHTML = '<div class="card" style="margin-bottom:20px;">' + meta +
+    '<h1 class="news-title">' + esc(detailField(x, 'q')) + "</h1>" +
+    '<p class="news-lead">' + esc(detailField(x, 'lede')) + "</p>" +
+    (x.author ? '<p class="note" style="margin-top:12px;">' + esc(t('detail.author_label')) + "：" + esc(x.author) + "</p>" : "") +
+    "</div>" +
+    '<div class="news-body">' + body + "</div>" + rel + srcs +
+    '<p style="margin-top:24px;"><a class="more" href="archive.html" style="color:var(--accent);">' + esc(t('detail.more')) + "</a></p>";
+}
+
+/* 文章末尾列出本站作品库里的相关条目（按标题匹配） */
+function relatedWorks(titles) {
+  var all = dataWorks() || [];
+  var found = [];
+  (titles || []).forEach(function (t2) {
+    var i = all.findIndex(function (w) { return w.title === t2 || String(w.title).indexOf(t2) >= 0 || String(w.creator) === t2; });
+    if (i >= 0) found.push({ w: all[i], i: i });
+  });
+  if (!found.length) return "";
+  return '<div class="news-source" style="margin-top:22px;"><p>' + esc(t('detail.related')) + "</p><ul>" +
+    found.map(function (o) {
+      return '<li><a href="work.html?i=' + o.i + '">' + esc(workTitle(o.w)) + "</a> —— " +
+        esc([workCreator(o.w), o.w.year].filter(Boolean).join(" · ")) + "</li>";
+    }).join("") + "</ul></div>";
+}
+
 /* ---------- 入口 ---------- */
 function renderAll() {
   renderNote();
+  renderDetails();
+  renderDetail();
   renderLatest();
   renderFeatured();
   renderWatch();
