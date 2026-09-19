@@ -28,7 +28,7 @@ const add = (loc, lastmod, changefreq, priority) => {
 
 // 静态页
 ;[['', '1.0', 'weekly'], ['archive.html', '0.9', 'weekly'], ['works.html', '0.9', 'weekly'],
-  ['about.html', '0.6', 'monthly'], ['subscribe.html', '0.5', 'monthly'], ['submit.html', '0.5', 'monthly']]
+  ['about.html', '0.6', 'monthly'], ['shop.html', '0.6', 'weekly'], ['subscribe.html', '0.5', 'monthly'], ['submit.html', '0.5', 'monthly']]
   .forEach(([f, pr, cf]) => add(SITE + '/' + f, today, cf, pr))
 
 // 作品详情（索引即 ?i=）

@@ -21,7 +21,7 @@ const DIST = path.join(ROOT, 'dist')
 /* 要发布的单文件（存在才复制） */
 const FILES = [
   'index.html', 'archive.html', 'issue.html', 'news.html',
-  'works.html', 'work.html', 'about.html', 'subscribe.html', 'submit.html',
+  'works.html', 'work.html', 'about.html', 'subscribe.html', 'submit.html', 'shop.html',
   '404.html', '_headers', '_redirects', 'robots.txt', 'sitemap.xml',
 ]
 

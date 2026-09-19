@@ -5,32 +5,30 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
   <meta name="theme-color" content="#F4F1EB" />
   <meta name="format-detection" content="telephone=no" />
-  <title data-zh="页面不存在 | Wake Up Girls" data-en="Page not found | Wake Up Girls" data-hant="頁面不存在 | Wake Up Girls">页面不存在 | Wake Up Girls</title>
-  <!-- 404 会被 Cloudflare Pages 用于任意深度的未匹配路径，故用 base 固定相对路径基准 -->
-  <base href="/" />
+  <title data-zh="作品检索 | Wake Up Girls" data-en="Directory | Wake Up Girls" data-hant="作品檢索 | Wake Up Girls">好物 · 支持女性自主创业 · Wake Up Girls</title>
   <link rel="icon" type="image/svg+xml" href="assets/img/logo.svg" />
   <link rel="apple-touch-icon" href="assets/img/logo-180.png" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@700;800;900&family=Noto+Serif+SC:wght@600;700;900&display=swap" rel="stylesheet" />
-  <link rel="canonical" href="https://yuanxiuzhong.com/404.html" />
+  <link rel="canonical" href="https://yuanxiuzhong.com/shop.html" />
   <meta property="og:type" content="website" />
   <meta property="og:site_name" content="Wake Up Girls 全球女性议题周报" />
   <meta property="og:locale" content="zh_CN" />
-  <meta property="og:url" content="https://yuanxiuzhong.com/404.html" />
-  <meta property="og:title" content="页面不存在 | Wake Up Girls" />
+  <meta property="og:url" content="https://yuanxiuzhong.com/shop.html" />
+  <meta property="og:title" content="作品检索 | Wake Up Girls" />
   <meta property="og:description" content="每周全球女性议题策展 + 女性电影/图书/艺术作品检索库。" />
   <meta property="og:image" content="https://yuanxiuzhong.com/assets/img/og-cover.jpg" />
   <meta property="og:image:width" content="1200" />
   <meta property="og:image:height" content="630" />
   <meta property="og:image:alt" content="Wake Up Girls 全球女性议题周报 · 视角在她，规则由她" />
   <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="页面不存在 | Wake Up Girls" />
+  <meta name="twitter:title" content="作品检索 | Wake Up Girls" />
   <meta name="twitter:description" content="每周全球女性议题策展 + 女性电影/图书/艺术作品检索库。" />
   <meta name="twitter:image" content="https://yuanxiuzhong.com/assets/img/og-cover.jpg" />
   <link rel="stylesheet" href="assets/css/style.css" />
 </head>
-<body>
+<body data-page="shop">
   <header class="site">
     <div class="wrap nav">
       <a class="brand" href="index.html">
@@ -46,6 +44,7 @@
           <a data-nav="about" href="about.html" data-i18n="nav.about">关于</a>
           <a data-nav="shop" href="shop.html" data-i18n="nav.shop">好物</a>
           <a data-nav="submit" href="submit.html" data-i18n="nav.submit">投稿</a>
+        
           <a class="menu-cta" data-nav="subscribe" href="subscribe.html" data-i18n="nav.cta">订阅周刊</a>
         </nav>
         <div class="lang-switch" id="langSwitch">
@@ -60,13 +59,36 @@
 
   <main class="wrap">
     <section class="block">
-      <div class="sec-label" data-i18n="err.label">404 · 页面不存在</div>
-      <div class="panel" style="text-align:center;">
-        <h2 data-i18n="err.title">这一页走丢了</h2>
-        <p data-i18n="err.desc">你访问的链接可能已失效、或地址输错了。可以回首页看本周精选，或去作品检索库逛逛。</p>
-        <div class="hero-btns" style="justify-content:center;margin-top:18px;">
-          <a class="pill" href="index.html"><span data-i18n="err.home">回首页</span><i>→</i></a>
-          <a class="pill ghost" href="works.html"><span data-i18n="err.works">作品检索库</span><i>→</i></a>
+      <div class="sec-label reveal"><span data-i18n="shop.label">Shop · 好物</span></div>
+      <h1 class="about-title" style="font-size:38px;" data-i18n="shop.title">支持女性自主创业的商品</h1>
+      <p class="about-lead" data-i18n="shop.intro">为保障网站在国内长期稳定运行，我们开设这一栏。这里只放一件事：由女性创办或主理的品牌，且我们自己了解、愿意推荐的商品。</p>
+    </section>
+
+    <section class="block" style="padding-top:0;">
+      <div class="card" style="margin-bottom:22px;">
+        <h2 style="font-family:var(--serif);font-size:22px;font-weight:800;margin-bottom:10px;" data-i18n="shop.how_t">我们的筛选标准</h2>
+        <p class="muted" data-i18n="shop.how_d">① 女性创办或主理　② 中价可获得　③ 我们自己用过或深入了解过　④ 不接受付费上榜与软文</p>
+      </div>
+
+      <div class="sec-label reveal"><span data-i18n="shop.slots_t">首批推荐位</span></div>
+      <div class="shop-grid" style="margin:14px 0 30px;">
+        <div class="shop-card"><span class="shop-slot">01</span><h3>虚位以待</h3><p>家居 / 收纳 / 日用 —— 女性创办的中价品牌</p></div>
+        <div class="shop-card"><span class="shop-slot">02</span><h3>虚位以待</h3><p>健康 / 运动 / 个护 —— 女性创办的中价品牌</p></div>
+        <div class="shop-card"><span class="shop-slot">03</span><h3>虚位以待</h3><p>文具 / 母婴 / 工装 —— 女性创办的中价品牌</p></div>
+      </div>
+      <p class="muted" data-i18n="shop.slots_d">推荐位正在选品中。我们优先考虑女性创办的家居、健康、文具、母婴与工装类品牌；如果你在经营这样的品牌，欢迎来信自荐。</p>
+    </section>
+
+    <section class="block" style="padding-top:0;">
+      <div class="grid c2">
+        <div class="card">
+          <h2 style="font-family:var(--serif);font-size:20px;font-weight:800;margin-bottom:8px;" data-i18n="shop.contact_t">品牌合作与读者推荐</h2>
+          <p class="muted" data-i18n="shop.contact_d">品牌方：请来信说明创始人、品牌与商品，我们不收取上榜费用。读者：如果你用过值得推荐、由女性创办的商品，也欢迎写信告诉我们。</p>
+          <p style="margin-top:10px;"><a class="btn ghost" href="mailto:futureyuan39@gmail.com?subject=%E5%93%81%E7%89%8C%E5%90%88%E4%BD%9C">futureyuan39@gmail.com</a></p>
+        </div>
+        <div class="card">
+          <h2 style="font-family:var(--serif);font-size:20px;font-weight:800;margin-bottom:8px;" data-i18n="shop.disclosure_t">收益与标注</h2>
+          <p class="muted" data-i18n="shop.disclosure_d">每条推荐都会标明：价格区间、是否联盟链接、我们与品牌的关系。本站所有内容仍然免费开放，推荐收益只用于维持网站运行。</p>
         </div>
       </div>
     </section>
