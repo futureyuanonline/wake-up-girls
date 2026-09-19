@@ -68,10 +68,10 @@
           <input type="text" name="topic" data-i18n-ph="submit.topic" placeholder="主题（新闻线索 / 作品条目 / 勘误）" required />
           <textarea name="content" data-i18n-ph="submit.content" placeholder="写下内容与来源链接…" required></textarea>
           <button class="btn" type="submit" data-i18n="submit.btn">生成邮件内容</button>
-        </form>
+        <input type="text" name="website" tabindex="-1" autocomplete="off" style="position:absolute;left:-9999px;width:1px;height:1px;opacity:0;" aria-hidden="true" /></form>
         <div class="card mail-out" id="submitOut" hidden style="margin-top:16px;border:1px solid var(--line);">
-          <h3 style="font-family:var(--serif);font-size:19px;font-weight:800;margin-bottom:8px;" data-i18n="mail.title">邮件内容已生成</h3>
-          <p class="muted" data-i18n="mail.howto">很多电脑和手机没有配置邮件程序，所以我们不自动跳转。请复制下面的内容，打开你的邮箱粘贴发送到：</p>
+          <h3 style="font-family:var(--serif);font-size:19px;font-weight:800;margin-bottom:8px;" data-done-text></h3><p class="muted mail-fallback" data-i18n="mail.failed" hidden style="color:var(--brick);"></p>
+          <p class="muted mail-fallback" data-i18n="mail.howto">很多电脑和手机没有配置邮件程序，所以我们不自动跳转。请复制下面的内容，打开你的邮箱粘贴发送到：</p>
           <p style="margin:8px 0 12px;"><strong style="font-size:15px;">futureyuan39@gmail.com</strong></p>
           <textarea id="submitText" readonly style="width:100%;min-height:150px;padding:12px;border:1px solid var(--line);border-radius:4px;background:var(--wall);font-size:13.5px;line-height:1.8;"></textarea>
           <p style="margin-top:12px;display:flex;gap:10px;flex-wrap:wrap;">

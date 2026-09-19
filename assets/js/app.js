@@ -7,6 +7,10 @@ var UI = {
   'zh-CN': {
     'nav.latest': '最新', 'nav.archive': '往期', 'nav.works': '作品检索',
     'nav.about': '关于', 'nav.subscribe': '订阅', 'nav.submit': '投稿', 'nav.shop': '好物',
+    'mail.sent': '已收到，谢谢你。我们会在 7 天内回复，无论是否采用。',
+    'mail.sending': '提交中…',
+    'mail.failed': '站内提交暂时不可用，已为你生成邮件内容（下面的按钮可复制）',
+    'mail.thanks_sub': '订阅成功，谢谢你。每周五你会收到一封邮件，随时可以退订。',
     'mail.title': '邮件内容已生成',
     'mail.howto': '很多电脑和手机没有配置邮件程序，所以我们不自动跳转。请点下面的按钮复制，然后打开你的邮箱（网页版或 App），粘贴并发送到：',
     'mail.copy_all': '复制全部内容',
@@ -175,6 +179,10 @@ var UI = {
   'zh-Hant': {
     'nav.latest': '最新', 'nav.archive': '往期', 'nav.works': '作品檢索',
     'nav.about': '關於', 'nav.subscribe': '訂閱', 'nav.submit': '投稿', 'nav.shop': '好物',
+    'mail.sent': '已收到，謝謝你。我們會在 7 天內回覆，無論是否採用。',
+    'mail.sending': '提交中…',
+    'mail.failed': '站內提交暫時不可用，已為你生成郵件內容（下面的按鈕可複製）',
+    'mail.thanks_sub': '訂閱成功，謝謝你。每週五你會收到一封郵件，隨時可以退訂。',
     'mail.title': '郵件內容已生成',
     'mail.howto': '很多電腦和手機沒有配置郵件程式，所以我們不自動跳轉。請點下面的按鈕複製，然後打開你的信箱（網頁版或 App），貼上並寄到：',
     'mail.copy_all': '複製全部內容',
@@ -343,6 +351,10 @@ var UI = {
   en: {
     'nav.latest': 'Latest', 'nav.archive': 'Archive', 'nav.works': 'Directory',
     'nav.about': 'About', 'nav.subscribe': 'Subscribe', 'nav.submit': 'Submit', 'nav.shop': 'Shop',
+    'mail.sent': 'Received — thank you. We reply within 7 days either way.',
+    'mail.sending': 'Sending…',
+    'mail.failed': 'In-site submit is unavailable — your message is ready to copy below',
+    'mail.thanks_sub': 'Subscribed — thank you. One email each Friday, unsubscribe anytime.',
     'mail.title': 'Your message is ready',
     'mail.howto': 'Many computers and phones have no mail app set up, so we do not auto-redirect. Copy below, then open your email (web or app), paste and send to:',
     'mail.copy_all': 'Copy everything',
@@ -1408,6 +1420,34 @@ function copyText(txt, btn, okText) {
     navigator.clipboard.writeText(txt).then(flash, legacy);
   } else { legacy(); }
 }
+/* 站内提交：先试 /api/submit（Cloudflare Worker + KV），失败回退到复制方案 */
+function inlineSubmit(payload, onOk, onFail) {
+  if (!window.fetch) { onFail(); return; }
+  var done = false;
+  var timer = setTimeout(function () { if (!done) { done = true; onFail(); } }, 8000);
+  fetch("/api/submit", {
+    method: "POST",
+    headers: { "content-type": "application/json" },
+    body: JSON.stringify(payload)
+  }).then(function (r) { return r.json().catch(function () { return { ok: false }; }); })
+    .then(function (j) {
+      if (done) return; done = true; clearTimeout(timer);
+      if (j && j.ok) { onOk(); } else { onFail(); }
+    }).catch(function () {
+      if (done) return; done = true; clearTimeout(timer); onFail();
+    });
+}
+function showDone(panelId, msg) {
+  var panel = document.getElementById(panelId);
+  if (!panel) return;
+  panel.hidden = false;
+  var h = panel.querySelector("[data-done-text]");
+  if (h) h.textContent = msg;
+  var m = panel.querySelector(".mail-fallback");
+  if (m) m.hidden = true;
+  try { panel.scrollIntoView({ behavior: "smooth", block: "nearest" }); } catch (e) {}
+}
+
 function showMailPanel(panelId, textId, full, to, subject, body) {
   var panel = document.getElementById(panelId);
   var ta = document.getElementById(textId);
@@ -1436,8 +1476,19 @@ function showMailPanel(panelId, textId, full, to, subject, body) {
       var topic = val("topic") || "投稿";
       var subject = "投稿：" + topic;
       var body = "称呼：" + (val("name") || "（未填）") + "\n主题：" + topic + "\n\n" + val("content");
-      showMailPanel("submitOut", "submitText",
-        "收件人：" + MAIL + "\n主题：" + subject + "\n\n" + body, MAIL, subject, body);
+      var payload = { type: "submit", name: val("name"), topic: topic, content: val("content") };
+      var btn = sf.querySelector('button[type="submit"]');
+      var restore = function () { if (btn) { btn.disabled = false; btn.textContent = t('submit.btn'); } };
+      if (btn) { btn.disabled = true; btn.textContent = t('mail.sending'); }
+      inlineSubmit(payload, function () {
+        restore();
+        sf.hidden = true;
+        showDone("submitOut", t('mail.sent'));
+      }, function () {
+        restore();
+        showMailPanel("submitOut", "submitText",
+          "收件人：" + MAIL + "\n主题：" + subject + "\n\n" + body, MAIL, subject, body);
+      });
     });
   }
   var bf = document.getElementById("subForm");
@@ -1448,8 +1499,18 @@ function showMailPanel(panelId, textId, full, to, subject, body) {
       var addr = input && input.value ? input.value.trim() : "";
       var subject = state.lang === "en" ? "Subscribe to Wake Up Girls weekly" : "订阅 Wake Up Girls 周报";
       var body = (state.lang === "en" ? "Please add this address to the list: " : "我的邮箱：") + addr;
-      showMailPanel("subOut", "subText",
-        "收件人：" + MAIL + "\n主题：" + subject + "\n\n" + body, MAIL, subject, body);
+      var btn2 = bf.querySelector('button[type="submit"]');
+      var restore2 = function () { if (btn2) { btn2.disabled = false; btn2.textContent = t('subscribe.btn'); } };
+      if (btn2) { btn2.disabled = true; btn2.textContent = t('mail.sending'); }
+      inlineSubmit({ type: "subscribe", email: addr }, function () {
+        restore2();
+        bf.hidden = true;
+        showDone("subOut", t('mail.thanks_sub'));
+      }, function () {
+        restore2();
+        showMailPanel("subOut", "subText",
+          "收件人：" + MAIL + "\n主题：" + subject + "\n\n" + body, MAIL, subject, body);
+      });
     });
   }
 })();
