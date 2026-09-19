@@ -174,7 +174,7 @@ var UI = {
     'submit.topic': '主题（新闻线索 / 作品条目 / 勘误）',
     'submit.content': '写下内容与来源链接…',
     'submit.btn': '生成邮件内容',
-    'submit.note': '点击按钮会打开你的邮件程序，内容会自动填好并发送到 futureyuan39@gmail.com；我们会在 7 天内回复，无论是否采用。'
+    'submit.note': 'We receive it and reply within 7 days either way. If in-site submit is unavailable, the page gives you a ready-to-copy email instead.'
   },
   'zh-Hant': {
     'nav.latest': '最新', 'nav.archive': '往期', 'nav.works': '作品檢索',
@@ -346,7 +346,7 @@ var UI = {
     'submit.topic': '主題（新聞線索 / 作品條目 / 勘誤）',
     'submit.content': '寫下內容與來源連結…',
     'submit.btn': '生成郵件內容',
-    'submit.note': '點擊按鈕會開啟你的郵件程式，內容會自動填好並寄到 futureyuan39@gmail.com；我們會在 7 天內回覆，無論是否採用。'
+    'submit.note': '提交後我們會收到，並會在 7 天內回覆（無論是否採用）。若站內提交暫時不可用，頁面會給你一段可直接複製的郵件內容。'
   },
   en: {
     'nav.latest': 'Latest', 'nav.archive': 'Archive', 'nav.works': 'Directory',
@@ -518,7 +518,7 @@ var UI = {
     'submit.topic': 'Topic (news tip / directory entry / correction)',
     'submit.content': 'Write your content and source links…',
     'submit.btn': 'Send submission email',
-    'submit.note': 'The button opens your mail app with your message ready to send to futureyuan39@gmail.com. We reply within 7 days either way.'
+    'submit.note': '提交后我们会收到，并会在 7 天内回复（无论是否采用）。若站内提交临时不可用，页面会给你一段可直接复制的邮件内容。'
   }
 };
 
