@@ -386,7 +386,7 @@ section.block { padding: 46px 0; }
 .panel h3 { font-family: var(--serif); font-size: 20px; font-weight: 800; margin: 24px 0 10px; color: var(--ink); }
 .panel p { margin-bottom: 10px; color: var(--ink-2); }
 .panel strong { color: var(--ink); }
-form.inline { display: flex; gap: 10px; margin-top: 14px; flex-wrap: wrap; }
+form.inline { display: flex; gap: 10px; margin-top: 14px; flex-wrap: wrap; align-items: flex-start; }
 form.inline input, form.inline textarea { flex: 1; min-width: 220px; padding: 11px 14px; border: 1px solid var(--line); border-radius: 6px; font-size: 14px; font-family: var(--sans); background: var(--wall); color: var(--ink); }
 form.inline textarea { min-height: 110px; resize: vertical; }
 form.inline input:focus, form.inline textarea:focus { outline: none; border-color: var(--brick); }
