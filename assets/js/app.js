@@ -7,6 +7,13 @@ var UI = {
   'zh-CN': {
     'nav.latest': '最新', 'nav.archive': '往期', 'nav.works': '作品检索',
     'nav.about': '关于', 'nav.subscribe': '订阅', 'nav.submit': '投稿', 'nav.shop': '好物',
+    'mail.title': '邮件内容已生成',
+    'mail.howto': '很多电脑和手机没有配置邮件程序，所以我们不自动跳转。请点下面的按钮复制，然后打开你的邮箱（网页版或 App），粘贴并发送到：',
+    'mail.copy_all': '复制全部内容',
+    'mail.copy_mail': '复制邮箱地址',
+    'mail.open_app': '或：用邮件程序打开',
+    'mail.copied': '已复制 ✓',
+    'mail.copied_cn': '已复制「收件人：futureyuan39@gmail.com」✓',
     'detail.label': 'Detail · 细节',
     'detail.home_label': '每期一个问题',
     'detail.read': '读这一期的问题 →',
@@ -162,12 +169,19 @@ var UI = {
     'submit.name': '你的称呼（可不填）',
     'submit.topic': '主题（新闻线索 / 作品条目 / 勘误）',
     'submit.content': '写下内容与来源链接…',
-    'submit.btn': '发送投稿邮件',
+    'submit.btn': '生成邮件内容',
     'submit.note': '点击按钮会打开你的邮件程序，内容会自动填好并发送到 futureyuan39@gmail.com；我们会在 7 天内回复，无论是否采用。'
   },
   'zh-Hant': {
     'nav.latest': '最新', 'nav.archive': '往期', 'nav.works': '作品檢索',
     'nav.about': '關於', 'nav.subscribe': '訂閱', 'nav.submit': '投稿', 'nav.shop': '好物',
+    'mail.title': '郵件內容已生成',
+    'mail.howto': '很多電腦和手機沒有配置郵件程式，所以我們不自動跳轉。請點下面的按鈕複製，然後打開你的信箱（網頁版或 App），貼上並寄到：',
+    'mail.copy_all': '複製全部內容',
+    'mail.copy_mail': '複製信箱地址',
+    'mail.open_app': '或：用郵件程式開啟',
+    'mail.copied': '已複製 ✓',
+    'mail.copied_cn': '已複製「收件人：futureyuan39@gmail.com」✓',
     'detail.label': 'Detail · 細節',
     'detail.home_label': '每期一個問題',
     'detail.read': '讀這一期的問題 →',
@@ -323,12 +337,19 @@ var UI = {
     'submit.name': '你的稱呼（可不填）',
     'submit.topic': '主題（新聞線索 / 作品條目 / 勘誤）',
     'submit.content': '寫下內容與來源連結…',
-    'submit.btn': '發送投稿郵件',
+    'submit.btn': '生成郵件內容',
     'submit.note': '點擊按鈕會開啟你的郵件程式，內容會自動填好並寄到 futureyuan39@gmail.com；我們會在 7 天內回覆，無論是否採用。'
   },
   en: {
     'nav.latest': 'Latest', 'nav.archive': 'Archive', 'nav.works': 'Directory',
     'nav.about': 'About', 'nav.subscribe': 'Subscribe', 'nav.submit': 'Submit', 'nav.shop': 'Shop',
+    'mail.title': 'Your message is ready',
+    'mail.howto': 'Many computers and phones have no mail app set up, so we do not auto-redirect. Copy below, then open your email (web or app), paste and send to:',
+    'mail.copy_all': 'Copy everything',
+    'mail.copy_mail': 'Copy address',
+    'mail.open_app': 'Or: open in your mail app',
+    'mail.copied': 'Copied ✓',
+    'mail.copied_cn': 'Address copied ✓',
     'detail.label': 'Detail',
     'detail.home_label': 'One question per issue',
     'detail.read': 'Read this issue’s question →',
@@ -1361,15 +1382,49 @@ function renderAll() {
 
 
 
-/* ---------- 表单提交：组装标准 mailto（不依赖邮件处理器是否配置好） ---------- */
+/* ---------- 表单：页面内生成邮件内容 + 一键复制 ----------
+   为什么不自动跳转 mailto：很多电脑/手机没有配置邮件程序，点击会毫无反应（实测）
+   所以改为：生成内容 → 复制 → 读者在自己的邮箱里粘贴发送。这条路径在任何设备上都可用。 */
 function mailtoFor(to, subject, body) {
-  return "mailto:" + to +
-    "?subject=" + encodeURIComponent(subject) +
-    "&body=" + encodeURIComponent(body);
+  return "mailto:" + to + "?subject=" + encodeURIComponent(subject) + "&body=" + encodeURIComponent(body);
+}
+function copyText(txt, btn, okText) {
+  var flash = function () {
+    if (!btn) return;
+    var old = btn.getAttribute("data-label") || btn.textContent;
+    btn.setAttribute("data-label", old);
+    btn.textContent = okText || t('mail.copied');
+    setTimeout(function () { btn.textContent = old; }, 1800);
+  };
+  var legacy = function () {
+    try {
+      var ta = document.createElement("textarea");
+      ta.value = txt; ta.style.position = "fixed"; ta.style.opacity = "0";
+      document.body.appendChild(ta); ta.select();
+      document.execCommand("copy"); document.body.removeChild(ta); flash();
+    } catch (e) { window.prompt("请手动复制：", txt); }
+  };
+  if (navigator.clipboard && navigator.clipboard.writeText) {
+    navigator.clipboard.writeText(txt).then(flash, legacy);
+  } else { legacy(); }
+}
+function showMailPanel(panelId, textId, full, to, subject, body) {
+  var panel = document.getElementById(panelId);
+  var ta = document.getElementById(textId);
+  if (!panel || !ta) return false;
+  ta.value = full;
+  panel.hidden = false;
+  var copyAll = panel.querySelector("[data-copy-all]");
+  if (copyAll) copyAll.onclick = function () { copyText(full, copyAll); };
+  var copyMail = panel.querySelector("[data-copy-mail]");
+  if (copyMail) copyMail.onclick = function () { copyText(to, copyMail, t('mail.copied_cn')); };
+  var openApp = panel.querySelector("[data-open-app]");
+  if (openApp) openApp.setAttribute("href", mailtoFor(to, subject, body));
+  try { panel.scrollIntoView({ behavior: "smooth", block: "nearest" }); } catch (e) {}
+  return true;
 }
 (function () {
   var MAIL = "futureyuan39@gmail.com";
-  /* 投稿页 */
   var sf = document.getElementById("submitForm");
   if (sf) {
     sf.addEventListener("submit", function (e) {
@@ -1379,15 +1434,12 @@ function mailtoFor(to, subject, body) {
         return el && el.value ? el.value.trim() : "";
       };
       var topic = val("topic") || "投稿";
-      var body = "称呼：" + (val("name") || "（未填）") +
-                 "\n主题：" + topic +
-                 "\n\n" + val("content");
-      var url = mailtoFor(MAIL, "投稿：" + topic, body);
-      sf.setAttribute("data-mailto", url);   /* 便于自检 */
-      window.location.href = url;
+      var subject = "投稿：" + topic;
+      var body = "称呼：" + (val("name") || "（未填）") + "\n主题：" + topic + "\n\n" + val("content");
+      showMailPanel("submitOut", "submitText",
+        "收件人：" + MAIL + "\n主题：" + subject + "\n\n" + body, MAIL, subject, body);
     });
   }
-  /* 订阅页（复用同一套组装逻辑） */
   var bf = document.getElementById("subForm");
   if (bf) {
     bf.addEventListener("submit", function (e) {
@@ -1395,10 +1447,9 @@ function mailtoFor(to, subject, body) {
       var input = bf.querySelector('input[type="email"]');
       var addr = input && input.value ? input.value.trim() : "";
       var subject = state.lang === "en" ? "Subscribe to Wake Up Girls weekly" : "订阅 Wake Up Girls 周报";
-      var body2 = (state.lang === "en" ? "Please add this address to the list: " : "我的邮箱：") + addr;
-      var url2 = mailtoFor(MAIL, subject, body2);
-      bf.setAttribute("data-mailto", url2);
-      window.location.href = url2;
+      var body = (state.lang === "en" ? "Please add this address to the list: " : "我的邮箱：") + addr;
+      showMailPanel("subOut", "subText",
+        "收件人：" + MAIL + "\n主题：" + subject + "\n\n" + body, MAIL, subject, body);
     });
   }
 })();

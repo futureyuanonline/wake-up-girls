@@ -69,6 +69,18 @@
           <textarea name="content" data-i18n-ph="submit.content" placeholder="写下内容与来源链接…" required></textarea>
           <button class="btn" type="submit" data-i18n="submit.btn">发送投稿邮件</button>
         </form>
+        <div class="card mail-out" id="submitOut" hidden style="margin-top:16px;border:1px solid var(--line);">
+          <h3 style="font-family:var(--serif);font-size:19px;font-weight:800;margin-bottom:8px;" data-i18n="mail.title">邮件内容已生成</h3>
+          <p class="muted" data-i18n="mail.howto">很多电脑和手机没有配置邮件程序，所以我们不自动跳转。请复制下面的内容，打开你的邮箱粘贴发送到：</p>
+          <p style="margin:8px 0 12px;"><strong style="font-size:15px;">futureyuan39@gmail.com</strong></p>
+          <textarea id="submitText" readonly style="width:100%;min-height:150px;padding:12px;border:1px solid var(--line);border-radius:4px;background:var(--wall);font-size:13.5px;line-height:1.8;"></textarea>
+          <p style="margin-top:12px;display:flex;gap:10px;flex-wrap:wrap;">
+            <button type="button" class="btn" data-copy-all data-i18n="mail.copy_all">复制全部内容</button>
+            <button type="button" class="btn ghost" data-copy-mail data-i18n="mail.copy_mail">复制邮箱地址</button>
+            <a class="btn ghost" data-open-app data-i18n="mail.open_app" href="#">或：用邮件程序打开</a>
+          </p>
+        </div>
+
         <p class="note fallback-mail" style="margin-top:12px;">如果没有自动打开邮件程序，请直接发到
           <a href="mailto:futureyuan39@gmail.com" style="color:var(--accent);">futureyuan39@gmail.com</a>
           （标题写「投稿」）。</p>
