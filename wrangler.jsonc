@@ -1,17 +1,32 @@
 {
-  // Cloudflare Worker（静态资源模式）配置
-  // 项目的 Deploy command 是 `npx wrangler deploy`，由本文件告诉它发布什么。
+  // Cloudflare Worker 配置：静态站点 + 一个表单接收接口
+  // Deploy command 是 `npx wrangler deploy`，由本文件告诉它发布什么。
   // 发布目录 = dist/，由 Build command `node tools/build_site.mjs` 生成（白名单，只含站点公开文件）。
   // 实测：若把 directory 设为 "."（仓库根目录），wrangler 会读入 1619 个文件（含 .git 历史与
   // node_modules），既臃肿又会公开仓库历史，故必须走 dist/。
+  //
+  // main 指向 worker/index.js：它在静态资源之前处理两个接口，其余请求全部交给静态资源
+  //   POST /api/submit   读者提交投稿 / 订阅
+  //   GET  /inbox?key=…  主理人私有收件箱（列表 + CSV 导出）
   "$schema": "node_modules/wrangler/config-schema.json",
   "name": "wake-up-girls",
+  "main": "worker/index.js",
   "compatibility_date": "2025-01-01",
   "assets": {
     "directory": "./dist",
+    // Worker 脚本里通过 env.ASSETS 读取静态资源
+    "binding": "ASSETS",
     // 未匹配到文件时返回 404.html（404 状态码），配合站点自定义 404 页
     "not_found_handling": "404-page",
     // 访问 /about 自动对应 about.html
     "html_handling": "auto-trailing-slash"
-  }
+  },
+  // 来信存储：Cloudflare KV 命名空间 wake-up-girls-inbox
+  // （访问密钥 INBOX_KEY 是 Secret，在 Cloudflare 后台设置，不写进本文件）
+  "kv_namespaces": [
+    {
+      "binding": "INBOX",
+      "id": "5031ddd6703a43fe9134a0bd323eaf84"
+    }
+  ]
 }
