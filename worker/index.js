@@ -85,9 +85,18 @@ async function handleSubmit(request, env) {
 }
 
 /* ---------------- 私有收件箱 ---------------- */
-function authed(env, url) {
+/* 密钥来源（二者皆可，优先 Secret）：
+ *   1) Worker Secret  INBOX_KEY（在 Cloudflare 后台 Settings → Variables and Secrets 设置）
+ *   2) KV 条目        key = config:inbox_key（在 KV Pairs 里 Add entry，无需任何授权）
+ * 这样即使不方便设置 Secret，也能用 KV 里的密钥开门。 */
+async function authed(env, url) {
   const key = url.searchParams.get('key') || '';
-  return env.INBOX_KEY && key && key === env.INBOX_KEY;
+  if (!key) return false;
+  let expected = env.INBOX_KEY || '';
+  if (!expected && env.INBOX) {
+    try { expected = (await env.INBOX.get('config:inbox_key')) || ''; } catch (e) {}
+  }
+  return !!expected && key === expected;
 }
 
 async function listAll(env, limit = 300) {
@@ -105,7 +114,7 @@ async function listAll(env, limit = 300) {
 }
 
 async function handleInbox(request, env, url) {
-  if (!authed(env, url)) return json({ ok: false, error: 'unauthorized' }, 401);
+  if (!(await authed(env, url))) return json({ ok: false, error: 'unauthorized' }, 401);
   if (!env.INBOX) return json({ ok: false, error: 'no_store' }, 500);
   const items = await listAll(env);
   if (url.searchParams.get('format') === 'csv') {
@@ -124,7 +133,7 @@ async function handleInbox(request, env, url) {
 }
 
 async function handleInboxPage(request, env, url) {
-  if (!authed(env, url)) {
+  if (!(await authed(env, url))) {
     return new Response(
       '<!doctype html><meta charset="utf-8"><title>收件箱</title>' +
       '<div style="font:16px/1.9 -apple-system,Segoe UI,Microsoft YaHei,sans-serif;max-width:640px;margin:80px auto;padding:0 20px">' +
