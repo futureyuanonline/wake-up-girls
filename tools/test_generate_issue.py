@@ -186,6 +186,15 @@ print('\n【6】同周护栏（防重复出刊）')
 tmp6 = setup_tmp()
 gi6 = load_generator(tmp6)
 gi6.FORCE = False
+# 让「本周已有期数」这一条件确定成立：把夹具的 issues.js 补一条今天的期数
+# （此前测试依赖夹具里的固定日期，跨周后会假报警）
+_today = __import__('datetime').date.today().isoformat()
+_js6p = tmp6 / 'data' / 'issues.js'
+_js6s = _js6p.read_text(encoding='utf-8')
+if _today not in _js6s:
+    _js6s = _js6s.replace('window.ISSUES = [',
+                          'window.ISSUES = [\n  { id: "900", date: "%s", title: "同周护栏夹具", sections: [] },' % _today, 1)
+    _js6p.write_text(_js6s, encoding='utf-8')
 _js6 = (tmp6 / 'data' / 'issues.js').read_text(encoding='utf-8')
 _before6 = len(gi6.issue_dates(_js6))
 _called = {'n': 0}
