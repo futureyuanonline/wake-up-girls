@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8" />
+<title>手机端图片检查</title>
+<style>
+  body { font: 14px/1.7 -apple-system, "Microsoft YaHei", sans-serif; margin: 0; padding: 16px; background: #f4f1eb; color: #1d1715; }
+  #stage { display: flex; flex-wrap: wrap; gap: 14px; }
+  .cell { width: 375px; }
+  .cell h3 { font-size: 13px; margin: 0 0 6px; }
+  iframe { width: 375px; height: 680px; border: 1px solid #ccc; background: #fff; }
+  pre { white-space: pre-wrap; background: #fff; padding: 12px; border-radius: 6px; }
+</style>
+</head>
+<body>
+<h2>手机端图片检查（375px 视口）</h2>
+<div id="stage"></div>
+<pre id="out">正在检查…</pre>
+<script>
+var PAGES = ['index.html', 'works.html', 'issue.html?id=002', 'news.html?id=002-1',
+             'work.html?i=0', 'shop.html', 'detail.html', 'archive.html'];
+var W = 375;
+var results = [];
+var host = document.getElementById('stage');
+
+function check(page, done) {
+  var cell = document.createElement('div');
+  cell.className = 'cell';
+  var h = document.createElement('h3');
+  h.textContent = page;
+  cell.appendChild(h);
+  var f = document.createElement('iframe');
+  f.src = '/' + page;
+  cell.appendChild(f);
+  host.appendChild(cell);
+
+  f.onload = function () {
+    setTimeout(function () {
+      var d, w;
+      try { d = f.contentDocument; w = f.contentWindow; } catch (e) {
+        results.push({ page: page, error: 'cross-origin' }); done(); return;
+      }
+      var imgs = Array.prototype.slice.call(d.images || []);
+      var broken = [], upscaled = [], huge = [], lazy = 0, small = 0;
+      var maxW = 0, maxSrc = '';
+      imgs.forEach(function (im) {
+        var nw = im.naturalWidth || 0, rw = Math.round(im.getBoundingClientRect().width);
+        if (nw === 0) broken.push(im.currentSrc || im.src);
+        else {
+          if (rw > nw + 2) upscaled.push((im.currentSrc || im.src).split('/').pop() + ' 显示' + rw + 'px > 原图' + nw + 'px');
+          if (nw > 900) { huge.push((im.currentSrc || im.src).split('/').pop() + '(' + nw + 'px)'); }
+          if (nw > maxW) { maxW = nw; maxSrc = (im.currentSrc || im.src).split('/').pop(); }
+          if (nw <= 260) small++;
+        }
+        if (im.loading === 'lazy') lazy++;
+      });
+      var ow = d.documentElement.scrollWidth;
+      results.push({
+        page: page, imgs: imgs.length, broken: broken.length, brokenList: broken.slice(0, 3),
+        upscaled: upscaled.length, upscaledList: upscaled.slice(0, 3),
+        huge: huge.length, hugeList: huge.slice(0, 3),
+        lazy: lazy, small: small, maxW: maxW, maxSrc: maxSrc, scrollW: ow, overflow: ow > W + 1
+      });
+      done();
+    }, 2200);
+  };
+}
+
+var i = 0;
+(function next() {
+  if (i >= PAGES.length) {
+    document.getElementById('out').textContent = 'RESULT_JSON:' + JSON.stringify(results);
+    document.title = 'DONE';
+    return;
+  }
+  check(PAGES[i++], next);
+})();
+</script>
+</body>
+</html>

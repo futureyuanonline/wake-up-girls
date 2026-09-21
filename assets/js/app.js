@@ -84,6 +84,7 @@ var UI = {
     'footer.copyright': '© 2026 Wake Up Girls',
     'footer.note': '内容仅供参考 · 欢迎勘误与投稿',
     'footer.images': '图片来源：作品封面与部分配图来自豆瓣、维基共享资源等公开渠道，版权归原作者及权利方所有；本站仅用于作品介绍与资讯检索，不作商业用途。如涉侵权或异议请联系：',
+    'ticker.hint': '按地区浏览作品库',
     'archive.label': 'Archive · 往期周报',
     'archive.title': '往期周报',
     'archive.empty': '暂无往期内容。',
@@ -256,6 +257,7 @@ var UI = {
     'footer.copyright': '© 2026 Wake Up Girls',
     'footer.note': '內容僅供參考 · 歡迎勘誤與投稿',
     'footer.images': '圖片來源：作品封面與部分配圖來自豆瓣、維基共享資源等公開渠道，版權歸原作者及權利方所有；本站僅用於作品介紹與資訊檢索，不作商業用途。如涉侵權或異議請聯繫：',
+    'ticker.hint': '按地區瀏覽作品庫',
     'archive.label': 'Archive · 往期週報',
     'archive.title': '往期週報',
     'archive.empty': '暫無往期內容。',
@@ -428,6 +430,7 @@ var UI = {
     'footer.copyright': '© 2026 Wake Up Girls',
     'footer.note': 'For reference only · Corrections & submissions welcome',
     'footer.images': 'Image credits: covers and some illustrations come from public sources such as Douban and Wikimedia Commons; all rights remain with their original owners. They are shown here for reference and discovery only, not for commercial use. Takedown or objections:',
+    'ticker.hint': 'Browse the directory by region',
     'archive.label': 'Archive · Past Issues',
     'archive.title': 'Past Issues',
     'archive.empty': 'No past issues yet.',
@@ -758,9 +761,18 @@ function initTransitions() {
 function renderTicker() {
   var el = document.getElementById("regionTicker");
   if (!el) return;
-  var regions = ["全球", "欧洲", "北美", "拉美", "中东", "非洲", "南亚", "东亚", "大洋洲", "中国"];
+  /* 每个地区有多少件作品；点击跳到已按该地区筛选的作品库 */
+  var all = dataWorks() || [];
+  var counts = {};
+  all.forEach(function (w) { if (w.region) counts[w.region] = (counts[w.region] || 0) + 1; });
+  var order = ["全球", "欧洲", "北美", "拉美", "中东", "非洲", "南亚", "东亚", "大洋洲", "中国"];
+  var regions = order.filter(function (r) { return counts[r]; });
+  if (!regions.length) { el.hidden = true; return; }
+  el.hidden = false;
   var one = regions.map(function (r) {
-    return '<span class="tick">' + esc(regionName(r)) + '</span><span class="tick-dot">◆</span>';
+    return '<a class="tick" href="works.html?region=' + encodeURIComponent(r) + '">' +
+      esc(regionName(r)) + '<span class="tick-n">' + counts[r] + "</span></a>" +
+      '<span class="tick-dot">◆</span>';
   }).join("");
   el.innerHTML = '<div class="ticker-track">' + one + one + "</div>";
 }
@@ -922,6 +934,16 @@ function renderWatch() {
 }
 
 /* ---------- 往期 ---------- */
+/* 从网址带入地区筛选：首页跑马灯点进来时用（works.html?region=东亚）
+   直接触发作品库页已有的地区按钮，复用它全部筛选逻辑 */
+function applyRegionFromUrl() {
+  var q = "";
+  try { q = new URLSearchParams(location.search).get("region") || ""; } catch (e) { return; }
+  if (!q) return;
+  var btn = document.querySelector('#regionTabs button[data-region="' + q.replace(/"/g, "") + '"]');
+  if (btn) setTimeout(function () { btn.click(); }, 60);
+}
+
 function renderArchive() {
   var el = document.getElementById("archive-list");
   if (!el || !dataIssues()) return;
@@ -1389,6 +1411,7 @@ function renderAll() {
   renderIssue();
   renderNews();
   renderWorks();
+  applyRegionFromUrl();
   renderWork();
 }
 
