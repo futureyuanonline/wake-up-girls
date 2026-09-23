@@ -121,6 +121,21 @@ async function readStats(env) {
   return { total, dayList, pageList };
 }
 
+
+/* 访问信标：页面加载时由前端 POST /api/hit（静态资源请求默认不经过 Worker，故不能在那里记账） */
+async function handleHit(request, env, ctx) {
+  if (request.method !== 'POST') return new Response('', { status: 204 });
+  let body = {};
+  try { body = await request.json(); } catch (e) {}
+  const raw = String(body.p || '/');
+  const path = raw.split('?')[0].slice(0, 120);
+  if (env.INBOX) {
+    const task = countHit(env, path);
+    if (ctx && ctx.waitUntil) ctx.waitUntil(task); else task.catch(() => {});
+  }
+  return new Response('', { status: 204, headers: { 'cache-control': 'no-store' } });
+}
+
 /* ---------------- 私有收件箱 ---------------- */
 /* 密钥来源（二者皆可，优先 Secret）：
  *   1) Worker Secret  INBOX_KEY（在 Cloudflare 后台 Settings → Variables and Secrets 设置）
