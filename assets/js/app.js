@@ -1538,20 +1538,6 @@ function showMailPanel(panelId, textId, full, to, subject, body) {
   }
 })();
 
-
-/* ---------- 访问统计信标（站内自建，不记录个人信息） ---------- */
-(function () {
-  if (!window.fetch) return;
-  try {
-    fetch("/api/hit", {
-      method: "POST",
-      headers: { "content-type": "application/json" },
-      body: JSON.stringify({ p: location.pathname + location.search }),
-      keepalive: true
-    }).catch(function () {});
-  } catch (e) {}
-})();
-
 document.addEventListener("DOMContentLoaded", function () {
   initChrome();
   initTransitions();
