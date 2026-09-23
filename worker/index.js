@@ -84,6 +84,43 @@ async function handleSubmit(request, env) {
   return json({ ok: true });
 }
 
+
+/* ---------------- 轻量访问统计 ----------------
+ * 只记「哪天、哪个页面、被访问几次」，不记录 IP、UA、Cookie 或任何可识别信息。
+ * 键：stat:YYYY-MM-DD:<页面>  值：次数字符串（保留 120 天自动过期） */
+async function countHit(env, pathname) {
+  if (!env.INBOX) return;
+  const day = new Date().toISOString().slice(0, 10);
+  const name = pathname === '/' ? 'home'
+    : pathname.replace(/^\/+|\/+$/g, '').replace(/[^a-zA-Z0-9\u4e00-\u9fa5]+/g, '_').slice(0, 40) || 'other';
+  const key = 'stat:' + day + ':' + name;
+  try {
+    const n = parseInt((await env.INBOX.get(key)) || '0', 10);
+    await env.INBOX.put(key, String(n + 1), { expirationTtl: 60 * 60 * 24 * 120 });
+  } catch (e) { /* 统计失败绝不影响访问 */ }
+}
+
+async function readStats(env) {
+  const byDay = {}, byPage = {}, pages = {}, days = {};
+  let cursor = null;
+  do {
+    const page = await env.INBOX.list({ prefix: 'stat:', cursor, limit: 1000 });
+    for (const k of page.keys) {
+      const parts = k.name.split(':');
+      const day = parts[1], name = parts.slice(2).join(':');
+      const n = parseInt((await env.INBOX.get(k.name)) || '0', 10) || 0;
+      days[day] = (days[day] || 0) + n;
+      pages[name] = (pages[name] || 0) + n;
+    }
+    cursor = page.list_complete ? null : page.cursor;
+  } while (cursor);
+  const dayList = Object.keys(days).sort().slice(-14).map((d) => ({ d, n: days[d] }));
+  const pageList = Object.keys(pages).sort((a, b) => pages[b] - pages[a]).slice(0, 12)
+    .map((k) => ({ p: k, n: pages[k] }));
+  const total = Object.keys(days).reduce((a, d) => a + days[d], 0);
+  return { total, dayList, pageList };
+}
+
 /* ---------------- 私有收件箱 ---------------- */
 /* 密钥来源（二者皆可，优先 Secret）：
  *   1) Worker Secret  INBOX_KEY（在 Cloudflare 后台 Settings → Variables and Secrets 设置）
@@ -162,17 +199,25 @@ async function handleInboxPage(request, env, url) {
     '<p style="color:#8a7a72;font-size:13px;margin:0 0 6px">共 ' + items.length + ' 条 · ' +
     '投稿与订阅都在这里 · 本页不公开、不会被搜索引擎收录</p>' +
     '<p style="font-size:13px"><a href="' + csv + '" style="color:#a12627">下载 CSV</a></p>' +
+    statHtml +
     (rows || '<p style="color:#8a7a72">还没有来信。</p>') +
     '</div>',
     { headers: { 'content-type': 'text/html; charset=utf-8', 'cache-control': 'no-store' } });
 }
 
 export default {
-  async fetch(request, env) {
+  async fetch(request, env, ctx) {
     const url = new URL(request.url);
     if (url.pathname === '/api/submit') return handleSubmit(request, env);
     if (url.pathname === '/api/inbox') return handleInbox(request, env, url);
     if (url.pathname === '/inbox') return handleInboxPage(request, env, url);
-    return env.ASSETS.fetch(request);
+    const res = await env.ASSETS.fetch(request);
+    // 只统计静态 HTML 页面的成功访问；用 waitUntil 记账，不影响响应速度
+    if (request.method === 'GET' && res.status === 200 &&
+        (res.headers.get('content-type') || '').includes('text/html')) {
+      const task = countHit(env, url.pathname);
+      if (ctx && ctx.waitUntil) ctx.waitUntil(task); else task.catch(() => {});
+    }
+    return res;
   },
 };
