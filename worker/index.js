@@ -190,6 +190,22 @@ async function handleInboxPage(request, env, url) {
     '</div>'
   )).join('');
   const csv = esc(url.pathname + '?key=' + url.searchParams.get('key') + '&format=csv');
+  let stats = { total: 0, dayList: [], pageList: [] };
+  try { stats = await readStats(env); } catch (e) {}
+  const statHtml =
+    '<div style="background:#fff;border:1px solid #e2ded4;border-radius:6px;padding:16px;margin:16px 0">' +
+    '<div style="font-weight:700;margin-bottom:10px">\u8bbf\u95ee\u7edf\u8ba1\uff08\u7ad9\u5185\u81ea\u5efa\uff0c\u4e0d\u8bb0\u5f55\u4e2a\u4eba\u4fe1\u606f\uff09</div>' +
+    '<div style="font-size:13px;color:#5a4f49;margin-bottom:10px">\u7d2f\u8ba1\u6d4f\u89c8 ' + stats.total + ' \u6b21</div>' +
+    (stats.dayList.length
+      ? '<div style="font-size:13px;line-height:1.9">' + stats.dayList.map(function (x) {
+          return esc(x.d) + '\u3000' + x.n + ' \u6b21';
+        }).join('<br>') + '</div>'
+      : '<div style="font-size:13px;color:#8a7a72">\u8fd8\u6ca1\u6709\u6570\u636e\uff08\u90e8\u7f72\u540e\u5f00\u59cb\u8bb0\u5f55\uff09</div>') +
+    (stats.pageList.length
+      ? '<div style="font-size:13px;line-height:1.9;margin-top:10px;color:#5a4f49">\u6700\u5e38\u8bbf\u95ee\uff1a' +
+        stats.pageList.map(function (x) { return esc(x.p) + '(' + x.n + ')'; }).join(' \u00b7 ') + '</div>'
+      : '') +
+    '</div>';
   return new Response(
     '<!doctype html><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">' +
     '<title>Wake Up Girls 收件箱（' + items.length + '）</title>' +
