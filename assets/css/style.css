@@ -1003,3 +1003,13 @@ nav.menu a.menu-cta { display: none; }
 /* small list thumbs keep a compact square */
 .dg-item img, .mini-cell img, .mini-thumb { width: 88px !important; }
 .issue-thumb { width: 100% !important; }
+
+/* Small list thumbnails: keep their own box and fill it completely (never letterbox).
+   A tiny crop is invisible at this size. */
+.dg-item img, .mini-cell img, .mini-thumb {
+  width: 100% !important;
+  height: 100% !important;
+  aspect-ratio: auto !important;
+  object-fit: cover !important;
+  background: none !important;
+}
