@@ -1026,3 +1026,23 @@ nav.menu a.menu-cta { display: none; }
   max-height: none !important;
   display: block;
 }
+
+/* Article body image: natural ratio (no crop, no letterbox) but capped at a
+   comfortable reading width and centred, so it never dominates the page. */
+.news-body img, .news-figure img, .news-media img {
+  aspect-ratio: auto !important;
+  object-fit: fill !important;
+  width: auto !important;
+  max-width: 620px !important;
+  height: auto !important;
+  max-height: 620px !important;
+  margin: 24px auto !important;
+  display: block;
+}
+@media (max-width: 700px) {
+  .news-body img, .news-figure img, .news-media img {
+    max-width: 100% !important;
+    max-height: none !important;
+    margin: 18px auto !important;
+  }
+}
