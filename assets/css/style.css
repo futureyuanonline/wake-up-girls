@@ -994,3 +994,14 @@ nav.menu a.menu-cta { display: none; }
   max-height: none !important;
   object-fit: cover;
 }
+
+/* ---- Digest: right column holds the list as one stacked column ----
+   Previously each item was its own grid cell, so the right column ended
+   early and left a large blank area under the last item. */
+@media (min-width: 900px) {
+  .digest-grid { grid-template-columns: 2fr 1fr; }
+  .dg-lead { grid-column: auto; border-right: 1px solid var(--line); }
+  .dg-list { display: flex; flex-direction: column; height: 100%; border-left: 0; }
+  .dg-list .dg-item { flex: 1 1 auto; display: flex; flex-direction: column; justify-content: flex-start; }
+  .dg-list .dg-item:last-child { border-bottom: 0; }
+}

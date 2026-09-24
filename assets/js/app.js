@@ -1571,6 +1571,22 @@ function renderColumn() {
       esc(t('col.back')) + "</a></p>";
 }
 
+
+/* ---------- 精选列表结构修复 ----------
+   把「本期精选」的条目收进一个独立容器，使它们在右列纵向铺满，
+   而不是散在 3 列网格里、让右列下方空出一大片。
+   只做 DOM 搬移，不改动渲染函数本身的模板。 */
+function restructureDigest() {
+  var grid = document.querySelector(".digest-grid");
+  if (!grid || grid.querySelector(".dg-list")) return;
+  var items = Array.prototype.slice.call(grid.querySelectorAll(".dg-item"));
+  if (!items.length) return;
+  var wrap = document.createElement("div");
+  wrap.className = "dg-list";
+  grid.insertBefore(wrap, items[0]);
+  items.forEach(function (it) { wrap.appendChild(it); });
+}
+
 /* ---------- 入口 ---------- */
 function renderAll() {
   renderNote();
@@ -1586,6 +1602,7 @@ function renderAll() {
   renderWorks();
   renderColumns();
   renderColumn();
+  restructureDigest();
   renderWork();
 }
 
