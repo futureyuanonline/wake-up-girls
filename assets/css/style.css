@@ -965,55 +965,6 @@ nav.menu a.menu-cta { display: none; }
 }
 @media (max-width: 640px) { .col-grid { grid-template-columns: 1fr; } }
 
-/* ---- Topic illustrations: show the whole image, never crop it ----
-   These images sit on the same beige as the page background, so the
-   letterboxing is invisible and nothing gets cut off. */
-.news-body img, .news-figure img, .news-media img,
-.issue-thumb, .dg-lead img, .dg-item img, .mini-cell img,
-.col-cover, .col-head-img, .work-poster img, .mini-thumb {
-  object-fit: contain !important;
-  background: var(--wall);
-}
-
-/* Thumbnails: fill the frame (a small crop is invisible at this size).
-   Only large displays keep object-fit: contain. */
-.mini-cell img, .mini-thumb, .dg-item img, .issue-thumb, .work-card img, .col-cover {
-  object-fit: cover !important;
-}
-
-/* Digest list thumbs and every small thumbnail: fill the frame (crop is invisible at this size) */
-#latest img, #latest .dg-item img, #featured img, #watchSec img,
-.dg-item img, .dg-thumb, .mini-cell img, .mini-thumb, .issue-thumb {
-  object-fit: cover !important;
-  background: none !important;
-}
-
-/* ---- Topic illustrations: square frames to match the square source images ----
-   A 1:1 frame with a 1:1 image fills perfectly: no crop, no letterboxing. */
-.dg-media { aspect-ratio: 1 / 1 !important; }
-.dg-media img { width: 100%; height: 100%; object-fit: cover !important; background: none !important; }
-.dg-item img, .dg-thumb, .mini-cell img, .mini-thumb, .issue-thumb,
-.news-body img, .news-figure img, .news-media img,
-.col-cover, .col-head-img, .work-card img, .work-poster img {
-  aspect-ratio: 1 / 1 !important;
-  height: auto !important;
-  object-fit: cover !important;
-  background: none !important;
-}
-/* small list thumbs keep a compact square */
-.dg-item img, .mini-cell img, .mini-thumb { width: 88px !important; }
-.issue-thumb { width: 100% !important; }
-
-/* Small list thumbnails: keep their own box and fill it completely (never letterbox).
-   A tiny crop is invisible at this size. */
-.dg-item img, .mini-cell img, .mini-thumb {
-  width: 100% !important;
-  height: 100% !important;
-  aspect-ratio: auto !important;
-  object-fit: cover !important;
-  background: none !important;
-}
-
 /* ---- Never let entrance animation hide content ----
    Elements with .reveal start at opacity:0 and only appear when the
    scroll observer fires. If it never fires (short page, fast scroll,
