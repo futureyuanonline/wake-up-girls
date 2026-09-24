@@ -1013,3 +1013,15 @@ nav.menu a.menu-cta { display: none; }
   object-fit: cover !important;
   background: none !important;
 }
+
+/* ---- Never let entrance animation hide content ----
+   Elements with .reveal start at opacity:0 and only appear when the
+   scroll observer fires. If it never fires (short page, fast scroll,
+   script error), the element keeps its space but stays invisible,
+   which reads as a large blank area. Content must always be visible. */
+.reveal, .reveal.in {
+  opacity: 1 !important;
+  transform: none !important;
+  filter: none !important;
+  transition: none !important;
+}
