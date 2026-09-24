@@ -16,7 +16,7 @@ window.ISSUES = [
     "title": "Gender Equality Countdown and Women's Actions",
     "summary": "UN warns gender parity is still 171 years away, South Korea plans to approve abortion pills, cases in Texas and South Africa expose health and safety crises; Egypt, France and Brazil advance rights debates."
   },
-  "img": "assets/img/womens-rights.png",
+  "img": "assets/img/womens-rights.png?v=3",
   "watch": {
     "name": "Michèle Vianès",
     "name_en": "Michèle Vianès",
@@ -56,7 +56,7 @@ window.ISSUES = [
               "The report blames weakened women's rights institutions, rising anti-gender agendas, and the neglect of women in climate and conflict crises. It calls for women's rights to be central to fiscal and social policy."
             ]
           },
-          "img": "assets/img/podium.png",
+          "img": "assets/img/podium.png?v=3",
           "src": "Devdiscourse",
           "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxOM3JCYklQUm53TWd3VDFHYkR5aldBVlA1WGdxWE5iYklzd21oT3p4U25wQ2hQV09DWTBjd0ZwN3k1MHF0T0F1eEpUYzVRYmtvdThTWEI5ZGtPcUxpWF9HRVppTEVRUGxCTG04SWhSTEl4b3R1NGZ1MW80YmtmZDVKMUNvUzFHZG4xSTlvRDZyeUtVZWRqTVUxUDJGdEVoUXNlTGdRUDFpWTh4SlVSbDRwUVdkNS1FcWZ3US01cmt4aTVZS1ZnSERKd9IBzgFBVV95cUxObVAxTjNCeG43WW9qb0NjYVJVc0JOV29qdThWWS0zdFZlNUZMNGh4RGE3QWJJSG9sY1B4YWxDaWJ5Wk5jdXdUS1hWd3o4dVNXbmpXWFpFNkFQVVowcmtiTGJYTnZrdnBSbUlhTVE3MGtidHVIMENVY0FfWDZFdmV5WVRYY3lvQVBDaDdkZDJvdTJVOEx5UWJ4VWQ2di1OaXd2eG8xV3dRem1Dd3Q0SV9pSERBUUIzaGRJZm50QS1CYTdXZ1lZdkxCa0ZYbmE1QQ?oc=5",
           "region": "全球"
@@ -85,7 +85,7 @@ window.ISSUES = [
               "Medication abortion is used for early pregnancy and offers more privacy, but approval requires prescription and follow-up systems. Cost coverage and access outside major cities remain contentious."
             ]
           },
-          "img": "assets/img/body-choice.png",
+          "img": "assets/img/body-choice.png?v=3",
           "src": "yahoo.com",
           "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxPbmw2cVFack9UMnBpcXFwaU9jMzYyTkttZV9ya3MxR3VEdHlGcmJsYVdyUmN6OElqLUpUckdYM0tCNUpKLURvd1hnN2ZSMFJKUTNZMW9yX1ByRWtqRFkyRWxid2xlR0I0aE9rYm5lQVJNNXhyNGdnQ0o2bVlYY0ZZRGNSSHFSODZ6OG8xVnhIWFpTaFE?oc=5",
           "region": "东亚"
@@ -114,7 +114,7 @@ window.ISSUES = [
               "The case turns abstract abortion law into measurable health outcomes and may influence judicial review. It raises questions about equal protection for pregnancy complications in restrictive states."
             ]
           },
-          "img": "assets/img/body-choice.png",
+          "img": "assets/img/body-choice.png?v=3",
           "src": "NBC News",
           "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxQUTYxZUUxVi1hZmFZQVRKYllTNGdyOXMwNmJfa3VyRTlkNTVGTHhxS2dpNGJBa0dhcmpJQkZ2dVlYZ0FJRE9QLUFQV0Z1d05BR1J1Tlh3OExQZXRnd01MSmR4Yms3Q2YwdzlCc1hSOXFkQTlaMFg2WDhkUTZXR3E2RUZLcWxpLThrSFgtckdNdXdXNHRESTFRMWxLYUFsQ3hDeGpETlNORklsdEtOd0FyekVvSndDZw?oc=5",
           "region": "北美"
@@ -143,7 +143,7 @@ window.ISSUES = [
               "The deaths expose a systemic crisis in women's safety, and activists demand that gender violence be treated as a national emergency. Questions are raised about early police response to missing women."
             ]
           },
-          "img": "assets/img/women-power.png",
+          "img": "assets/img/women-power.png?v=3",
           "src": "Al Jazeera",
           "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxPbkpjbG9sSFdwSDJyRDdQX1FVX3JHbWtTbUR4bWZSN2xxWWFlbXdHTG56SzZXM2VOaFUxRHdPLVdxZ3lMNGhyRjQwLVkxNndISU9BTFJ1VHhydUVqMXNabFoxTGNVcG5nbldjRU4yNUpRZGNBdWgzY3gxdnBuc1BVem1zWDJEVmNSR2piQ0tQdUkxcUF1dklXRlRZTHBzdzVyOHZybjdDajNCQdIBrwFBVV95cUxNb2Z5MDNtYk5SUzVyRjRsV2RZSDZWbUd0U3pwU1lweFpnb1dmelduRkNDbjJkcW11b1V1blkzbU9McHpfcURWWk0zN25jM0Z5RDhMOVBMX0RxV203SFVqcTNpWHZEeGVUM0kzS0hNSFRBVjNuUm1IaTRvSHAtemRuZkFnMmlxOU8za2F5NnNhUzQzdS1aMFdvdFZzM3FjQjhqODhRMzVScVBsQ0xrUWw4?oc=5",
           "region": "非洲"
@@ -166,7 +166,7 @@ window.ISSUES = [
               "Her position balances opposition to religious coercion with concern about using secularism to suppress cultural identity. Autonomy requires education, employment and anti-discrimination law."
             ]
           },
-          "img": "assets/img/women-power.png",
+          "img": "assets/img/women-power.png?v=3",
           "src": "Lyon Capitale",
           "url": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxQQlhGbWs4S3VZWC15WmF2YXQ2a0l0eGh0YTVCT2VwMjUzZmRwOVNvRjkxTjAwYVFycmFXdFRDQjNuOXlwZkFrbHBmQXVqaS12Tm1EY090Nl9ETWR6TVlqRDQwS0ZkTFh6STJtcGpzRXhwRVd4ZVVKSmEzdEg0TDVBcFdnWkVyMFUwVWtob2YzRWs3bzZYeGxtOEozb3BuS3h3bTRRYm9pakxnRUIxWWh2NzRlbnBZSU5GaDdxSlBBSDNBclBkWmF2Y3Q3b0VZTWZHallBc2dLdWJjZVdVai12ZE9ITWw?oc=5",
           "region": "欧洲"
@@ -189,7 +189,7 @@ window.ISSUES = [
               "The average may mask widening inequality for migrants, Indigenous and low-income women, requiring more granular data."
             ]
           },
-          "img": "assets/img/women-power.png",
+          "img": "assets/img/women-power.png?v=3",
           "src": "Yahoo News Australia",
           "url": "https://news.google.com/rss/articles/CBMiekFVX3lxTE5sRnp6UHV3R2FISnRQbklMWTVOOG9RZTZJeDlkaFA0UEQxdWhocFVwUGVscGhRWDZ2Q3VmNkhjbWhoelJoTkwyS0FNYThnV2xteXBQWDBVUnJ6RkwzUm45Z0RobHFKUldyWjhuOEthQmo4OWlQUmdIWU93?oc=5",
           "region": "大洋洲"
@@ -218,7 +218,7 @@ window.ISSUES = [
               "Linking pay with decision-making shows economic empowerment changes power in family and society. Progress requires legal enforcement and corporate governance pressure."
             ]
           },
-          "img": "assets/img/workplace.png",
+          "img": "assets/img/workplace.png?v=3",
           "src": "الهيئة الوطنية للإعلام",
           "url": "https://news.google.com/rss/articles/CBMi4AJBVV95cUxORzdlZXR0eXh4SkQ2aEc3U1ZQRW9DUU8zdTVxRy1yRi03NmUtNTNqWXlqYkxkV0NGVVlWXzhYbTJqa2dmTjFVZU1NSEJPOVlocjhYTlFvR3Z2aUstS2ZwbUpyZi1sakVUdnBmVkN4Ump4cHEtY0laWDRlWTBteGlqRkYzSjBZWGZRRXd4QUgwYXAzSjJXV2ZGQWNwUlFHTmwya0UydDhIQThuQTltWjMwQXhPa0Y5WmZ6OExpcGdQVHU4d29WRXVlWkQ0RjRxbFhSbTBTT0Q1ZnNjeVRObkxDWWNBclJjS2pHbmo2YzBKUkJUbDNaOXRkeVRVYjZqQUhvTDZVbzlvQXVjTU5CZGdVSDZfazdud3dELVVMNWVoaGZvUWRhSHc3Ql9EcVhNY1VNOE9BTVRMS1FzWEtKb25LZnVRaFB4enhFRnNvQWNTV1lReUdUT1kya1lWdGdKeVow?oc=5",
           "region": "中东"
@@ -247,7 +247,7 @@ window.ISSUES = [
               "The challenge is translating council recommendations into budget and action. Local transparency and enforcement will determine whether participation leads to real change."
             ]
           },
-          "img": "assets/img/womens-rights.png",
+          "img": "assets/img/womens-rights.png?v=3",
           "src": "conexaomarilia.com.br",
           "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxNTEpIdU9hRFkyeTlITkczWXIzNEFwbXo0eWsxZ0taUEJNSV83cmZ6ekxWQ2Z5TElOZnNlTGFoWWgzMUJSbm85UWJqOFBDS1lLLV9CUFNydjZQWHd5aTBvcEREMHp3ZTJWbjd0dnZlc0NGaEI5d0FXd3lnWjl1LTc3ZnI1U2hDUVpHSGthRWUxOV9ldTNkWWcybXMtNWZ0WHhSdnRBdGkxYVZobUlUdHdwSHZSVEhuaTRROXd3aVQyckcwd2Z4?oc=5",
           "region": "拉美"
@@ -270,7 +270,7 @@ window.ISSUES = [
               "Substantive equality demands positive measures in employment, education and social protection, but also raises debate about reverse discrimination."
             ]
           },
-          "img": "assets/img/womens-rights.png",
+          "img": "assets/img/womens-rights.png?v=3",
           "src": "themorning.lk",
           "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE1xRk12UURFUzFyVW1PTHJLanlRQ0FNWXhjcVJQaXFQcDZLa3BKN1B5UHVtXzNTc0pZV3JNN2U4aUZhTWd4MFNOaWk3ZGV5dERyZkdTem9pY2g1cTRfMzVremxHdjVMZw?oc=5",
           "region": "南亚"
@@ -299,7 +299,7 @@ window.ISSUES = [
               "Sustained funding and media visibility remain challenges beyond medals. The performance may inspire young women but needs institutional support to translate into long-term change."
             ]
           },
-          "img": "assets/img/women-power.png",
+          "img": "assets/img/women-power.png?v=3",
           "src": "ABS-CBN",
           "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxNb1NuTFpPN2NwaWVpTWZKaXhHcjJ0aFdKbFc0enpmMk13T0hvUXN3aEhfMlBMSk9mNV96Z2lvU2VYTzJsVk00R0tvOVM0Q2RQUHVOOHB6NzFVM3JyWWtrWkllQ3ZZaHlYUkltN2RWQThSSGU0bHhCSHlHOGVFRlpaakdqYk5ERmFub0x4LVQ2eXlPdkNoYTNhR1IxN0M2WXRUVF9kbkp0VGxCY2wwVE9hVFJCTFd1dTJ6aDlWVjB2clNfYzQ?oc=5",
           "region": "东南亚"
@@ -310,7 +310,7 @@ window.ISSUES = [
 },
 {
   "id": "001",
-  "img": "assets/img/womens-rights.png",
+  "img": "assets/img/womens-rights.png?v=3",
   "date": "2026-09-17",
   "period": "2026.09.14 – 2026.09.20",
   "title": "她照亮历史：金狮、法案与“120年”之问",
@@ -326,7 +326,7 @@ window.ISSUES = [
       "items": [
         {
           "id": "001-1",
-          "img": "assets/img/vote.png",
+          "img": "assets/img/vote.png?v=3",
           "t": "世界经济论坛：全球性别平等还需120年",
           "d": "世界经济论坛最新报告警告：按当前速度，全球性别平等仍需要约120年才能实现，呼吁各国加快缩小差距。",
           "en": {
@@ -349,7 +349,7 @@ window.ISSUES = [
         },
         {
           "id": "001-2",
-          "img": "assets/img/podium.png",
+          "img": "assets/img/podium.png?v=3",
           "t": "联合国妇女署出席第81届联合国大会",
           "d": "联合国妇女署在联大期间发声：性别平等议程“从未如此相关”，呼吁以国家领导力与持续伙伴关系推进妇女议题。",
           "en": {
@@ -372,7 +372,7 @@ window.ISSUES = [
         },
         {
           "id": "001-3",
-          "img": "assets/img/workplace.png",
+          "img": "assets/img/workplace.png?v=3",
           "t": "利比里亚：300万美元倡议推动女性领导力与和平建设",
           "d": "联合国妇女署与合作伙伴启动300万美元倡议，支持利比里亚女性在领导力、司法与和平建设中的参与。",
           "en": {
@@ -401,7 +401,7 @@ window.ISSUES = [
       "items": [
         {
           "id": "001-4",
-          "img": "assets/img/women-power.png",
+          "img": "assets/img/women-power.png?v=3",
           "t": "法国：受“莉安娜案”推动，打击性暴力法案10月审议",
           "d": "在社会舆论推动下，法国打击性暴力法案将于10月进入审议，强化对性暴力犯罪的追诉与受害者保护。",
           "en": {
@@ -424,7 +424,7 @@ window.ISSUES = [
         },
         {
           "id": "001-5",
-          "img": "assets/img/womens-rights.png",
+          "img": "assets/img/womens-rights.png?v=3",
           "t": "《浙江省妇女权益保障条例》正式落地",
           "d": "条例施行后，浙江多地启动普法基层行活动，推动妇女权益保障从纸面走向实践。",
           "en": {
@@ -447,7 +447,7 @@ window.ISSUES = [
         },
         {
           "id": "001-6",
-          "img": "assets/img/body-choice.png",
+          "img": "assets/img/body-choice.png?v=3",
           "t": "美国：联邦上诉法院再次审理米非司酮案",
           "d": "针对堕胎药物米非司酮的诉讼再度进入联邦上诉法院，ACLU呼吁驳回“毫无根据”的挑战。",
           "en": {
@@ -476,7 +476,7 @@ window.ISSUES = [
       "items": [
         {
           "id": "001-7",
-          "img": "assets/img/womens-rights.png",
+          "img": "assets/img/womens-rights.png?v=3",
           "t": "美国：宫外孕死亡人数近翻倍，得州尤甚",
           "d": "研究显示美国宫外孕死亡人数几乎翻倍，限制堕胎的州情况更为严峻，引发对孕产妇健康的广泛担忧。",
           "en": {
@@ -505,7 +505,7 @@ window.ISSUES = [
       "items": [
         {
           "id": "001-8",
-          "img": "assets/img/workplace.png",
+          "img": "assets/img/workplace.png?v=3",
           "t": "日本：性别平等排名全球第117位，继续G7垫底",
           "d": "最新排名显示日本男女平等指数仅列全球第117位，在七国集团中持续垫底，职场与政界的性别差距仍是焦点。",
           "en": {
@@ -528,7 +528,7 @@ window.ISSUES = [
         },
         {
           "id": "001-9",
-          "img": "assets/img/workplace.png",
+          "img": "assets/img/workplace.png?v=3",
           "t": "澳大利亚：男女平等排名创历史新高",
           "d": "最新数据显示澳大利亚男女平等程度达到有记录以来的最高水平。",
           "en": {
@@ -557,7 +557,7 @@ window.ISSUES = [
       "items": [
         {
           "id": "001-10",
-          "img": "assets/img/women-power.png",
+          "img": "assets/img/women-power.png?v=3",
           "t": "墨西哥的堕胎权胜利：拉美经验或为美国提供借鉴",
           "d": "拉美女性权利组织指出，墨西哥在堕胎去罪化上的胜利，或为正在激烈博弈的美国提供经验与路径。",
           "en": {
@@ -586,7 +586,7 @@ window.ISSUES = [
       "items": [
         {
           "id": "001-11",
-          "img": "assets/img/womens-rights.png",
+          "img": "assets/img/womens-rights.png?v=3",
           "t": "穆斯林世界联盟：针对女性的暴力没有伊斯兰合法性",
           "d": "穆斯林世界联盟负责人公开表示，暴力侵害女性没有任何伊斯兰教法依据，呼吁穆斯林社会共同反对基于性别的暴力。",
           "en": {
@@ -615,7 +615,7 @@ window.ISSUES = [
       "items": [
         {
           "id": "001-12",
-          "img": "assets/img/womens-rights.png",
+          "img": "assets/img/womens-rights.png?v=3",
           "t": "第83届威尼斯电影节：梅尔·图琪凭《女人，未知》摘金狮",
           "d": "丹麦导演梅尔·图琪成为史上第八位获金狮奖的女性电影人，主演玛蒂尔德·阿塞尔·F.获最佳女演员奖。授奖辞中她呼吁：照亮共同历史中那些不为人知的女性。",
           "en": {

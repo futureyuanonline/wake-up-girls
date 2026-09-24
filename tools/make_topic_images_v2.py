@@ -43,23 +43,23 @@ def make_topic(fname, chars, en, sub, blocks):
     # 英文标签 y=250（不再是 196，避开竖版裁切）
     f_en = F(SERIF_EN_B, 32)
     w = text_w(d, en, f_en, 7)
-    draw_tracked(d, ((W - w) / 2, 250), en, f_en, INK3, spacing=7)
+    draw_tracked(d, ((W - w) / 2, 285), en, f_en, INK3, spacing=7)
 
     # 中文大字 y=330
-    f_cn = F(SERIF_CN_B, 210)
+    f_cn = F(SERIF_CN_B, 190)
     cw = d.textlength(chars[0], font=f_cn)
     gap = 22
     total = cw * len(chars) + gap * (len(chars) - 1)
     x = (W - total) / 2
     for ch in chars:
-        d.text((x, 330), ch, font=f_cn, fill=INK)
+        d.text((x, 345), ch, font=f_cn, fill=INK)
         x += cw + gap
 
     # 中央分隔线 + 主题说明
-    d.rectangle([W / 2 - 38, 630, W / 2 + 38, 634], fill=blocks[0])
+    d.rectangle([W / 2 - 38, 600, W / 2 + 38, 604], fill=blocks[0])
     f_sub = F(SANS_CN, 36)
     ws = d.textlength(sub, font=f_sub)
-    d.text(((W - ws) / 2, 668), sub, font=f_sub, fill=(90, 79, 73))
+    d.text(((W - ws) / 2, 640), sub, font=f_sub, fill=(90, 79, 73))
 
     # 页脚（可被裁）
     f_foot = F(SANS_CN, 24)
@@ -77,7 +77,7 @@ def check(p):
     im = Image.open(p).convert('L')
     w, h = im.size
     # 4:5 竖版裁切：取中心 800×1000 → 上下不动、左右各裁 100
-    box = im.crop((100, 180, 900, 820))
+    box = im.crop((40, 260, 960, 700))
     ink = 0
     px = box.load()
     for y in range(0, box.size[1], 3):

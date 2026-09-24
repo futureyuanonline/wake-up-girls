@@ -9,7 +9,7 @@ window.COLUMNS = [
     "id": "body",
     "name": "身体",
     "en": "BODY",
-    "img": "assets/img/body-choice.png",
+    "img": "assets/img/body-choice.png?v=3",
     "sub": "身体自主与健康",
     "intro": "谁的身体、谁来决定、谁来承担后果——这三问贯穿本栏。避孕与堕胎、孕产医疗与死亡、照护劳动与健康可及性，在这里不是\"女性议题\"，而是公共卫生与法律的具体后果。",
     "news": [
@@ -43,7 +43,7 @@ window.COLUMNS = [
     "id": "rights",
     "name": "权利",
     "en": "RIGHTS",
-    "img": "assets/img/womens-rights.png",
+    "img": "assets/img/womens-rights.png?v=3",
     "sub": "权益与法律",
     "intro": "把权利从口号拉回到条文：哪一部法律、哪一次判决、哪一笔预算，实际改变了女性能不能上学、工作、离婚、报警、拥有财产。本栏追踪立法与司法的具体动作，而不是表态。",
     "news": [
@@ -62,7 +62,7 @@ window.COLUMNS = [
     "id": "voice",
     "name": "发声",
     "en": "VOICE",
-    "img": "assets/img/podium.png",
+    "img": "assets/img/podium.png?v=3",
     "sub": "国际治理与领导力",
     "intro": "国际机构、峰会和报告怎么说，决定了资源与注意力流向哪里。本栏收录全球治理层面关于性别平等的承诺、排名与落差——以及承诺与行动之间的那段距离。",
     "news": [
@@ -81,7 +81,7 @@ window.COLUMNS = [
     "id": "presence",
     "name": "在场",
     "en": "PRESENCE",
-    "img": "assets/img/women-power.png",
+    "img": "assets/img/women-power.png?v=3",
     "sub": "女性与公共空间",
     "intro": "女性在公共空间里如何被看见、被对待、被记录。从街头与社区到体育场与美术馆，本栏关注\"在场\"这件事本身：谁有资格出现，出现时被如何讲述。",
     "news": [
@@ -133,7 +133,7 @@ window.COLUMNS = [
     "id": "labour",
     "name": "劳动",
     "en": "LABOUR",
-    "img": "assets/img/workplace.png",
+    "img": "assets/img/workplace.png?v=3",
     "sub": "职场与经济",
     "intro": "无偿照护是劳动的影子，生育是职业的中断点，薪酬差距是结果而不是原因。本栏追踪工作、报酬与经济的结构性安排，以及女性在其中的位置。",
     "news": [
