@@ -1109,6 +1109,57 @@ function renderWorks() {
     return a.i - b.i;
   }
 
+  /* ---- 记住筛选状态与滚动位置：从作品详情返回时不再回到"全部" ---- */
+  var STORE = "wugWorksFilter";
+  var FILTER_KEYS = ["cat", "region", "country", "decade", "letter", "sort", "kw"];
+  function saveWorksState() {
+    try {
+      sessionStorage.setItem(STORE, JSON.stringify(stateW));
+      sessionStorage.setItem(STORE + ".scroll", String(window.scrollY || 0));
+    } catch (e) {}
+    try {
+      var q = [];
+      FILTER_KEYS.forEach(function (k) {
+        if (stateW[k] && stateW[k] !== "all") q.push(k + "=" + encodeURIComponent(stateW[k]));
+      });
+      history.replaceState(null, "", location.pathname + (q.length ? "?" + q.join("&") : ""));
+    } catch (e) {}
+  }
+  function readWorksState() {
+    var out = {};
+    try {
+      FILTER_KEYS.forEach(function (k) {
+        var v = new URLSearchParams(location.search).get(k);
+        if (v) out[k] = v;
+      });
+    } catch (e) {}
+    if (!Object.keys(out).length) {
+      try {
+        var raw = sessionStorage.getItem(STORE);
+        if (raw) out = JSON.parse(raw) || {};
+      } catch (e) {}
+    }
+    return out;
+  }
+  function restoreWorksState() {
+    var st = readWorksState();
+    if (!st || !Object.keys(st).length) return 0;
+    FILTER_KEYS.forEach(function (k) {
+      if (st[k] !== undefined && st[k] !== null && st[k] !== "") stateW[k] = st[k];
+    });
+    /* 同步界面：按钮高亮 + 下拉 + 关键词 */
+    tabs.forEach(function (b) { b.classList.toggle("on", b.getAttribute("data-cat") === stateW.cat); });
+    regionTabs.forEach(function (b) { b.classList.toggle("on", b.getAttribute("data-region") === stateW.region); });
+    if (selCountry) selCountry.value = stateW.country;
+    if (selDecade) selDecade.value = stateW.decade;
+    if (selLetter) selLetter.value = stateW.letter;
+    if (selSort) selSort.value = stateW.sort;
+    if (kwInput) kwInput.value = stateW.kw || "";
+    var sv = 0;
+    try { sv = parseInt(sessionStorage.getItem(STORE + ".scroll") || "0", 10) || 0; } catch (e) {}
+    return sv;
+  }
+
   function apply() {
     var list = all.map(function (w, i) { return { w: w, i: i }; }).filter(function (o) {
       var w = o.w;
@@ -1128,6 +1179,7 @@ function renderWorks() {
       ? list.map(function (o) { return workCard(o.w, o.i); }).join("")
       : '<p class="muted">' + esc(t('works.empty')) + "</p>";
     afterRender();
+    saveWorksState();
   }
 
   if (kwInput) kwInput.addEventListener("input", function () { stateW.kw = kwInput.value.trim(); apply(); });
@@ -1153,7 +1205,11 @@ function renderWorks() {
   if (selSort) selSort.addEventListener("change", function () { stateW.sort = selSort.value; apply(); });
 
   fillSelects();
+  var savedScroll = restoreWorksState();
   apply();
+  if (savedScroll > 0) {
+    setTimeout(function () { try { window.scrollTo(0, savedScroll); } catch (e) {} }, 90);
+  }
 }
 
 /* ---------- 作品详情页 ---------- */
@@ -1411,7 +1467,6 @@ function renderAll() {
   renderIssue();
   renderNews();
   renderWorks();
-  applyRegionFromUrl();
   renderWork();
 }
 
