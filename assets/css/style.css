@@ -974,3 +974,9 @@ nav.menu a.menu-cta { display: none; }
   object-fit: contain !important;
   background: var(--wall);
 }
+
+/* Thumbnails: fill the frame (a small crop is invisible at this size).
+   Only large displays keep object-fit: contain. */
+.mini-cell img, .mini-thumb, .dg-item img, .issue-thumb, .work-card img, .col-cover {
+  object-fit: cover !important;
+}
