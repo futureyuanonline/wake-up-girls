@@ -1721,21 +1721,28 @@ function clearPageTransition() {
   if (document.body) document.body.classList.remove("page-out");
 }
 setTimeout(clearPageTransition, 1000);
-window.addEventListener("pageshow", clearPageTransition);
+window.addEventListener("pageshow", function () {
+  clearPageTransition();
+  try { window.scrollTo(0, 0); } catch (e) {}
+  var mm = document.getElementById("navMenu"); if (mm) mm.classList.remove("open");
+});
 window.addEventListener("popstate", clearPageTransition);
 
 /* ---------- 新打开的页面一律从最上方开始 ----------
    浏览器前进/后退（back_forward）时尊重浏览器自己的位置恢复；
    其余情况（点链接进来、刷新、从外部打开）强制回到顶部，避免"点进去停在底部"。 */
 function ensureStartAtTop() {
-  var type = "";
-  try {
-    var nav = performance.getEntriesByType && performance.getEntriesByType("navigation")[0];
-    if (nav && nav.type) type = nav.type;
-  } catch (e) {}
-  if (type === "back_forward") return;
+  /* 关掉浏览器自己的滚动恢复：它会在加载完成后覆盖我们的回到顶部 */
+  try { if ("scrollRestoration" in history) history.scrollRestoration = "manual"; } catch (e) {}
+  /* 收起移动端菜单（新页面默认收起） */
+  var m = document.getElementById("navMenu");
+  if (m) m.classList.remove("open");
+  var bg = document.getElementById("navBurger");
+  if (bg) bg.setAttribute("aria-expanded", "false");
+  /* 强制回到顶部，并在稍后各补一次，压过晚到的恢复 */
   try { window.scrollTo(0, 0); } catch (e) {}
   setTimeout(function () { try { window.scrollTo(0, 0); } catch (e) {} }, 60);
+  setTimeout(function () { try { window.scrollTo(0, 0); } catch (e) {} }, 300);
 }
 
 document.addEventListener("DOMContentLoaded", function () {
