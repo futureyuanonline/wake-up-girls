@@ -987,3 +987,19 @@ nav.menu a.menu-cta { display: none; }
   object-fit: cover !important;
   background: none !important;
 }
+
+/* ---- Topic illustrations: square frames to match the square source images ----
+   A 1:1 frame with a 1:1 image fills perfectly: no crop, no letterboxing. */
+.dg-media { aspect-ratio: 1 / 1 !important; }
+.dg-media img { width: 100%; height: 100%; object-fit: cover !important; background: none !important; }
+.dg-item img, .dg-thumb, .mini-cell img, .mini-thumb, .issue-thumb,
+.news-body img, .news-figure img, .news-media img,
+.col-cover, .col-head-img, .work-card img, .work-poster img {
+  aspect-ratio: 1 / 1 !important;
+  height: auto !important;
+  object-fit: cover !important;
+  background: none !important;
+}
+/* small list thumbs keep a compact square */
+.dg-item img, .mini-cell img, .mini-thumb { width: 88px !important; }
+.issue-thumb { width: 100% !important; }
