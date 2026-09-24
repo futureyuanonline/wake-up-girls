@@ -984,3 +984,13 @@ nav.menu a.menu-cta { display: none; }
 .dg-media { aspect-ratio: 1 / 1; }
 .dg-media img { width: 100%; height: 100%; object-fit: cover; display: block; }
 .news-body img { aspect-ratio: 1 / 1; object-fit: cover; width: 100%; height: auto; display: block; }
+
+/* Digest list rows: the thumbnail must not be taller than the text.
+   Stretch it to the row height so no empty space is left under the text. */
+#latest .dg-item { align-items: stretch; }
+#latest .dg-item img {
+  align-self: stretch;
+  height: 100% !important;
+  max-height: none !important;
+  object-fit: cover;
+}
