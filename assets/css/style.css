@@ -922,3 +922,20 @@ nav.menu a.menu-cta { display: none; }
   .card:active, .value-card:active, .mini-cta:active { transform: scale(.985); }
   .nav-cta:active, .btn:active, .pill:active, .tabs button:active { opacity: .82; }
 }
+
+/* ---- Mobile fix: image-bearing issue items must keep their text visible ---- */
+@media (max-width: 640px) {
+  .issue-item { display: block !important; overflow: visible !important; }
+  .issue-item .issue-thumb {
+    float: none !important; width: 100% !important; height: auto !important;
+    aspect-ratio: 16 / 9 !important; margin: 0 0 12px !important;
+  }
+  /* never let entrance animation or blur hide article text on phones */
+  .issue-item h3, .issue-item h3 a, .issue-item p, .issue-item .why-line,
+  .issue-item .why-box, .issue-item .src, .issue-item .cat, .issue-item .region {
+    opacity: 1 !important; transform: none !important; filter: none !important;
+    visibility: visible !important; display: block;
+  }
+  .issue-item .why-line, .issue-item .src { display: block; }
+  .issue-item.reveal, .issue-item .reveal { opacity: 1 !important; transform: none !important; filter: none !important; }
+}
