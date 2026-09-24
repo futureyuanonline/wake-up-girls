@@ -964,3 +964,13 @@ nav.menu a.menu-cta { display: none; }
   .col-head h1 { font-size: 30px; }
 }
 @media (max-width: 640px) { .col-grid { grid-template-columns: 1fr; } }
+
+/* ---- Topic illustrations: show the whole image, never crop it ----
+   These images sit on the same beige as the page background, so the
+   letterboxing is invisible and nothing gets cut off. */
+.news-body img, .news-figure img, .news-media img,
+.issue-thumb, .dg-lead img, .dg-item img, .mini-cell img,
+.col-cover, .col-head-img, .work-poster img, .mini-thumb {
+  object-fit: contain !important;
+  background: var(--wall);
+}
