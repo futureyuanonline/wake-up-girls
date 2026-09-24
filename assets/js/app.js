@@ -1115,7 +1115,6 @@ function renderWorks() {
   function saveWorksState() {
     try {
       sessionStorage.setItem(STORE, JSON.stringify(stateW));
-      sessionStorage.setItem(STORE + ".scroll", String(window.scrollY || 0));
     } catch (e) {}
     try {
       var q = [];
@@ -1205,11 +1204,8 @@ function renderWorks() {
   if (selSort) selSort.addEventListener("change", function () { stateW.sort = selSort.value; apply(); });
 
   fillSelects();
-  var savedScroll = restoreWorksState();
+  restoreWorksState();
   apply();
-  if (savedScroll > 0) {
-    setTimeout(function () { try { window.scrollTo(0, savedScroll); } catch (e) {} }, 90);
-  }
 }
 
 /* ---------- 作品详情页 ---------- */
@@ -1605,7 +1601,22 @@ setTimeout(clearPageTransition, 1000);
 window.addEventListener("pageshow", clearPageTransition);
 window.addEventListener("popstate", clearPageTransition);
 
+/* ---------- 新打开的页面一律从最上方开始 ----------
+   浏览器前进/后退（back_forward）时尊重浏览器自己的位置恢复；
+   其余情况（点链接进来、刷新、从外部打开）强制回到顶部，避免"点进去停在底部"。 */
+function ensureStartAtTop() {
+  var type = "";
+  try {
+    var nav = performance.getEntriesByType && performance.getEntriesByType("navigation")[0];
+    if (nav && nav.type) type = nav.type;
+  } catch (e) {}
+  if (type === "back_forward") return;
+  try { window.scrollTo(0, 0); } catch (e) {}
+  setTimeout(function () { try { window.scrollTo(0, 0); } catch (e) {} }, 60);
+}
+
 document.addEventListener("DOMContentLoaded", function () {
+  ensureStartAtTop();
   initChrome();
   initTransitions();
   applyLang();
