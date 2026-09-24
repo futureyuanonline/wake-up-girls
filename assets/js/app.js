@@ -868,9 +868,9 @@ function renderLatest() {
       "</div>" +
     "</article>";
 
-  // 右侧 4 条小条目
+  // 右侧列表（8 条，确保铺满大图旁的高度，底部不留空）
   html += '<div class="dg-side">';
-  flat.slice(1, 5).forEach(function (o) {
+  flat.slice(1, 9).forEach(function (o) {
     html +=
       '<article class="dg-item">' +
         '<a class="dg-thumb" href="news.html?id=' + esc(o.it.id) + '">' +
