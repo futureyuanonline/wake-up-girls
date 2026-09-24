@@ -459,7 +459,9 @@ footer.site { background: var(--ink); color: var(--wall); padding: 48px 0 30px; 
 .to-top:hover { background: var(--brick); color: var(--wall); border-color: var(--brick); transform: translateY(-3px); }
 .page-veil { position: fixed; inset: 0; z-index: 300; pointer-events: none; opacity: 0; background: radial-gradient(120% 100% at 50% 0%, rgba(225, 182, 42, .5) 0%, rgba(244, 241, 235, .96) 46%, var(--wall) 100%); transition: opacity .5s var(--ease-apple), backdrop-filter .5s var(--ease-apple); }
 .page-veil.entering { opacity: 1; -webkit-backdrop-filter: blur(10px); backdrop-filter: blur(10px); }
-.page-veil.leaving { opacity: 1; }
+.page-veil.leaving { opacity: 1; animation: veilFade .9s var(--ease-apple) forwards; }
+/* 兜底：即使脚本没能移除 leaving，动画结束后遮罩也是透明的，页面一定可见 */
+@keyframes veilFade { from { opacity: 1; } to { opacity: 0; } }
 .page-veil.gone { opacity: 0; }
 body.page-in { animation: pageIn .6s var(--ease-apple) both; }
 @keyframes pageIn { from { opacity: 0; } to { opacity: 1; } }

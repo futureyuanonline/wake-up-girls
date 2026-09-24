@@ -1593,6 +1593,18 @@ function showMailPanel(panelId, textId, full, to, subject, body) {
   }
 })();
 
+/* ---------- 过渡兜底：无论前面发生什么脚本错误，页面都必须恢复可见 ----------
+   1 秒后强制移掉遮罩与 body.page-out（正常情况早已完成，这一步是纯保险）；
+   另外处理 bfcache 返回（浏览器后退）时残留的淡出状态。 */
+function clearPageTransition() {
+  var v = document.getElementById("pageVeil");
+  if (v) { v.classList.remove("leaving", "entering"); v.classList.add("gone"); }
+  if (document.body) document.body.classList.remove("page-out");
+}
+setTimeout(clearPageTransition, 1000);
+window.addEventListener("pageshow", clearPageTransition);
+window.addEventListener("popstate", clearPageTransition);
+
 document.addEventListener("DOMContentLoaded", function () {
   initChrome();
   initTransitions();

@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="zh-CN"><head><meta charset="utf-8"><title>流程测试</title></head>
+<body style="font:14px/1.8 sans-serif;padding:16px">
+<h3>模拟同一个标签页内的完整操作</h3>
+<pre id="o">进行中…</pre>
+<iframe id="f" style="width:1000px;height:600px;border:1px solid #ccc"></iframe>
+<script>
+var f = document.getElementById('f'), out = [], step = 0;
+function go(url, wait, then) {
+  f.onload = function () { setTimeout(function () { try { then(f.contentDocument); } catch (e) { out.push('跨域错误'); } }, wait); };
+  f.src = url;
+}
+function cards(d) { return (d.documentElement.innerHTML.match(/work-card/g) || []).length; }
+function count(d) { var m = d.getElementById('count'); return m ? m.textContent : '(无)'; }
+
+// ① 进入检索库并筛选「艺术」
+go('/works.html?cat=art', 2200, function (d) {
+  out.push('① 筛选艺术后卡片数：' + cards(d) + '（应 31）');
+  out.push('   计数：' + count(d));
+  // ② 点进作品详情
+  go('/work.html?i=0', 2000, function (d2) {
+    out.push('② 详情页：' + (d2.documentElement.innerHTML.indexOf('work-detail') >= 0 || d2.documentElement.innerHTML.indexOf('work-poster') >= 0 ? '已渲染 ✓' : '未渲染 ✗'));
+    // ③ 返回检索库（无参数，模拟点「返回检索库」）
+    go('/works.html', 2400, function (d3) {
+      var c = cards(d3);
+      out.push('③ 返回后卡片数：' + c + '（应 31 = 筛选被记住；若 160 = 未记住 ✗）');
+      out.push('   计数：' + count(d3));
+      out.push('   艺术按钮高亮：' + ((d3.documentElement.innerHTML.match(/data-cat="art"[^>]*class="on"|class="on"[^>]*data-cat="art"/g) || []).length));
+      out.push('');
+      out.push(c === 31 ? '✅ 成功：返回后筛选状态被记住' : '✗ 失败：未恢复筛选');
+      document.getElementById('o').textContent = out.join('\n');
+      document.title = 'DONE';
+    });
+  });
+});
+</script>
+</body></html>
