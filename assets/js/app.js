@@ -7,6 +7,15 @@ var UI = {
   'zh-CN': {
     'nav.latest': '最新', 'nav.archive': '往期', 'nav.works': '作品检索',
     'nav.about': '关于', 'nav.subscribe': '订阅', 'nav.submit': '投稿', 'nav.shop': '好物',
+    'nav.columns': '专栏',
+    'col.label': 'Columns · 按议题浏览',
+    'col.title': '五个专栏',
+    'col.intro': '把周报里的新闻和作品库里的作品，按议题归到一起。每周更新，长期积累。',
+    'col.news': '本栏新闻',
+    'col.works': '本栏作品',
+    'col.back': '← 返回专栏列表',
+    'col.empty': '本栏内容正在积累中。',
+    'col.all_works': '在作品检索库中查看全部',
     'mail.sent': '已收到，谢谢你。我们会在 7 天内回复，无论是否采用。',
     'mail.sending': '提交中…',
     'mail.failed': '站内提交暂时不可用，已为你生成邮件内容（下面的按钮可复制）',
@@ -180,6 +189,15 @@ var UI = {
   'zh-Hant': {
     'nav.latest': '最新', 'nav.archive': '往期', 'nav.works': '作品檢索',
     'nav.about': '關於', 'nav.subscribe': '訂閱', 'nav.submit': '投稿', 'nav.shop': '好物',
+    'nav.columns': '專欄',
+    'col.label': 'Columns · 按議題瀏覽',
+    'col.title': '五個專欄',
+    'col.intro': '把週報裡的新聞和作品庫裡的作品，按議題歸到一起。每週更新，長期積累。',
+    'col.news': '本欄新聞',
+    'col.works': '本欄作品',
+    'col.back': '← 返回專欄列表',
+    'col.empty': '本欄內容正在積累中。',
+    'col.all_works': '在作品檢索庫中查看全部',
     'mail.sent': '已收到，謝謝你。我們會在 7 天內回覆，無論是否採用。',
     'mail.sending': '提交中…',
     'mail.failed': '站內提交暫時不可用，已為你生成郵件內容（下面的按鈕可複製）',
@@ -353,6 +371,15 @@ var UI = {
   en: {
     'nav.latest': 'Latest', 'nav.archive': 'Archive', 'nav.works': 'Directory',
     'nav.about': 'About', 'nav.subscribe': 'Subscribe', 'nav.submit': 'Submit', 'nav.shop': 'Shop',
+    'nav.columns': 'Columns',
+    'col.label': 'Columns · browse by issue',
+    'col.title': 'Five columns',
+    'col.intro': 'Weekly news and library works gathered by issue. Updated each week, accumulating over time.',
+    'col.news': 'News in this column',
+    'col.works': 'Works in this column',
+    'col.back': '← Back to columns',
+    'col.empty': 'This column is still building up.',
+    'col.all_works': 'See everything in the directory',
     'mail.sent': 'Received — thank you. We reply within 7 days either way.',
     'mail.sending': 'Sending…',
     'mail.failed': 'In-site submit is unavailable — your message is ready to copy below',
@@ -1450,6 +1477,100 @@ function relatedWorks(titles) {
     }).join("") + "</ul></div>";
 }
 
+
+/* ---------- 专栏（按议题浏览） ---------- */
+function dataColumns() {
+  return window.COLUMNS || [];
+}
+function colName(c) { return isEn() ? (c.en || c.name) : c.name; }
+function colById(id) {
+  var l = dataColumns();
+  return l.filter(function (c) { return c.id === id; })[0] || l[0];
+}
+/* 按 id 在全站周报里找一条新闻 */
+function findNews(id) {
+  var list = dataIssues() || [];
+  for (var i = 0; i < list.length; i++) {
+    var secs = list[i].sections || [];
+    for (var j = 0; j < secs.length; j++) {
+      var items = secs[j].items || [];
+      for (var k = 0; k < items.length; k++) {
+        if (items[k].id === id) return { it: items[k], cat: secs[j].cat, issue: list[i].id };
+      }
+    }
+  }
+  return null;
+}
+/* 专栏列表页 */
+function renderColumns() {
+  var el = document.getElementById("columns");
+  if (!el) return;
+  var list = dataColumns();
+  if (!list.length) { el.innerHTML = '<p class="muted">' + esc(t('col.empty')) + "</p>"; return; }
+  el.innerHTML = list.map(function (c) {
+    return '<a class="col-card" href="column.html?id=' + esc(c.id) + '">' +
+      '<img class="col-cover" src="' + esc(c.img) + '" alt="' + esc(colName(c)) + '" loading="lazy" />' +
+      '<div class="col-body">' +
+      '<div class="col-en">' + esc(c.en || "") + "</div>" +
+      "<h3>" + esc(colName(c)) + "</h3>" +
+      '<div class="col-sub">' + esc(c.sub || "") + "</div>" +
+      '<p class="col-desc">' + esc(c.intro || "") + "</p>" +
+      '<div class="col-meta">' + esc(t('col.news')) + " " + ((c.news || []).length) + " · " +
+      esc(t('col.works')) + " " + ((c.works || []).length) + "</div>" +
+      "</div></a>";
+  }).join("");
+}
+/* 单个专栏页 */
+function renderColumn() {
+  var el = document.getElementById("column");
+  if (!el) return;
+  var list = dataColumns();
+  if (!list.length) {
+    el.innerHTML = '<div class="panel"><h2>' + esc(t('col.empty')) + "</h2></div>";
+    return;
+  }
+  var id = new URLSearchParams(location.search).get("id");
+  var c = colById(id);
+  document.title = colName(c) + " · " + esc(t('nav.columns')) + " | Wake Up Girls";
+
+  var news = (c.news || []).map(function (nid) {
+    var f = findNews(nid);
+    if (!f) return "";
+    var it = f.it;
+    return '<div class="card issue-card">' +
+      '<div class="card-top"><span class="cat">' + esc(f.cat || "") + "</span>" +
+      '<span class="region">' + esc(regionName(it.region)) + " · 第 " + esc(f.issue) + " 期</span></div>" +
+      '<h3><a href="news.html?id=' + esc(it.id) + '">' + esc(it.t) + "</a></h3>" +
+      "<p>" + esc(it.d || "") + "</p>" +
+      (it.why ? '<p class="why-line">' + esc(t('item.why')) + esc(it.why) + "</p>" : "") +
+      '<div class="src">' + esc(it.src || "") + "</div></div>";
+  }).join("");
+
+  var all = dataWorks() || [];
+  var works = (c.works || []).map(function (idx) {
+    return all[idx] ? workCard(all[idx], idx) : "";
+  }).join("");
+
+  el.innerHTML =
+    '<div class="col-head">' +
+      '<img class="col-head-img" src="' + esc(c.img) + '" alt="' + esc(colName(c)) + '" />' +
+      '<div><div class="col-en">' + esc(c.en || "") + "</div>" +
+      "<h1>" + esc(colName(c)) + "</h1>" +
+      '<div class="col-sub">' + esc(c.sub || "") + "</div>" +
+      '<p class="col-intro">' + esc(c.intro || "") + "</p></div>" +
+    "</div>" +
+    '<section class="block"><div class="sec-label"><span>' + esc(t('col.news')) +
+      "（" + ((c.news || []).length) + "）</span></div>" +
+      '<div class="grid c2">' + (news || '<p class="muted">' + esc(t('col.empty')) + "</p>") + "</div></section>" +
+    '<section class="block"><div class="sec-label"><span>' + esc(t('col.works')) +
+      "（" + ((c.works || []).length) + "）</span></div>" +
+      '<div class="grid works-grid">' + (works || '<p class="muted">' + esc(t('col.empty')) + "</p>") + "</div>" +
+      '<p style="margin-top:14px;"><a class="more" href="works.html" style="color:var(--accent);">' +
+      esc(t('col.all_works')) + "</a></p></section>" +
+    '<p style="margin-top:8px;"><a class="more" href="columns.html" style="color:var(--accent);">' +
+      esc(t('col.back')) + "</a></p>";
+}
+
 /* ---------- 入口 ---------- */
 function renderAll() {
   renderNote();
@@ -1463,6 +1584,8 @@ function renderAll() {
   renderIssue();
   renderNews();
   renderWorks();
+  renderColumns();
+  renderColumn();
   renderWork();
 }
 
