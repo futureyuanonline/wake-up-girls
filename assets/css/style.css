@@ -994,12 +994,3 @@ nav.menu a.menu-cta { display: none; }
   max-height: none !important;
   object-fit: cover;
 }
-
-/* Digest grid: the left lead image is tall, so the right column of items used to
-   end early and leave a large empty area under the last item. Make the item rows
-   share the full height so the last item ends flush with the lead's bottom edge. */
-@media (min-width: 900px) {
-  .digest-grid { grid-auto-rows: 1fr; align-content: stretch; }
-  .dg-item { display: flex; flex-direction: column; justify-content: flex-start; height: 100%; }
-  .dg-item:last-child { border-bottom: 1px solid var(--line); }
-}
