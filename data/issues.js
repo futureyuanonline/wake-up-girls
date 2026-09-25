@@ -7,6 +7,354 @@
    - region：全球/欧洲/北美/拉美/中东/非洲/南亚/东亚/大洋洲/中国 */
 window.ISSUES = [
 {
+  "id": "003",
+  "date": "2026-09-25",
+  "period": "2026.09.21 – 2026.09.27",
+  "title": "全球女性权益周报：从天皇继承到土地所有权，平等仍是进行时",
+  "summary": "本期聚焦日本皇位继承性别壁垒、尼泊尔女性土地权利、厄瓜多尔杀害女性、加纳宪法改革争议、联合国性别平等报告等12条新闻，覆盖东亚、南亚、拉美、非洲、北美、欧洲、中东、全球与东南亚，呈现政策进步与制度惯性并存的复杂图景。",
+  "en": {
+    "title": "Global Women's Rights Weekly: From Imperial Succession to Land Rights, Equality Is Still in Progress",
+    "summary": "This edition covers Japan's imperial gender gap, Nepali women's land rights, femicide in Ecuador, Ghana's constitutional reform dispute, and a UN gender equality report, among 12 stories across East Asia, South Asia, Latin America, Africa, North America, Europe, the Middle East, and Southeast Asia."
+  },
+  "img": "assets/img/womens-rights.png",
+  "watch": {
+    "name": "Nágila Brito",
+    "name_en": "Nágila Brito",
+    "role": "女性权利倡导者",
+    "role_en": "Women's rights advocate",
+    "region": "巴西",
+    "why": "因在维护妇女权益领域的长期行动获得“不朽者”称号，代表巴西基层女性权利倡导力量。她的工作让地方层面的援助与抗争被看到，是社区正义的具体推动者。",
+    "why_en": "Honored with the title of “Immortal” for her long-standing work defending women's rights in Brazil, she represents grassroots advocacy that brings local struggles into view.",
+    "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxOLVlzc3YtemxicUVRR3BpZ3N6bl9lc0hDZ2ZHVGtCWmJOVXZnUDdPRTdaTkNIQzhQRjhSeF85V2dOd2VFbV9wWHd1anpCM3FRTzRnY1owMm1HTEhUZU9wQnZSRkNTTFNQbzFLNktZNU01NDJRNEdqOTJxR2pfQ0ZSRnRZNExuVHdFbU9ZbzJGd2wwcFRTbkJVcGdJT3YtX01LMjBIUkdvNFdYUnV5UXB4SWJJQXpVTWlNQ0E?oc=5",
+    "img": ""
+  },
+  "picks": {
+    "film": "坠落的审判",
+    "book": "厌女",
+    "art": "弗里达·卡罗"
+  },
+  "sections": [
+    {
+      "cat": "国际",
+      "en_cat": "International",
+      "items": [
+        {
+          "id": "003-1",
+          "t": "联合国报告：全球性别平等严重偏离轨道",
+          "d": "联合国最新报告显示全球性别平等进展严重滞后，若按当前速度，实现性别平等目标遥遥无期，需采取更有力行动。",
+          "body": [
+            "联合国发布报告指出，全球性别平等进程严重偏离轨道，现有努力不足以按时实现可持续发展目标中的性别平等。报告措辞直接，罕见地使用“严重偏离轨道”来描述现状，透露出国际社会对进展缓慢的担忧。",
+            "报告提到多项目标进展缓慢，受疫情、冲突和经济下行影响，女性在就业、教育、安全等领域差距回潮。此前有报道称按现有速度，实现性别平等可能要等到2197年，远晚于2030年的承诺。",
+            "国际社会的承诺与投入之间存在巨大差距。若性别平等被持续推迟，社会整体发展潜力也将受损。报告提醒，危机往往首先压缩女性在教育、就业和安全上的资源，而不仅仅是统计数字的回落。"
+          ],
+          "why": "报告用了“严重偏离轨道”这样少见的措辞，说明国际目标的实际进展比想象中更差。",
+          "en": {
+            "t": "UN report says gender equality is woefully off track",
+            "d": "A new UN report finds global progress toward gender equality is far behind schedule.",
+            "body": [
+              "The UN reports that gender equality is woefully off track, with multiple targets lagging. Crises have worsened women's situations in employment, education, and safety.",
+              "Without accelerated action, equality remains a distant goal. The report calls for stronger commitment and notes that current efforts are insufficient for the 2030 agenda."
+            ]
+          },
+          "img": "assets/img/podium.png",
+          "src": "news.un.org",
+          "url": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE9CRWFIZzY1S1RaczVwZnF5d3g2Y2NzN0dEcXZ0VXAzRjNPVTFfc3JIVkhlSXVYdUhJcVhNRkp0SldLbExydXNQS1JMWXJxYl9XT3FKOV91MA?oc=5",
+          "region": "全球"
+        }
+      ]
+    },
+    {
+      "cat": "政策与法律",
+      "en_cat": "Policy & Law",
+      "items": [
+        {
+          "id": "003-2",
+          "t": "女性可当首相却难承天皇位：日本皇位继承的性别壁垒",
+          "d": "日本评论家岛田裕巳指出，即便女性可任首相，现行皇室典范仍将爱子公主排除在天皇继承序列之外。围绕女性天皇的讨论被政治因素长期搁置，折射法律与习俗的性别歧视。",
+          "body": [
+            "日本政坛已有女性出任首相的现实，但皇室继承仍受限于只允许男性天皇的《皇室典范》。评论家岛田裕巳指出，爱子公主被排除在继承序列之外，这种反差暴露出制度深处的不平等。",
+            "日本《皇室典范》规定皇位由男性皇族继承，女性婚后需脱离皇籍。近年来皇族人数减少，民众对女性天皇接受度较高，但保守政治力量仍以传统为由拒绝修法，将问题长期搁置。",
+            "将女性排除在最高象征职位之外，显示法律性别平等的局限。即使女性可担任行政首脑，象征性权力仍保留给男性，反映制度惯性对性别进步的制约。"
+          ],
+          "why": "女性已能出任首相，但爱子仍被排除在天皇继承序列之外，这种反差很少被放在一起比较。",
+          "en": {
+            "t": "Women can be prime minister but Princess Aiko cannot be emperor: Japan's imperial gender gap",
+            "d": "A commentator highlights the contradiction between women reaching political leadership and the male-only imperial succession law.",
+            "body": [
+              "Japan has seen women assume the prime ministership, yet Princess Aiko remains excluded from the imperial line under current law. The male-only succession rule persists, setting the symbolic head of state apart from political progress.",
+              "The debate over female emperors faces resistance from conservative forces, even as public support is high. The gap reveals how legal inequality can survive in symbolic institutions."
+            ]
+          },
+          "img": "assets/img/womens-rights.png",
+          "src": "Yahoo!ニュース",
+          "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxPaWszblEwTmxBbDV2VThjMmhrVHJRNVFSWUJha3lCaHRMbUxjeExfdWU3SW1TWWVoaG4wdTFQeGxPcjJQd3ZIZzRHWjd2d2ZZU1VKRTBoM0xWQW85azJNTXFKY244NjNCdTV2TnNkQ3Y2cFRHZDRJeWNhVlAzOG96WTljdUlrNWJN?oc=5",
+          "region": "东亚"
+        },
+        {
+          "id": "003-3",
+          "t": "加纳妇女团体拒绝宪法审查中的性别平等改革方案",
+          "d": "加纳妇女团体对宪法审查中涉及性别平等的改革条款表达拒绝，认为现有方案未能回应女性实际诉求，甚至可能弱化已有保障。",
+          "body": [
+            "加纳进行宪法审查期间，妇女团体公开反对某些性别平等改革建议，担心条文表述损害女性权益。她们认为改革方向与女性实际需求相悖，因此选择拒绝而非默认接受。",
+            "加纳宪法已确认性别平等原则，但习惯法在婚姻、继承等领域与成文法并存，妇女团体长期呼吁统一法律标准。改革草案若未能消除这种并行，反而可能让习惯法获得更大空间。",
+            "法律改革若缺乏女性群体实质参与，容易出现形式上平等、实践中倒退的结果。妇女团体的反对是一种监督，提醒决策者不能只看条文辞令，还要看女性在日常生活中的真实处境。"
+          ],
+          "why": "宪法审查本应是扩大平等的机会，妇女团体却站出来拒绝改革方向，这种反向动作值得追问。",
+          "en": {
+            "t": "Ghanaian women's groups reject gender equality reforms in constitutional review",
+            "d": "Women's groups are pushing back against proposed constitutional reforms they say fail to protect women's rights.",
+            "body": [
+              "During Ghana's constitutional review, women's groups have rejected certain gender equality proposals, warning they may weaken protections.",
+              "Statutory and customary law coexist, and women have long demanded alignment. The groups see the draft as insufficient or harmful."
+            ]
+          },
+          "img": "assets/img/womens-rights.png",
+          "src": "Ghana News Agency",
+          "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxObS1PMzlUSzh2RFh4MzVwU1p1SGRQVVFMZTNVNjRCajZtQS1wREtzOVM5Y1J5bEN0aVkya1RFRHZoSGZHZHJ0cFNFSjVCdi1YemJBaHdyN2Mzbmg2MG1ILXd0Vk1vZmprcHhnRm5MaEVCLWRvQ3RjR29nckNpWW8xM1l6bHZqa2VqQ2o2VkFEVEpLbS1ZTnV4ZkNEM0FkUQ?oc=5",
+          "region": "非洲"
+        },
+        {
+          "id": "003-4",
+          "t": "英自由民主党在女性权利议题上被批懦弱",
+          "d": "英国自由民主党在跨性别与女性权利等议题上的立场遭批评，被指回避明确原则，在核心性别议题上表现软弱。",
+          "body": [
+            "有评论批评英国自由民主党在女性权利相关问题上态度含糊，尤其是在跨性别政策与单性别空间争论中缺乏决断。该党被指不敢明确表态，以免失去部分选民。",
+            "英国围绕性别承认法、体育与监狱中的性别分类长期争议，政党常因担心疏远部分选民而回避立场。这种政治计算使女性权利与跨性别权益之间的公共讨论更加极化。",
+            "政党若在女性权利与跨性别权益之间选择模糊，可能两头不讨好，也让基层女性感到被忽视。清晰立场不只是政治责任，也关系到公共政策的可预期性。"
+          ],
+          "why": "一个自称自由主义的政党在女性权利上不敢表态，这种反差暴露出政治计算优先于原则。",
+          "en": {
+            "t": "UK Lib Dems accused of cowardice on women's rights",
+            "d": "Critics say the Liberal Democrats have avoided clear positions on contested gender and women's rights issues.",
+            "body": [
+              "The UK Liberal Democrats face criticism for vague stances on women's rights, especially around transgender policy and single-sex spaces.",
+              "Party caution on contested issues may alienate both sides. Observers argue clarity is needed for trust."
+            ]
+          },
+          "img": "assets/img/womens-rights.png",
+          "src": "telegraph.co.uk",
+          "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxPYll3RVdQMGZNdERqTElPd01peEd1ZGtVOXc1RGpZYm1MSjVvNUhMUGJ4dzIwTEg2U1VQOVQwd0lXWm9sMldxSFVnaGNoZkJjcjUtdDRQX25nb0F4REZQV3NxZkpWU2NOZTRhNWszTVFJZk1zaVhmZWI1Ml8xRGIxQ3VhZGZzekE1S2c?oc=5",
+          "region": "欧洲"
+        },
+        {
+          "id": "003-5",
+          "t": "埃及全国妇女委员会称妇女权利立法取得重要进展",
+          "d": "埃及全国妇女委员会表示，在保护妇女权益相关法律文件中取得重要立法突破，涉及针对性暴力与家庭关系等领域的保障强化。",
+          "body": [
+            "埃及全国妇女委员会宣布在维护妇女权益的法律领域出现重要进展，称多项相关文件得到推进。官方机构主动强调立法成绩，试图展现国家在妇女权利方面的努力。",
+            "埃及近年修订部分法律，对性骚扰、女性割礼等作出更严厉规定，但执法与社会污名仍是挑战。许多女性仍不敢报案，法律条文与日常保护之间存在落差。",
+            "官方机构主动强调立法成绩，既可能是真实进步，也可能服务于国际形象。需要观察法律能否转化为日常保护，而非只停留在纸面上的进步叙事。"
+          ],
+          "why": "妇女委员会把多项法律修改称为“重要立法突破”，但具体细节和落实成效仍待检验。",
+          "en": {
+            "t": "Egypt's National Council for Women reports legislative progress",
+            "d": "The state women's body highlights advances in laws protecting women's rights.",
+            "body": [
+              "Egypt's National Council for Women says important legislative progress has been made in files related to women's protection.",
+              "Past reforms targeted harassment and FGM, but enforcement and stigma remain. The announcement may signal both reform and image-building."
+            ]
+          },
+          "img": "assets/img/womens-rights.png",
+          "src": "صدى البلد",
+          "url": "https://news.google.com/rss/articles/CBMiR0FVX3lxTE9kNE5ia1c3a0Izd0ZDUG5nbDVneHplQzZXenJvUkdCU3hYSFhkX0EyWnRCSWpOeXNOSy1sYzA1cF9TWEJxMVJZ?oc=5",
+          "region": "中东"
+        }
+      ]
+    },
+    {
+      "cat": "社会",
+      "en_cat": "Society",
+      "items": [
+        {
+          "id": "003-6",
+          "t": "尼泊尔女性争取所耕种土地的所有权",
+          "d": "尼泊尔许多女性长期从事农业生产，却因法律与社会惯例无法拥有土地。她们正推动土地所有权改革，以保障生计、借贷和家庭决策地位。",
+          "body": [
+            "尼泊尔农村女性承担主要农作劳动，但土地登记多在男性名下。报道指出，女性希望获得她们实际耕种土地的所有权，以改变依附状态，而不是继续只出力不落名。",
+            "尼泊尔法律近年虽有赋予女性财产权的条款，但执行受父权习俗、文件缺失与意识不足阻碍。土地是获得贷款、参与村务的基础资源，没有地契，女性往往被排除在公共事务之外。",
+            "土地所有权不只关乎财产，还直接影响女性在家庭与社区中的议价能力，是打破贫困循环和性别从属的关键。当女性拥有土地，她们更可能投资子女教育并参与决策。"
+          ],
+          "why": "她们每天都在土地上劳作，却不能以自己名义登记产权，这种反差常被发展议题忽略。",
+          "en": {
+            "t": "Nepali women seek ownership of the land they farm",
+            "d": "Women who till the land are demanding legal recognition as owners to secure livelihoods and standing.",
+            "body": [
+              "Women in Nepal do much of the agricultural work yet rarely hold land titles. They are pressing for ownership rights over the fields they cultivate.",
+              "Though laws grant women property rights, patriarchal customs and weak implementation keep land in men's names. Ownership is key to credit, autonomy, and local influence."
+            ]
+          },
+          "img": "assets/img/women-power.png",
+          "src": "news - Mongabay",
+          "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxNMkZ1QmRINzczRXdiUVBhTDlESUo0Q1dXbGlHcVpFZGNuVG9vWVBRbVd6MHFUVl9WSFpFdjM4d1dUdDM1MUNjdjZWeDJEaDY3UWtiN2VnSXJRc1JTdEpXdThJREFQSVZGNXpzeE14Q0QwRmtINEFGLVZ2SXFIUEV3bDQzbWJkSlVvbXVWMlJwck1KWXJMaUN1S2l30gGfAUFVX3lxTE5Jblp2M0NCTkJXVHhaVGVTZTlaWHZjcFZVZGRwLUZsSEhaNktVdGh2SThxRnVwdHdPRl9nR242M2tuNFBVd0owTVpTVV80WDR2TldiU3lfcTNqNTlwUkhMcFJMaC1yaHpGX1ZKZG1oX1RMVTRDd3YtaXpoQmc1TTlkd2N1NzJpdVF6cWxrZ3dZQzVXUUVFeDV2dTRZTDdxSQ?oc=5",
+          "region": "南亚"
+        },
+        {
+          "id": "003-7",
+          "t": "厄瓜多尔为何难以遏制杀害女性案件",
+          "d": "厄瓜多尔杀害女性案件频发，尽管法律已设立相关罪名，执法与预防仍存在断层。报道探讨暴力高发背后的制度失效与性别偏见。",
+          "body": [
+            "厄瓜多尔近年将杀害女性列为特定犯罪，但案件数量仍令人担忧。报道追问，为何法律明确后女性仍不安全，问题显然不止于立法层面。",
+            "拉美地区长期存在高谋杀率与性别暴力文化，警方与司法系统常轻视家庭暴力报案，预防措施和庇护资源不足。许多女性在遇害前已多次求助，却未被认真对待。",
+            "仅将行为入罪不够，若报案不被认真对待、施害者鲜少受罚，法律威慑力有限。杀害女性是性别不平等的极端表现，需要从执法与预防同时着手。"
+          ],
+          "why": "法律已经将杀害女性单独立罪，但女性被杀的数量仍然没有降下来，说明问题不止于立法。",
+          "en": {
+            "t": "Why Ecuador struggles to stop femicide",
+            "d": "Despite criminalizing femicide, Ecuador continues to see high rates of deadly violence against women.",
+            "body": [
+              "Ecuador has made femicide a distinct crime, yet killings of women remain alarming. Gaps in enforcement and prevention are under scrutiny.",
+              "Gender-based violence is widespread, and authorities often downplay domestic violence reports. Without protection and accountability, the law's impact is limited."
+            ]
+          },
+          "img": "assets/img/women-power.png",
+          "src": "DW.com",
+          "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTFA5Q2pSMWN5UGZjYUpKRTNDRXBCMURPbVZjRVdqV3dscS1wWTMtU09DZXZ2OTE1YmQyQUhTUWVZMHlPSWFzRDJWTTRLb3NSSFNISGpyNnpPUzlTdnMyd2VsdWRIcFZNRGpZdUJIYkhHOVNuaVVINlE?oc=5",
+          "region": "拉美"
+        },
+        {
+          "id": "003-8",
+          "t": "加拿大原住民妇女宣言：保护女性与土地免受大型项目暴力",
+          "d": "加拿大原住民妇女发布宣言，将大型开发项目带来的环境破坏与针对原住民妇女的暴力联系起来，要求停止掠夺性开发。",
+          "body": [
+            "UBCIC发布妇女宣言，指出大型项目在破坏土地的同时，也加剧针对原住民妇女的暴力风险。她们把土地权利与人身安全视为一体，认为不能只保护土地而不保护土地上的人。",
+            "加拿大原住民妇女长期面临高暴力风险，资源开采项目常带来外来工人、治安恶化和社区失序，已有调查关注失踪与被谋杀原住民妇女。宣言将环境正义与性别正义相结合。",
+            "将环境正义与性别正义结合，挑战了将经济发展置于社区安全之上的逻辑，也提醒主流女权运动不应忽视原住民女性。破坏土地和伤害妇女常常来自同一套掠夺逻辑。"
+          ],
+          "why": "宣言把土地破坏和妇女暴力放在同一个框架里，这在大型项目争议中并不常见。",
+          "en": {
+            "t": "Indigenous women's declaration in Canada links land protection to ending violence",
+            "d": "UBCIC women connect major project violence to harms against Indigenous women and demand land protections.",
+            "body": [
+              "The UBCIC Women's Declaration says large projects on Indigenous lands worsen violence against women. It ties environmental destruction to community safety.",
+              "The declaration challenges both resource extraction and the neglect of missing and murdered Indigenous women, joining gender and land justice."
+            ]
+          },
+          "img": "assets/img/women-power.png",
+          "src": "ubcic.bc.ca",
+          "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxNV1RlQmpSVXV3MkpWMVEzd21HRmJJUTVFUGVVNTJZQ054NGduTE1KSFNtTFVNZjhjVmtBYmk4cEpiVFlfZVJFUWc3SnJEUWNDWVBpSEFFTjlleVFuRGZzZXhpYjVaU2pOdVVqeUlTei1NZU1kOGpJZVBTcVZYNWRpSUNaMU1xOFdTSzl3?oc=5",
+          "region": "北美"
+        }
+      ]
+    },
+    {
+      "cat": "健康与权益",
+      "en_cat": "Health & Rights",
+      "items": [
+        {
+          "id": "003-9",
+          "t": "墨西哥瓜纳华托州寻求强化产妇权利保护",
+          "d": "墨西哥瓜纳华托州拟加强女性在孕产期间的权利保障，涉及医疗与劳动保护，旨在减少孕期歧视和健康风险。",
+          "body": [
+            "墨西哥瓜纳华托州提出或讨论加强女性在生育期间的权益保护，重点是孕产期女性的医疗和劳动保障。保护怀孕和生育期间的权利，听起来基础，却仍需要地方立法来强调。",
+            "墨西哥女性在怀孕期间常面临职场歧视、解雇风险与医疗条件不足，孕产妇健康不平等问题突出。许多女性因担心失去工作而不敢怀孕或不敢休产假。",
+            "将保护从纸面落实到医疗与劳动实践，是保障女性生育自主与身体权利的基础。如果孕期被解雇、产检资源不足等问题持续存在，那么法律上的平等就是空话。"
+          ],
+          "why": "保护女性在怀孕和生育期间的权利，听起来基础，却仍需要地方立法来强调，说明执行很薄弱。",
+          "en": {
+            "t": "Guanajuato seeks stronger protections for women during maternity",
+            "d": "Mexican state moves to reinforce rights for women during pregnancy and maternity.",
+            "body": [
+              "Guanajuato is working to strengthen protections for women's rights during maternity, including healthcare and labor safeguards.",
+              "Pregnancy-related discrimination and unequal maternal care remain challenges. The effort aims to turn legal rights into practice."
+            ]
+          },
+          "img": "assets/img/body-choice.png",
+          "src": "MILENIO",
+          "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxQTm5hZXR4S1BOei1sUWtsSHZ3TWpWYk54R2JJVlRBWk1NeXBjQzJ0SFg5bjBuRnRUNFBsdkVfNjV3WUVPYlFVdnEtVHk4LTdIVFZiOGM3TThfZWRMWUh3a29mb1BrQS1qZ3NYaG9RN1FXVmpXUk5VQWhUQXlYeDM5Q2VyYTVxXzUyUnEwSHA0TTXSAZABQVVfeXFMT2Q3d1ZnTFpCbTBQWFhqT1FTMXJzbjNaVGl1ckhaSUxDa3gyNWYzaWpNZ3pHUG9WcXJ5WngtRnZjblV3SlgzOGRFeldYUzlUd3YyNFNmWGEwMm1pWFNxRDR6ZlpVdHdScE9QMnhwWkhYeUQ4RkMtMU9GcmtDS0NjSDg5emg2UDJBZ3lOby1IeGZG?oc=5",
+          "region": "拉美"
+        }
+      ]
+    },
+    {
+      "cat": "文化",
+      "en_cat": "Culture",
+      "items": [
+        {
+          "id": "003-10",
+          "t": "巴西女性权利倡导者Nágila Brito获“不朽”称号",
+          "d": "巴西女性权利捍卫者Nágila Brito因其在维护妇女权益方面的行动获得荣誉称号，表彰她在相关领域的长期投入。",
+          "body": [
+            "Nágila Brito 因在维护女性权利方面的突出行动获得“不朽者”称号。这一荣誉来自巴西相关机构，用以表彰她在女性权益领域的持续努力。",
+            "巴西女性面临高暴力率与政治代表不足，许多地方行动者在基层提供法律援助与庇护。Nágila Brito 的工作属于这种社区层面的日常抗争，未必出现在全国性头条中。",
+            "对基层女性权利倡导者的认可，有助于将关注引向日常实践而非仅法律条文。当一位并非全国知名的人物获得称号，地方层面的努力就被看见了。"
+          ],
+          "why": "一位并非全国知名的女性权利行动者获得“不朽”称号，说明地方层面的努力被看见。",
+          "en": {
+            "t": "Brazilian women's rights advocate Nágila Brito receives title",
+            "d": "Nágila Brito is honored for her work defending women's rights in Brazil.",
+            "body": [
+              "Nágila Brito received an \"Immortal\" title for her advocacy for women's rights. The honor recognizes grassroots commitment.",
+              "Her work highlights the role of local defenders in a country with high gender violence and underrepresentation."
+            ]
+          },
+          "img": "assets/img/womens-rights.png",
+          "src": "Taktá No AR",
+          "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxOLVlzc3YtemxicUVRR3BpZ3N6bl9lc0hDZ2ZHVGtCWmJOVXZnUDdPRTdaTkNIQzhQRjhSeF85V2dOd2VFbV9wWHd1anpCM3FRTzRnY1owMm1HTEhUZU9wQnZSRkNTTFNQbzFLNktZNU01NDJRNEdqOTJxR2pfQ0ZSRnRZNExuVHdFbU9ZbzJGd2wwcFRTbkJVcGdJT3YtX01LMjBIUkdvNFdYUnV5UXB4SWJJQXpVTWlNQ0E?oc=5",
+          "region": "拉美"
+        }
+      ]
+    },
+    {
+      "cat": "生育权利",
+      "en_cat": "Reproductive Rights",
+      "items": [
+        {
+          "id": "003-11",
+          "t": "生育权利倒退之际，美国邮政发行纪念作家朱厄特邮票",
+          "d": "美国邮政在生育权利受挫背景下发行纪念作家萨拉·奥恩·朱厄特的邮票，她曾描绘女性在婚姻之外的生活可能。",
+          "body": [
+            "美国生育权利面临倒退，此时美国邮政发行纪念作家 Sarah Orne Jewett 的邮票。她以描写女性独立生活而知名，作品展现女性不依附婚姻的可能性。",
+            "美国多州限制堕胎后，女性自主选择空间缩小。朱厄特的作品提醒人们，女性可以拥有生育之外的人生道路，这种文学想象在当下具有现实意义。",
+            "一枚邮票在此时出现，既是对女性文学传统的肯定，也提醒公众生育自主与女性生活道路选择密切相关。当法律收紧时，文化表达成为另一种抵抗。"
+          ],
+          "why": "在生育权利被压缩的时候发行纪念一位书写女性不婚生活的作家邮票，时机本身就像一种表态。",
+          "en": {
+            "t": "Amid reproductive rollbacks, USPS honors author Sarah Orne Jewett",
+            "d": "A new stamp honors a writer who imagined women's lives beyond marriage as reproductive rights are curtailed.",
+            "body": [
+              "The USPS has issued a stamp for Sarah Orne Jewett, known for depicting women's independent lives. It comes amid reproductive rights rollbacks.",
+              "The stamp highlights literary visions of female autonomy at a time when bodily self-determination is under legal attack."
+            ]
+          },
+          "img": "assets/img/body-choice.png",
+          "src": "Ms. Magazine",
+          "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxOZjhiVWMwZU1ISnIyWmcxTUpEcHhPX0VJQTNZdThjQXZUdmFEdEVWRFNDUmxJRmVwcmFlRHJJY254WGkyTGlQZEVfZjRPQ0lsYnFjRXJTTDUzMUdtd3lhaU00MDk0MGJ0V3o1UGtncGtBVkFaTmVLTWZVYzBid0tmdlZtdy0?oc=5",
+          "region": "北美"
+        }
+      ]
+    },
+    {
+      "cat": "职场平等",
+      "en_cat": "Workplace Equality",
+      "items": [
+        {
+          "id": "003-12",
+          "t": "提高女性在军队中的工作效能以推动性别平等",
+          "d": "东南亚地区讨论提高女性在军队环境中的工作效能，以促进军队内部性别平等与女性职业发展。",
+          "body": [
+            "有报道关注如何提高女性在军队中的工作效能，以推动军事环境中的性别平等和女性进步。军队作为权力最集中的机构之一，其性别平等进展可影响更广的社会规范。",
+            "军队长期以男性为主导，女性常面临晋升受限、性骚扰与制度排斥。提升效能需结构性改革，而不只是增加女性人数，还要改变评价体系和日常文化。",
+            "如果连最保守的军队都开始谈性别平等，说明其他行业的借口更站不住脚。军队中的变化可能产生示范效应，让更多机构重新审视自己的性别盲区。"
+          ],
+          "why": "在强调纪律和服从的军队里讨论女性晋升和效能，本身就是对旧结构的挑战。",
+          "en": {
+            "t": "Improving women's effectiveness in the military to advance gender equality",
+            "d": "Calls to enhance women's roles and effectiveness in military settings aim to promote gender equality.",
+            "body": [
+              "A report highlights efforts to improve women's effectiveness and equality in the military. It discusses structural barriers to advancement.",
+              "As a male-dominated institution, the military requires targeted reforms to address discrimination and promote women's progress."
+            ]
+          },
+          "img": "assets/img/workplace.png",
+          "src": "Vietnam.vn",
+          "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxQWGd0ODMxOVdLTmwzQVJaQzJpZFNNeG1uQWFLbGZmSEhMWDRRTmhhM2ZFVng3aVVkLWdvRUVQM1NrNW9yVWt4NHhZRnUzR1dUZk1MSDZ1R0EyYWpDMVNRVjExTW4xSHQ2ME15eXlPRFZYb1M1RnF2bWdGUnhJN0FTUkVzcjJOZ2p0NXVTaktGMmZNLWlUTG8wcnFlZTVDRHBsV3RxVzBsS3JHTU1YaG1Z?oc=5",
+          "region": "东南亚"
+        }
+      ]
+    }
+  ]
+},
+{
   "id": "002",
   "date": "2026-09-18",
   "period": "2026.09.14 – 2026.09.20",
