@@ -333,5 +333,41 @@ def main():
     print('备选句清单：%s' % sheet)
 
 
+# ---- 出刊去重：排除上一期已选过的「她的作品」 ----
+# 背景（实测）：第 002 期与第 003 期的艺术类选品都是「弗里达·卡罗」，
+# 因为提示词没有排除上期选品，模型天然偏好最有名的那位。
+# 做法：包装原来的 load_works_hint()，在作品清单前加一条明确的排除说明。
+def _recent_picks(limit=3):
+    """从 data/issues.js 里取最近几期的 picks 标题（新→旧）"""
+    import re as _re
+    path = os.path.join(ROOT, 'data', 'issues.js')
+    try:
+        txt = io.open(path, encoding='utf-8').read()
+    except Exception:
+        return []
+    out = []
+    for m in _re.finditer(r'"picks"\s*:\s*\{([^}]*)\}', txt):
+        body = m.group(1)
+        for key in ('film', 'book', 'art'):
+            mm = _re.search(r'"%s"\s*:\s*"([^"]+)"' % key, body)
+            if mm:
+                out.append(mm.group(1))
+        if len(out) >= limit * 3:
+            break
+    return out
+
+
+_load_works_hint_original = load_works_hint
+
+
+def load_works_hint():
+    hint = _load_works_hint_original()
+    used = _recent_picks()
+    if not used:
+        return hint
+    note = ('\n\n【重要】以下作品已在最近几期推荐过，本期【禁止】再选，'
+            '必须在同一类型里换一件不同的作品：' + '、'.join(used) + '\n')
+    return hint + note
+
 if __name__ == '__main__':
     main()

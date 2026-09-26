@@ -1054,3 +1054,17 @@ nav.menu a.menu-cta { display: none; }
 @keyframes veilFade { from { opacity: 1; } to { opacity: 0; } }
 body.page-out { transition: opacity .18s var(--ease-apple), transform .18s var(--ease-apple) !important; }
 body.page-in { animation-duration: .3s !important; }
+
+/* Page transition: drop the full-screen backdrop-filter blur.
+   A full-viewport live blur is re-computed every frame and is the main
+   cause of janky page switches. Plain opacity is cheap and always smooth. */
+.page-veil,
+.page-veil.entering,
+.page-veil.leaving {
+  -webkit-backdrop-filter: none !important;
+  backdrop-filter: none !important;
+}
+.page-veil {
+  transition: opacity .22s var(--ease-apple) !important;
+  background: var(--wall) !important;
+}
