@@ -110,8 +110,20 @@ def call_llm(prompt):
     finish = choice.get('finish_reason')
     usage = data.get('usage') or {}
     reasoning = usage.get('completion_tokens_details', {}).get('reasoning_tokens', 0)
-    print('  模型=%s finish=%s tokens=%s(推理 %s) 正文字符=%d'
-          % (data.get('model'), finish, usage.get('completion_tokens'), reasoning, len(content)))
+    print('  用量：模型=%s finish=%s ｜ 输入 %s ｜ 输出 %s（推理 %s）｜ 合计 %s ｜ 正文字符=%d'
+          % (data.get('model'), finish, usage.get('prompt_tokens'), usage.get('completion_tokens'),
+             reasoning, usage.get('total_tokens'), len(content)))
+    # 追加到用量日志，便于长期统计每期花费（drafts 目录不入库，这里放 tools/why/）
+    try:
+        _dir = os.path.join(ROOT, 'tools', 'why')
+        os.makedirs(_dir, exist_ok=True)
+        _line = '%s ｜ %s ｜ 输入 %s ｜ 输出 %s ｜ 推理 %s ｜ 合计 %s ｜ 期号 %s\n' % (
+            datetime.now(CST).strftime('%Y-%m-%d %H:%M'), data.get('model'),
+            usage.get('prompt_tokens'), usage.get('completion_tokens'), reasoning,
+            usage.get('total_tokens'), os.environ.get('GITHUB_RUN_ID', 'local'))
+        io.open(os.path.join(_dir, 'usage.log'), 'a', encoding='utf-8').write(_line)
+    except Exception:
+        pass
     if finish == 'length':
         sys.exit('LLM 输出被截断（finish_reason=length，max_tokens=%d 不够）。'
                  '请调大 LLM_MAX_TOKENS 或减少条目数。' % MAX_TOKENS)
