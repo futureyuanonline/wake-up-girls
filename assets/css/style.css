@@ -1068,3 +1068,12 @@ body.page-in { animation-duration: .3s !important; }
   transition: opacity .22s var(--ease-apple) !important;
   background: var(--wall) !important;
 }
+
+/* Restore the original warm gradient veil (that gradient was the "silky" part),
+   keep only the blur removed and the shorter opacity timing. */
+.page-veil {
+  background: radial-gradient(120% 100% at 50% 0%, rgba(225, 182, 42, .5) 0%, rgba(244, 241, 235, .96) 46%, var(--wall) 100%) !important;
+  transition: opacity .22s var(--ease-apple) !important;
+  -webkit-backdrop-filter: none !important;
+  backdrop-filter: none !important;
+}
