@@ -1046,3 +1046,11 @@ nav.menu a.menu-cta { display: none; }
     margin: 18px auto !important;
   }
 }
+
+/* Faster page transitions: 0.5s veil + 0.3s body felt sluggish.
+   Short and light reads as crisp; long reads as sticky. */
+.page-veil { transition: opacity .25s var(--ease-apple) !important; }
+.page-veil.leaving { animation-duration: .3s !important; }
+@keyframes veilFade { from { opacity: 1; } to { opacity: 0; } }
+body.page-out { transition: opacity .18s var(--ease-apple), transform .18s var(--ease-apple) !important; }
+body.page-in { animation-duration: .3s !important; }
