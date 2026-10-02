@@ -7,6 +7,308 @@
    - region：全球/欧洲/北美/拉美/中东/非洲/南亚/东亚/大洋洲/中国 */
 window.ISSUES = [
 {
+  "id": "004",
+  "date": "2026-10-02",
+  "period": "2026.09.28 – 2026.10.04",
+  "title": "Wake Up Girls 全球女性议题周报：法律、身体与政治参与",
+  "summary": "本期聚焦日本首例性骚扰诉讼、韩国职场晋升歧视、伊朗鞭刑、尼日利亚继承权与印度性暴力等议题，横跨亚非拉美欧澳，呈现女性在法律、职场、身体自主与公共参与中的处境。",
+  "en": {
+    "title": "Global Women's Issues Weekly: Law, Bodies, and Political Participation",
+    "summary": "This issue covers Japan's first sexual harassment lawsuit, workplace discrimination in South Korea, flogging in Iran, inheritance denial in Nigeria, and sexual violence in India, spanning Asia, Africa, the Americas, Europe and Oceania."
+  },
+  "img": "assets/img/womens-rights.png",
+  "watch": {
+    "name": "迪亚米拉·里贝罗",
+    "name_en": "Djamila Ribeiro",
+    "role": "哲学家 / 作家 / 行动者",
+    "role_en": "Philosopher / Writer / Activist",
+    "region": "拉美",
+    "why": "她在巴西主流媒体撰文追问“何时轮到女性”，长期以黑人女性主义视角剖析种族与性别交叉的不平等，推动公共教育和政策讨论。",
+    "why_en": "A leading Black feminist intellectual in Brazil, she uses public writing to challenge structural racism and sexism.",
+    "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxQVWliSG9TeUhwN283cVo5clJuX0ZyeTBwb3pCbHpLYjNYakxUYzZFa2pPVmJPN3c2c2pBVkRIVUoybHFia0ZlVENLNjZYd1hOUHBkbGd6NThxQTRxTXlwNjlSZWRuOWNpSmJHM3pzdXR0d2F6MmhtcF9Fa21meHB2VHdFTEJLakFZaFVxX0xkS2kzV2wwaklyTkJlMTMzWFE?oc=5",
+    "img": ""
+  },
+  "picks": {
+    "film": "好东西",
+    "book": "一间自己的房间",
+    "art": "小野洋子"
+  },
+  "sections": [
+    {
+      "cat": "政策与法律",
+      "en_cat": "Policy & Law",
+      "items": [
+        {
+          "id": "004-1",
+          "t": "日本首起性骚扰诉讼女律师：女性歧视现实未变",
+          "d": "日本首起性骚扰诉讼的代理女律师回顾案件，指出职场性骚扰与性别歧视如今依然普遍，法律改革势在必行。",
+          "body": [
+            "日本首起性骚扰诉讼的女性代理律师近日接受采访，讲述了当年推动这一前例性案件的经过。她表示，发起诉讼不仅为当事人争取正义，更希望唤醒社会对职场性骚扰问题的关注。该案在当时几乎没有先例可循，面临很大风险。",
+            "该案发生在日本经济高速增长后，女性大量进入职场却面临不平等待遇的时期。性骚扰概念当时尚未被日本法律普遍承认，多数受害者选择沉默，企业也缺乏预防和处理机制。律师团队需要克服法律和舆论的重重阻力。",
+            "律师指出，尽管如今性骚扰防治已被写入法律，但女性在职场中仍面临隐性歧视与报复。此案的意义在于确立了司法先例，但真正的性别平等仍需制度与文化的持续改变，不能止步于个别胜诉。"
+          ],
+          "why": "日本首例性骚扰诉讼，意味着法律首次承认职场中女性身体尊严受损可诉。",
+          "en": {
+            "t": "Japan's First Sexual Harassment Lawsuit Lawyer: Discrimination Reality Unchanged",
+            "d": "The lawyer behind Japan's first sexual harassment lawsuit reflects on the case, noting workplace harassment and gender discrimination remain widespread.",
+            "body": [
+              "The woman lawyer who led Japan's first sexual harassment lawsuit spoke about the case, which established a legal precedent for workplace harassment claims in the country.",
+              "Despite legal reforms, she says discrimination persists, and women still face retaliation and silence when reporting abuse."
+            ]
+          },
+          "img": "assets/img/womens-rights.png",
+          "src": "現代ビジネス",
+          "url": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE1WaEV6VWxUc2prUGwtWEpsUVNSSkpiYTB3VzhkTmVfV0F5bTcxNmx3SThrQlo1eWV5QmV1Xy1sbmQxQmtYOW1DcTNnRG9mVjQ?oc=5",
+          "region": "东亚"
+        },
+        {
+          "id": "004-2",
+          "t": "尼日利亚女性继承权仍遭剥夺，律师指加剧贫困与暴力",
+          "d": "尼日利亚独立66年后，许多地区仍依习俗剥夺女性继承权，律师称这加剧女性贫困和家庭暴力，亟待改革。",
+          "body": [
+            "尼日利亚女性律师埃泽洛指出，该国独立66年来，众多社区仍依据传统习俗否认女性的土地和财产继承权，使女性在丧偶或离婚后失去经济来源。她呼吁政府优先处理这一长期被忽视的问题。",
+            "尽管尼日利亚宪法禁止性别歧视，但继承事务多由习惯法和宗教法主导，女性难以通过司法途径获得救济。经济弱势导致女性更易陷入贫困并遭受家庭暴力，甚至被迫接受不公正的安排。这一状况在农村地区尤为严重。",
+            "这一议题将继承权与女性安全直接联结。活动人士呼吁政府通过立法和司法改革消除歧视性习俗，否则性别平等的承诺难以落实。财产权保障是女性独立与免于暴力的基础。"
+          ],
+          "why": "尼日利亚独立66年仍未保障女性继承权，法律与习俗之间差距巨大。",
+          "en": {
+            "t": "Nigeria Still Denies Women Inheritance Rights, Lawyer Says, Fueling Poverty and Violence",
+            "d": "A Nigerian lawyer says many communities still deny women inheritance rights 66 years after independence, worsening female poverty and domestic violence.",
+            "body": [
+              "Lawyer Ezeilo highlights that customary and religious laws often override constitutional protections, leaving women without land or property after a spouse's death.",
+              "Without economic security, women face higher risks of poverty and abuse. Activists urge the government to prioritize legal reform on inheritance."
+            ]
+          },
+          "img": "assets/img/womens-rights.png",
+          "src": "Sahara Reporters",
+          "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxPXzhzV2hQLUhoaG1NMER4ZXFGTVZ0YUQzN0pKS21WYS0zOEZ1SUNDT1l2Y1lBUHExUU1ycGkxaHhlM1I2THh0TmtLbmYwOEZmTjl0Ty1xSmVaOXBMMm4ycTBPcXQyUlVqVlpreTJnRTdrM1lsalFEektBTlFpMDBRZ3BqR1lHdVpGTW1mQWdOeXNPa091cGFJMTJ3S1VyOEVvT3o0VzVzWjJkdzNDUkhRSTJGLW9JM0hpemhzeVpZemFTd1ZKTUE?oc=5",
+          "region": "非洲"
+        },
+        {
+          "id": "004-3",
+          "t": "美国教育部推翻拜登时期第九条规则，恢复女性保护",
+          "d": "美国教育部宣布撤销拜登政府时期的第九条民权规则，称将恢复对女性及女孩的保护，引发不同解读。",
+          "body": [
+            "美国教育部宣布废除拜登政府时期的第九条规则，该规则曾扩展对跨性别学生的保护。教育部称，新措施将恢复对女性和女孩的权益保护，避免性别概念被扩大解释，从而影响女性专属空间。",
+            "第九条是美国禁止教育领域性别歧视的联邦法律。近年来，围绕跨性别学生使用设施和参与体育的争议不断，不同政府上台后政策反复，学校和学区在执行上面临混乱。各州之间的差异也日益扩大。",
+            "此举被保守派视为恢复传统性别秩序，但民权组织担忧会削弱对跨性别学生的保护。政策摇摆凸显美国性别政治的高度对立，以及法律解释对弱势群体的直接影响。"
+          ],
+          "why": "同一部法律在不同政府下被赋予完全相反的性别定义。",
+          "en": {
+            "t": "US Education Department Reverses Biden-Era Title IX Rule, Says Restores Protections for Women",
+            "d": "The US Education Department revoked the Biden administration's Title IX rule, saying it restores protections for women and girls.",
+            "body": [
+              "The reversal changes how schools interpret sex discrimination, particularly regarding transgender students' access to facilities and sports.",
+              "Supporters call it a return to fairness, while critics say it endangers transgender students and deepens political polarization."
+            ]
+          },
+          "img": "assets/img/womens-rights.png",
+          "src": "Campus Reform",
+          "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxQT29jclBnR2RVTUxldWpYam1zZlFJbnllc1FDQlNNRkhfbXhPbl9WdUJHWWR6SG43MkphZ080UE9mbk9UWUhCbmRXdnBCTE9xRFBBTUR1OXJxUS1UajU1dFAyLWsxbmNxLU1PeVlJNERxT0pfQWU2QUxFRE9IemZIVkgzZjVRd2JHZ1F4T3NnQVp4NHFldGlYSWlMOF8zNzMwNG5ySGJTNkxkRkFOUnhFMGh4LXFqWVYwbkt4OWtLUWpZTDhHRTdXbQ?oc=5",
+          "region": "北美"
+        }
+      ]
+    },
+    {
+      "cat": "职场平等",
+      "en_cat": "Workplace Equality",
+      "items": [
+        {
+          "id": "004-4",
+          "t": "韩国人权委认定兵役加分造成女性晋升歧视",
+          "d": "韩国国家人权委员会裁定，将军队服役经历作为晋升优势的做法对女性构成间接歧视，要求相关部门加以改善。",
+          "body": [
+            "韩国国家人权委员会近日表示，将男性兵役经历自动等同于工作经历并给予晋升优待，构成对女性的间接歧视。该委员会要求相关机构修改规定，消除性别差异影响，保障女性在职场中获得平等的晋升机会。",
+            "在韩国，所有男性需服兵役，女性通常不服役。长期以来，很多企业将服役年限计入工龄或作为晋升评定时加分，认为这是对男性服役的补偿。然而，这一做法使女性在职业发展中处于系统性的不利位置。",
+            "这一裁定引发对职场性别平等的讨论。支持者认为必须消除系统性偏差，反对者则认为服役是男性承担的特殊义务。如何平衡服役补偿与性别平等仍存争议，相关机构的后续措施将受到密切关注。"
+          ],
+          "why": "韩国以兵役为名给予男性晋升优待，实质将女性排除在同等职业发展之外。",
+          "en": {
+            "t": "South Korea Rights Body Says Military Service Bonus Discriminates Against Women in Promotions",
+            "d": "South Korea's human rights commission ruled that granting promotion advantages based on military service constitutes indirect discrimination against women.",
+            "body": [
+              "The commission found that counting military service as work experience or promotion credits disadvantages women, who are generally exempt from conscription. It urged institutions to revise related rules.",
+              "Supporters see the ruling as a step toward removing systemic bias, while critics argue it overlooks men's compulsory service obligations."
+            ]
+          },
+          "img": "assets/img/workplace.png",
+          "src": "한국NGO신문",
+          "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTFAzWnNUWTFQbm1ieG1RZmhtSW5SeU44MzNISUVqQ0I3YnlNWjN2T3NjelNlTGQxUjVfbG5MSldzekJyZ1JvUGowZDhLb3F2UDVnWUZKQnNGSDZrRmlWdlhYLVZlc1czcVNI?oc=5",
+          "region": "东亚"
+        }
+      ]
+    },
+    {
+      "cat": "健康与权益",
+      "en_cat": "Health & Rights",
+      "items": [
+        {
+          "id": "004-5",
+          "t": "国际特赦组织：伊朗鞭刑侵犯女性权利等同酷刑",
+          "d": "国际特赦组织指出，伊朗对女性施以鞭刑的做法违反国际人权法，构成酷刑或残忍待遇，应被禁止。",
+          "body": [
+            "国际特赦组织发表声明，谴责伊朗法院对女性判处鞭刑。该组织认为，此类刑罚专门针对女性的行为进行惩罚，严重侵犯其身体完整权与人格尊严，构成国际法所禁止的酷刑或残忍待遇，必须立即停止。",
+            "伊朗法律受伊斯兰刑法影响，对某些行为处以鞭刑，女性常因着装、社交或道德指控受罚。国际人权机构多次呼吁停止体罚，但伊朗当局仍维持相关判罚，甚至公开执行以儆效尤。",
+            "将鞭刑与酷刑相提并论，凸显了性别化的暴力如何以法律形式被制度化。该问题不仅关乎伊朗，也提醒国际社会关注身体自主权与司法惩罚的边界，以及法律对女性身体的控制。"
+          ],
+          "why": "国际特赦组织将伊朗鞭刑定性为酷刑，罕见地聚焦性别化体罚。",
+          "en": {
+            "t": "Amnesty International: Iran's Flogging Violates Women's Rights, Amounts to Torture",
+            "d": "Amnesty International says flogging sentences against women in Iran violate international human rights law and constitute torture.",
+            "body": [
+              "The rights group condemned Iranian courts for sentencing women to flogging, often for moral or dress-related charges.",
+              "Such punishments institutionalize gender-based violence and highlight the need to defend bodily autonomy worldwide."
+            ]
+          },
+          "img": "assets/img/body-choice.png",
+          "src": "رؤيا الإخباري",
+          "url": "https://news.google.com/rss/articles/CBMiRkFVX3lxTE43TGxWbDJsYXlDZ1BRSWpyTkZPaTdYNUdtb1lNYy01QUlCZTNWQ3RfSkQ3VG9DcExuLXowdmYzbzBqVjFqVHc?oc=5",
+          "region": "中东"
+        }
+      ]
+    },
+    {
+      "cat": "社会",
+      "en_cat": "Society",
+      "items": [
+        {
+          "id": "004-6",
+          "t": "印度性暴力事件频发，女性安全感持续下降",
+          "d": "德国之声报道，印度多地性暴力案件高发，女性对公共安全和司法救济的信心低落，生存处境令人担忧。",
+          "body": [
+            "德国之声报道指出，印度持续发生的性暴力案件让许多女性不再感到安全。从城市街头到乡村，性骚扰和性侵事件频发，部分案件引发大规模抗议。女性在公共场所和交通工具上常常面临骚扰风险。",
+            "尽管印度在2012年巴士轮奸案后加强了性犯罪法律，但执行不力、警察态度消极和审判拖延等问题依然突出。社会对受害者的污名化也令许多人不敢报案，导致实际案件数量远高于官方统计。",
+            "女性安全感的下降不仅影响个人生活，也限制其教育、就业和公共参与。该报道呼吁关注制度性失效与文化偏见，而不仅是孤立案件。安全环境的缺失正在侵蚀社会整体的性别平等进程。"
+          ],
+          "why": "法律改革后性暴力仍高发，说明立法进步未自动转化为安全保障。",
+          "en": {
+            "t": "Sexual Violence in India: Why Women No Longer Feel Safe",
+            "d": "DW reports that rising sexual violence in India has eroded women's sense of safety, with weak enforcement and stigma compounding the problem.",
+            "body": [
+              "Despite stricter laws after the 2012 Delhi gang rape, police inaction, delayed trials, and victim-blaming persist.",
+              "Fear of violence restricts women's mobility and participation in education and work, deepening gender inequality."
+            ]
+          },
+          "img": "assets/img/women-power.png",
+          "src": "DW.com",
+          "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxQRmxRekk1SklZR1VDTnlsOVlkMzNad2p6UElxdU10eHRLUGZmakNqWEtKQ1JoenIwbEp0TU1NRUwxeGtRT1Q1VmtpN1NlV253aENKbmJaWUV0MnA4V09VbHVoRC1WWkFxZ1BwSkcwaDR2am1obnpHaGt6UlBlaGgtQ3Y1NWRuZWxqUTRiT2JPM1VRTGtGWkV5X9IBmAFBVV95cUxQSnNlck1FdGtYaFlNbi1RdExMTTlwNTJGSmJwa3YzTjRQbTdGd3I2LV9zeUswZVl1N2dCYnZydXNPRmdhYUNya1oyaEdOcmFSa1RyX1FST1B3Ykx2b0NnMWo1bF85ajl0SGZYUURlcmw2WkVUeE5jRThyQk5XYzIxdFNOdUdlQXVLRzlldE1WamtBZnFVQmNvOA?oc=5",
+          "region": "南亚"
+        },
+        {
+          "id": "004-7",
+          "t": "迪亚米拉·里贝罗撰文：何时轮到女性？",
+          "d": "巴西哲学家迪亚米拉·里贝罗在专栏中追问女性在政治与社会中的位置，指出性别不平等仍被长期忽视。",
+          "body": [
+            "巴西作家、哲学家迪亚米拉·里贝罗在《圣保罗页报》发表评论，以“何时轮到女性？”为题，讨论女性在巴西政治与社会决策中的边缘化处境。她指出，性别议题常被置于议程末端，男性主导的权力结构长期未有实质改变。",
+            "里贝罗长期以黑人女性主义视角分析巴西的种族与性别问题，其著作和演讲推动公众正视结构性歧视。她指出，女性尤其黑人女性在权力结构中仍然代表性不足，机会与资源分配存在明显失衡。",
+            "这篇专栏不只是情绪宣泄，而是提出女性必须关注政治参与和制度变革。其观点在巴西及拉美地区引发广泛共鸣，促使人们重新审视性别平等的优先次序，以及谁有权定义公共议题。"
+          ],
+          "why": "里贝罗作为黑人女性知识分子，在主流报纸直接质疑女性的政治缺席。",
+          "en": {
+            "t": "Djamila Ribeiro Asks: When Will It Be Women's Turn?",
+            "d": "Brazilian philosopher Djamila Ribeiro writes in a column that women remain marginalized in politics and decision-making.",
+            "body": [
+              "Ribeiro, a leading Black feminist voice in Brazil, argues that structural inequality keeps women, especially Black women, underrepresented in power.",
+              "Her piece calls for renewed attention to women's political participation across Latin America."
+            ]
+          },
+          "img": "assets/img/women-power.png",
+          "src": "Folha de S.Paulo",
+          "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxQVWliSG9TeUhwN283cVo5clJuX0ZyeTBwb3pCbHpLYjNYakxUYzZFa2pPVmJPN3c2c2pBVkRIVUoybHFia0ZlVENLNjZYd1hOUHBkbGd6NThxQTRxTXlwNjlSZWRuOWNpSmJHM3pzdXR0d2F6MmhtcF9Fa21meHB2VHdFTEJLakFZaFVxX0xkS2kzV2wwaklyTkJlMTMzWFE?oc=5",
+          "region": "拉美"
+        }
+      ]
+    },
+    {
+      "cat": "生育权利",
+      "en_cat": "Reproductive Rights",
+      "items": [
+        {
+          "id": "004-8",
+          "t": "墨西哥莫雷纳党将在保守州推动女性堕胎权立法",
+          "d": "墨西哥执政党计划在保守派主导的州游说，确保女性拥有自主决定生育的权利，相关立法进程备受关注。",
+          "body": [
+            "墨西哥执政党莫雷纳的议员瓜达卢佩·查维拉表示，将在保守派主导的州推动立法，保障女性决定自己身体的权利。她认为生育自主不应因地域而受限，所有女性都应平等获得生殖健康服务。",
+            "墨西哥近年来在堕胎权方面取得进展，但部分保守州仍维持严格限制。联邦与地方之间的法律差异导致女性获得服务的机会不平等，许多女性被迫前往其他地区或寻求不安全途径。",
+            "推动地方立法是扩大女性生殖权利的重要步骤，也面临宗教团体和保守政治势力的反对。这一博弈反映了拉美地区生育自主权斗争的典型张力，对其他国家也具有参照意义。"
+          ],
+          "why": "执政党主动在反对声较大的州推动堕胎权，打破通常的回避态度。",
+          "en": {
+            "t": "Mexico's Morena Party to Push Abortion Rights in Conservative States",
+            "d": "Lawmakers from Mexico's ruling Morena party plan to lobby conservative states to guarantee women's right to decide over their bodies.",
+            "body": [
+              "Senator Guadalupe Chavira says reproductive autonomy should not depend on geography. Mexico has advanced abortion rights federally, but some states still restrict access.",
+              "The push faces opposition from conservative and religious groups, highlighting regional divides over bodily autonomy in Latin America."
+            ]
+          },
+          "img": "assets/img/body-choice.png",
+          "src": "senado.gob",
+          "url": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxNTm9BSDNqNnlSenJucXlLNXh5N0pjSUNRQWFXZVlpa256ZThkRXRHcnR1VEI0c0F1QVVxT0F5X3Fzd2Z4UG83cTRQczVWYUd0dXJlV1VvcTRoRTNSd2FBRUktSlFDdTRjNjRlTFVWcXRldlQ4OVRhVlhqNjFsbDItbFM0bjEyYkN5MS1XeTJzLUQ0b0xHSkt5dGtTbWdaUlRJODdnMmF3djdOM0oxUzdRc1ZWMGhyVEJlZFkyLVM3d3Y2Y25jNEk1RTMzaXhsckl5T3BSQ0tJbWlsVms?oc=5",
+          "region": "拉美"
+        }
+      ]
+    },
+    {
+      "cat": "国际",
+      "en_cat": "International",
+      "items": [
+        {
+          "id": "004-9",
+          "t": "瑞典人权奖表彰AI研究者与女性权利活动家",
+          "d": "瑞典一项人权奖项颁发给人工智能研究者与女性权利活动人士，肯定其推动科技公平与性别平等的贡献。",
+          "body": [
+            "瑞典一知名人权奖项近日公布获奖者，表彰在人工智能研究和女性权利领域作出贡献的人士。奖项旨在鼓励利用科技和行动推动社会公正，特别是在性别平等和数字权利交叉的议题上。",
+            "获奖者中包括关注算法偏见与公平的AI研究者，以及长期从事女性权利倡导的基层活动家。奖项跨越不同地区，强调人权议题的全球关联性，以及技术在保护或侵害权利中的双重作用。",
+            "将科技研究者与女性活动家并列表彰，显示性别平等与数字权利正在成为国际人权议程的重要交叉点。这也启发更多创新者将伦理与平等纳入技术实践，避免技术进步加剧既有不平等。"
+          ],
+          "why": "奖项将AI研究者与女性活动家并列，体现性别与科技的议题交叉。",
+          "en": {
+            "t": "Swedish Rights Prize Honours AI Researcher and Women's Rights Campaigners",
+            "d": "A Swedish human rights prize has recognised an AI researcher and women's rights advocates for their work on technology fairness and gender equality.",
+            "body": [
+              "The award highlights the intersection of digital rights and gender justice, honouring those who tackle algorithmic bias and grassroots activism.",
+              "International recognition helps amplify work on issues that affect women's access to opportunities worldwide."
+            ]
+          },
+          "img": "assets/img/podium.png",
+          "src": "ECR",
+          "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxOOF9FVzNxRGdWTk9GNWRXZTUtXzdCNEZXUlg2UGcwOUltMzlldnZhNmJ3RHFHdjFDSGx6RUNaa2x2eGFlNm9GZUhYajNmZDY5dGVzcV9jSlI5QTlxSWhlYkZ2bnZzb2dwTWN0dkp1b3R5emM3eEttU1VnRjJ3dUp4RA?oc=5",
+          "region": "欧洲"
+        }
+      ]
+    },
+    {
+      "cat": "文化",
+      "en_cat": "Culture",
+      "items": [
+        {
+          "id": "004-10",
+          "t": "希腊裔澳大利亚女性先锋入选维多利亚州女性荣誉榜",
+          "d": "多位希腊裔澳大利亚女性入选维多利亚州女性荣誉榜，表彰她们在社区、文化或专业领域的开创性贡献。",
+          "body": [
+            "澳大利亚维多利亚州公布年度女性荣誉榜，多位希腊裔澳大利亚女性入选。该榜旨在表彰为社区和多元文化社会作出突出贡献的女性，肯定她们在文化传承、公共服务等领域的长期付出。",
+            "入选者来自不同领域，包括社区服务、文化传承和专业工作。荣誉榜是维多利亚州认可女性成就的长期项目，强调移民背景女性的独特贡献，以及她们在融合社会中的桥梁作用。",
+            "将少数族裔女性纳入主流荣誉体系，不仅是对个人努力的肯定，也有助于提升多元文化社会中女性榜样的可见度，激励更多年轻移民女性参与公共事务，改变对女性角色的传统期待。"
+          ],
+          "why": "移民背景女性往往在主流荣誉体系中容易被忽略。",
+          "en": {
+            "t": "Greek Australian Trailblazers Join Victorian Honour Roll of Women",
+            "d": "Several Greek Australian women have been inducted into the Victorian Honour Roll of Women for their contributions to community and multicultural society.",
+            "body": [
+              "The Honour Roll recognises women across fields, highlighting the role of immigrant women in shaping Victoria's social fabric.",
+              "Inclusion boosts visibility for minority women and encourages broader participation in public life."
+            ]
+          },
+          "img": "assets/img/womens-rights.png",
+          "src": "The Greek Herald",
+          "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxNX0ZfR01TMWhrNFhvZzBzSXZ2b3QzcGFUWTVVMDFEV3dNQjkzQnB5OWxEbDdJWE44SzdudTR3WlR0eUl0eU5CcXdhZlFhcV80X3hxMElfRGF1Zm1NREswX01UZFF4Y3B3NTZZLUZwdVo0UEhCSFdiQzFwU1hvMHdodG16TU1Rbi1Cal9PREFPMUgzYXE1cTQ1ZlVrYXgxQlBtMXltQkN3?oc=5",
+          "region": "大洋洲"
+        }
+      ]
+    }
+  ]
+},
+{
   "id": "003",
   "date": "2026-09-25",
   "period": "2026.09.21 – 2026.09.27",
