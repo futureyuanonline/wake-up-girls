@@ -889,6 +889,9 @@ function renderLatest() {
 
 /* 每期「她的作品」选品：优先用本期 issue.picks（主理人选品，存作品标题而非下标，避免数据变动后错位）；
    没有 picks 时回退为「按类型各取一件」（旧行为）。 */
+/* 书名/片名比对用：去掉《》等符号与空格，避免「好东西」对不上「《好东西》」而回退成第一部 */
+function normTitle(x) { return String(x == null ? "" : x).replace(/[《》〈〉「」『』\\s·・]/g, ""); }
+
 function featuredPicks() {
   var all = dataWorks();
   var latest = (dataIssues() || [])[0] || {};
@@ -897,7 +900,7 @@ function featuredPicks() {
   ["film", "book", "art"].forEach(function (c) {
     var want = p[c];
     var idx = -1;
-    if (want) idx = all.findIndex(function (w) { return w.c === c && w.title === want; });
+    if (want) idx = all.findIndex(function (w) { return w.c === c && normTitle(w.title) === normTitle(want); });
     if (idx < 0) idx = all.findIndex(function (w) { return w.c === c; });
     if (idx >= 0) out.push({ w: all[idx], i: idx });
   });
@@ -1466,7 +1469,7 @@ function relatedWorks(titles) {
   var all = dataWorks() || [];
   var found = [];
   (titles || []).forEach(function (t2) {
-    var i = all.findIndex(function (w) { return w.title === t2 || String(w.title).indexOf(t2) >= 0 || String(w.creator) === t2; });
+    var i = all.findIndex(function (w) { return normTitle(w.title) === normTitle(t2) || String(w.title).indexOf(t2) >= 0 || String(w.creator) === t2; });
     if (i >= 0) found.push({ w: all[i], i: i });
   });
   if (!found.length) return "";
