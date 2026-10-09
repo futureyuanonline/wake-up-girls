@@ -7,6 +7,296 @@
    - region：全球/欧洲/北美/拉美/中东/非洲/南亚/东亚/大洋洲/中国 */
 window.ISSUES = [
 {
+  "id": "005",
+  "date": "2026-10-09",
+  "period": "2026.10.05 – 2026.10.11",
+  "title": "女性权利的多重前线：从校园到警队，从法庭到球场",
+  "summary": "本期聚焦全球女性议题：东京大学首位女校长、英国警员家暴停职、新西兰医院安全疏忽、埃及寡妇赡养权，以及体育欠薪与气候倡导；呈现权利保护在制度、医疗、家庭和公共空间中的复杂博弈。",
+  "en": {
+    "title": "Women's Rights on Multiple Frontlines: From Campus to Police Force, Courtroom to Pitch",
+    "summary": "This edition covers women's issues worldwide: first female president of the University of Tokyo, UK police suspensions over abuse, hospital safety failure in New Zealand, widows' alimony rights in Egypt, plus sports wage gaps and climate advocacy."
+  },
+  "img": "assets/img/womens-rights.png",
+  "watch": {
+    "name": "Viridiana Regino",
+    "name_en": "Viridiana Regino",
+    "role": "原住民女性权利推动者",
+    "role_en": "Indigenous women's rights advocate",
+    "region": "拉美",
+    "why": "她因在墨西哥普埃布拉州推动土著女性权利工作获国家奖，具体参与社区法律赋权、组织支持和能力建设，让边缘社区女性获得更多话语权。",
+    "why_en": "She received Mexico's National Prize for Promoting Indigenous Women's Rights for her work in Puebla, focusing on legal empowerment and community organizing.",
+    "url": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxOdjZ5dGJaY3JmSDZ1a2M0VGJhbGNCQmJiMnhWdEl4WjV4cXZwSHdLVml1bUdvTmlXVVk4ZDhmakJNR1ExSXFNdEl0S1lubVJ1Tmxnc085ZXZRaEYxUlQ0TDVmOTY3d0NnU3ZvUWRkYU5jWjcwR1oyZUFsRGJ2VjlHQkZrUm9Wa1VXWmtqdG5JY2pFeWxQSnBHYUI5NlFmMUJLQ3EtcGxHazZZeWNLNFpKS0k2Q3B2eHJ3OTYtWnFrbU14S3VJM09HeGZGcjB6ZGtCWlROc0dXYmtJaGt6?oc=5",
+    "img": ""
+  },
+  "picks": {
+    "film": "热辣滚烫",
+    "book": "知晓我姓名",
+    "art": "玛丽娜·阿布拉莫维奇"
+  },
+  "sections": [
+    {
+      "cat": "国际",
+      "en_cat": "International",
+      "items": [
+        {
+          "id": "005-1",
+          "t": "联合国呼吁塔利班停止因着装规范逮捕阿富汗女性",
+          "d": "联合国敦促阿富汗塔利班当局停止以着装违规为由逮捕女性，指出此类行动进一步限制女性公共空间与基本自由。",
+          "body": [
+            "联合国发声，要求阿富汗塔利班当局立即停止因所谓着装规范违规逮捕女性。近期有报道称，多名女性因被指穿着不符合规定而被拘押。",
+            "塔利班重新掌权后，逐步恢复对女性着装的强制性规定，并限制其教育、就业和出行。国际社会多次谴责，但塔利班以国内法和宗教传统为由拒绝改变。",
+            "以着装为名实施逮捕，将性别压迫日常化，严重侵犯女性基本权利。联合国呼吁国际社会持续施压，为阿富汗女性争取公共空间和尊严。"
+          ],
+          "why": "仅仅因为穿着不合规定就遭逮捕，性别控制变得无比具体。",
+          "en": {
+            "t": "UN Calls on Taliban to Halt Arrests of Afghan Women for Dress Code Violations",
+            "d": "The United Nations urges Afghan Taliban authorities to stop arresting women for alleged dress code offences, warning of further erosion of women's freedoms.",
+            "body": [
+              "The UN has called for an end to arrests of women in Afghanistan over dress code violations. Reports indicate women have been detained for clothing deemed non-compliant.",
+              "Since returning to power, the Taliban has tightened restrictions on women's dress, education, and movement. The arrests are seen as part of broader efforts to push women out of public life."
+            ]
+          },
+          "img": "assets/img/podium.png",
+          "src": "UN News",
+          "url": "https://news.google.com/rss/articles/CBMiV0FVX3lxTFBJM1FSM2RHRDMtR000YWdST2VGZUZWbW1xNVFTQWZ1bVl2SmZaRExxcDNUZHlYTHh5WXl5NWpMTE11cm1adXlLQnNaU0Q3YzVLdWFkQlhZRQ?oc=5",
+          "region": "南亚"
+        }
+      ]
+    },
+    {
+      "cat": "政策与法律",
+      "en_cat": "Policy & Law",
+      "items": [
+        {
+          "id": "005-2",
+          "t": "英国大型警队45名在职警员因涉家暴女性被停职",
+          "d": "一支英国主要警察部门对45名在职警员作出停职处理，他们涉嫌对妇女和女童实施暴力，引发对执法机构内部文化的审视。",
+          "body": [
+            "英国一支大型警察部门宣布，45名在职警员因涉嫌对妇女和女童实施暴力被停职。此次大规模停职涉及多项指控，包括家庭暴力和性侵。",
+            "此前英国警方已因多起警员施暴案受到批评，内部投诉处理不透明。数据显示，执法机构中针对女性的暴力并非孤立事件，而是与职场文化和权力滥用相关。",
+            "警员本应是保护者，却成为施害者，严重损害公众信任。事件促使公众要求独立监督、严格筛查和更有效的内部追责机制，以保障女性安全。"
+          ],
+          "why": "45名警员同时停职，法律守护者集体涉案，极具冲击。",
+          "en": {
+            "t": "45 Serving UK Police Officers Suspended over Violence Against Women",
+            "d": "A major British police force has suspended 45 serving officers over allegations of violence against women and girls, triggering new scrutiny of police culture.",
+            "body": [
+              "A UK police force has suspended 45 serving officers over alleged violence against women and girls, including domestic abuse and sexual assault.",
+              "The case renews concerns about impunity and internal handling of complaints. Public trust in police protection is undermined when officers themselves are accused of abuse."
+            ]
+          },
+          "img": "assets/img/womens-rights.png",
+          "src": "The Independent",
+          "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxNWlpLeDM4NFNoLWFjZWl2dVd2amlUbmRLTThFZ2xMWmtnY2dBanBsM2doSmkwaGluVERrWUhyN0EtcmlXenU0OFQ5YTAyQURZeVZDUE82MWNvR2x0OVpqdThyZmkzVnlLVndlYWQ2aUhTSElHa3Frd09WZUtjU2wxQ1ZFWE5RQXprbEh3Q3d2UGRPdlVRS183LVRuaFdRZnVTbVJGQUtJVmU2X3V5NF8yY2FMbjBsRDVI?oc=5",
+          "region": "欧洲"
+        },
+        {
+          "id": "005-3",
+          "t": "巴切莱特警告：女性权利倒退是发展主要风险",
+          "d": "智利前总统巴切莱特在拉加经委会会议上表示，女性权利倒退是该地区发展面临的主要风险之一，呼吁将性别平等纳入核心议程。",
+          "body": [
+            "智利前总统米歇尔·巴切莱特在拉丁美洲和加勒比经济委员会（CEPAL）会议上警告，女性权利出现倒退，是地区发展面临的主要风险之一。",
+            "近年来拉美多国出现保守政策回潮，女性在生殖权利、政治参与和人身安全方面的保障受到侵蚀。巴切莱特长期推动性别平等，曾任联合国人权事务高级专员。",
+            "将女性权利与发展指标联系起来，指出退潮不仅关乎公平，也影响经济增长和社会稳定。她的发言意在促使各国政府重新评估政策优先次序。"
+          ],
+          "why": "前国家元首在区域重要平台把女性权利与发展风险直接挂钩，罕见而有力。",
+          "en": {
+            "t": "Bachelet Warns: Backsliding on Women's Rights Is a Major Development Risk",
+            "d": "Former Chilean president Michelle Bachelet told CEPAL that regressions in women's rights are a key risk to development in Latin America and the Caribbean.",
+            "body": [
+              "At a CEPAL meeting, former Chilean president Michelle Bachelet said the erosion of women's rights poses one of the main risks to regional development.",
+              "Recent policy shifts in several Latin American countries have restricted reproductive rights and political participation. Bachelet urged governments to place gender equality at the center of their agendas."
+            ]
+          },
+          "img": "assets/img/womens-rights.png",
+          "src": "CNN Chile",
+          "url": "https://news.google.com/rss/articles/CBMi7gFBVV95cUxPUjBsYWlYZ3NKeWgycGo3ZU1zUXNrT0Z0LVhmWHBUZ0VKSWk0NV9qQm9VZTc4WDI1RTE0MV9JM3hVeFRKNm5EYTliNFFpNHRRLWJvSTRzdjBQdzAyM0szUm1MaE9SV0M1WVBBbG84LXkyZm9jZ1YwVnptQzBMVTEzQkVoaUJjWXY0VVNnT21qbzlXbXBfM3BkZGQwbjNvQzhlX1J2NGNfRnI1X3lWT3F1YW5pZkl4Unh6b29kWWtpU0QxdzZDNERIaUY2SjUwbXZCOVlVeHdTcXhjaE1TQW96TGt2Q2Fya2ZZNHJMbmVB?oc=5",
+          "region": "拉美"
+        },
+        {
+          "id": "005-4",
+          "t": "埃及女性工会要求总理把妇女权利列为政府优先",
+          "d": "埃及女性工会向总理公开呼吁，要求将妇女权利纳入政府优先事项，以解决女性在就业、法律保护等方面面临的长期差距。",
+          "body": [
+            "埃及女性工会要求总理曼苏里将妇女权利作为政府优先事项。工会发表声明，呼吁采取具体措施改善女性处境。",
+            "埃及女性在就业、财产权和人身安全等方面存在法律与社会障碍，女性组织长期争取政策倾斜。当前经济困境加剧了女性在劳动力市场中的脆弱性。",
+            "直接向政府首脑提出诉求，显示女性团体从街头抗议转向制度内的政策倡导。能否成为优先议题，取决于政府是否愿意分配资源和政治意愿。"
+          ],
+          "why": "女性工会跳过部门层级，直接向总理提出妇女权利诉求。",
+          "en": {
+            "t": "Egyptian Women's Union Urges PM to Make Women's Rights a Government Priority",
+            "d": "The Egyptian Women's Union has publicly called on the prime minister to place women's rights at the top of the government agenda.",
+            "body": [
+              "The Egyptian Women's Union issued a statement urging the prime minister to make women's rights a government priority, citing gaps in employment and legal protection.",
+              "The move reflects a shift toward institutional advocacy rather than street protest. Whether the demand translates into policy depends on political will and resource allocation."
+            ]
+          },
+          "img": "assets/img/womens-rights.png",
+          "src": "24saa.com",
+          "url": "https://news.google.com/rss/articles/CBMivAJBVV95cUxQZ3V2UElnbGhydWRCdEUxd2lCQk5ndE1JWnlHVDM3UUE0TVg1cHVmQ19qMG1kOFlRS2V5Tm9GanZsVW9DQnk5a1BVbVU1Y2djY2MwVHJIVkdvQy12NWM0MnRtTktiVXVvZDh1Q2FGVGV1Y2tEWHZFNG83a1UxbTh2dTdySGdGaFAzN3ZMNHRWOXB5OUU4Y3Bnb2J5RmlySUp6bFNqbGxULTZlYUlXRXkxMVVMbTdjM0pETTlQVXZEbVFwUXU0VG55bGJmc1V4bEYzNmdLMWoxTVRFbkItdllEcGNGa2FuU083R3kwajdNcVJxTHo3cEh2UVZkbjNKRFdMZGpxY3Y0alNTaUc0M2RoZ0FGUG5XdzhzMk9wbDBvTVpRcGVtM1JWeTVySjdadlhsdHpJUGJzVXRqZHhf?oc=5",
+          "region": "中东"
+        },
+        {
+          "id": "005-5",
+          "t": "埃及律师：寡妇有权向亡夫父兄追讨赡养费",
+          "d": "阿拉伯律师协会妇女委员会成员表示，寡妇可对已故丈夫的父亲和兄弟提起赡养诉讼，为丧偶女性获得经济支持提供法律依据。",
+          "body": [
+            "阿拉伯律师协会妇女委员会一名成员表示，根据相关法律解释，寡妇有权对已故丈夫的父亲和兄弟提起赡养费诉讼。该观点旨在澄清女性在丈夫去世后的经济权利。",
+            "在埃及等国的家庭法中，夫家亲属有时对丧偶女性负有照顾义务，但实践中常被忽视或推诿。许多寡妇在失去主要经济来源后陷入贫困。",
+            "这一法律解释为寡妇提供了新的救济途径，也挑战了传统上女性依附夫家、无权主动求偿的规范。但实际执行中能否落实，仍取决于司法实践和社会压力。"
+          ],
+          "why": "赡养义务被扩展到夫家亲属，突破了以往只向丈夫本人求偿的局限。",
+          "en": {
+            "t": "Egyptian Lawyer Says Widows Can Sue Deceased Husband's Father and Brother for Alimony",
+            "d": "A member of the Arab Lawyers Union's women's committee says widows have the right to file alimony claims against a deceased husband's father and brother.",
+            "body": [
+              "A legal expert stated that widows in Egypt may seek alimony from their deceased husband's father and brother, clarifying an often-overlooked obligation.",
+              "Such claims could provide economic security for widows who lose their main source of income. Enforcement, however, will depend on courts and social attitudes."
+            ]
+          },
+          "img": "assets/img/womens-rights.png",
+          "src": "المصري اليوم",
+          "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE9sVGxvWGRJcnAxSDVxdGtlV0g3cjNxbUlEaTFlZzd4VGlkVEV2RHNJbW8yZktBUHhhSXVUaWQ4MVRtMHlWUFk1VnFtRG8yZXpOY1p1SHBSRWJKTzVPVXBZ?oc=5",
+          "region": "中东"
+        }
+      ]
+    },
+    {
+      "cat": "健康与权益",
+      "en_cat": "Health & Rights",
+      "items": [
+        {
+          "id": "005-6",
+          "t": "新西兰医院无视女性安全警告，让患者与危险友人独处",
+          "d": "一名女性曾告知医院工作人员她对朋友感到不安全，院方仍安排两人独处，事件暴露医疗系统对亲密关系暴力风险响应不足。",
+          "body": [
+            "新西兰一名女性在医院看病时，明确告诉工作人员她对陪同朋友感到不安全，但院方依然让她与对方单独相处。该事件经媒体曝光后引发关注。",
+            "医疗场所往往缺乏对亲密关系暴力的系统筛查，医护人员很少接受识别和响应风险的培训。女性在就医时若处于被控制关系中，医院可能成为危险环境。",
+            "这一案例表明，女性主动发出求助信号，专业机构却未重视。医疗系统需要建立安全评估和转介机制，确保寻求健康服务不附带伤害风险。"
+          ],
+          "why": "女性已经开口说害怕，仍被安排和对方独处，风险被轻率处理。",
+          "en": {
+            "t": "NZ Hospital Left Patient Alone with Friend She Deemed Unsafe, Despite Warning",
+            "d": "A woman told hospital staff she felt unsafe with a friend, but they left her alone with him, highlighting gaps in healthcare responses to violence risk.",
+            "body": [
+              "A woman in New Zealand warned hospital staff that she felt unsafe with a friend, but they still left her alone with him. The incident was reported by media.",
+              "Healthcare settings often lack systematic screening for intimate partner violence, leaving vulnerable patients exposed. The case calls for better staff training and safety protocols."
+            ]
+          },
+          "img": "assets/img/body-choice.png",
+          "src": "NZ Herald",
+          "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxNeHhIMFYxZk90WHA5X2pjbjNxVWxta29zWnNIUHhIY3FSQ0s2aWk1V0l0V3MxeGVPbDhZZU5yYV9jVUY4R2JzSUc4WFNMLUUya0VyRUJkWElmWlRjSzVNMnZuOVBJN0s0TEl3dTNBVWJGb29UdVVMcmJ4c2NLWGxPVG1SdjFQYnJDUGxZaUwwTEFEVV95WEpxNnB4dmlGQXlGMGJuYlc1SDZLOGtpcmF2bVUxQlpHTWY3cHgtN2p0RjVucTcyeEk0?oc=5",
+          "region": "大洋洲"
+        },
+        {
+          "id": "005-7",
+          "t": "坦桑尼亚议员敦促立法保护妇女儿童健康权",
+          "d": "坦桑尼亚议员图利娅博士推动制定法律，以保障妇女、儿童和青年的健康权利，回应医疗资源不足与法律保障薄弱的问题。",
+          "body": [
+            "坦桑尼亚议员图利娅博士呼吁通过立法，保护妇女、儿童和青年的健康权利。她在公共场合表示，现有法律不足以应对医疗可及性和质量问题。",
+            "非洲多国在孕产妇保健、儿童营养和青年生殖健康方面指标落后，部分地区因资金短缺和设施不足导致可预防死亡。法律框架的缺失使问责困难。",
+            "议员主导的立法倡议可能将健康权从政策宣示提升为可诉权利。若通过，将为弱势群体提供法律工具，推动政府履行健康投入义务。"
+          ],
+          "why": "由本土女性议员推动健康立法，而非等待外援或外部压力。",
+          "en": {
+            "t": "Tanzanian MP Pushes for Laws to Protect Health Rights of Women and Children",
+            "d": "Tanzanian MP Dr Tulia is advocating for legislation to safeguard health rights for women, children, and youth, amid persistent gaps in healthcare access.",
+            "body": [
+              "Dr Tulia, a Tanzanian member of parliament, has called for new laws to protect the health rights of women, children, and young people.",
+              "She argues that current legal protections are inadequate, and that binding legislation would hold the government accountable for delivering equitable healthcare."
+            ]
+          },
+          "img": "assets/img/body-choice.png",
+          "src": "Daily News",
+          "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxOTDkxUFlhdjJ0bzBTYk5YTUV3MkdQTzZSakliMHE3VVkwY3N4akZqc2Z6Y2Y1VGNHQlJTclQ0SEVKZ1R2Yk4zZE9iU3c4XzVGOEZzMXU5cHV6OXpyTjRjMXJzaXdjUkxXaHdZX19pOVFzU0J0SF9DZ2VaS2wyZEg5TEE0ckxYbDJCZEd2U2F4XzFlY2p0dVYzMy1Oenprb1VpRmlOQw?oc=5",
+          "region": "非洲"
+        }
+      ]
+    },
+    {
+      "cat": "体育",
+      "en_cat": "Sports",
+      "items": [
+        {
+          "id": "005-8",
+          "t": "科林蒂安结清女球员形象权欠款，奖金仍拖欠",
+          "d": "巴西科林蒂安俱乐部支付了女足球员的形象权欠款，但赛事奖金尚未结清，凸显女足领域普遍的资金拖欠与投入差距。",
+          "body": [
+            "巴西科林蒂安俱乐部宣布已结清其女足队员的形象权欠款，但确认赛事奖金仍未支付。球员们此前通过法律或集体谈判追讨欠款。",
+            "女子足球在巴西乃至全球长期面临资金不足，赞助和奖金远低于男子项目。即使像科林蒂安这样拥有女足强队的俱乐部，也出现拖欠现象。",
+            "形象权欠款清除虽是一步进展，但奖金未结清意味着薪酬保障仍不完整。女足球员需要更透明的财务管理和合同执行，才能真正实现职业化。"
+          ],
+          "why": "豪门俱乐部也拖欠女球员报酬，说明欠薪不是个案而是行业常态。",
+          "en": {
+            "t": "Corinthians Pays Women's Image Rights Arrears, Prize Money Still Unpaid",
+            "d": "Brazil's Corinthians has cleared image-rights arrears for its women's footballers, but prize payments remain outstanding, reflecting persistent wage gaps in the women's game.",
+            "body": [
+              "Corinthians confirmed it has paid outstanding image-rights dues to female players, though tournament prize money is still owed.",
+              "The case highlights chronic underfunding in women's football, where even top clubs struggle to guarantee timely payment. Financial transparency and contract enforcement remain critical."
+            ]
+          },
+          "img": "assets/img/women-power.png",
+          "src": "OneFootball",
+          "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxNZmdXaWlWRVNDNHl3WnY3czNkTG9xb18xaGhqSWFRV1lndHZlc0FLQmV4SXdSRW5CTzU0MEo5ckNWY1JrLXQ4T2VIdEtTaHhQR1RMYUVmMkRHSm5VZzVXcFNlTGlwMGstSzhwN0lrVTdIZHkzU1MwUmxRRElkQUdPX1V4dEV1ZVBaNy1rOHJPRmg4cklUcTh2NDNtekN2YUlmNG4zM2hLNVcyZjBFUHRXbXdET3diakpNRDFMLTFldUI?oc=5",
+          "region": "拉美"
+        }
+      ]
+    },
+    {
+      "cat": "社会",
+      "en_cat": "Society",
+      "items": [
+        {
+          "id": "005-9",
+          "t": "东京大学首位女校长折射日本性别平等现状",
+          "d": "联合早报刊发柴思原文章，从东京大学建校以来首位女性校长任命切入，讨论日本高等教育与社会的性别平等进展与深层阻力。",
+          "body": [
+            "日本最高学府东京大学近日产生首位女校长。作者柴思原撰文指出，这一任命打破了该校长期由男性主导的最高领导层惯例，成为观察日本性别平等现状的一个窗口。",
+            "日本在全球性别差距指数中排名长期靠后，大学管理层与教授席位中的女性占比远低于国际水平。女性学者往往因家庭责任、评审偏见和缺乏导师网络而难以晋升至顶层。",
+            "首位女校长具有象征意义，但单一任命并不自动改变结构。评论认为，需要检视招聘、晋升和学术文化中隐性的性别筛选机制，否则个别突破可能掩盖系统性的不平等延续。"
+          ],
+          "why": "日本最保守的学术权力中心首次由女性执掌，反差鲜明。",
+          "en": {
+            "t": "University of Tokyo's First Female President Reflects Japan's Gender Equality Reality",
+            "d": "Columnist Chai Siyuan uses the first female president of the University of Tokyo to examine progress and persistent obstacles for gender equality in Japanese higher education.",
+            "body": [
+              "Japan's University of Tokyo has appointed its first female president. The author notes that this breaks a long tradition of male leadership at the country's top academic institution.",
+              "Yet Japan ranks low on global gender gap indexes, and women remain rare in senior academic roles. The appointment is symbolic, but structural barriers in promotion and workplace culture still need to be addressed."
+            ]
+          },
+          "img": "assets/img/women-power.png",
+          "src": "联合早报",
+          "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE9ZcjJqY0dCTmN2RmJlaVRHSGp4RmVibWl2ZTRISWpZa0hiVVFneTRMQjFuY0l2S3BZcHhqalJNVTM1YTFJemNGOXZmQ0RyN1RUQnlfRmJSaGVQbTBPYXNhTjJIblR0NFE5OE9J?oc=5",
+          "region": "东亚"
+        },
+        {
+          "id": "005-10",
+          "t": "国际女孩日：从加沙到图瓦卢，女孩在行动",
+          "d": "在国际女孩日报道中，来自加沙、图瓦卢等地的女孩通过教育、社区组织等方式推动变革，展现女童作为行动者的力量。",
+          "body": [
+            "在国际女孩日当天，Women's Agenda 报道了来自加沙、图瓦卢等不同地区的女孩，她们通过教育和社区活动改善自身处境。",
+            "全球范围内，女童在武装冲突、气候变化和贫困中承受更高风险，受教育机会和人身安全常被剥夺。但许多女孩选择组织起来、表达诉求。",
+            "从受害者到行动者的叙事转变，提醒政策制定者应倾听女童的声音。支持女孩的领导力，需要资金、安全空间和教育机会的实质性投入。"
+          ],
+          "why": "报道没有停留在苦难展示，而是聚焦女孩改变现状的具体行动。",
+          "en": {
+            "t": "International Day of the Girl: Girls from Gaza to Tuvalu Taking Action",
+            "d": "On International Day of the Girl, stories highlight girls in Gaza, Tuvalu and beyond who are driving change through education and community organizing.",
+            "body": [
+              "Women's Agenda marked International Day of the Girl by featuring girls from conflict zones and climate-vulnerable islands who are leading local initiatives.",
+              "These stories shift the narrative from victimhood to agency. Supporting girls' leadership requires investment in education, safe spaces, and real participation."
+            ]
+          },
+          "img": "assets/img/women-power.png",
+          "src": "Women's Agenda",
+          "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxNSmJSdVdvOGg4Q0t4OVliYVNxTFdZaFdrSkRPclU1cUpURm5VdFpqSWxrS0pONmNQTVZpLTM5Nklkc1hmWm5ic1F6N1AweHg3MExvTVcyMGdVNHdjSUQtMVUxTXFGR2piMmE2VGY2MnA0ZTNGSUZYcmRfZk91dUdCQmxrTFVtZmR2cVhrZ2ZXckZkb0VnRElYWXk2TzV3NWc4REhVNktiNVNqamdvQWR4T0RscXYwUW5jc1ViQ1BXME1sUQ?oc=5",
+          "region": "全球"
+        }
+      ]
+    }
+  ]
+},
+{
   "id": "004",
   "date": "2026-10-02",
   "period": "2026.09.28 – 2026.10.04",
