@@ -7,6 +7,267 @@
    - region：全球/欧洲/北美/拉美/中东/非洲/南亚/东亚/大洋洲/中国 */
 window.ISSUES = [
 {
+  "id": "006",
+  "date": "2026-10-16",
+  "period": "2026.10.12 – 2026.10.18",
+  "title": "全球女性议题周报：制度指标、职场与生育权利",
+  "summary": "本期从韩国、日本、东南亚、中东、非洲、南亚与拉美选取九则报道，涉及性别平等指标、农业职场、委员会代表性、库尔德女性声音、生殖健康与生育选择、墨西哥结构性暴力预防，呈现女性权益在制度与日常中的推进与阻力。",
+  "en": {
+    "title": "Weekly Brief: Gender Equality in Local Governance, Workplaces, and Reproductive Autonomy",
+    "summary": "This edition selects nine reports from East Asia, Southeast Asia, the Middle East, Africa, South Asia, and Latin America, covering gender equality indicators, farming careers, committee representation, Kurdish women's voice, reproductive health, and structural violence prevention."
+  },
+  "img": "assets/img/womens-rights.png",
+  "watch": {
+    "name": "Ilham Ahmed",
+    "name_en": "Ilham Ahmed",
+    "role": "库尔德女性政治人物",
+    "role_en": "Kurdish political figure",
+    "region": "中东",
+    "why": "她在采访中同时谈论政治一体化、女性角色与库尔德权利，指出稳定议程可能压缩女性已获得的公共空间。这种将性别与族群议题置于地缘政治中的表达，在主流报道中少见，值得关注。",
+    "why_en": "She publicly linked political integration to weakened women's roles and Kurdish rights, highlighting how stability agendas can erode gains for marginalized groups.",
+    "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxNa29SN0ozSHNTN1FXZmtORW1maXRZcmFBQzF1bTRtdk4tVlNJelJORU5SeVNsZDlpMVJHcU41X0tRdThMZWNseS16RVp2b1g0SkNib0VrTmN0aEx0UktUTmIwZDgwOVE3aXF2M1lZVDhvVE12U1l2ajR4TkJqOXBrdmVOZUR4YnowcERObERXdDRiVVloeHNjUTd5QXpWRW5KbkpzY05OMHlBQzhVM0E?oc=5",
+    "img": ""
+  },
+  "picks": {
+    "film": "出走的决心",
+    "book": "第二性",
+    "art": "路易丝·布尔乔亚"
+  },
+  "sections": [
+    {
+      "cat": "政策与法律",
+      "en_cat": "Policy & Law",
+      "items": [
+        {
+          "id": "006-1",
+          "t": "韩国全南女性家族财团办论坛，推议会与市民共建性别平等",
+          "d": "全南女性家族财团举办论坛，讨论在地方行政整合中如何使议会与市民共同参与性别平等议题，推动地方性别主流化。",
+          "body": [
+            "全南女性家族财团近期举办一场公开论坛，主题为“议会与市民共同打造性别平等全南光州广域特别市”。该论坛把地方议会、市民团体和关注性别议题的人士聚在一起，讨论如何将性别平等原则带入地方行政整合的决策与执行中。",
+            "全南与光州正在推进行政整合，性别平等是其中的一项重要议程。女性家族财团作为地方公共机构，试图通过论坛收集现场意见，避免整合方案只讨论行政区划和财政，而忽略女性在公共服务、就业和照护中的实际需求。",
+            "地方行政整合往往优先考虑效率与经济发展，性别议题容易被边缘化。此次论坛让性别平等成为可见的讨论对象，也提醒决策者：整合不只是合并机构，更应重新分配资源，使女性在不同层级的治理中真实参与。"
+          ],
+          "why": "地方行政整合议题中专门讨论性别平等并不多见，且同时邀请议会与市民参与，形式直接。",
+          "en": {
+            "t": "Jeonnam Women & Family Foundation Holds Forum on Gender Equality in City Integration",
+            "d": "A South Korean women's foundation organized a forum to involve local councils and citizens in gender equality issues during administrative integration.",
+            "body": [
+              "Jeonnam Women & Family Foundation recently held a public forum titled 'Building a Gender-Equal Jeonnam-Gwangju Integrated City with Councils and Citizens.' The event brought together local council members, civic groups, and residents to discuss how gender equality can be embedded in the administrative merger.",
+              "Administrative integration often prioritizes efficiency and economic development, leaving gender issues on the margins. By creating a space for dialogue, the forum makes gender equality visible and urges policymakers to allocate resources so that women can genuinely participate in local governance."
+            ]
+          },
+          "img": "assets/img/womens-rights.png",
+          "src": "여수넷통뉴스",
+          "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE5nSWZlUU5mWVZiblNUc0QyZHB5ZmxHeDFnWXJTQ3NHMVR3Z3l2WFdVZ0p5RTNXaVlPZWlHVnJkMlRUcWlSLWZvVGttNXMwNXRmSjVtUEJpa1Q2QzRNWmVSanBzdzByaDVzWXc?oc=5",
+          "region": "东亚"
+        },
+        {
+          "id": "006-2",
+          "t": "印尼政治人物批评性别平等指标只聚焦高层职位",
+          "d": "印度尼西亚有声音指出，现有性别平等指标过度关注高层领导岗位，忽视基层女性在教育、健康和非正规就业中的处境。",
+          "body": [
+            "印度尼西亚政治人物 Heri Pudyatmoko 公开表示，当前使用的性别平等指标过于聚焦高层职位，难以反映普通女性的真实状况。他认为，仅以领导层女性比例衡量进展存在明显局限。",
+            "许多性别平等评估确实把女性在议会、企业高管等岗位的比例作为核心标准，这容易导致公共资源和政策注意力集中在少数精英女性身上，而教育机会、健康服务、非正规就业和基层参与等更广泛领域被忽视。",
+            "批评者认为，性别平等不应被简化为高层数字。重新设计指标，将基层女性的就业、安全和决策参与纳入衡量，有助于让政策惠及更多女性，避免性别议程变成精英化改革。"
+          ],
+          "why": "性别平等评估常被高层女性比例绑架，基层女性的真实处境反而被指标遮蔽。",
+          "en": {
+            "t": "Indonesian Voice Criticizes Gender Equality Indicators Focused on Top Positions",
+            "d": "An Indonesian political figure says gender equality indicators that focus only on leadership posts miss the reality of ordinary women.",
+            "body": [
+              "Indonesian political figure Heri Pudyatmoko publicly criticized gender equality indicators that overemphasize high-level positions. He argues that measuring progress mainly by the number of women in leadership ignores wider inequalities.",
+              "Such indicator design can concentrate resources on a small elite while leaving education, health, informal work, and grassroots participation underfunded. The criticism calls for measurements that reflect the daily situations of most women."
+            ]
+          },
+          "img": "assets/img/womens-rights.png",
+          "src": "Indoraya News",
+          "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxOc2tNbDdvekNWVzExeE1WdnR1ODI3cjVNWkI1ck1BakpUZzRMZ2p2VlJ4R2dZZjJaQUE3S3hibVRNUHJjTUhuQjNWcVJETTZJQnRHVmsxZnNZRDhNVnlqWHBpUHc3b0pub1RJVHluREhIUS1TcndHdHBEMFo3MzhLS09PTEV5TEdwbE1nc0FlUTd4aHJzQlhTNTB0cFR0X0pGYzRjV29HMUFoSDg3ZUE?oc=5",
+          "region": "东南亚"
+        },
+        {
+          "id": "006-3",
+          "t": "越南美福社接受性别平等法实施监督",
+          "d": "越南 My Phuoc 公社成为性别平等法实施监督对象，相关方面检查基层执行情况，评估法律落地成效与障碍。",
+          "body": [
+            "越南 My Phuoc 公社近期被纳入性别平等法实施监督范围，相关方面对该基层单位的法律执行情况进行检查。监督内容涉及性别平等政策宣传、地方制度安排以及妇女参与公共事务的具体情况。",
+            "越南早已制定性别平等法，但在基层落实中仍面临传统观念、资源不足和问责机制薄弱等障碍。许多乡级单位缺乏专门人员和经费，法律要求容易停留在文件层面，妇女的实际处境改善有限。",
+            "对基层单位开展监督，说明法律不能只停留在纸面，而需要通过常态化评估和问责来推动执行。此次行动如果能够形成可复制的方法，将为其他地区落实性别平等法提供参考。"
+          ],
+          "why": "法律条文在乡级单位是否真正生效，往往缺少公开监督，这次行动让基层执行进入视野。",
+          "en": {
+            "t": "Vietnam Monitors Gender Equality Law Implementation in a Commune",
+            "d": "A Vietnamese commune came under supervision to check how the gender equality law is being implemented at the grassroots.",
+            "body": [
+              "My Phuoc commune in Vietnam was recently subject to supervision over its implementation of the gender equality law. The review covered policy dissemination, institutional arrangements, and women's participation in public affairs.",
+              "Laws often face weak enforcement at the local level due to traditional attitudes and limited resources. Grassroots supervision is a key step in turning national gender equality legislation into real changes in daily life."
+            ]
+          },
+          "img": "assets/img/womens-rights.png",
+          "src": "Vietnam.vn",
+          "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxQZUtHUU5TaTVIdGlYaXRwVU1QbHlCaFpuSG9vM2lBZmJpZVctV0JHMGR4QVBKZFFsOFVFWl9oMDVqMFdFUVFQZmRRMnhYZ3pmZnhtRHpBdEc2Szdkd0gwUG1yNW5NV0dEQ1d2aHFGNUFheGJUT21kMjdFZkRTX2RyaDVSVHBXdWNpNFRFXzZMQXAxQkdpSGlhRGFHUzQ?oc=5",
+          "region": "东南亚"
+        },
+        {
+          "id": "006-4",
+          "t": "女性权利联合会批评委员会主席女性代表性不足",
+          "d": "一家女性权利联合会批评议会委员会主席职位中女性比例过低，认为决策层的性别失衡限制了女性议题进入核心议程。",
+          "body": [
+            "一家女性权利联合会公开批评，称议会委员会主席职位中女性代表性明显不足。该联合会认为，委员会主席掌握议程设置权，性别失衡意味着女性的立法关切难以被优先处理。",
+            "在部分中东和北非国家，女性在议会中的总体比例虽有所提升，但领导职位仍由男性主导。女性议员往往被分配到社会、教育等被认为“适合女性”的委员会，难以进入财政、安全等核心委员会。",
+            "代表性不足不仅是人数问题，更关系到政治权力的实际分配。该批评试图推动制度改变，让更多女性进入决策层，从而改变立法方向与资源分配，使性别平等不只停留在选举口号。"
+          ],
+          "why": "公众常关注女性议员数量，却忽略委员会主席这类真正掌握议程权力的职位。",
+          "en": {
+            "t": "Women's Rights Federation Criticizes Low Female Representation in Committee Chairs",
+            "d": "A women's rights federation says too few women hold committee chair positions, weakening women's influence over legislative agendas.",
+            "body": [
+              "A women's rights federation publicly criticized the low proportion of women chairing parliamentary committees. Committee chairs control agenda-setting, so the imbalance reduces the likelihood that women's concerns will be prioritized.",
+              "In some Middle Eastern and North African countries, women's overall parliamentary presence has grown, but leadership remains male-dominated. The criticism highlights that access to top committee roles matters as much as the number of seats won."
+            ]
+          },
+          "img": "assets/img/womens-rights.png",
+          "src": "جورنال 24",
+          "url": "https://news.google.com/rss/articles/CBMi0AJBVV95cUxNZ3BjMkpPNm1GeWpYbDViaW9ZOEx2Yk9SdnNDOGxlRWFQOXZOQnNOUmRMczdyMVpYTHJWRm9jSFZKeTRRT0hneHJPcDNyZkJpNGhCeHFtUEZLU2k3ZDRJMlNpNFRVRGY2WGUtWHg4QWdwVzBJQlB4aDZ4ckY1dFpUZDZWS3F0ME5nY2EtNFJYdFMtZ1ZQTUN0ZXptMjRHUWwzbzA1Ni01WEw0RlU4MzA3N1VoZnFFVnFiWVBHZjJsTUdTSUN0b3VianVaeElyRk1mSEJ0Y1hqeXB4dC1hT2dDWWpBMVlRSDhyNmlvdmk0bE44cFREaXBGajR5TTR0cHpTQVNPbnFoT2FLS0l2OVpacFlGQkllU3R6b2NaZTBDLXE0WXFWMzV3VFhuUmxMX0tNcTFUSnFHTjZpdmdWZlRuVTNZSVJLcENGVHZER0psbi0?oc=5",
+          "region": "中东"
+        },
+        {
+          "id": "006-5",
+          "t": "Carolina Viggiano要求资源应对女性暴力结构性根源",
+          "d": "墨西哥政治人物 Carolina Viggiano 呼吁拨出资源，从结构性原因入手预防和减少针对女性的暴力，而非仅依赖事后惩处。",
+          "body": [
+            "墨西哥政治人物 Carolina Viggiano 公开呼吁，应分配更充足的资源来应对针对女性暴力的结构性原因。她指出，仅靠事后救援、起诉和惩罚无法从根本上减少暴力，必须投资于预防。",
+            "墨西哥长期面临严重的女性被杀与失踪问题，暴力根植于性别不平等、贫困、司法有罪不罚和有组织犯罪交织的环境。若干预措施只停留在案件发生后的应急响应，难以改变高发趋势。",
+            "将资源导向结构性预防，意味着要改变教育、就业、司法和社会保障中的性别歧视。这比单一严惩更能触及问题根源，也为基层女性建立更可靠的安全网。"
+          ],
+          "why": "她明确区分了应急反应与结构性预防，指出只处理案件后果无法减少暴力。",
+          "en": {
+            "t": "Carolina Viggiano Demands Resources for Structural Causes of Violence Against Women",
+            "d": "Mexican political figure Carolina Viggiano called for resources to address the structural causes of violence against women, not just its aftermath.",
+            "body": [
+              "Mexican political figure Carolina Viggiano publicly urged the allocation of more resources to tackle the structural causes of violence against women. She said emergency responses, prosecution, and punishment are not enough on their own.",
+              "Mexico has long faced high rates of femicide and disappearances, rooted in inequality, poverty, impunity, and organized crime. Directing resources to prevention—through education, employment, justice, and social protection—aims to build a safer environment for women."
+            ]
+          },
+          "img": "assets/img/womens-rights.png",
+          "src": "senado.gob",
+          "url": "https://news.google.com/rss/articles/CBMihAJBVV95cUxOLW5Bbk14WGZRbE9aZGhiVGIzWDJhbjUwX3RDMVNvYkNpRGRjTmlpZ19FM1VYSFY1el9pMmVheDk5YVBNUEFPSFJId3QzYVcxeDBPaExZamRfUGs2NXQwTnNFWnl6RzZYZ1dLOGFZcTdmRGlpOWVfd0Z6XzN5RlJnNjdMMDJMeFN0RU0yVmtzYVJ2VE9NcDlPaUlkRGJiMmdaNEdxSVhjQmxwSXEtZFYzNDY5Vm82RFlXcWY4aFZhVjIzdWFURnlqN0RWaXN0ZHFzMXlncGYzcFFHdUQzYjU2ZXpxVW9GU3VMWkhQRjR2REl3ZGFKeVE2VnJSeDhKWEtxWlNubg?oc=5",
+          "region": "拉美"
+        }
+      ]
+    },
+    {
+      "cat": "职场平等",
+      "en_cat": "Workplace Equality",
+      "items": [
+        {
+          "id": "006-6",
+          "t": "日本举办农业女性研讨会，讨论性别平等与女性活跃",
+          "d": "日本举行以“思考农业女性活跃、迈向性别平等”为主题的研讨会，关注农村女性在农业经营中的角色与发展障碍。",
+          "body": [
+            "日本近期举行以“思考农业女性活跃、迈向性别平等”为主题的研讨会。与会者围绕农业经营、地方经济与女性参与展开讨论，试图找出让女性在农村和农业领域获得更多主导权的路径。",
+            "日本农业人口持续减少，女性在农业劳动力中占有相当比例，但往往被当作辅助劳动力，很少拥有土地、资金和经营决策权。性别平等政策在地方农业部门落实有限，农村女性的职业发展缺少制度支持。",
+            "农业女性的发展不仅关系个体收入，也影响地方经济和食品安全。研讨会将性别视角带入农业政策讨论，意在改变长期忽视女性贡献的结构，推动农村社会重新认识女性的生产与经营角色。"
+          ],
+          "why": "农业常被视为男性主导行业，专门为农业女性举办的性别平等研讨会并不多见。",
+          "en": {
+            "t": "Japan Symposium Focuses on Rural Women and Gender Equality in Farming",
+            "d": "A symposium in Japan examined how to boost rural women's participation and promote gender equality in agriculture.",
+            "body": [
+              "Japan recently held a symposium on women's advancement in agriculture under the theme of moving toward gender equality. Participants discussed land access, business leadership, and the structural barriers rural women face.",
+              "Rural policies and gender policies are often separate, leaving women in farming without sufficient institutional support. The event aimed to bring a gender perspective into agricultural policy and make women's contributions to rural economies more visible."
+            ]
+          },
+          "img": "assets/img/workplace.png",
+          "src": "琉球新報デジタル",
+          "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTFBEUGZobkp3QmZnT0NHWVY0MkRPdGsxOVZ1OGxpcFZSR0lPWXpsOXM4ZnN6WVNzWFJteVk2dkZoMk5hRFRBZWRGekN6M1AtV21ld0lWVVJNZWk3YzFE?oc=5",
+          "region": "东亚"
+        }
+      ]
+    },
+    {
+      "cat": "生育权利",
+      "en_cat": "Reproductive Rights",
+      "items": [
+        {
+          "id": "006-7",
+          "t": "尼日利亚NGO呼吁各方支持女性生殖健康权利",
+          "d": "尼日利亚一家非政府组织寻求利益相关方支持，以推进女性生殖健康权利，强调生殖健康服务应被视为基本权利而非特权。",
+          "body": [
+            "尼日利亚一家非政府组织公开寻求利益相关方支持，以推进女性生殖健康权利。该组织强调，获得避孕、安全孕产和生殖保健服务应当是女性的基本权利，不应因经济或地域差异而受阻。",
+            "在许多非洲国家，女性获得生殖健康服务仍面临障碍，包括设施不足、费用高昂以及宗教和文化观念的限制。非政府组织往往通过社区教育、政策倡导和服务提供来弥补公共体系的缺口，但资源长期有限。",
+            "将生殖健康明确定位为权利问题，有助于推动政府承担责任，并改变社会对女性身体的传统评判。没有身体自主，女性在教育和就业等领域的平等就难以实现。"
+          ],
+          "why": "生殖健康权利常被简化成医疗问题，但该组织直接把它作为政治与社会议题提出。",
+          "en": {
+            "t": "Nigerian NGO Seeks Support for Women's Reproductive Health Rights",
+            "d": "A Nigerian non-governmental organization called on stakeholders to support women's reproductive health rights as basic rights.",
+            "body": [
+              "A Nigerian NGO publicly sought stakeholder support to advance women's reproductive health rights. It emphasized that access to contraception, safe motherhood, and reproductive care should be treated as a basic right, not a privilege.",
+              "Many women in Africa still face barriers such as inadequate facilities, high costs, and cultural restrictions. Positioning reproductive health as a rights issue helps push governments to take responsibility and changes how society views women's bodies."
+            ]
+          },
+          "img": "assets/img/body-choice.png",
+          "src": "News Agency of Nigeria",
+          "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxQcGtKaFJYc2hPQXVKNHdid0c2a1o0eGlsaFlYRjI5R2dUYjZOX1RMT0tiMXdGLUNYSkZmcm5LbDhXbl9oWF81WHdReUt0WUstTHRtdHBEZG5XbTVNWVRFRFZZRGM5LU5YMUM0V2ptQnZBY3RyMzlXU3VFWlZ2YTBWS2hEUTFUZjAyaE0wa2xRR08yQQ?oc=5",
+          "region": "非洲"
+        },
+        {
+          "id": "006-8",
+          "t": "印度媒体：生育与否应是女性自己的选择",
+          "d": "印度媒体刊登评论，主张是否生育、何时生育应由女性自主决定，不应受家庭或社会强迫，强调身体自主权。",
+          "body": [
+            "印度《时报》近日刊登评论，主张生育决定权应属于女性本人。文章认为，女性对于是否生育、生育几个孩子拥有最终选择权，家庭和社会不应以传统期待施加压力。",
+            "在印度，围绕婚姻和生育的社会压力仍相当普遍。许多女性在结婚后很快面临来自亲属的生育期待，家庭计划的实际决策往往落在丈夫或长辈手中，女性自身的意愿被忽视。",
+            "将生育定义为个人选择而非家庭义务，是对传统性别角色的直接挑战。这需要法律保障，也需要社会文化改变对女性身体的认知，否则选择权仍难以真正实现。"
+          ],
+          "why": "主流媒体直接以“女人的选择”为标题，在生育议题上表意明确，打破常见的中性化表达。",
+          "en": {
+            "t": "Indian Media: Having Children Should Be a Woman's Own Choice",
+            "d": "An Indian newspaper commentary argues that decisions about childbearing should belong to women, free from family or social coercion.",
+            "body": [
+              "The Times of India published a commentary asserting that women should have the final say over whether and when to have children. It argues that family expectations should not override a woman's bodily autonomy.",
+              "It acknowledges that social pressure around marriage and childbirth remains strong in India, with many women facing demands from relatives soon after marriage. Framing childbearing as an individual choice challenges traditional gender roles and calls for legal and cultural change."
+            ]
+          },
+          "img": "assets/img/body-choice.png",
+          "src": "The Times of India",
+          "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxQSll4MzFlM0hsejNFNXNIUXl4S2RPUHpaQnRNdGVCRWNvVWpGSDQtT0ZUWUZSempOOEx0cnZzOGdVcElZUkE0YjhHcUhaS0NzakhwdEF5Z1RtRUhLSUk2RUJnOUlTNlBuNU4wVGc0aHRtVFMxYjc3Z2VyaEF2SlUycDBkSW03TXRwNTg5VVJlTkpOY2pEMmFPWnVzRjRRUjhZdGZ0Nlo5QUptUdIBrwFBVV95cUxPSmNnSFY1a3Fhc05oMjJ6U3lBWVBvZk5udVlfTW9YUDE0Z2ZvZzlISEV6cHRENng0ZVZXRXBGOWVzNlo4SG5pWHZFUnZXek5oWjAyMHlYblVXSkpuZjdvYUFpbjRVLWFpMzVkZ3lDbThUVkVzXzBKaGlNd2xZOGRSR3BHOGo2dzU0UXV2Q1FiZzJ2Y0VOeFp6cldnSUVvTDZFREtpZkZaUnlxVkY5Wk5r?oc=5",
+          "region": "南亚"
+        }
+      ]
+    },
+    {
+      "cat": "社会",
+      "en_cat": "Society",
+      "items": [
+        {
+          "id": "006-9",
+          "t": "Ilham Ahmed：一体化增强稳定但削弱女性与库尔德权利",
+          "d": "库尔德女性政治人物 Ilham Ahmed 认为，地区一体化虽可能带来稳定，却会削弱女性已取得的公共角色与库尔德权利。",
+          "body": [
+            "Ilham Ahmed 在一次采访中表示，地区一体化进程虽然有助于加强稳定，但也对女性已经取得的公共角色以及库尔德权利构成压力。她提醒，稳定不应以牺牲多元权利为代价。",
+            "在叙利亚东北部等地，女性曾在地方治理与自治中占据相对突出的位置，参与决策和安全事务。政治整合要求统一法律与行政框架，可能改变这些既有安排，使女性代表权和族群自治空间缩小。",
+            "她的观点揭示了稳定与权利之间的张力：在追求政治统一的过程中，少数群体和女性的既得权利容易被当作次要问题。这种提醒对任何处于转型中的地区都有参考价值。"
+          ],
+          "why": "她同时谈论一体化、女性角色与族群权利，将性别视角嵌入地缘政治讨论，较少见于主流报道。",
+          "en": {
+            "t": "Ilham Ahmed: Integration Brings Stability but Weakens Women's Roles and Kurdish Rights",
+            "d": "Kurdish political figure Ilham Ahmed said regional integration may improve stability but risks eroding women's public roles and Kurdish rights.",
+            "body": [
+              "In an interview, Ilham Ahmed argued that integration processes can strengthen stability but also put pressure on the public roles women have achieved and on Kurdish rights. She warned that stability should not come at the expense of plural rights.",
+              "In parts of northeast Syria, women have held relatively prominent positions in local governance and security. Political integration may unify legal and administrative frameworks and thus alter those arrangements, shrinking women's representation and minority autonomy."
+            ]
+          },
+          "img": "assets/img/women-power.png",
+          "src": "ANHA",
+          "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxNa29SN0ozSHNTN1FXZmtORW1maXRZcmFBQzF1bTRtdk4tVlNJelJORU5SeVNsZDlpMVJHcU41X0tRdThMZWNseS16RVp2b1g0SkNib0VrTmN0aEx0UktUTmIwZDgwOVE3aXF2M1lZVDhvVE12U1l2ajR4TkJqOXBrdmVOZUR4YnowcERObERXdDRiVVloeHNjUTd5QXpWRW5KbkpzY05OMHlBQzhVM0E?oc=5",
+          "region": "中东"
+        }
+      ]
+    }
+  ]
+},
+{
   "id": "005",
   "date": "2026-10-09",
   "period": "2026.10.05 – 2026.10.11",
