@@ -11,6 +11,14 @@ import json
 import os
 import pathlib
 import subprocess
+import sys
+
+# Windows 控制台默认 GBK，最后一行输出「✓」会抛 UnicodeEncodeError。
+# 文件此时已经写好，但报错会让人以为生成失败，所以统一把输出改成 UTF-8。
+try:
+    sys.stdout.reconfigure(encoding='utf-8', errors='replace')
+except Exception:
+    pass
 
 ROOT = pathlib.Path(__file__).resolve().parent.parent
 

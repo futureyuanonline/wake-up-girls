@@ -103,6 +103,12 @@ jobs:
         if: env.LLM_API_KEY != ''
         run: node tools/build_sitemap.mjs
 
+      # 专栏（data/columns.js）是按关键词把各期条目归到 5 个专栏里的，
+      # 脚本不会自己跑；不放这一步的话新一期永远不会出现在专栏页。
+      - name: ③.6 重新归类专栏（让新一期进入「在场/权利/发声/身体/劳动」）
+        if: env.LLM_API_KEY != ''
+        run: python tools/build_columns.py
+
       - name: ④ 提交（触发 Cloudflare 自动部署）
         if: env.LLM_API_KEY != ''
         run: |
