@@ -95,12 +95,12 @@ jobs:
         if: env.LLM_API_KEY != ''
         run: python tools/generate_issue.py ${{ inputs.force && '--force' || '' }}
 
-      # 作品库自动收录：从 Wikidata 拉「各地区新兴的女性创作者作品」，
-      # 机器起草一句介绍（d），草稿写不出来就不入库、只进 data/works_queue.json。
-      # 必须放在「同步繁体版」之前，否则新条目没有繁体版。
-      - name: ②.5 作品库自动收录（各地区新兴作品）
+      # 作品库自动收录：聚焦「全世界电影/电视节获奖作品」——奖项可核查、天然分地区，
+      # 也直接支撑那句编辑判断（获了什么奖、谁导的、哪国的）。
+      # 备选（新片线）：python tools/fetch_works.py --write --since 2025
+      - name: ②.5 作品库自动收录（电影节获奖作品）
         if: env.LLM_API_KEY != ''
-        run: python tools/fetch_works.py --write --since 2025 --per-region 2
+        run: python tools/fetch_awards.py --write --since 2015 --per-region 2
 
       - name: ③ 同步繁体版
         if: env.LLM_API_KEY != ''

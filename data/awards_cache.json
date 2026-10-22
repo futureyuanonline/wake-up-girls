@@ -1,0 +1,114 @@
+[
+  {
+    "seed": "Palme d'Or",
+    "zh": "戛纳金棕榈",
+    "qid": "Q179808",
+    "label": "Palme d'Or",
+    "desc": "highest prize awarded at the cannes film festival"
+  },
+  {
+    "seed": "Golden Lion",
+    "zh": "威尼斯金狮",
+    "qid": "Q209459",
+    "label": "Golden Lion",
+    "desc": "highest prize given to a film at the venice film festival"
+  },
+  {
+    "seed": "Silver Bear",
+    "zh": "柏林银熊",
+    "qid": "Q708135",
+    "label": "Silver Bear",
+    "desc": "german film award in several categories (1951–)"
+  },
+  {
+    "seed": "Jury Prize",
+    "zh": "戛纳评审团奖",
+    "qid": "Q164200",
+    "label": "Jury Prize",
+    "desc": "the third most prestigious prize at the annual cannes film f"
+  },
+  {
+    "seed": "Teddy Award",
+    "zh": "泰迪熊奖",
+    "qid": "Q182836",
+    "label": "Teddy Award",
+    "desc": "lgbt film award of the berlin international film festival (1"
+  },
+  {
+    "seed": "Crystal Bear",
+    "zh": "水晶熊奖",
+    "qid": "Q1464094",
+    "label": "Crystal Bear",
+    "desc": "award for children and youth movies from the generation sect"
+  },
+  {
+    "seed": "Golden Leopard",
+    "zh": "洛迦诺金豹",
+    "qid": "Q1700510",
+    "label": "Golden Leopard",
+    "desc": "top prize at the locarno international film festival"
+  },
+  {
+    "seed": "Golden Shell",
+    "zh": "圣塞巴斯蒂安金贝壳",
+    "qid": "Q775086",
+    "label": "Golden Shell",
+    "desc": "best film award at san sebastián film festival"
+  },
+  {
+    "seed": "New Currents Award",
+    "zh": "釜山新浪潮",
+    "qid": "Q109300200",
+    "label": "New Currents Award",
+    "desc": "film award"
+  },
+  {
+    "seed": "Tokyo Grand Prix",
+    "zh": "东京大奖",
+    "qid": "Q136471547",
+    "label": "Tokyo Grand Prix",
+    "desc": "award of tokyo international film festival"
+  },
+  {
+    "seed": "Emmy Award",
+    "zh": "艾美奖",
+    "qid": "Q123737",
+    "label": "Emmy Award",
+    "desc": "american television production award"
+  },
+  {
+    "seed": "Golden Globe Award",
+    "zh": "金球奖",
+    "qid": "Q1011547",
+    "label": "Golden Globes",
+    "desc": "american film and television awards in several categories (1"
+  },
+  {
+    "seed": "FIPRESCI Prize",
+    "zh": "费比西奖",
+    "qid": "Q3404587",
+    "label": "FIPRESCI Prize of the Festival de Cannes",
+    "desc": "international film critics association award of the festival"
+  },
+  {
+    "seed": "Un Certain Regard",
+    "zh": "一种关注",
+    "qid": "Q1071326",
+    "label": "Un Certain Regard",
+    "desc": "section of the cannes film festival"
+  },
+  {
+    "seed": "Queer Palm",
+    "zh": "酷儿棕榈",
+    "qid": "Q2159561",
+    "label": "Queer Palm",
+    "desc": "award by cannes film for lgbtiq+"
+  },
+  {
+    "seed": "Silver Lion",
+    "zh": "威尼斯银狮",
+    "qid": "Q1337827",
+    "label": "Silver Lion",
+    "desc": "italian film director award"
+  }
+]
