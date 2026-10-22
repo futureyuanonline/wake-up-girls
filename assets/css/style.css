@@ -1162,6 +1162,16 @@ body.page-in { animation: none !important; }
 .num-cite code { display: block; font-size: 12px; line-height: 1.8; color: var(--ink); word-break: break-all; background: none; padding: 0; }
 .num-nav { font-size: 13px; }
 .num-nav a { color: var(--brick); }
+/* 「这一条唯一能支撑的结论」——发布门槛的可视化：没有这句就不该发 */
+.num-claim {
+  margin: 0 0 26px; padding: 16px 18px; background: #FBF3E6;
+  border-left: 4px solid var(--brick); border-radius: 2px;
+}
+.num-claim-label {
+  font-size: 11px; letter-spacing: .1em; text-transform: uppercase;
+  color: var(--brick); font-weight: 700; margin-bottom: 8px;
+}
+.num-claim p { font-size: 15.5px; line-height: 1.9; color: var(--ink); margin: 0; font-weight: 500; }
 @media (max-width: 640px) {
   .num-card { padding: 18px; }
   .num-value { font-size: 28px; }

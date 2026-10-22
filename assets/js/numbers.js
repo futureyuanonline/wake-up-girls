@@ -153,6 +153,11 @@
           '<h1 class="num-headline">' + E(n.title) + '</h1>' +
           '<div class="num-meta">' + E(n.date || '') + (n.topic ? ' · ' + E(n.topic) : '') + '</div>' +
         '</div>' +
+        (n.claim ? '<div class="num-claim">' +
+          '<div class="num-claim-label">' +
+            E(({ 'zh-CN': '这一条唯一能支撑的结论', 'zh-Hant': '這一條唯一能支撐的結論',
+                 en: 'The one claim this entry supports' })[lang()] || '这一条唯一能支撑的结论') +
+          '</div><p>' + E(n.claim) + '</p></div>' : '') +
         '<section class="num-block"><h2>' + E(numT('num.s1')) + '</h2><p>' + E(n.what) + '</p></section>' +
         '<section class="num-block"><h2>' + E(numT('num.s2')) + '</h2><p>' + E(n.who) + '</p>' +
           (src.url ? '<p class="num-src"><a href="' + E(src.url) + '" target="_blank" rel="noopener">' +

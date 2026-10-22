@@ -38,7 +38,7 @@ NUMBERS_JS = os.path.join(ROOT, 'data', 'numbers.js')
 CANDIDATES = os.path.join(ROOT, 'data', 'numbers_candidates.json')
 ISSUES_JS = os.path.join(ROOT, 'data', 'issues.js')
 
-REQUIRED_TEXT = ['value', 'title', 'what', 'who', 'caliber', 'action']
+REQUIRED_TEXT = ['value', 'title', 'claim', 'what', 'who', 'caliber', 'action']
 TOPICS = ['在场', '权利', '发声', '身体', '劳动', '性别与技术']
 
 SYSTEM = (
@@ -64,6 +64,7 @@ PROMPT = '''请根据下面的选题，写一条「数字」栏目条目，只�
   "value": "主数字，可含单位或符号，例如 43.1% 或 63 / 160",
   "valueLabel": "对主数字的一句限定说明，12 字以内",
   "title": "标题，24 字以内，陈述句，不喊口号",
+  "claim": "这一条唯一能支撑的结论，一句话，30–80 字。必须真的站得住，且不能被下面的 cannot 否定",
   "what": "这个数字是什么，120–260 字，讲清它衡量的是什么、不衡量什么",
   "who": "谁统计的：机构 + 报告名 + 年份，60–160 字。若不确定，写「待核实」并说明缺什么",
   "caliber": "口径：分母是什么、怎么算的、样本范围，60–160 字",
@@ -163,11 +164,12 @@ def validate(item):
     errs = []
     # value / title 本来就是短的（±0.10、63 / 160），只查非空
     short_fields = {'value', 'title', 'valueLabel'}
+    min_len = {'claim': 20}
     for f in REQUIRED_TEXT:
         v = item.get(f)
         if not isinstance(v, str) or not v.strip():
             errs.append('字段 %s 缺失' % f)
-        elif f not in short_fields and len(v.strip()) < 10:
+        elif f not in short_fields and len(v.strip()) < min_len.get(f, 10):
             errs.append('字段 %s 过短' % f)
     cannot = item.get('cannot')
     if not isinstance(cannot, list) or len(cannot) < 2:
