@@ -14,6 +14,13 @@
     "desc": "highest prize given to a film at the venice film festival"
   },
   {
+    "seed": "Golden Bear",
+    "zh": "柏林金熊",
+    "qid": "Q154590",
+    "label": "Golden Bear",
+    "desc": "prize awarded for the best film at the berlin international "
+  },
+  {
     "seed": "Silver Bear",
     "zh": "柏林银熊",
     "qid": "Q708135",

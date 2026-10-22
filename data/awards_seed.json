@@ -1,0 +1,27 @@
+{
+  "_说明": "三大电影节最高奖的女性得主骨架。这里只放「假设」，实际入库前由 tools/fetch_awards.py --enrich 逐条向 Wikidata 反向核验：作品是否真的获得该奖、年份是否一致、创作者性别是否为女性。核不上的不发布。",
+  "_字段": {
+    "title_zh": "中文片名（入库用，会包上《》）",
+    "match": "用于在 Wikidata 检索的原文/英文片名（模糊匹配，越小越准）",
+    "year": "获奖年份（同时用于核对该片的出版年）",
+    "award": "奖项键：palme=戛纳金棕榈 / lion=威尼斯金狮 / bear=柏林金熊",
+    "note": "备注（不发布，只供人看）"
+  },
+  "items": [
+    { "title_zh": "钢琴课", "match": "The Piano", "year": 1993, "award": "palme", "note": "简·坎皮恩；与《霸王别姬》并列" },
+    { "title_zh": "钛", "match": "Titane", "year": 2021, "award": "palme", "note": "朱利亚·迪库诺，第二位金棕榈女导演" },
+    { "title_zh": "坠落的审判", "match": "Anatomy of a Fall", "year": 2023, "award": "palme", "note": "茹斯汀·特里耶，第三位" },
+
+    { "title_zh": "德国姊妹", "match": "Marianne and Juliane", "year": 1981, "award": "lion", "note": "玛加蕾特·冯·特罗塔" },
+    { "title_zh": "天涯沦落女", "match": "Vagabond", "year": 1985, "award": "lion", "note": "阿涅斯·瓦尔达" },
+    { "title_zh": "在某处", "match": "Somewhere", "year": 2010, "award": "lion", "note": "索菲亚·科波拉" },
+    { "title_zh": "无依之地", "match": "Nomadland", "year": 2020, "award": "lion", "note": "赵婷" },
+    { "title_zh": "正发生", "match": "Happening", "year": 2021, "award": "lion", "note": "奥黛丽·迪万" },
+    { "title_zh": "所有美丽与流血", "match": "All the Beauty and the Bloodshed", "year": 2022, "award": "lion", "note": "劳拉·珀特拉斯，纪录片" },
+
+    { "title_zh": "格巴维察", "match": "Grbavica", "year": 2006, "award": "bear", "note": "亚斯米拉·兹巴尼克" },
+    { "title_zh": "伤心的奶水", "match": "The Milk of Sorrow", "year": 2009, "award": "bear", "note": "克劳迪雅·略萨" },
+    { "title_zh": "不要碰我", "match": "Touch Me Not", "year": 2018, "award": "bear", "note": "阿迪娜·平蒂列" },
+    { "title_zh": "达荷美", "match": "Dahomey", "year": 2024, "award": "bear", "note": "玛缇·迪欧普" }
+  ]
+}

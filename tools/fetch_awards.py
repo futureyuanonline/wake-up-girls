@@ -22,6 +22,7 @@ import argparse
 import datetime
 import json
 import os
+import subprocess
 import sys
 import time
 import urllib.parse
@@ -76,8 +77,17 @@ def discover_awards(refresh=False):
     for seed, zh in SEEDS:
         try:
             js = api({'action': 'wbsearchentities', 'search': seed, 'language': 'en',
-                      'type': 'item', 'limit': '1'})
-            hit = (js.get('search') or [{}])[0]
+                      'type': 'item', 'limit': '6'})
+            hits = js.get('search') or []
+            hit = {}
+            for cand in hits:            # 逐个看描述，避开「训练舰」「电子游戏」这类同名项
+                d = (cand.get('description') or '').lower()
+                if any(b in d for b in BAD_HINT) or not any(g in d for g in GOOD_HINT):
+                    continue
+                hit = cand
+                break
+            if not hit and hits:
+                hit = hits[0]
         except Exception as exc:                                  # noqa: BLE001
             print('  ! 搜索 %s 失败：%s' % (seed, exc))
             continue
@@ -140,6 +150,156 @@ def cell(row, key):
     return ((row.get(key) or {}).get('value') or '').strip()
 
 
+# ---- 骨架核验模式：给一份「我以为是获奖作品」的清单，逐条向 Wikidata 核实 ----
+ENRICH = '''
+SELECT DISTINCT ?work ?wlabel ?czhcn ?czh ?gender ?countryZh ?img WHERE {
+  ?work rdfs:label ?lbl .
+  FILTER(LANG(?lbl) = "zh" || LANG(?lbl) = "en")
+  FILTER(CONTAINS(LCASE(?lbl), LCASE("%(needle)s")))
+  ?work wdt:P577 ?d . FILTER(YEAR(?d) = %(year)d)
+  ?work p:P166 ?st . ?st ps:P166 wd:%(award)s .
+  { ?work wdt:P57 ?c } UNION { ?work wdt:P50 ?c } UNION { ?work wdt:P170 ?c }
+  ?work rdfs:label ?wlabel . FILTER(LANG(?wlabel) = "zh")
+  OPTIONAL { ?c rdfs:label ?czhcn . FILTER(LANG(?czhcn) = "zh-cn") }
+  OPTIONAL { ?c rdfs:label ?czh . FILTER(LANG(?czh) = "zh") }
+  OPTIONAL { ?c wdt:P21 ?gender . }
+  OPTIONAL { ?work wdt:P495 ?co . ?co rdfs:label ?countryZh . FILTER(LANG(?countryZh) = "zh") }
+  OPTIONAL { ?work wdt:P18 ?img . }
+}
+LIMIT 5
+'''
+
+FEMALE = 'Q6581072'
+
+
+def enrich(args):
+    seed_path = os.path.join(ROOT, 'data', 'awards_seed.json')
+    with open(seed_path, encoding='utf-8') as fh:
+        seed = json.load(fh)
+    awards = discover_awards(False)
+    # 奖项键 → 缓存的奖项条目
+    keymap = {}
+    for a in awards:
+        s = a['seed'].lower()
+        if 'palme' in s:
+            keymap['palme'] = a
+        elif 'golden lion' in s:
+            keymap['lion'] = a
+        elif 'golden bear' in s:
+            keymap['bear'] = a
+    missing = [k for k in ('palme', 'lion', 'bear') if k not in keymap]
+    if missing:
+        print('⚠ 奖项清单里缺少：%s（试 --refresh-awards）' % missing)
+
+    works = load_works()
+    known_titles = {norm(w.get('title')) for w in works}
+    queue = load_queue()
+
+    verified, failed = [], []
+    for it in seed.get('items', []):
+        aw = keymap.get(it['award'])
+        if not aw:
+            failed.append((it, '奖项未查到'))
+            continue
+        try:
+            js = sparql(ENRICH % {'needle': it['match'], 'year': it['year'], 'award': aw['qid']})
+        except Exception as exc:                                  # noqa: BLE001
+            failed.append((it, '查询失败 %s' % exc))
+            continue
+        rows = js['results']['bindings']
+        if not rows:
+            failed.append((it, 'Wikidata 里查不到「%s」在 %s 年获该奖' % (it['match'], it['year'])))
+            continue
+        r = rows[0]
+        gender = cell(r, 'gender').rsplit('/', 1)[-1]
+        # Wikidata 的 zh 标签常是繁体（法國/美國），地区表是简体，先统一转简体
+        title_zh = simplify([it.get('title_zh') or cell(r, 'wlabel')])[0]
+        creator = simplify([cell(r, 'czhcn') or cell(r, 'czh')])[0]
+        country = simplify([cell(r, 'countryZh')])[0]
+        if gender != FEMALE:
+            failed.append((it, '创作者性别字段不是女性（%s）' % (gender or '缺失')))
+            continue
+        rec = {'qid': cell(r, 'work').rsplit('/', 1)[-1], 'kind': 'film',
+               'title': title_zh, 'creator': creator,
+               'year': it['year'], 'country': country,
+               'region': REGION.get(country, ''), 'award': aw['zh'],
+               'zhwiki': True, 'img': cell(r, 'img')}
+        # 介绍句：有模型就起草；没有就写一句事实（不装编辑腔），并标记「需补写」
+        rec['d'] = draft(rec) if os.environ.get('LLM_API_KEY', '').strip() else ''
+        if not rec['d']:
+            rec['d'] = '由%s执导，%s年获%s。出品国：%s。' % (creator, it['year'], aw['zh'], country or '未知')
+            rec['needs_edit'] = True
+        if not rec['region']:
+            failed.append((it, '国别无法归入地区（%s）' % (country or '无')))
+            continue
+        if norm(rec['title']) in known_titles:
+            failed.append((it, '库里已有《%s》，跳过' % rec['title']))
+            continue
+        verified.append(rec)
+
+    conv = simplify([v['title'] for v in verified] + [v['creator'] for v in verified])
+    for i, v in enumerate(verified):
+        v['title'] = conv[i]
+        v['creator'] = conv[len(verified) + i]
+
+    print('\n=== 核验结果 ===')
+    for v in verified:
+        print('  ✓ 《%s》%s（%s）%s｜%s' % (v['title'], v['creator'], v['year'], v['award'], v['qid']))
+    for it, why in failed:
+        print('  ✗ %-14s %s' % (it['title_zh'], why))
+    print('\n通过 %d 条 / 共 %d 条' % (len(verified), len(seed.get('items', []))))
+
+    if not args.write:
+        print('（dry-run，未写入；加 --write 落盘）')
+        return
+    if verified:
+        append_with_award(verified)
+        print('✓ 已追加 %d 条进 data/works.js（仅写核验通过的）' % len(verified))
+    qmap = {i.get('qid'): i for i in queue.get('items', [])}
+    for v in verified:
+        qmap[v['qid']] = dict(v, status='published')
+    queue['items'] = list(qmap.values())[-400:]
+    queue['updated'] = datetime.date.today().isoformat()
+    save_queue(queue)
+
+    summary = os.environ.get('GITHUB_STEP_SUMMARY')
+    if summary:
+        with open(summary, 'a', encoding='utf-8') as fh:
+            fh.write('## 作品库骨架核验\n\n通过 %d / %d\n\n' % (len(verified), len(seed.get('items', []))))
+            for v in verified:
+                fh.write('- 《%s》%s（%s）%s\n' % (v['title'], v['creator'], v['year'], v['award']))
+            for it, why in failed:
+                fh.write('- ✗ %s：%s\n' % (it['title_zh'], why))
+
+
+def append_with_award(items):
+    """追加到 works.js，并写入 works.js 已有的 a（奖项）字段。"""
+    from fetch_works import WORKS_JS
+    src = open(WORKS_JS, encoding='utf-8').read()
+    block = ''
+    for it in items:
+        tags = ['骨架收录', it['qid']] + (['需补写'] if it.get('needs_edit') else [])
+        block += (
+            '  { c:%s, title:%s, creator:%s, year:%s, country:%s, region:%s,\n'
+            '    d:%s,\n'
+            '    tags:[%s], a:%s },\n'
+            % (js_str(it['kind']), js_str('《%s》' % it['title']), js_str(it['creator']),
+               it['year'], js_str(it['country'] or ''), js_str(it['region']),
+               js_str(it.get('d') or ''), ', '.join(js_str(t) for t in tags), js_str(it['award']))
+        )
+    idx = src.rstrip().rfind('];')
+    if idx < 0:
+        raise SystemExit('works.js 结构异常')
+    head = src[:idx]
+    if head.rstrip().endswith('}'):        # 原文件最后一条没有尾逗号
+        head = head.rstrip() + ',\n'
+    with open(WORKS_JS, 'w', encoding='utf-8', newline='\n') as fh:
+        fh.write(head + block + src[idx:])
+    r = subprocess.run(['node', '--check', WORKS_JS], capture_output=True)
+    if r.returncode != 0:
+        raise SystemExit('写入后语法错误：' + r.stderr.decode('utf-8', 'replace')[:300])
+
+
 def draft(item):
     key = os.environ.get('LLM_API_KEY', '').strip()
     if not key:
@@ -175,8 +335,14 @@ def main():
     ap.add_argument('--since', type=int, default=2015)
     ap.add_argument('--per-region', type=int, default=3)
     ap.add_argument('--refresh-awards', action='store_true')
+    ap.add_argument('--enrich', action='store_true', help='按 data/awards_seed.json 逐条核验骨架名单')
     ap.add_argument('--no-llm', action='store_true')
     args = ap.parse_args()
+
+    if args.enrich:
+        print('=== 骨架核验（逐条向 Wikidata 求证）===')
+        enrich(args)
+        return
 
     print('=== 奖项清单 ===')
     awards = discover_awards(args.refresh_awards)
