@@ -1,0 +1,167 @@
+<!doctype html>
+<html xmlns:o="urn:schemas-microsoft-com:office:office" xmlns:w="urn:schemas-microsoft-com:office:word">
+<head>
+<meta charset="utf-8" />
+<title>Wake Up Girls · 刊物体例</title>
+<style>
+  @page { size: A4; margin: 1.9cm 1.8cm 1.6cm 1.8cm; }
+  body { font-family: "Microsoft YaHei", "微软雅黑", sans-serif; font-size: 10.5pt; line-height: 1.72; color: #1D1715; }
+  h1 { font-size: 17pt; margin: 0 0 3pt 0; }
+  .sub { font-size: 9.5pt; color: #5A4F49; margin: 0 0 14pt 0; }
+  h2 { font-size: 12pt; margin: 16pt 0 7pt 0; padding-bottom: 3pt; border-bottom: 1.2pt solid #A12627; color: #A12627; }
+  h3 { font-size: 10.5pt; margin: 11pt 0 3pt 0; }
+  p { margin: 3pt 0; }
+  ul, ol { margin: 3pt 0; padding-left: 16pt; }
+  li { margin: 2pt 0; }
+  table { border-collapse: collapse; width: 100%; margin: 5pt 0; }
+  th, td { border: 0.75pt solid #DAD4C8; padding: 4pt 6pt; font-size: 9.5pt; vertical-align: top; }
+  th { background: #F1E9D9; text-align: left; }
+  .box { background: #FBF3E6; border-left: 3pt solid #A12627; padding: 8pt 11pt; margin: 9pt 0; font-size: 9.5pt; }
+  .num { font-size: 20pt; font-weight: bold; color: #A12627; letter-spacing: 1pt; }
+  code { font-family: Consolas, monospace; font-size: 9pt; background: #F4F1EA; padding: 0 2pt; }
+  .small { font-size: 9pt; color: #6B5F58; }
+</style>
+</head>
+<body>
+
+<h1>Wake Up Girls · 刊物体例 v1</h1>
+<p class="sub">
+沿用现有品牌与期号（001–006 已发，本期起为第 007 期）｜ 2026-10-22 ｜ 定位：<b>用证据读性别</b>
+</p>
+
+<h2>一、一句话定位</h2>
+<p>
+<b>不是"为女性发声"，是"把性别这件事的事实结构讲清楚"。</b>
+前者是立场，谁都能喊；后者是能力，需要一手来源、口径意识和承认无知的克制。
+刊物的差异化不在话题，在于<b>每期都有一个别人给不了的、可核查的观察</b>。
+</p>
+
+<h2>二、栏目表</h2>
+<table>
+  <tr><th style="width:15%">栏目</th><th style="width:12%">篇幅</th><th style="width:10%">频率</th><th>约定</th></tr>
+  <tr>
+    <td><b>本周精选</b><br/><span class="small">The Digest</span></td>
+    <td>8–12 条<br/>每条 80–120 字</td><td>每周</td>
+    <td>全球女性议题扫读。每条必须有：标题 / 一句摘要 / 原始来源链接 / 地区与类别。禁止只用二手转述。</td>
+  </tr>
+  <tr>
+    <td><b>数字</b><br/><span class="small">The Number · 新增</span></td>
+    <td>300–600 字<br/>一个数字</td><td>每期 1 条</td>
+    <td>刊物的牙齿。只讲一个数字，讲清谁统计的、什么口径、哪里不可靠、能推出什么。<b>模板见第三节</b>。</td>
+  </tr>
+  <tr>
+    <td><b>细节</b><br/><span class="small">Details</span></td>
+    <td>1500–2500 字</td><td>每期 1 篇</td>
+    <td>主打长文，一期一问。必须有可点开的一手来源，且结尾落到"谁可以改什么"。</td>
+  </tr>
+  <tr>
+    <td><b>她是谁</b><br/><span class="small">Her Work</span></td>
+    <td>3 件作品卡片</td><td>每期</td>
+    <td>从作品库挑，每件写一句"为什么现在值得看"，不做生平简介。</td>
+  </tr>
+  <tr>
+    <td><b>纠错</b><br/><span class="small">Corrections</span></td>
+    <td>不限</td><td>随时</td>
+    <td>公开更正，标注原句、错在哪、何时改。这是刊物与内容流的分界线之一。</td>
+  </tr>
+  <tr>
+    <td><b>档案</b><br/><span class="small">Archive</span></td>
+    <td>—</td><td>持续</td>
+    <td>往期按主题索引（在场/权利/发声/身体/劳动），每期有稳定 URL 与期号。</td>
+  </tr>
+</table>
+
+<h2>三、「数字」栏目模板（照这个写，不要自由发挥）</h2>
+<div class="box">
+<p class="num">43.1%</p>
+<p><b>① 它是什么</b>：一句话说清这个数字指的是什么（不是"女性地位"，是"全社会就业人员中女性占比"）。</p>
+<p><b>② 谁统计的</b>：机构 + 报告名 + 年份 + 链接。例：《中国妇女发展纲要（2021—2030 年）》统计监测报告，国家统计局，2023 年。</p>
+<p><b>③ 口径</b>：分母是什么、怎么算的、有没有把非正规就业算进去。</p>
+<p><b>④ 它不能推出什么</b>（至少写两条）：例如"不能推出同工同酬""不能推出行业内部女性比例"。</p>
+<p><b>⑤ 谁可以拿它做什么</b>：一句可执行的话——"用来对照自己所在行业，差多少个百分点"。</p>
+</div>
+<p class="small">
+五段缺任何一段都不发。第 ④ 段是这个栏目存在的理由：绝大多数性别内容的问题不是数据错，是<b>数据被拿去承重它承不住的东西</b>。
+</p>
+
+<h2>四、编辑流程（每期走一遍，约 5 小时）</h2>
+<table>
+  <tr><th style="width:18%">步骤</th><th style="width:12%">时间</th><th>动作</th></tr>
+  <tr><td>① 选题</td><td>周一 30 分钟</td><td>先定"这一期要回答什么问题"，再定写什么。禁止先有立场再找材料。</td></tr>
+  <tr><td>② 一手来源</td><td>周二 1 小时</td><td>官方统计 / 论文原文 / 法律条文 / 机构报告。二手媒体只用来发现线索。</td></tr>
+  <tr><td>③ 写作</td><td>周三 2 小时</td><td>「已知 / 推测 / 不知道」三段分开写，不糊过去。</td></tr>
+  <tr><td>④ 核查</td><td>周四 1 小时</td><td>数字复算一遍；链接逐个点开；日期、专有名词、人名、机构名对一遍。</td></tr>
+  <tr><td>⑤ 发布</td><td>周五 30 分钟</td><td>排版、三语、归档、生成引用格式、订阅推送。</td></tr>
+</table>
+
+<h2>五、引用格式（让它像刊物，而不是博客）</h2>
+<p>每篇文章页脚固定输出一行：</p>
+<p><code>Wake Up Girls：《数字》第 007 期，〈43.1% 之后，还差的那 4 个百分点〉，2026-10-30，https://yuanxiuzhong.com/issue/007/number-01</code></p>
+<p>并给一段可直接粘进论文的 APA 式：</p>
+<p class="small">Yuan, X. (2026). 43.1% 之后，还差的那 4 个百分点. <i>Wake Up Girls</i>, No. 007. https://yuanxiuzhong.com/issue/007/number-01</p>
+
+<h2>六、节奏</h2>
+<ul>
+  <li><b>两周一期</b>，不日更。性别内容不缺日更，缺可引用。</li>
+  <li>每期 5 个栏目 + 3 张作品卡，总量约 3500 字，单人 5 小时内可完成。</li>
+  <li>先做 <b>6 期</b>（到第 012 期）看留存与回信，再决定是否加栏目或提速。</li>
+</ul>
+
+<h2>七、试刊号目录（第 007 期）</h2>
+<table>
+  <tr><th style="width:14%">栏目</th><th>标题与要点</th></tr>
+  <tr>
+    <td><b>数字</b></td>
+    <td><b>±0.10</b>——为什么"科学家比护士更女性化"这句话是噪声<br/>
+    来源：本地实验（1,504 篇中文维基 / 165 万词 / 13 个中性名词对照）。<br/>
+    不可推出：不能推出"词向量无偏见"，也不能推出"有偏见"；只能推出单个词的分数不可解释。</td>
+  </tr>
+  <tr>
+    <td><b>细节</b></td>
+    <td><b>中文性别偏见为什么测不准？</b>——一个失败实验的完整交代<br/>
+    线索：d=1.07 但 p=0.0555；几何校准后 15/16 负号降到 12/16、p=0.0137；被删掉的恰是分布两端。结论落到"评测工具本身需要被评测"。</td>
+  </tr>
+  <tr>
+    <td><b>本周精选</b></td>
+    <td>按现有流程出 8–10 条（自动采集 + 人工核对来源）。</td>
+  </tr>
+  <tr>
+    <td><b>她是谁</b></td>
+    <td>3 件作品，其中一件建议选与"数据/可见性"相关的（呼应本期主题）。</td>
+  </tr>
+</table>
+
+<h2>八、十个候选「数字」选题（够用五期）</h2>
+<table>
+  <tr><th style="width:6%">#</th><th style="width:46%">数字与问题</th><th>来源方向</th></tr>
+  <tr><td>1</td><td>就业女性 43.1%，但居委会主任中女性仅 41.4% —— 落差发生在哪一层？</td><td>妇女发展纲要监测报告</td></tr>
+  <tr><td>2</td><td>文学专业女生 87.82%、工学 36.11% —— 专业隔离从哪一步开始</td><td>人口普查年鉴 / 教育统计</td></tr>
+  <tr><td>3</td><td>城镇女性薪酬为男性 77.1% —— 时薪还是月薪？口径决定一切</td><td>麦肯锡 / 人社部统计</td></tr>
+  <tr><td>4</td><td>视障女性的就业率数据——<b>数据缺失本身就是发现</b></td><td>残联统计年鉴</td></tr>
+  <tr><td>5</td><td>160 件作品里 63 位女性导演 —— 自己建库才知道缺口在哪</td><td>本站作品库</td></tr>
+  <tr><td>6</td><td>招聘 JD 中"抗压能力强"与岗位性别比的关联</td><td>公开招聘数据（可抓）</td></tr>
+  <tr><td>7</td><td>AI 给出的职业建议里女性代词占比 vs 普查基线 43.1%</td><td>大模型审计（可复现）</td></tr>
+  <tr><td>8</td><td>家务劳动时间差异 —— 无酬劳动为何不计入 GDP</td><td>时间利用调查</td></tr>
+  <tr><td>9</td><td>女研究生 51.5%，但教授中女性比例 —— 管道在哪一段泄漏</td><td>教育部统计</td></tr>
+  <tr><td>10</td><td>家暴报案数与立案数之间的差 —— 口径与取证门槛</td><td>司法统计 / 妇联数据</td></tr>
+</table>
+
+<h2>九、站点需要补的三个功能</h2>
+<ol>
+  <li><b>「数字」栏目</b>：独立数据文件（`data/numbers.js`）+ 列表页 + 单条页，风格沿用现有 band 体系。</li>
+  <li><b>稳定 URL 与期号</b>：每篇形如 <code>/issue/007/number-01</code>，页脚自动生成引用行。</li>
+  <li><b>纠错页</b>：一个简单的更正记录表（日期 / 原文 / 更正 / 影响范围）。</li>
+</ol>
+<p class="small">这三项都不大，但决定了刊物能不能被引用。没有它们，内容仍然是内容流。</p>
+
+<h2>十、五条防口号铁律（每期自检）</h2>
+<ol>
+  <li>每个数字都能点回原始来源；</li>
+  <li>明确区分「已知 / 推测 / 不知道」；</li>
+  <li>不做道德动员，只做结构说明；</li>
+  <li>结论落到"谁可以改什么"，哪怕是"数据不存在，所以谁都无法判断"；</li>
+  <li><b>负结果照发。</b></li>
+</ol>
+
+</body>
+</html>

@@ -22,6 +22,7 @@ const DIST = path.join(ROOT, 'dist')
 const FILES = [
   'index.html', 'archive.html', 'issue.html', 'news.html',
   'works.html', 'work.html', 'about.html', 'subscribe.html', 'submit.html', 'shop.html', 'detail.html', 'columns.html', 'column.html',
+  'numbers.html', 'number.html',
   '404.html', '_headers', '_redirects', 'robots.txt', 'sitemap.xml',
 ]
 

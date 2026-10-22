@@ -173,6 +173,24 @@ export default {
     if (url.pathname === '/api/submit') return handleSubmit(request, env);
     if (url.pathname === '/api/inbox') return handleInbox(request, env, url);
     if (url.pathname === '/inbox') return handleInboxPage(request, env, url);
-    return env.ASSETS.fetch(request);
+
+    /* 稳定短链：「数字」栏目用 /n/007-01 这种可引用地址，
+       内部重写到 number.html?id=007-01（列表页内跳转仍用 query 形式，本地预览也能跑）。 */
+    const m = url.pathname.match(/^\/n\/([A-Za-z0-9_-]+)\/?$/);
+    if (m) {
+      const u = new URL(request.url);
+      u.pathname = '/number.html';
+      u.searchParams.set('id', m[1]);
+      return env.ASSETS.fetch(new Request(u.toString(), request));
+    }
+
+    const res = await env.ASSETS.fetch(request);
+    /* 数据文件（每周更新）不走长缓存，出刊后刷新即见新一期 */
+    if (url.pathname.startsWith('/data/')) {
+      const r2 = new Response(res.body, res);
+      r2.headers.set('cache-control', 'no-cache, must-revalidate');
+      return r2;
+    }
+    return res;
   },
 };

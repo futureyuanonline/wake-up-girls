@@ -20,6 +20,7 @@ function loadData(rel) {
 
 const { ISSUES = [] } = loadData('data/issues.js')
 const { WORKS = [] } = loadData('data/works.js')
+const { NUMBERS = [] } = loadData('data/numbers.js')
 
 const urls = []
 const add = (loc, lastmod, changefreq, priority) => {
@@ -28,7 +29,7 @@ const add = (loc, lastmod, changefreq, priority) => {
 
 // 静态页
 ;[['', '1.0', 'weekly'], ['archive.html', '0.9', 'weekly'], ['works.html', '0.9', 'weekly'],
-  ['about.html', '0.6', 'monthly'], ['shop.html', '0.6', 'weekly'], ['detail.html', '0.7', 'weekly'], ['columns.html', '0.8', 'weekly'], ['subscribe.html', '0.5', 'monthly'], ['submit.html', '0.5', 'monthly']]
+  ['about.html', '0.6', 'monthly'], ['shop.html', '0.6', 'weekly'], ['detail.html', '0.7', 'weekly'], ['columns.html', '0.8', 'weekly'], ['numbers.html', '0.8', 'weekly'], ['subscribe.html', '0.5', 'monthly'], ['submit.html', '0.5', 'monthly']]
   .forEach(([f, pr, cf]) => add(SITE + '/' + f, today, cf, pr))
 
 // 作品详情（索引即 ?i=）
@@ -37,6 +38,9 @@ WORKS.forEach((_, i) => add(`${SITE}/work.html?i=${i}`, '', 'yearly', '0.6'))
 // 每期周报与每条报道
 const { COLUMNS = [] } = loadData('data/columns.js')
 COLUMNS.forEach((c) => add(`${SITE}/column.html?id=${c.id}`, today, 'weekly', '0.7'))
+
+// 「数字」栏目：列表页在上方静态表；每条用稳定短链 /n/<id>（由 worker 重写到 number.html）
+NUMBERS.forEach((n) => add(`${SITE}/n/${n.id}`, n.date || today, 'monthly', '0.7'))
 
 ISSUES.forEach((iss) => {
   const d = iss.date || ''

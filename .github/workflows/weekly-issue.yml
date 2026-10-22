@@ -109,6 +109,16 @@ jobs:
         if: env.LLM_API_KEY != ''
         run: python tools/build_columns.py
 
+      # 「数字」栏目：自动起草一条（默认写成 draft，页面显示"待核查"；
+      # 来源是本站自建数据的候选会直接标为已验证）。写不进去就跳过，不影响出刊。
+      - name: ③.7 自动起草一条「数字」
+        if: env.LLM_API_KEY != ''
+        run: python tools/generate_number.py
+
+      - name: ③.8 校验「数字」栏目完整性（缺段就不让它上线）
+        if: env.LLM_API_KEY != ''
+        run: python tools/generate_number.py --check
+
       - name: ④ 提交（触发 Cloudflare 自动部署）
         if: env.LLM_API_KEY != ''
         run: |
