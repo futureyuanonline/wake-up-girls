@@ -7,6 +7,319 @@
    - region：全球/欧洲/北美/拉美/中东/非洲/南亚/东亚/大洋洲/中国 */
 window.ISSUES = [
 {
+  "id": "007",
+  "date": "2026-10-23",
+  "period": "2026.10.19 – 2026.10.25",
+  "title": "女性权利周报：土地、身体与政治空间的争夺",
+  "summary": "本期聚焦女性在土地、医疗、暴力与政治参与中的权利斗争，覆盖非洲、大洋洲、中东、北美和拉美等地。从摩洛哥女童遇害到澳大利亚移民拘留女性被忽视，再到南非和肯尼亚的土地权争议，展现结构性性别不平等的多重面向。",
+  "en": {
+    "title": "Women's Rights Weekly: Struggles over Land, Body and Political Space",
+    "summary": "This issue focuses on women's struggles over land, healthcare, violence and political participation, covering Africa, Oceania, the Middle East, North America and Latin America. From a girl's killing in Morocco to neglected women in Australian immigration detention, and land rights disputes in South Africa and Kenya, it reveals structural gender inequality."
+  },
+  "img": "assets/img/womens-rights.png",
+  "watch": {
+    "name": "亚历山德里娅·奥卡西奥-科尔特斯",
+    "name_en": "Alexandria Ocasio-Cortez",
+    "role": "美国众议员、政治人物",
+    "role_en": "U.S. Representative, Politician",
+    "region": "北美",
+    "why": "她在特朗普政府推出系列跨性别政策时公开警告，指出针对跨性别者的打压可能演变为对全体女性公民权利的限制。她将性别身份权利与更广泛的女性权利联系起来，推动了相关立法辩论。",
+    "why_en": "She publicly warned that the Trump administration's policies targeting transgender people could erode civil rights for all women, linking gender identity restrictions to broader rollbacks. Her intervention reframed the debate around the definition of sex and women's rights.",
+    "url": "https://news.google.com/rss/articles/CBMiiAJBVV95cUxPN19Rd3hOWDRja2FKdzJUUXp3Nl9IUkc4ckc3dWVNMmdmYmphMTlsZW9KOFFtYU1IeVgtc1QwanJPLVZuZXlyS19NWmExZF9nS2dpVEpnVzgtTWotV0p0Z0JCSTYwdzVpb2Q5QzdHSTdPV3BiMk9aWEdxemZvbFVXTVY5NEo5R20yaWQ3a0xsUHFuRktjYU1hYVEwOW15c2hJVThFUDh5enhnb1RDXzFSQUZ5TFcwYnVPTjd6QWpTVlBDdzg1M0I5Z1BzQVNnajFEaFM5VnY5YTJVcEk1aUV1UlNKaGZLbi11LUhfSmU4eUJCNUJDcHpUZVRmNFNacFJtaXN4MGYzTS3SAY4CQVVfeXFMTlg2NDJBdGh1X1N5TzEyWHRKV3U0b1BfVUxrNEhSdjIxOWVQVlRMaTJLRlE4cGl1aVJBeUlLUWRoY1JfSVZDTnNVVnRoTUN6MDUyalpvbDhzZHZ4OXdsNTJUazlXY2tBdXFqQ2VxNk1rRGVBZFk4TDUtYUc3aFFRaGJ0azdITWRvRG1nWGRRbzdGdFhwYnRqb0FjdXg5OEY3RDdjTnowWGNzN21QVm1ET1RkOU04WlpxbkZyVFhtR29qazVSdzloWWJyWG1RZ0ZTV01MVFZGcWFoOTdZRFF3VmRyNUFtbEtZRkxGczVNYWhMOVB3NExFb1BiNndncDFXamszeVN6MXA3ZjAxMXdR?oc=5",
+    "img": ""
+  },
+  "picks": {
+    "film": "芭比",
+    "book": "厌女",
+    "art": "弗里达·卡罗"
+  },
+  "sections": [
+    {
+      "cat": "社会",
+      "en_cat": "Society",
+      "items": [
+        {
+          "id": "007-1",
+          "t": "摩洛哥女童遇害，妇女权利联盟要求最严厉惩罚",
+          "d": "卡萨布兰卡机场区一名女童遇害，妇女权利联盟谴责暴行，要求司法系统处以最严厉惩罚，以遏止针对女童的暴力。事件引发社会震惊，暴露儿童保护机制薄弱。",
+          "body": [
+            "摩洛哥卡萨布兰卡“机场区”一名女童遇害，妇女权利联盟公开要求司法机关对凶手处以最严厉惩罚。消息经当地媒体报道后，舆论广泛关注。事件细节尚在调查中，但初步信息显示女童遭受极端暴力，其死亡方式被描述为“惨案”。妇女权利组织正跟进案件，呼吁公众不要沉默。",
+            "摩洛哥近年多次发生针对女童和女性的暴力案件，女性团体持续批评法律保护不足，执法滞后。尽管刑法对谋杀有不同程度量刑，但针对家庭内或熟人作案的暴力仍常被轻判。妇女权利联盟长期收集类似案件，推动修法加强对未成年人和妇女的保护。",
+            "此案再次将儿童保护和性别暴力问题推向公共议程。支持者认为严厉司法能起威慑作用，但批评者指出仅靠重刑无法消除结构性性别不平等。如何在惩罚与预防之间取得平衡，成为摩洛哥妇女运动面临的难题。"
+          ],
+          "why": "一名女童以惨烈方式遇害，而凶手身份和动机有待查明，案件性质超出普通犯罪。",
+          "en": {
+            "t": "Morocco: Women's rights group demands harshest penalties after girl's killing",
+            "d": "A girl was killed in Casablanca's airport district, and a women's rights federation is demanding the strictest punishment. The case highlights weak child protection and widespread gender-based violence.",
+            "body": [
+              "A girl was killed in the 'airport district' of Casablanca, Morocco, and a women's rights federation is publicly demanding the harshest possible punishment. Local media report broad public shock, with initial information suggesting extreme violence. The group is monitoring the case and urging people not to remain silent.",
+              "Morocco has seen repeated violent cases against girls and women, with women's groups criticizing weak legal protection and slow law enforcement. Even when murder charges are filed, violence within families or by acquaintances is often treated leniently. This case has reignited debate on child protection and how to combine punishment with prevention."
+            ]
+          },
+          "img": "assets/img/women-power.png",
+          "src": "LeSiteinfo.com",
+          "url": "https://news.google.com/rss/articles/CBMi1wJBVV95cUxPZ2xLal80Z2NYVEkzRnpVZmV2X1Nhdm5VbDJBbGtUdk50R05NalU5ZDl6S3RBc0tVMnJVaHNZdkRIVk5Qa2ZpdFlRQnFZWE5uWllxRkZBM3ZjV3RONHZMWHdFQ3NaWGRRV2l4Q3hJdk15aVR1eUhmWjdrSlhJZ1JRM1I3ZlJZNy1UWnd0ZXVrNkdnSzFILVNqMG1mTTJiX054QnVhUllfVjFDS01HZFBnYW5XOVFkWWhxQjUzVTRIOF8zY0JPcHlkZnVpa09wS0RQTmNZVGVsOFowcVpjaVY3b2RKdE5UckEyOW9rVkNqSE1SLUZ1TF9IcnZ0bm9lV2tvTjg5RXlhbUV3TFZkcEJsS2lXWFh6a3dqcnhxRGhvS2JkZ0lXNVZZcWg4cUE2MVBGbkNFQnk0OERoaFdsMVhQZllCMy0zX1pWejFjWFlXVjNidEVtblVN?oc=5",
+          "region": "非洲"
+        },
+        {
+          "id": "007-2",
+          "t": "伊拉克女子被父杀害，人权机构要求不以家庭纠纷定性",
+          "d": "伊拉克苏莱曼尼亚一名女子遭父亲杀害，当地人权监测机构呼吁停止将此类杀戮女性案件标签为“家庭纠纷”，应认定为基于性别的谋杀，并追究责任。",
+          "body": [
+            "伊拉克苏莱曼尼亚地区一名女子被其父亲杀害，事件被部分舆论和当局称为“家庭纠纷”。人权监测机构公开反对这一标签，认为这是典型的杀戮女性（femicide），要求以谋杀罪公正调查和起诉。",
+            "在伊拉克部分地区，家族内的“荣誉杀人”或家暴致死常被司法系统降格处理，凶手可能因亲属身份获减刑。人权组织长期指出，这种法律文化纵容了对女性的暴力，使致命攻击被掩盖在“家事”名目下。",
+            "命名方式影响司法走向和公共认知。将父杀女定义为“家庭纠纷”不仅淡化凶手的责任，也向其他家庭传递错误信号。改变语言和分类，是争取女性生命权的重要一步。"
+          ],
+          "why": "父亲杀害女儿却被轻描淡写为“家庭纠纷”，这种定性本身掩盖了谋杀性质。",
+          "en": {
+            "t": "Iraq: Rights monitor says father's killing of daughter is femicide, not family dispute",
+            "d": "The killing of a woman by her father in Sulaimaniya must be treated as gender-based murder, not a 'familial dispute,' a rights monitor said, calling for proper investigation.",
+            "body": [
+              "A woman in Sulaimaniya, Iraq, was killed by her father, and some authorities and media described it as a 'family dispute.' A human rights monitor rejected that label, calling it a clear case of femicide and demanding a murder investigation and prosecution.",
+              "In parts of Iraq, so-called 'honor killings' or domestic violence deaths are often downgraded by the justice system, with perpetrators receiving reduced sentences due to family ties. Rights groups say this legal culture enables violence against women by hiding lethal attacks under the guise of 'family matters.'"
+            ]
+          },
+          "img": "assets/img/women-power.png",
+          "src": "The New Region",
+          "url": "https://news.google.com/rss/articles/CBMiS0FVX3lxTFBMbTNJT2NMVjZia1pwYUliTnpxM2dDMnluSkZGQTRmQ2p6c09BTktTZHlUV2pfYlpIZVY5WVIxcmloS0V3d3RIVHBOTQ?oc=5",
+          "region": "中东"
+        }
+      ]
+    },
+    {
+      "cat": "政策与法律",
+      "en_cat": "Policy & Law",
+      "items": [
+        {
+          "id": "007-3",
+          "t": "澳大利亚检查发现移民拘留中的女性仍被忽视",
+          "d": "澳大利亚人权委员会后续检查显示，移民拘留体系中的女性仍处于制度盲区，基本医疗、安全与尊严保障不足，委员会呼吁立即改革。",
+          "body": [
+            "澳大利亚人权委员会发布后续检查报告，指出女性在移民拘留中仍被当作“事后才想到的群体”。她们在获得经期用品、隐私保护、心理健康支持和安全住宿方面面临持续障碍，许多人报告恐惧与无助。",
+            "此前检查已发现类似问题，但改善有限。女性被拘留者中不少是寻求庇护者或签证逾期者，因非刑事原因被长期关押。拘留中心设计以男性为主，缺乏性别敏感服务，孕产妇和创伤幸存者处境尤为艰难。",
+            "这份报告再次引发对移民拘留制度的合法性争议。批评者认为拘留本身对女性造成二次伤害，尤其当她们并未对公共安全构成威胁。保障被拘留女性基本权利，是移民政策不可回避的人道底线。"
+          ],
+          "why": "检查报告用“afterthought”（事后才被想起）形容女性，说明制度设计初期就未考虑女性需求。",
+          "en": {
+            "t": "Australia: Women in immigration detention remain an afterthought, inspection finds",
+            "d": "A follow-up inspection by the Australian Human Rights Commission finds women in immigration detention still lack adequate healthcare, privacy and safety, calling for urgent reform.",
+            "body": [
+              "The Australian Human Rights Commission's follow-up inspection found that women in immigration detention continue to be treated as an afterthought. They face persistent barriers in accessing menstrual products, privacy, mental health support and safe accommodation, with many reporting fear and helplessness.",
+              "Earlier inspections identified similar problems, but improvements have been limited. Many detained women are asylum seekers or visa overstayers held for non-criminal reasons. Detention centers are largely designed for men, lacking gender-sensitive services, and pregnant women and trauma survivors face particularly harsh conditions."
+            ]
+          },
+          "img": "assets/img/womens-rights.png",
+          "src": "Australian Human Rights Commission",
+          "url": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxQMHBPZG5wb25HYmNHTmE1RnZWWDVRV1BaOGlKU3FhelhQc3VCc0JqbnJRZEFyRUlqbFFwcnRhNVRfOXZEaDhIZExqR0Q5allxbE51Mll2SDlleC1Odk1uT3lMRVFHRVd5cDBTeUVtQ3VpY3E3c2swRzdBSkdUeGlMd19DMl9BNWNxNW1LOW1IS2V3ZTFhUjFza1p0X0xfaTg2dXhzTk1nMXowTmxvWUxlYmtBVl9XbkZwWVBIbXRKUXBFU2lNVS13M2VZYTkxQnJrQTZxN1ZFRVd1T0Rj?oc=5",
+          "region": "大洋洲"
+        },
+        {
+          "id": "007-4",
+          "t": "澳洲性别歧视专员：现行法律未能保护母亲",
+          "d": "澳大利亚性别歧视专员指出，反性别歧视法律在孕期歧视、育儿负担和职场排斥方面保护不足，母亲群体面临制度性失败。",
+          "body": [
+            "澳大利亚性别歧视专员公开表示，现行反性别歧视法律未能有效保护母亲。许多女性在怀孕、休产假或重返职场时遭遇歧视，却难以通过法律途径获得救济，投诉门槛高、赔偿有限。",
+            "尽管澳大利亚有《性别歧视法》，但实际执行中，母亲在招聘、晋升和工作安排上仍处劣势。雇主常以“业务需要”为由规避责任，法律对间接歧视和结构性偏见的认定标准严苛，导致维权者望而却步。",
+            "专员的批评直指法律与现实的落差。当生育成为女性职场惩罚的起点，性别平等立法若不能回应母职惩罚，就只是纸面权利。法律改革需要降低举证难度，并将照顾责任纳入反歧视框架。"
+          ],
+          "why": "专员罕见承认法律“失败”，说明现有条文对母亲保护并不足以对抗职场现实。",
+          "en": {
+            "t": "Australia: Sex discrimination laws are failing mothers, commissioner says",
+            "d": "Australia's sex discrimination commissioner says current laws fail mothers, with pregnancy and parental discrimination persisting and legal remedies hard to obtain.",
+            "body": [
+              "Australia's Sex Discrimination Commissioner has publicly stated that current anti-discrimination laws are failing mothers. Many women face discrimination when pregnant, on parental leave or returning to work, but find it difficult to obtain legal remedies due to high barriers to complaints and limited compensation.",
+              "Despite Australia's Sex Discrimination Act, mothers remain disadvantaged in hiring, promotion and workplace arrangements. Employers often evade responsibility by citing 'business needs,' and the strict tests for indirect discrimination and structural bias deter many from seeking justice. The commissioner's criticism highlights the gap between law and reality."
+            ]
+          },
+          "img": "assets/img/womens-rights.png",
+          "src": "ABC News & Headlines – Australian Broadcasting Corporation",
+          "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxPcVNtTUY4TmlYN3REcTRTTzJFdnhfakFlTVhoenljX1hMZGgtbE9hN3Qwc1o4WnJuTEd2Zmpjcmc1NS1SWG4tbTNJUWdxUFBUUThUdnVWMjdPLWZ0bVczQVdpRVlhaGFaNjN3cEdqM0xDd193MjBlTmwxM29kLWJMUWZvZHA5TlNCbDhtM2lUZlV6Y3JxdWRidUpmU2I2UmlMblQ0TVotbnVmZk5OUHFoQXh3MA?oc=5",
+          "region": "大洋洲"
+        },
+        {
+          "id": "007-5",
+          "t": "AOC警告特朗普跨性别政策或威胁女性民权",
+          "d": "美国众议员亚历山德里娅·奥卡西奥-科尔特斯表示，将跨性别者作为目标的政策可能侵蚀所有女性的公民权利，引发对性别平等的担忧。",
+          "body": [
+            "美国众议员亚历山德里娅·奥卡西奥-科尔特斯（AOC）公开警告，特朗普政府针对跨性别者的政策可能并非孤立行动，而会波及其他女性的公民权利。她指出，“针对跨性别者”的行政举措正在制造恐惧，并可能为限制更广泛女性权利铺路。",
+            "特朗普执政期间，联邦层面试图重新定义性别、限制跨性别者使用公共设施和参与体育，这些政策引发大量法律挑战。AOC认为，当国家把性别本质化并压缩性别表达空间时，所有不符合传统性别角色的女性都可能成为审查对象。",
+            "AOC的言论凸显跨性别权利与女性权利之间的复杂关联。支持者认为保护跨性别女性不会削弱顺性别女性权益，而是扩展自由边界；反对者则坚持单性别空间需要生物标准。争议背后是性别定义权的争夺。"
+          ],
+          "why": "一位知名女性议员把跨性别政策和女性民权联系起来，指出攻击一个群体可能危及其他群体。",
+          "en": {
+            "t": "AOC warns Trump's transgender policies could threaten women's civil rights",
+            "d": "U.S. Representative Alexandria Ocasio-Cortez said policies targeting transgender people could erode civil rights for all women, linking gender identity restrictions to broader rollbacks.",
+            "body": [
+              "U.S. Representative Alexandria Ocasio-Cortez warned that the Trump administration's policies targeting transgender people are not isolated but could spill over into the civil rights of all women. She said such measures create fear and could pave the way for broader restrictions on women's rights.",
+              "During the Trump era, federal attempts to redefine gender and restrict transgender people's access to public facilities and sports sparked legal challenges. AOC argues that when the state enforces a narrow biological definition of sex, all women who do not fit traditional gender roles become subject to scrutiny."
+            ]
+          },
+          "img": "assets/img/womens-rights.png",
+          "src": "The Economic Times",
+          "url": "https://news.google.com/rss/articles/CBMiiAJBVV95cUxPN19Rd3hOWDRja2FKdzJUUXp3Nl9IUkc4ckc3dWVNMmdmYmphMTlsZW9KOFFtYU1IeVgtc1QwanJPLVZuZXlyS19NWmExZF9nS2dpVEpnVzgtTWotV0p0Z0JCSTYwdzVpb2Q5QzdHSTdPV3BiMk9aWEdxemZvbFVXTVY5NEo5R20yaWQ3a0xsUHFuRktjYU1hYVEwOW15c2hJVThFUDh5enhnb1RDXzFSQUZ5TFcwYnVPTjd6QWpTVlBDdzg1M0I5Z1BzQVNnajFEaFM5VnY5YTJVcEk1aUV1UlNKaGZLbi11LUhfSmU4eUJCNUJDcHpUZVRmNFNacFJtaXN4MGYzTS3SAY4CQVVfeXFMTlg2NDJBdGh1X1N5TzEyWHRKV3U0b1BfVUxrNEhSdjIxOWVQVlRMaTJLRlE4cGl1aVJBeUlLUWRoY1JfSVZDTnNVVnRoTUN6MDUyalpvbDhzZHZ4OXdsNTJUazlXY2tBdXFqQ2VxNk1rRGVBZFk4TDUtYUc3aFFRaGJ0azdITWRvRG1nWGRRbzdGdFhwYnRqb0FjdXg5OEY3RDdjTnowWGNzN21QVm1ET1RkOU04WlpxbkZyVFhtR29qazVSdzloWWJyWG1RZ0ZTV01MVFZGcWFoOTdZRFF3VmRyNUFtbEtZRkxGczVNYWhMOVB3NExFb1BiNndncDFXamszeVN6MXA3ZjAxMXdR?oc=5",
+          "region": "北美"
+        },
+        {
+          "id": "007-6",
+          "t": "南非土地改革委员会呼吁强化妇女土地权利",
+          "d": "南非议会土地改革委员会表示，现行改革措施对妇女土地权保障不足，需采取更有力行动，确保女性平等获得土地和资源。",
+          "body": [
+            "南非议会土地改革委员会公开呼吁，在土地改革中采取更有力行动保障妇女土地权利。委员会指出，尽管宪法和多项法律承认性别平等，但女性在土地获取、所有权登记和继承方面仍面临巨大障碍。",
+            "南非土地分配长期受殖民和种族隔离影响，黑人女性处境最为脆弱。习惯法常将土地归于男性户主，寡妇和单身女性常因传统规范失去土地。政府改革方案若忽视性别维度，可能加剧不平等。",
+            "土地不仅是生产资料，也是居住安全、食物来源和身份基础。委员会呼吁将妇女土地权纳入改革核心指标，并配套法律援助和性别预算。能否落实妇女土地权，考验南非承诺的社会转型是否覆盖最边缘群体。"
+          ],
+          "why": "官方委员会主动承认改革对妇女土地权保障不足，这种自我批评在政策领域少见。",
+          "en": {
+            "t": "South Africa: Land Reform Committee calls for stronger action on women's land rights",
+            "d": "The South African Parliament's Land Reform Committee says current reforms fail women, urging stronger measures to ensure equal access to land and resources.",
+            "body": [
+              "The South African Parliament's Land Reform Committee has publicly called for stronger action to secure women's land rights. It said that despite constitutional and legal commitments to gender equality, women still face major obstacles in land access, title registration and inheritance.",
+              "Land allocation in South Africa has long been shaped by colonialism and apartheid, leaving Black women especially vulnerable. Customary law often assigns land to male household heads, and widows or single women frequently lose land due to traditional norms. The Committee wants women's land rights integrated into core reform indicators with legal aid and gender budgeting."
+            ]
+          },
+          "img": "assets/img/womens-rights.png",
+          "src": "Parliament of the Republic of South Africa",
+          "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxOZUY3OWZMTWFhcUVlcmJ1Q1dGUk43Tkt5bkhmRGJCUUxXVjFmeE9fZVVGZ0lrMzBGbXZjRlZDVEF2cnBpTUwtNUVEbmxPRzBtaWo2OWl5cHlhbVlxVWVRYUJ0cDFibGJuZlZoT2lUbkxYaFZKdV83NTVOZkszaGZ6NUxXUEpHdFNqODZQa2cyMTQ5Uy1hX3BGUjdBT1RLdw?oc=5",
+          "region": "非洲"
+        },
+        {
+          "id": "007-7",
+          "t": "墨西哥奇瓦瓦培训公职人员预防妇女政治暴力",
+          "d": "墨西哥奇瓦瓦市政府培训公职人员，提高预防和应对妇女政治暴力的能力，落实保护女性参政权利的承诺。",
+          "body": [
+            "墨西哥奇瓦瓦市政府对公职人员进行专项培训，内容聚焦预防和处理针对妇女的政治暴力。培训旨在让公务员识别性别暴力形式、掌握投诉渠道，并在公共事务中避免歧视性言论和行为。",
+            "墨西哥女性参政比例虽逐步提高，但政治暴力事件频发，包括威胁、诽谤、强制辞职和人身攻击。联邦和州法律已定义政治性别暴力，但基层执行不力，公职人员缺乏性别敏感度，导致受害者投诉无门。",
+            "地方政府的培训是落实法律的第一步，但象征意义大于实质的风险也存在。若缺乏后续监督和制裁机制，培训可能流于形式。妇女政治暴力的减少，最终取决于权力结构是否真正向女性开放。"
+          ],
+          "why": "政府主动培训公职人员识别政治性别暴力，说明官方承认这一问题在基层普遍存在。",
+          "en": {
+            "t": "Mexico: Chihuahua trains public servants to prevent violence against women in politics",
+            "d": "The Municipality of Chihuahua is training public servants to prevent and respond to political violence against women, aiming to protect women's participation in politics.",
+            "body": [
+              "The municipality of Chihuahua, Mexico, is training public servants on preventing and responding to political violence against women. The training aims to help officials recognize gender-based violence, know complaint channels, and avoid discriminatory speech and behavior in public affairs.",
+              "Women's political participation in Mexico is increasing, but political violence remains frequent, including threats, defamation, forced resignation and physical attacks. Although federal and state laws define political gender violence, enforcement is weak at the local level, and many officials lack gender sensitivity, leaving victims without recourse."
+            ]
+          },
+          "img": "assets/img/womens-rights.png",
+          "src": "Municipio Chihuahua",
+          "url": "https://news.google.com/rss/articles/CBMi6gFBVV95cUxPUXFmYlRnSE9ZZWFFdWpwdlRBMzRGbzdLWmRpdFk4UjVQWGZqZHBpR01RMzZXVGdNNG1uQjdWekI0eU5BNjBFdzFZMzU0RG5yeDAxRWRtWm42aVNFMzJ4QnlBa0k5TEc2NVlibkwzekY1TmVLLXBYRElKWi1xYWwxVDg3OTdoalhyQUpjOHRtVmdlX2RSTEdsWGRIZmc1MlNReVZDUFQwOHVBQUU1WEg4anVjMWQ5WWFPNlBhbmdQaDRUR21qUXoxTmVwYVRWSUJFZjU5ZW13UTdHOHpHSy15RVdZOE4zRHVpSkE?oc=5",
+          "region": "拉美"
+        }
+      ]
+    },
+    {
+      "cat": "健康与权益",
+      "en_cat": "Health & Rights",
+      "items": [
+        {
+          "id": "007-8",
+          "t": "新西兰倡议：女性有权知晓乳房密度",
+          "d": "活动人士和慈善机构呼吁政府支持，确保所有接受乳腺筛查的女性获知其乳房密度信息，以便评估乳腺癌风险和选择进一步检查。",
+          "body": [
+            "新西兰乳腺筛查活动人士发起倡议，称女性“有权知道”自己的乳房密度。高密度乳腺组织会降低X光筛查的敏感性，增加漏诊风险，但许多女性至今未被告知这一指标。慈善机构呼吁政界介入。",
+            "乳房密度是乳腺癌风险因素之一，致密型乳房在X光片中呈白色，可能掩盖肿瘤。部分国家已立法或制定指南，要求筛查机构向受检者提供密度信息，但新西兰尚未形成统一强制规定，信息告知取决于不同地区做法。",
+            "支持者认为，知情权是患者自主决策的基础，女性应根据自身风险决定是否接受补充超声或MRI。反对者担忧过度检查引发焦虑和资源浪费，但隐匿信息可能让高风险女性错过早期诊断。政策辩论仍在继续。"
+          ],
+          "why": "一项影响乳腺癌检出率的关键指标，却长期不告知受检女性，信息不对称令人意外。",
+          "en": {
+            "t": "New Zealand: Campaigners say women have the right to know their breast density",
+            "d": "Campaigners and a charity are calling for political support to ensure women receiving breast screening are told their breast density, which affects cancer detection.",
+            "body": [
+              "Breast screening campaigners in New Zealand say women have the right to know their breast density. High-density breast tissue can reduce the sensitivity of X-ray screening and increase the risk of missed cancers, yet many women are not informed of this metric. A charity is urging political parties to take action.",
+              "Breast density is a known risk factor for breast cancer, as dense tissue appears white on X-rays and can mask tumors. Some countries have laws or guidelines requiring screening services to provide density information, but New Zealand has no uniform requirement, and practice varies by region. Supporters argue that informed consent is fundamental, while opponents worry about over-testing and anxiety."
+            ]
+          },
+          "img": "assets/img/body-choice.png",
+          "src": "The Press",
+          "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxNWHFuWWp6R2FGQkhldjNEZFotU05mZGp1R29qZ1hMa3JqZDZzTXhKblZPb1VJRGFPZlE2VjY0YWdZRUdJQ1lqb1Z1SFJhYlY1NXdoUHFWMGlJRzRWZ2dRUFZxeHc0ckdYbnVGX1g3dlpqbTI0ZUFvUWlOdEMtTmJHQWVVQ24tbDl1aExnX20zbS1BeDFndklwNXI5dWNpZFRUQ2xmVGlTemltdENwNzhRQXRoRWNaSWJFU1kxelVRcFNGS3pQbEVuSlpiZ2dkVFJ3?oc=5",
+          "region": "大洋洲"
+        },
+        {
+          "id": "007-9",
+          "t": "巴西乳腺癌宣传月：议会提案保障女性患者权利",
+          "d": "巴西圣路易斯市议会借“粉红十月”讨论乳腺癌患者权利提案，涉及治疗期间的工作保障、假发提供和心理支持等内容。",
+          "body": [
+            "巴西圣路易斯市议会在“粉红十月”乳腺癌宣传月期间，提出多项保障乳腺癌女性患者权利的提案。提案内容涉及治疗期间的工作保障、假发等医疗辅助用品提供以及心理支持服务。",
+            "乳腺癌是巴西女性常见癌症，治疗过程漫长且昂贵，许多女性因化疗脱发、身体虚弱而遭受就业歧视或社会孤立。现行公共医疗虽提供部分治疗，但辅助支持如假发、义乳和心理咨询尚未纳入普遍权利。",
+            "地方议会提案若通过，将在市级层面为患者建立更系统的支持网络。支持者认为，癌症治疗应被视为完整的社会权利而非单纯医疗问题。反对者可能担忧财政负担，但支持者强调预防性支持能减少长期社会成本。"
+          ],
+          "why": "提案聚焦治疗期间的具体需求如假发和心理支持，而非仅谈筛查，展现出对患者尊严的细致关注。",
+          "en": {
+            "t": "Brazil: Breast cancer month sees proposals to protect patients' rights",
+            "d": "In Brazil's 'Pink October', São Luís city council discusses proposals to guarantee rights for women undergoing breast cancer treatment, including work protection and support aids.",
+            "body": [
+              "During 'Pink October' breast cancer awareness month, the São Luís city council in Brazil is discussing proposals to guarantee rights for women undergoing breast cancer treatment. The proposals include job protection during treatment, provision of wigs and other aids, and psychological support services.",
+              "Breast cancer is common among Brazilian women, and treatment is long and costly. Many women face employment discrimination or social isolation due to chemotherapy hair loss and physical weakness. While the public health system covers some treatment, aids like wigs, prostheses and counseling are not yet universal rights. The local proposals aim to close that gap."
+            ]
+          },
+          "img": "assets/img/body-choice.png",
+          "src": "Câmara Municipal de São Luís",
+          "url": "https://news.google.com/rss/articles/CBMi9AFBVV95cUxOM1ZsdmFDazJIZjZxWVpnNnVjNmpQNlh6OXlkdE1JSVhjVzdxT1ZiTTkxUnRrc0NLREJvQ1F4S3c4RW5OZ1ZVOWxsVDhPcmM1ekVsUHZyZ1FZWWIxQmVwNDh0RFhVVXNVM3htVlJMdDFZSEpJSVY4M29TbXZseWlNSnJIelRpc3laZnpjaDl5Q3JWRnp4ZEtkd1BVSkxBd2NWaGQyUkNoV2NEUXFiZzFuVFlacXZyNFhRQkJudmhYT3Y4SjdpTl9NdjRZNnp5ajVHOXNHdmhuVFh6Q0VhSk1raF9JUllxQWRqVlZCMDRWYjI4WTJT?oc=5",
+          "region": "拉美"
+        }
+      ]
+    },
+    {
+      "cat": "文化",
+      "en_cat": "Culture",
+      "items": [
+        {
+          "id": "007-10",
+          "t": "休斯顿纪念女权活动人士壁画再次遭破坏",
+          "d": "美国休斯顿高地一幅纪念女性权利活动家的壁画再次遭到涂鸦破坏，当地警方已介入，活动人士谴责针对女性历史记忆的攻击。",
+          "body": [
+            "美国休斯顿高地一幅纪念女性权利活动家的壁画再次被人为破坏。这不是该壁画第一次遭涂鸦，此前已修复过。这次破坏发生在上次事件后不久，社区成员和艺术家表示失望与愤怒。",
+            "该壁画描绘的是一位在当地推动女性权利的历史人物（名称未在报道中详细说明）。公共艺术常成为社会价值冲突的靶子，涉及女性、少数族裔或LGBTQ+主题的壁画尤其容易遭到蓄意损毁。",
+            "壁画的反复被毁不只关乎财产损失，更反映部分人对女性公共记忆的敌意。支持者认为应加强保护并公开谴责，也有人主张通过教育消除偏见。公共空间中的女性形象能否被接纳，是性别平等的直观标尺。"
+          ],
+          "why": "同一幅壁画多次遭破坏，说明攻击并非偶发，而是有针对性的持续行为。",
+          "en": {
+            "t": "Houston mural honoring women's rights activist vandalized again",
+            "d": "A mural honoring a women's rights activist in Houston Heights has been vandalized again, sparking condemnation and police investigation.",
+            "body": [
+              "A mural honoring a women's rights activist in Houston Heights, Texas, has been vandalized again. This is not the first time the mural has been defaced; it was previously repaired. Community members and artists expressed disappointment and anger.",
+              "The mural depicts a local historical figure who advanced women's rights. Public art often becomes a target in social value conflicts, and murals featuring women, minorities or LGBTQ+ themes are especially vulnerable to deliberate damage. Repeated vandalism reflects hostility toward women's public memory, not just property crime."
+            ]
+          },
+          "img": "assets/img/womens-rights.png",
+          "src": "Houston Chronicle",
+          "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxNeVE5X012cmgtTzlIaUxLbmprRTUzT2l5WXRHUXVZLW42UmxPa3dQQXVMamNwdHZmNFhWai1VX1lYMGNUSDB2WnN0UF9wOVppOTRvNVdrb1RfdWYyZkFlc1BsRTg2RWdvdWpRZHZqZllKOERRUWF5NjBzNE9wYnphWURBNE9xVV9melRua05qLVptVGl1VEhYY0tBUmFKam9QbE1RU0hUNkU5LUd2cE5qMzNB?oc=5",
+          "region": "北美"
+        }
+      ]
+    },
+    {
+      "cat": "国际",
+      "en_cat": "International",
+      "items": [
+        {
+          "id": "007-11",
+          "t": "OIC重申支持阿富汗女孩接受教育",
+          "d": "伊斯兰合作组织重申支持阿富汗女孩教育，呼吁确保女童平等接受各级教育，国际社会持续关注阿富汗性别隔离政策。",
+          "body": [
+            "伊斯兰合作组织（OIC）重申支持阿富汗女孩接受教育，这一表态在国际压力持续之际发出。阿富汗事实当局限制女性教育，女孩被禁止进入中学和大学，数百万女童学业中断。",
+            "OIC作为伊斯兰国家间组织，其立场具有特殊意义。此前部分国家曾以文化或宗教理由容忍限制性政策，但越来越多成员承认教育与伊斯兰教义并不冲突。OIC内部对是否承认阿富汗当局存在分歧，表态力度仍待观察。",
+            "阿富汗女孩教育问题是全球性别平等的标志性危机。OIC的表态若不能转化为具体外交杠杆，实际效果有限。如何在尊重主权与维护基本权利之间施压，是国际社会面临的持续难题。"
+          ],
+          "why": "一个伊斯兰国家间组织公开支持女孩教育，这本身就打破了“文化相对主义”的沉默。",
+          "en": {
+            "t": "OIC reaffirms support for girls' education in Afghanistan",
+            "d": "The Organization of Islamic Cooperation has reaffirmed its support for girls' education in Afghanistan, where restrictions keep millions out of school.",
+            "body": [
+              "The Organization of Islamic Cooperation (OIC) has reaffirmed its support for girls' education in Afghanistan amid ongoing international pressure. Afghan authorities restrict female education, barring girls from secondary schools and universities, leaving millions out of school.",
+              "As an intergovernmental body of Islamic states, the OIC's stance carries particular weight. While some members have previously tolerated restrictive policies citing culture or religion, a growing number now acknowledge that education does not conflict with Islamic teachings. The OIC's internal divisions over recognizing Afghan authorities may limit the impact of its statement."
+            ]
+          },
+          "img": "assets/img/podium.png",
+          "src": "8AM Media",
+          "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxNSEFHU3c5SktZYkJZeUIzTEo2OVA4SFdmWkdnUWE0Tm5xMndnOC0zMXk1bmkzMUdTZWJUX3pUSEg1bmdoc0V2UVFWUjgxS3JhOFo4ckt0WGlqTnVNSy1HczRYdzU1UlFIZDlsQndBTWlyWldaZnVGc0MtME5jNGd4YVFxbkV2QQ?oc=5",
+          "region": "南亚"
+        }
+      ]
+    }
+  ]
+},
+{
   "id": "006",
   "date": "2026-10-16",
   "period": "2026.10.12 – 2026.10.18",

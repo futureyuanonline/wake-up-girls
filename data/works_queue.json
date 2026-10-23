@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-22",
+  "updated": "2026-10-23",
   "items": [
     {
       "qid": "Q105393862",
@@ -165,6 +165,38 @@
       "d": "由玛缇·迪欧普执导，2024年获柏林金熊。出品国：法国。",
       "needs_edit": true,
       "status": "published"
+    },
+    {
+      "qid": "Q132732126",
+      "kind": "film",
+      "title": "十七岁的圣召",
+      "creator": "阿劳达·鲁伊斯·德·阿苏阿",
+      "year": 2025,
+      "country": "西班牙",
+      "region": "欧洲",
+      "award": "圣塞巴斯蒂安金贝壳",
+      "awardQid": "Q775086",
+      "zhwiki": false,
+      "img": "http://commons.wikimedia.org/wiki/Special:FilePath/Premios%20Goya%202026%20-%20Los%20domingos.jpg",
+      "tier": "B",
+      "d": "",
+      "status": "needs_writing"
+    },
+    {
+      "qid": "Q110622667",
+      "kind": "film",
+      "title": "阿尔卡拉斯",
+      "creator": "卡拉·西蒙",
+      "year": 2022,
+      "country": "西班牙",
+      "region": "欧洲",
+      "award": "柏林金熊",
+      "awardQid": "Q154590",
+      "zhwiki": true,
+      "img": "http://commons.wikimedia.org/wiki/Special:FilePath/Cast%20from%20the%20movie%20Alcarr%C3%A0s-7243.jpg",
+      "tier": "A",
+      "d": "",
+      "status": "needs_writing"
     }
   ]
 }
