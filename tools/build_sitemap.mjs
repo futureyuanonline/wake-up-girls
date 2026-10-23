@@ -45,9 +45,11 @@ NUMBERS.forEach((n) => add(`${SITE}/n/${n.id}`, n.date || today, 'monthly', '0.7
 ISSUES.forEach((iss) => {
   const d = iss.date || ''
   add(`${SITE}/issue.html?id=${iss.id}`, d, 'weekly', '0.8')
+  // 机器可读静态页（AI 爬虫不执行 JS，收录静态全文页）
+  add(`${SITE}/i/${iss.id}`, d, 'weekly', '0.8')
   ;(iss.sections || []).forEach((sec) => {
     ;(sec.items || []).forEach((it) => {
-      if (it.id) add(`${SITE}/news.html?id=${it.id}`, d, 'yearly', '0.5')
+      if (it.id) add(`${SITE}/a/${it.id}`, d, 'yearly', '0.6')
     })
   })
 })

@@ -24,10 +24,11 @@ const FILES = [
   'works.html', 'work.html', 'about.html', 'subscribe.html', 'submit.html', 'shop.html', 'detail.html', 'columns.html', 'column.html',
   'numbers.html', 'number.html',
   '404.html', '_headers', '_redirects', 'robots.txt', 'sitemap.xml',
+  'llms.txt', 'feed.xml',
 ]
 
 /* 要整目录发布的资源 */
-const DIRS = ['assets', 'data']
+const DIRS = ['assets', 'data', 'seo']
 
 /* 绝不发布的文件（隐私） */
 const NEVER = ['data/subscribers.json']

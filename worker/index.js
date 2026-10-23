@@ -184,6 +184,21 @@ export default {
       return env.ASSETS.fetch(new Request(u.toString(), request));
     }
 
+    /* 机器可读静态页（SEO / GEO）：JS 渲染的页面 AI 爬虫读不到，
+       这里把 /a/<id>（单条报道）与 /i/<id>（整期）指向构建时生成的静态全文页。 */
+    const art = url.pathname.match(/^\/a\/([A-Za-z0-9_-]+)\/?$/);
+    if (art) {
+      const u = new URL(request.url);
+      u.pathname = '/seo/a-' + art[1] + '.html';
+      return env.ASSETS.fetch(new Request(u.toString(), request));
+    }
+    const iss = url.pathname.match(/^\/i\/([0-9]{3})\/?$/);
+    if (iss) {
+      const u = new URL(request.url);
+      u.pathname = '/seo/i-' + iss[1] + '.html';
+      return env.ASSETS.fetch(new Request(u.toString(), request));
+    }
+
     const res = await env.ASSETS.fetch(request);
     /* 数据文件（每周更新）不走长缓存，出刊后刷新即见新一期 */
     if (url.pathname.startsWith('/data/')) {

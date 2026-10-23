@@ -958,70 +958,76 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://yuanxiuzhong.com/news.html?id=007-1</loc>
+    <loc>https://yuanxiuzhong.com/i/007</loc>
     <lastmod>2026-10-23</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.5</priority>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://yuanxiuzhong.com/news.html?id=007-2</loc>
+    <loc>https://yuanxiuzhong.com/a/007-1</loc>
     <lastmod>2026-10-23</lastmod>
     <changefreq>yearly</changefreq>
-    <priority>0.5</priority>
+    <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://yuanxiuzhong.com/news.html?id=007-3</loc>
+    <loc>https://yuanxiuzhong.com/a/007-2</loc>
     <lastmod>2026-10-23</lastmod>
     <changefreq>yearly</changefreq>
-    <priority>0.5</priority>
+    <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://yuanxiuzhong.com/news.html?id=007-4</loc>
+    <loc>https://yuanxiuzhong.com/a/007-3</loc>
     <lastmod>2026-10-23</lastmod>
     <changefreq>yearly</changefreq>
-    <priority>0.5</priority>
+    <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://yuanxiuzhong.com/news.html?id=007-5</loc>
+    <loc>https://yuanxiuzhong.com/a/007-4</loc>
     <lastmod>2026-10-23</lastmod>
     <changefreq>yearly</changefreq>
-    <priority>0.5</priority>
+    <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://yuanxiuzhong.com/news.html?id=007-6</loc>
+    <loc>https://yuanxiuzhong.com/a/007-5</loc>
     <lastmod>2026-10-23</lastmod>
     <changefreq>yearly</changefreq>
-    <priority>0.5</priority>
+    <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://yuanxiuzhong.com/news.html?id=007-7</loc>
+    <loc>https://yuanxiuzhong.com/a/007-6</loc>
     <lastmod>2026-10-23</lastmod>
     <changefreq>yearly</changefreq>
-    <priority>0.5</priority>
+    <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://yuanxiuzhong.com/news.html?id=007-8</loc>
+    <loc>https://yuanxiuzhong.com/a/007-7</loc>
     <lastmod>2026-10-23</lastmod>
     <changefreq>yearly</changefreq>
-    <priority>0.5</priority>
+    <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://yuanxiuzhong.com/news.html?id=007-9</loc>
+    <loc>https://yuanxiuzhong.com/a/007-8</loc>
     <lastmod>2026-10-23</lastmod>
     <changefreq>yearly</changefreq>
-    <priority>0.5</priority>
+    <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://yuanxiuzhong.com/news.html?id=007-10</loc>
+    <loc>https://yuanxiuzhong.com/a/007-9</loc>
     <lastmod>2026-10-23</lastmod>
     <changefreq>yearly</changefreq>
-    <priority>0.5</priority>
+    <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://yuanxiuzhong.com/news.html?id=007-11</loc>
+    <loc>https://yuanxiuzhong.com/a/007-10</loc>
     <lastmod>2026-10-23</lastmod>
     <changefreq>yearly</changefreq>
-    <priority>0.5</priority>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://yuanxiuzhong.com/a/007-11</loc>
+    <lastmod>2026-10-23</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.6</priority>
   </url>
   <url>
     <loc>https://yuanxiuzhong.com/issue.html?id=006</loc>
@@ -1030,58 +1036,64 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://yuanxiuzhong.com/news.html?id=006-1</loc>
+    <loc>https://yuanxiuzhong.com/i/006</loc>
     <lastmod>2026-10-16</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.5</priority>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://yuanxiuzhong.com/news.html?id=006-2</loc>
+    <loc>https://yuanxiuzhong.com/a/006-1</loc>
     <lastmod>2026-10-16</lastmod>
     <changefreq>yearly</changefreq>
-    <priority>0.5</priority>
+    <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://yuanxiuzhong.com/news.html?id=006-3</loc>
+    <loc>https://yuanxiuzhong.com/a/006-2</loc>
     <lastmod>2026-10-16</lastmod>
     <changefreq>yearly</changefreq>
-    <priority>0.5</priority>
+    <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://yuanxiuzhong.com/news.html?id=006-4</loc>
+    <loc>https://yuanxiuzhong.com/a/006-3</loc>
     <lastmod>2026-10-16</lastmod>
     <changefreq>yearly</changefreq>
-    <priority>0.5</priority>
+    <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://yuanxiuzhong.com/news.html?id=006-5</loc>
+    <loc>https://yuanxiuzhong.com/a/006-4</loc>
     <lastmod>2026-10-16</lastmod>
     <changefreq>yearly</changefreq>
-    <priority>0.5</priority>
+    <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://yuanxiuzhong.com/news.html?id=006-6</loc>
+    <loc>https://yuanxiuzhong.com/a/006-5</loc>
     <lastmod>2026-10-16</lastmod>
     <changefreq>yearly</changefreq>
-    <priority>0.5</priority>
+    <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://yuanxiuzhong.com/news.html?id=006-7</loc>
+    <loc>https://yuanxiuzhong.com/a/006-6</loc>
     <lastmod>2026-10-16</lastmod>
     <changefreq>yearly</changefreq>
-    <priority>0.5</priority>
+    <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://yuanxiuzhong.com/news.html?id=006-8</loc>
+    <loc>https://yuanxiuzhong.com/a/006-7</loc>
     <lastmod>2026-10-16</lastmod>
     <changefreq>yearly</changefreq>
-    <priority>0.5</priority>
+    <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://yuanxiuzhong.com/news.html?id=006-9</loc>
+    <loc>https://yuanxiuzhong.com/a/006-8</loc>
     <lastmod>2026-10-16</lastmod>
     <changefreq>yearly</changefreq>
-    <priority>0.5</priority>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://yuanxiuzhong.com/a/006-9</loc>
+    <lastmod>2026-10-16</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.6</priority>
   </url>
   <url>
     <loc>https://yuanxiuzhong.com/issue.html?id=005</loc>
@@ -1090,64 +1102,70 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://yuanxiuzhong.com/news.html?id=005-1</loc>
+    <loc>https://yuanxiuzhong.com/i/005</loc>
     <lastmod>2026-10-09</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.5</priority>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://yuanxiuzhong.com/news.html?id=005-2</loc>
+    <loc>https://yuanxiuzhong.com/a/005-1</loc>
     <lastmod>2026-10-09</lastmod>
     <changefreq>yearly</changefreq>
-    <priority>0.5</priority>
+    <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://yuanxiuzhong.com/news.html?id=005-3</loc>
+    <loc>https://yuanxiuzhong.com/a/005-2</loc>
     <lastmod>2026-10-09</lastmod>
     <changefreq>yearly</changefreq>
-    <priority>0.5</priority>
+    <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://yuanxiuzhong.com/news.html?id=005-4</loc>
+    <loc>https://yuanxiuzhong.com/a/005-3</loc>
     <lastmod>2026-10-09</lastmod>
     <changefreq>yearly</changefreq>
-    <priority>0.5</priority>
+    <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://yuanxiuzhong.com/news.html?id=005-5</loc>
+    <loc>https://yuanxiuzhong.com/a/005-4</loc>
     <lastmod>2026-10-09</lastmod>
     <changefreq>yearly</changefreq>
-    <priority>0.5</priority>
+    <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://yuanxiuzhong.com/news.html?id=005-6</loc>
+    <loc>https://yuanxiuzhong.com/a/005-5</loc>
     <lastmod>2026-10-09</lastmod>
     <changefreq>yearly</changefreq>
-    <priority>0.5</priority>
+    <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://yuanxiuzhong.com/news.html?id=005-7</loc>
+    <loc>https://yuanxiuzhong.com/a/005-6</loc>
     <lastmod>2026-10-09</lastmod>
     <changefreq>yearly</changefreq>
-    <priority>0.5</priority>
+    <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://yuanxiuzhong.com/news.html?id=005-8</loc>
+    <loc>https://yuanxiuzhong.com/a/005-7</loc>
     <lastmod>2026-10-09</lastmod>
     <changefreq>yearly</changefreq>
-    <priority>0.5</priority>
+    <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://yuanxiuzhong.com/news.html?id=005-9</loc>
+    <loc>https://yuanxiuzhong.com/a/005-8</loc>
     <lastmod>2026-10-09</lastmod>
     <changefreq>yearly</changefreq>
-    <priority>0.5</priority>
+    <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://yuanxiuzhong.com/news.html?id=005-10</loc>
+    <loc>https://yuanxiuzhong.com/a/005-9</loc>
     <lastmod>2026-10-09</lastmod>
     <changefreq>yearly</changefreq>
-    <priority>0.5</priority>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://yuanxiuzhong.com/a/005-10</loc>
+    <lastmod>2026-10-09</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.6</priority>
   </url>
   <url>
     <loc>https://yuanxiuzhong.com/issue.html?id=004</loc>
@@ -1156,64 +1174,70 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://yuanxiuzhong.com/news.html?id=004-1</loc>
+    <loc>https://yuanxiuzhong.com/i/004</loc>
     <lastmod>2026-10-02</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.5</priority>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://yuanxiuzhong.com/news.html?id=004-2</loc>
+    <loc>https://yuanxiuzhong.com/a/004-1</loc>
     <lastmod>2026-10-02</lastmod>
     <changefreq>yearly</changefreq>
-    <priority>0.5</priority>
+    <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://yuanxiuzhong.com/news.html?id=004-3</loc>
+    <loc>https://yuanxiuzhong.com/a/004-2</loc>
     <lastmod>2026-10-02</lastmod>
     <changefreq>yearly</changefreq>
-    <priority>0.5</priority>
+    <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://yuanxiuzhong.com/news.html?id=004-4</loc>
+    <loc>https://yuanxiuzhong.com/a/004-3</loc>
     <lastmod>2026-10-02</lastmod>
     <changefreq>yearly</changefreq>
-    <priority>0.5</priority>
+    <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://yuanxiuzhong.com/news.html?id=004-5</loc>
+    <loc>https://yuanxiuzhong.com/a/004-4</loc>
     <lastmod>2026-10-02</lastmod>
     <changefreq>yearly</changefreq>
-    <priority>0.5</priority>
+    <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://yuanxiuzhong.com/news.html?id=004-6</loc>
+    <loc>https://yuanxiuzhong.com/a/004-5</loc>
     <lastmod>2026-10-02</lastmod>
     <changefreq>yearly</changefreq>
-    <priority>0.5</priority>
+    <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://yuanxiuzhong.com/news.html?id=004-7</loc>
+    <loc>https://yuanxiuzhong.com/a/004-6</loc>
     <lastmod>2026-10-02</lastmod>
     <changefreq>yearly</changefreq>
-    <priority>0.5</priority>
+    <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://yuanxiuzhong.com/news.html?id=004-8</loc>
+    <loc>https://yuanxiuzhong.com/a/004-7</loc>
     <lastmod>2026-10-02</lastmod>
     <changefreq>yearly</changefreq>
-    <priority>0.5</priority>
+    <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://yuanxiuzhong.com/news.html?id=004-9</loc>
+    <loc>https://yuanxiuzhong.com/a/004-8</loc>
     <lastmod>2026-10-02</lastmod>
     <changefreq>yearly</changefreq>
-    <priority>0.5</priority>
+    <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://yuanxiuzhong.com/news.html?id=004-10</loc>
+    <loc>https://yuanxiuzhong.com/a/004-9</loc>
     <lastmod>2026-10-02</lastmod>
     <changefreq>yearly</changefreq>
-    <priority>0.5</priority>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://yuanxiuzhong.com/a/004-10</loc>
+    <lastmod>2026-10-02</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.6</priority>
   </url>
   <url>
     <loc>https://yuanxiuzhong.com/issue.html?id=003</loc>
@@ -1222,76 +1246,82 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://yuanxiuzhong.com/news.html?id=003-1</loc>
+    <loc>https://yuanxiuzhong.com/i/003</loc>
     <lastmod>2026-09-25</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.5</priority>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://yuanxiuzhong.com/news.html?id=003-2</loc>
+    <loc>https://yuanxiuzhong.com/a/003-1</loc>
     <lastmod>2026-09-25</lastmod>
     <changefreq>yearly</changefreq>
-    <priority>0.5</priority>
+    <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://yuanxiuzhong.com/news.html?id=003-3</loc>
+    <loc>https://yuanxiuzhong.com/a/003-2</loc>
     <lastmod>2026-09-25</lastmod>
     <changefreq>yearly</changefreq>
-    <priority>0.5</priority>
+    <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://yuanxiuzhong.com/news.html?id=003-4</loc>
+    <loc>https://yuanxiuzhong.com/a/003-3</loc>
     <lastmod>2026-09-25</lastmod>
     <changefreq>yearly</changefreq>
-    <priority>0.5</priority>
+    <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://yuanxiuzhong.com/news.html?id=003-5</loc>
+    <loc>https://yuanxiuzhong.com/a/003-4</loc>
     <lastmod>2026-09-25</lastmod>
     <changefreq>yearly</changefreq>
-    <priority>0.5</priority>
+    <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://yuanxiuzhong.com/news.html?id=003-6</loc>
+    <loc>https://yuanxiuzhong.com/a/003-5</loc>
     <lastmod>2026-09-25</lastmod>
     <changefreq>yearly</changefreq>
-    <priority>0.5</priority>
+    <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://yuanxiuzhong.com/news.html?id=003-7</loc>
+    <loc>https://yuanxiuzhong.com/a/003-6</loc>
     <lastmod>2026-09-25</lastmod>
     <changefreq>yearly</changefreq>
-    <priority>0.5</priority>
+    <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://yuanxiuzhong.com/news.html?id=003-8</loc>
+    <loc>https://yuanxiuzhong.com/a/003-7</loc>
     <lastmod>2026-09-25</lastmod>
     <changefreq>yearly</changefreq>
-    <priority>0.5</priority>
+    <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://yuanxiuzhong.com/news.html?id=003-9</loc>
+    <loc>https://yuanxiuzhong.com/a/003-8</loc>
     <lastmod>2026-09-25</lastmod>
     <changefreq>yearly</changefreq>
-    <priority>0.5</priority>
+    <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://yuanxiuzhong.com/news.html?id=003-10</loc>
+    <loc>https://yuanxiuzhong.com/a/003-9</loc>
     <lastmod>2026-09-25</lastmod>
     <changefreq>yearly</changefreq>
-    <priority>0.5</priority>
+    <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://yuanxiuzhong.com/news.html?id=003-11</loc>
+    <loc>https://yuanxiuzhong.com/a/003-10</loc>
     <lastmod>2026-09-25</lastmod>
     <changefreq>yearly</changefreq>
-    <priority>0.5</priority>
+    <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://yuanxiuzhong.com/news.html?id=003-12</loc>
+    <loc>https://yuanxiuzhong.com/a/003-11</loc>
     <lastmod>2026-09-25</lastmod>
     <changefreq>yearly</changefreq>
-    <priority>0.5</priority>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://yuanxiuzhong.com/a/003-12</loc>
+    <lastmod>2026-09-25</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.6</priority>
   </url>
   <url>
     <loc>https://yuanxiuzhong.com/issue.html?id=002</loc>
@@ -1300,64 +1330,70 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://yuanxiuzhong.com/news.html?id=002-1</loc>
+    <loc>https://yuanxiuzhong.com/i/002</loc>
     <lastmod>2026-09-18</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.5</priority>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://yuanxiuzhong.com/news.html?id=002-2</loc>
+    <loc>https://yuanxiuzhong.com/a/002-1</loc>
     <lastmod>2026-09-18</lastmod>
     <changefreq>yearly</changefreq>
-    <priority>0.5</priority>
+    <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://yuanxiuzhong.com/news.html?id=002-3</loc>
+    <loc>https://yuanxiuzhong.com/a/002-2</loc>
     <lastmod>2026-09-18</lastmod>
     <changefreq>yearly</changefreq>
-    <priority>0.5</priority>
+    <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://yuanxiuzhong.com/news.html?id=002-4</loc>
+    <loc>https://yuanxiuzhong.com/a/002-3</loc>
     <lastmod>2026-09-18</lastmod>
     <changefreq>yearly</changefreq>
-    <priority>0.5</priority>
+    <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://yuanxiuzhong.com/news.html?id=002-5</loc>
+    <loc>https://yuanxiuzhong.com/a/002-4</loc>
     <lastmod>2026-09-18</lastmod>
     <changefreq>yearly</changefreq>
-    <priority>0.5</priority>
+    <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://yuanxiuzhong.com/news.html?id=002-6</loc>
+    <loc>https://yuanxiuzhong.com/a/002-5</loc>
     <lastmod>2026-09-18</lastmod>
     <changefreq>yearly</changefreq>
-    <priority>0.5</priority>
+    <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://yuanxiuzhong.com/news.html?id=002-7</loc>
+    <loc>https://yuanxiuzhong.com/a/002-6</loc>
     <lastmod>2026-09-18</lastmod>
     <changefreq>yearly</changefreq>
-    <priority>0.5</priority>
+    <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://yuanxiuzhong.com/news.html?id=002-8</loc>
+    <loc>https://yuanxiuzhong.com/a/002-7</loc>
     <lastmod>2026-09-18</lastmod>
     <changefreq>yearly</changefreq>
-    <priority>0.5</priority>
+    <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://yuanxiuzhong.com/news.html?id=002-9</loc>
+    <loc>https://yuanxiuzhong.com/a/002-8</loc>
     <lastmod>2026-09-18</lastmod>
     <changefreq>yearly</changefreq>
-    <priority>0.5</priority>
+    <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://yuanxiuzhong.com/news.html?id=002-10</loc>
+    <loc>https://yuanxiuzhong.com/a/002-9</loc>
     <lastmod>2026-09-18</lastmod>
     <changefreq>yearly</changefreq>
-    <priority>0.5</priority>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://yuanxiuzhong.com/a/002-10</loc>
+    <lastmod>2026-09-18</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.6</priority>
   </url>
   <url>
     <loc>https://yuanxiuzhong.com/issue.html?id=001</loc>
@@ -1366,93 +1402,99 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://yuanxiuzhong.com/news.html?id=001-1</loc>
+    <loc>https://yuanxiuzhong.com/i/001</loc>
     <lastmod>2026-09-17</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.5</priority>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://yuanxiuzhong.com/news.html?id=001-2</loc>
+    <loc>https://yuanxiuzhong.com/a/001-1</loc>
     <lastmod>2026-09-17</lastmod>
     <changefreq>yearly</changefreq>
-    <priority>0.5</priority>
+    <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://yuanxiuzhong.com/news.html?id=001-3</loc>
+    <loc>https://yuanxiuzhong.com/a/001-2</loc>
     <lastmod>2026-09-17</lastmod>
     <changefreq>yearly</changefreq>
-    <priority>0.5</priority>
+    <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://yuanxiuzhong.com/news.html?id=001-4</loc>
+    <loc>https://yuanxiuzhong.com/a/001-3</loc>
     <lastmod>2026-09-17</lastmod>
     <changefreq>yearly</changefreq>
-    <priority>0.5</priority>
+    <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://yuanxiuzhong.com/news.html?id=001-5</loc>
+    <loc>https://yuanxiuzhong.com/a/001-4</loc>
     <lastmod>2026-09-17</lastmod>
     <changefreq>yearly</changefreq>
-    <priority>0.5</priority>
+    <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://yuanxiuzhong.com/news.html?id=001-6</loc>
+    <loc>https://yuanxiuzhong.com/a/001-5</loc>
     <lastmod>2026-09-17</lastmod>
     <changefreq>yearly</changefreq>
-    <priority>0.5</priority>
+    <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://yuanxiuzhong.com/news.html?id=001-7</loc>
+    <loc>https://yuanxiuzhong.com/a/001-6</loc>
     <lastmod>2026-09-17</lastmod>
     <changefreq>yearly</changefreq>
-    <priority>0.5</priority>
+    <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://yuanxiuzhong.com/news.html?id=001-8</loc>
+    <loc>https://yuanxiuzhong.com/a/001-7</loc>
     <lastmod>2026-09-17</lastmod>
     <changefreq>yearly</changefreq>
-    <priority>0.5</priority>
+    <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://yuanxiuzhong.com/news.html?id=001-9</loc>
+    <loc>https://yuanxiuzhong.com/a/001-8</loc>
     <lastmod>2026-09-17</lastmod>
     <changefreq>yearly</changefreq>
-    <priority>0.5</priority>
+    <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://yuanxiuzhong.com/news.html?id=001-10</loc>
+    <loc>https://yuanxiuzhong.com/a/001-9</loc>
     <lastmod>2026-09-17</lastmod>
     <changefreq>yearly</changefreq>
-    <priority>0.5</priority>
+    <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://yuanxiuzhong.com/news.html?id=001-11</loc>
+    <loc>https://yuanxiuzhong.com/a/001-10</loc>
     <lastmod>2026-09-17</lastmod>
     <changefreq>yearly</changefreq>
-    <priority>0.5</priority>
+    <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://yuanxiuzhong.com/news.html?id=001-12</loc>
+    <loc>https://yuanxiuzhong.com/a/001-11</loc>
     <lastmod>2026-09-17</lastmod>
     <changefreq>yearly</changefreq>
-    <priority>0.5</priority>
+    <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://yuanxiuzhong.com/news.html?id=001-13</loc>
+    <loc>https://yuanxiuzhong.com/a/001-12</loc>
     <lastmod>2026-09-17</lastmod>
     <changefreq>yearly</changefreq>
-    <priority>0.5</priority>
+    <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://yuanxiuzhong.com/news.html?id=001-14</loc>
+    <loc>https://yuanxiuzhong.com/a/001-13</loc>
     <lastmod>2026-09-17</lastmod>
     <changefreq>yearly</changefreq>
-    <priority>0.5</priority>
+    <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://yuanxiuzhong.com/news.html?id=001-15</loc>
+    <loc>https://yuanxiuzhong.com/a/001-14</loc>
     <lastmod>2026-09-17</lastmod>
     <changefreq>yearly</changefreq>
-    <priority>0.5</priority>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://yuanxiuzhong.com/a/001-15</loc>
+    <lastmod>2026-09-17</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.6</priority>
   </url>
 </urlset>

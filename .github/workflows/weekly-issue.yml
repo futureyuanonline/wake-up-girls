@@ -112,6 +112,12 @@ jobs:
         if: env.LLM_API_KEY != ''
         run: node build_i18n.mjs
 
+      # 机器可读层（SEO / GEO）：JS 渲染的页面 AI 爬虫读不到，
+      # 这里生成本期每条报道的静态全文页 + llms.txt + RSS，再由 worker 用 /a/<id> 暴露。
+      - name: ③.4 生成机器可读层（静态全文页 / llms.txt / RSS）
+        if: env.LLM_API_KEY != ''
+        run: node tools/build_seo.mjs
+
       - name: ③.5 重新生成 sitemap（把新一期加进搜索引擎索引）
         if: env.LLM_API_KEY != ''
         run: node tools/build_sitemap.mjs
