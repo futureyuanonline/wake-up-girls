@@ -184,7 +184,11 @@ def draft_sentence(item):
             js = json.loads(r.read().decode('utf-8'))
         txt = js['choices'][0]['message']['content'].strip()
         txt = txt.strip('“”"\' ').replace('\n', ' ')
-        return txt if 10 <= len(txt) <= 120 else ''
+        # 超长按标点截断，不整条丢弃（之前 120 字上限会把正常长句判失败）
+        if len(txt) > 110:
+            cut = max(txt.rfind('。', 0, 110), txt.rfind('；', 0, 110), txt.rfind('，', 0, 110))
+            txt = txt[:cut + 1] if cut > 40 else txt[:109] + '。'
+        return txt if len(txt) >= 10 else ''
     except Exception:                                             # noqa: BLE001
         return ''
 

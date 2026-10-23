@@ -287,6 +287,23 @@ def main():
         print('\n✗ 校验未通过，不写入：')
         for e in errs:
             print('  - ' + e)
+        # 不静默丢弃：把草稿和原因存下来，供人工看一眼（否则永远不知道它为什么没出）
+        try:
+            dp = os.path.join(ROOT, 'data', 'numbers_drafts.json')
+            drafts = json.load(open(dp, encoding='utf-8')) if os.path.exists(dp) else {'drafts': []}
+            drafts['drafts'] = (drafts.get('drafts') or [])[-40:] + [
+                {'candidate': target.get('key'), 'errors': errs, 'item': item}]
+            with open(dp, 'w', encoding='utf-8', newline='\n') as fh:
+                json.dump(drafts, fh, ensure_ascii=False, indent=2)
+                fh.write('\n')
+            print('  草稿已存 data/numbers_drafts.json（%d 条）' % len(drafts['drafts']))
+        except Exception as exc:                                  # noqa: BLE001
+            print('  草稿保存失败：%s' % exc)
+        summary = os.environ.get('GITHUB_STEP_SUMMARY')
+        if summary:
+            with open(summary, 'a', encoding='utf-8') as fh:
+                fh.write('## 数字栏目：起草被校验拦下\n\n- 候选：%s\n- 原因：%s\n'
+                         % (target.get('key'), '；'.join(errs)))
         return
 
     if args.dry_run or args.offline:

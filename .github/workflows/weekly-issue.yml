@@ -95,6 +95,12 @@ jobs:
         if: env.LLM_API_KEY != ''
         run: python tools/generate_issue.py ${{ inputs.force && '--force' || '' }}
 
+      # picks 去重：提示词只是建议，模型会重复推荐同一件作品（已实测踩到）。
+      # --min-id 007：只修当期及之后，不动已经发出去的历史期。
+      - name: ②.2 picks 跨期去重（重复的换成库中未用过的同类作品）
+        if: env.LLM_API_KEY != ''
+        run: python tools/fix_picks.py --min-id 007
+
       # 作品库自动收录：聚焦「全世界电影/电视节获奖作品」——奖项可核查、天然分地区，
       # 也直接支撑那句编辑判断（获了什么奖、谁导的、哪国的）。
       # 备选（新片线）：python tools/fetch_works.py --write --since 2025

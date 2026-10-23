@@ -324,7 +324,11 @@ def draft(item):
             js = json.loads(r.read().decode('utf-8'))
         txt = js['choices'][0]['message']['content'].strip().strip('“”"\' ')
         txt = ' '.join(txt.split())
-        return txt if 10 <= len(txt) <= 130 else ''
+        # 模型常写长句；超长就按标点截断，而不是整条丢弃
+        if len(txt) > 120:
+            cut = max(txt.rfind('。', 0, 120), txt.rfind('；', 0, 120), txt.rfind('，', 0, 120))
+            txt = txt[:cut + 1] if cut > 40 else txt[:119] + '。'
+        return txt if len(txt) >= 10 else ''
     except Exception:                                             # noqa: BLE001
         return ''
 

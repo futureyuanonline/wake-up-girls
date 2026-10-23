@@ -337,7 +337,7 @@ def main():
 # 背景（实测）：第 002 期与第 003 期的艺术类选品都是「弗里达·卡罗」，
 # 因为提示词没有排除上期选品，模型天然偏好最有名的那位。
 # 做法：包装原来的 load_works_hint()，在作品清单前加一条明确的排除说明。
-def _recent_picks(limit=3):
+def _recent_picks(limit=12):
     """从 data/issues.js 里取最近几期的 picks 标题（新→旧）"""
     import re as _re
     path = os.path.join(ROOT, 'data', 'issues.js')
