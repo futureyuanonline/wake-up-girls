@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-23",
+  "updated": "2026-10-30",
   "items": [
     {
       "qid": "Q105393862",
@@ -195,6 +195,38 @@
       "zhwiki": true,
       "img": "http://commons.wikimedia.org/wiki/Special:FilePath/Cast%20from%20the%20movie%20Alcarr%C3%A0s-7243.jpg",
       "tier": "A",
+      "d": "",
+      "status": "needs_writing"
+    },
+    {
+      "qid": "Q28127581",
+      "kind": "film",
+      "title": "肉与灵",
+      "creator": "伊尔蒂蔻·恩伊达",
+      "year": 2017,
+      "country": "匈牙利",
+      "region": "欧洲",
+      "award": "柏林金熊",
+      "awardQid": "Q154590",
+      "zhwiki": true,
+      "img": "http://commons.wikimedia.org/wiki/Special:FilePath/MJK31133%20Testr%C5%91l%20%C3%A9s%20l%C3%A9lekr%C5%91l%20%28Berlinale%202017%29.jpg",
+      "tier": "A",
+      "d": "",
+      "status": "needs_writing"
+    },
+    {
+      "qid": "Q29963333",
+      "kind": "film",
+      "title": "夏日1993",
+      "creator": "卡拉·西蒙",
+      "year": 2017,
+      "country": "西班牙",
+      "region": "欧洲",
+      "award": "水晶熊奖",
+      "awardQid": "Q1464094",
+      "zhwiki": false,
+      "img": "http://commons.wikimedia.org/wiki/Special:FilePath/Equipo%20de%20Verano%201993.jpg",
+      "tier": "B",
       "d": "",
       "status": "needs_writing"
     }

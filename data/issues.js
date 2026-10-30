@@ -6,6 +6,331 @@
    - src / url：来源与原文链接（报道页结尾注明）
    - region：全球/欧洲/北美/拉美/中东/非洲/南亚/东亚/大洋洲/中国 */
 window.ISSUES = [
+{
+  "id": "008",
+  "date": "2026-10-30",
+  "period": "2026.10.26 – 2026.11.01",
+  "title": "地方行动与跨国呼吁：女性权益的多线推进",
+  "summary": "本期关注女性权益的多线推进：韩国地方性别会议、摩洛哥和平决策倡导、澳大利亚竞选性别争议；印尼与印度职场开放；美国与墨西哥生育权利；也门围困呼吁、监禁分娩束缚禁令；以及金子文子电影重映。",
+  "en": {
+    "title": "Local Actions and Transnational Calls: Advancing Women's Rights",
+    "summary": "This week covers multiple fronts of women’s rights: local gender meetings in South Korea, peace decision-making in Morocco, Australian election gender disputes, workplace openings in Indonesia and India, reproductive rights in the US and Mexico, Yemen’s siege appeal, shackling ban in childbirth, and a film re-screening about Kaneko Fumiko."
+  },
+  "img": "assets/img/womens-rights.png",
+  "watch": {
+    "name": "林阳子",
+    "name_en": "Yoko Hayashi",
+    "role": "律师 / 前联合国消除对妇女歧视委员会主席",
+    "role_en": "Lawyer / former Chair of the UN Committee on the Elimination of Discrimination against Women",
+    "region": "东亚",
+    "why": "她长期参与国际妇女人权审查，曾任联合国消除对妇女歧视委员会主席，现在在松户市男女共同参画中心活动上做基调解说，将国际标准带入地方性别平等讨论。",
+    "why_en": "She has long worked on international women's human rights review, serving as Chair of the UN CEDAW Committee. Now she brings international standards into local gender equality discussions through a keynote speech in Matsudo.",
+    "url": "https://news.google.com/rss/articles/CBMiT0FVX3lxTFA5Ti1UR2ZWR3IwdVk5TjdyQlZEVXlLZzdwSWVuR2NtU2RheHFnV0U2ZVRpemwxMGhxbnlVQkVxVWdUZy1POG4tUlVORVc2bXc?oc=5",
+    "img": ""
+  },
+  "picks": {
+    "film": "燃烧女子的肖像",
+    "book": "房思琪的初恋乐园",
+    "art": "潘玉良"
+  },
+  "sections": [
+    {
+      "cat": "政策与法律",
+      "en_cat": "Policy & Law",
+      "items": [
+        {
+          "id": "008-1",
+          "t": "仁川桂阳区召开女性亲善性别平等会议",
+          "d": "韩国仁川桂阳区近日召开女性亲善与性别平等会议，讨论如何将性别平等政策落实到地区治理和市民日常生活中。",
+          "body": [
+            "仁川桂阳区近日召开以“女性亲善”和“性别平等”为主题的会议，区政府与相关机构围绕提升女性生活质量和促进性别平衡展开讨论。会议议程包括地方政策评估与下一步计划，意在让性别视角进入社区公共服务和城市空间规划。",
+            "韩国地方政府普遍设有性别平等相关委员会或协商机制，通过社区层面的政策推动女性就业、安全与参与。此类会议虽属常规行政程序，但在地方选举临近时往往被赋予更多政策信号意义，成为检验执政者性别议程诚意的窗口。",
+            "地方层面的性别平等会议常被批评流于形式，但若能落实具体项目，也可能成为改善女性公共服务的起点。关键在于后续预算与执行是否跟进，以及市民能否有效监督，避免会议沦为拍照和新闻稿。"
+          ],
+          "why": "韩国地方政府主动召开女性亲善会议并不罕见，但此类活动常缺乏公众关注，具体成果难以追踪。",
+          "en": {
+            "t": "Incheon Gyeyang-gu holds women-friendly gender equality meeting",
+            "d": "The district government of Gyeyang-gu, Incheon, convened a meeting on women-friendly and gender equality policies, aiming to bring gender balance into local governance and daily life.",
+            "body": [
+              "Gyeyang-gu, Incheon, recently held a meeting under the theme of women-friendly and gender equality. District officials and related organizations discussed local policies and next steps.",
+              "Such local meetings are common in South Korea, but their impact depends on implementation and budget follow-up. Critics often question whether they produce concrete change beyond administrative routine."
+            ]
+          },
+          "img": "assets/img/womens-rights.png",
+          "src": "CNB뉴스",
+          "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE5zVFRfYjlwSU82VE9jNWdRV1JKNWpORGxQZWJvNnB2QkFxaG1tMGFvb0kwLTN3TkhJOVlJdUJZZ1pzcFUyU0phMUlhYXkxd2VTd1FyYWlZeWhienV3VHF2ZVJGSjVlUVdIMW5V?oc=5",
+          "region": "东亚"
+        },
+        {
+          "id": "008-2",
+          "t": "摩洛哥研讨呼吁扩大女性决策参与以促进可持续和平",
+          "d": "摩洛哥一场研讨会呼吁提高女性在决策层的代表性，并将性别平等纳入和平建设，以推动可持续和平。这是北非国家近期又一次关于女性与和平议程的公开讨论。",
+          "body": [
+            "摩洛哥举办了一场专题研讨会，与会者呼吁扩大女性在决策中的参与，并将性别平等纳入和平与安全议程。会议强调了女性领导力对可持续和平的作用，并提出将女性视角引入安全部门与冲突调解机制。",
+            "联合国安理会第1325号决议通过后，多个国家制定国家行动计划，但在北非地区，女性在安全与决策领域仍面临明显代表性不足。摩洛哥近年来在家庭法等方面有所改革，但政治与安全领域女性占比仍低，社会阻力依然存在。",
+            "这类研讨会能否转化为实际政策，取决于政府是否愿意在安全部门和高层职位中吸纳女性。对摩洛哥而言，增加女性参与既是外部压力，也与国内改革诉求相互交织，可能成为推动更广泛政治改革的切入点。"
+          ],
+          "why": "在和平与安全议题上，女性通常被视为受害者而非决策者，这场研讨试图扭转这一视角。",
+          "en": {
+            "t": "Morocco seminar calls for more women in decision-making for sustainable peace",
+            "d": "A seminar in Morocco urged greater representation of women in decision-making and inclusion of gender equality in peacebuilding.",
+            "body": [
+              "Participants at a seminar in Morocco called for expanding women's participation in decision-making and integrating gender equality into peace and security policies.",
+              "Despite international frameworks like UN Resolution 1325, women remain underrepresented in security and political leadership in North Africa. Real change depends on government willingness to appoint women to senior roles."
+            ]
+          },
+          "img": "assets/img/womens-rights.png",
+          "src": "إيلاف",
+          "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE1KWEoyNnBjZUdWODlTcHVlUTZNNmFqeml0SUNZNjJfenBfb19YbTNzaVJBeW1Hay1KU3FUUURGVFRYTE1uV2EwazZCam5sWDd6TWdzNnVrRUxFT29Qanc?oc=5",
+          "region": "非洲"
+        },
+        {
+          "id": "008-3",
+          "t": "澳大利亚自由党候选人谈性别平等承诺时遭嘘声",
+          "d": "在澳大利亚一场竞选活动中，自由党候选人提出性别平等主张时被现场观众喝倒彩，显示公众对政党性别政策缺乏信任。",
+          "body": [
+            "澳大利亚自由党一名候选人在竞选活动中就性别平等进行表态时，遭到部分观众嘘声。现场反应显示选民对政党在性别议题上的承诺持怀疑态度，竞选活动一度陷入尴尬。",
+            "自由党近年来在女性议员比例、性别薪酬差距和家庭暴力应对等问题上受到持续批评。反对者认为，该党虽有政策宣示，但制度上尚未形成真正的性别平等文化，女性在党内高层仍属少数。",
+            "竞选中的嘘声未必反映完整民意，却揭示出性别议题已成为澳大利亚政治中难以回避的试金石。政党若只口头上支持平等，可能失去女性选民支持，并在选举中付出实际代价。"
+          ],
+          "why": "竞选场合通常经过安排，公开嘘声透露出该党在性别平等上的信用赤字已被选民直接表达。",
+          "en": {
+            "t": "Australian Liberal candidate booed while pitching gender equality",
+            "d": "A Liberal candidate in Australia was booed by the audience while making a gender equality pitch during an election campaign.",
+            "body": [
+              "During an Australian election event, a Liberal candidate faced boos when addressing gender equality, signaling public distrust of the party's commitment.",
+              "The Liberal Party has faced criticism over women's representation and domestic violence policies. The incident shows that gender equality has become a contentious issue in Australian politics."
+            ]
+          },
+          "img": "assets/img/womens-rights.png",
+          "src": "The Canberra Times",
+          "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxNaHhtR3VhZm0ySmRYMlY0SWpxb3puWWxLVFRzMDVGU1JPc2M5X2dOVVRfN0xHelNnWk1NTlZ3a2ZpZldfVXlQYVpGYXdkOV83cGlhbklVYWlDUTJ5M3VYNkJGM3AyQkl0d3R5S0Z5YkQ5LWRqRkxUejUtaEMyYlppVmVZNUNBaEoycUFxVDYtLUwxZnJzcURHcTJxeHY4SG8yRmlROQ?oc=5",
+          "region": "大洋洲"
+        }
+      ]
+    },
+    {
+      "cat": "职场平等",
+      "en_cat": "Workplace Equality",
+      "items": [
+        {
+          "id": "008-4",
+          "t": "联合国妇女署公布2026年印尼WEPs奖得主",
+          "d": "联合国妇女署公布2026年印度尼西亚女性赋权原则奖得主，表彰在职场推动性别平等的企业。该奖鼓励私营部门采取具体措施支持女性发展。",
+          "body": [
+            "联合国妇女署公布2026年印度尼西亚女性赋权原则（WEPs）奖得主，表彰在性别平等方面表现突出的企业。奖项覆盖职场机会、领导力与供应链等类别，多家印尼企业因推行女性友好政策而获认可。",
+            "WEPs 由联合国妇女署与全球契约共同发起，为企业提供赋权女性的行动框架。在印尼，越来越多企业参与该倡议，但性别薪酬差距和管理层女性比例仍待改善，中小企业对于系统性改革仍缺乏资源。",
+            "企业获奖提升了性别平等在商界的可见度，但如何防止奖项沦为公关包装，需要外部审计与持续承诺。获奖不是终点，而是企业需要继续接受公众检验的起点。"
+          ],
+          "why": "企业性别平等常被当作品牌宣传，获奖名单背后的实际政策是否落实，外界很难知晓。",
+          "en": {
+            "t": "UN Women announces 2026 WEPs Awards winners in Indonesia",
+            "d": "UN Women announced the winners of the 2026 Women's Empowerment Principles Awards in Indonesia, recognizing companies for gender equality efforts.",
+            "body": [
+              "The 2026 WEPs Awards in Indonesia honored companies for promoting gender equality in workplace opportunity, leadership, and supply chains.",
+              "While more Indonesian companies join the WEPs initiative, gender pay gaps and low female representation in management remain challenges. The awards need to avoid becoming mere public relations tools."
+            ]
+          },
+          "img": "assets/img/workplace.png",
+          "src": "RM.ID",
+          "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxPT05lRGNLR0htQ2hSeXNLNm5hZXA5Ui1mV0xpbXhrR0J4czV3djEtdzRrcTR0ZUhPTnFNVUVjZDVRR1E3bmx4bW1JYVVsVEhrSDY4eVBmRTlFdEtaaEhTc3RnaldxNS1PUzB4cDFWRldnMWFVajZjT2haRDl6ZDRldmZicVhwZTVQSnF0OWdHMW9hTGNKZ2Zka2JXVDU?oc=5",
+          "region": "东南亚"
+        },
+        {
+          "id": "008-5",
+          "t": "喀拉拉邦托迪酒铺向女性开放工作权",
+          "d": "印度喀拉拉邦的托迪酒铺开始向女性开放工作机会，挑战该行业长期由男性主导的传统。这一变化与女性就业权扩展相关。",
+          "body": [
+            "印度喀拉拉邦的托迪酒铺近日向女性开放工作权，允许女性进入这一传统上由男性主导的行业。此前，相关岗位通常不面向女性，招聘广告中往往明确限定男性。",
+            "印度许多邦对女性从事酒精销售和夜间工作有严格限制，部分因历史保护性立法，实际也限制了女性的就业选择。喀拉拉邦在女性识字率和劳动参与率上曾表现较好，但女性正规就业比例并不高，行业隔离仍然明显。",
+            "向女性开放此类工作既是权利延伸，也可能引发关于安全与道德争议。支持者认为应保障女性自由选择，反对者担忧工作环境风险。这一争议反映出社会对女性职业选择权的双重标准。"
+          ],
+          "why": "酒铺工作常被视为“不适合女性”，这条新闻打破了职业性别隔离里的一小块砖。",
+          "en": {
+            "t": "Kerala toddy shops open doors to women's right to work",
+            "d": "Toddy shops in Kerala, India, have begun opening jobs to women, challenging male dominance in the trade.",
+            "body": [
+              "Women in Kerala can now apply for work at toddy shops, a sector traditionally closed to them.",
+              "Protective laws in India often restrict women's employment in alcohol-related and night work. This change is a test of whether women can choose such jobs freely despite safety concerns."
+            ]
+          },
+          "img": "assets/img/workplace.png",
+          "src": "Urban Acres",
+          "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxNTTZOZ3h6V3ZwQ3E0THp0cGhBUS00T0JDbjBvWUFmOWp1RWdzT2k3dDNUMVFPcXZtLTFfVWFIT2VzTkh0VHgxaGRmRG4zYUxxREowdEczdWx6MURPbEdBclV3d09GRU1ZMElFQnhBclRxbHpGaHJ3YjFzZFB3eUdURQ?oc=5",
+          "region": "南亚"
+        }
+      ]
+    },
+    {
+      "cat": "生育权利",
+      "en_cat": "Reproductive Rights",
+      "items": [
+        {
+          "id": "008-6",
+          "t": "美国多州女性权益相关选票措施受关注",
+          "d": "美国佐治亚、俄亥俄、明尼苏达等州的选票措施成为女性权益倡导者关注焦点，涉及堕胎权、投票权与性别平等条款。中期选举结果将影响政策走向。",
+          "body": [
+            "美国佐治亚州、俄亥俄州、明尼苏达州等地的选票措施成为女性权益与民主倡导者关注重点。这些措施涉及堕胎权、投票权及性别平等相关条款，各州选民将通过直接投票决定是否修改州法。",
+            "在联邦层面堕胎权保护被削弱后，各州通过直接民主方式决定是否保留或扩大生育权利。中西部和南部多州出现激烈拉锯，倡议团体投入大量资源动员选民，尤其是年轻女性和郊区选民。",
+            "州级选票结果不仅决定当地法律，还将影响2028年大选议程与最高法院相关案件的舆论气候。每一次州级公投都在重塑美国生育权利的地理版图，也考验草根动员能否抵抗保守立法。"
+          ],
+          "why": "堕胎权本被视为既定权利，如今却要一个州一个州地投票重新确认，这种倒退本身就很反常。",
+          "en": {
+            "t": "US state ballot measures on women's rights draw attention",
+            "d": "Ballot measures in Georgia, Ohio, Minnesota and other states are being closely watched by women's rights advocates, covering abortion and voting rights.",
+            "body": [
+              "Voters in several US states will decide ballot measures related to abortion rights, voting access, and gender equality.",
+              "After federal abortion protections were weakened, state-level direct democracy has become a key battleground. Results will shape reproductive rights and political momentum for years."
+            ]
+          },
+          "img": "assets/img/body-choice.png",
+          "src": "Ms. Magazine",
+          "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxQLTZwWXFScVhMMHRubVJDMTNWeElDNE1ua2pfNlJ4bkhsTjM2Q3p4Zy1rRjJIWjFFMUJHcXh1RUdrZHZoTUpxaHYxTXhuV01zYnRqbUE5WU05UU1EUV9TUU4wWHkzbnRMb3B0SzFUZTBIaDVJNmlaby1ZTzY3YnhKb1hicFpwQmlULXd4RGZsc2pNUnNUdmc5aWRQcTZuN1k?oc=5",
+          "region": "北美"
+        },
+        {
+          "id": "008-7",
+          "t": "墨西哥参议院肯定米却肯州推进性与生殖权利",
+          "d": "墨西哥参议院在论坛上肯定米却肯州在女性性权利和生殖权利方面的工作。此举被视为地方与联邦在堕胎及健康政策上协同的信号。",
+          "body": [
+            "墨西哥参议院在一次论坛中肯定了米却肯州在女性性与生殖权利方面所做的努力。论坛讨论了地方政策与联邦框架的衔接，米却肯州代表介绍了扩大服务可及性的具体做法。",
+            "墨西哥近年来部分州逐步放宽堕胎限制，但各州法律差异仍大。米却肯州推动相关服务的可及性，被视为墨西哥联邦制下进步政策的地方实践，为其他保守州提供了参照。",
+            "参议院公开背书可能为其他州提供示范，但也面临保守力量反对。性权利与生殖健康服务的实际落地仍需资源和基层执行，否则可能停留在论坛上的口头肯定。"
+          ],
+          "why": "在一个天主教文化深厚的国家，地方政府公开推进生殖权利本身就需要承担政治风险。",
+          "en": {
+            "t": "Mexican Senate recognizes Michoacán's efforts on sexual and reproductive rights",
+            "d": "The Mexican Senate recognized Michoacán state's work on women's sexual and reproductive rights during a forum.",
+            "body": [
+              "The Mexican Senate praised Michoacán's efforts to advance sexual and reproductive rights for women, highlighting coordination between state and federal policies.",
+              "Abortion access varies widely across Mexican states. Recognition from the Senate could encourage other states, though implementation still faces resource and political challenges."
+            ]
+          },
+          "img": "assets/img/body-choice.png",
+          "src": "El Congresista",
+          "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxPQ0R2c05sdWtrck1EQVV6UE1QYVFmVXNpMXF3NHJfdTl5WW5BVnJWVlBKQVZsQWhGdDVST01oUjZRWnZ2aS14SjNKQ1FrYmxuWmRMWDBhcWtJeElKZ0R2VXJ1WVdBd3owbDJDeEdwUTBELVJOeFNXWldKeEJUVEZ6ZC0wV2c?oc=5",
+          "region": "拉美"
+        }
+      ]
+    },
+    {
+      "cat": "文化",
+      "en_cat": "Culture",
+      "items": [
+        {
+          "id": "008-8",
+          "t": "金子文子反抗歧视题材电影在冲绳重映",
+          "d": "以日本女性金子文子为主角的电影将在冲绳市再次上映，并举办映后座谈。影片描绘她反抗歧视与不公的经历，呼应女性抗争主题。",
+          "body": [
+            "一部以金子文子为主角的电影将在冲绳市再次上映，放映后安排座谈活动。影片讲述她面对社会歧视与压迫时的反抗，主创和研究者将与观众交流。",
+            "金子文子是20世纪初日本的无政府主义者，因参与反抗活动而被捕，后死于狱中。她的故事长期被边缘化，近年通过影像和文学被重新发掘，成为讨论女性与权力结构的素材。",
+            "电影重映不只关乎历史，也连接当下：女性对结构性不公的反抗，在不同时代以不同形式延续。冲绳作为曾受歧视与军事化影响的地方，为重映增添了现实注脚。"
+          ],
+          "why": "一个世纪前的女性反抗者被现在的电影重新讲述，说明她的经验尚未过时。",
+          "en": {
+            "t": "Film about Kaneko Fumiko's resistance re-screened in Okinawa",
+            "d": "A film about Japanese woman Kaneko Fumiko, who resisted discrimination and oppression, will be re-screened in Okinawa City with talk sessions.",
+            "body": [
+              "The film depicting Kaneko Fumiko's resistance against discrimination will be shown again in Okinawa City, accompanied by post-screening discussions.",
+              "Kaneko Fumiko, an early 20th-century Japanese anarchist, died in prison. Her story has been rediscovered in recent years, linking past struggles to current feminist resistance."
+            ]
+          },
+          "img": "assets/img/womens-rights.png",
+          "src": "沖縄タイムス社",
+          "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTFBVWTBiNmJrQzhDR20zR0plREpaSW1JLTl4TGVtQlozVFF1MjVPVUdMZzI1M3VSbVBfdWpEb2kxbmZSYjZUdE44RFBacUJFYmtiSmg3OEdsNXJVVjdPN3c?oc=5",
+          "region": "东亚"
+        }
+      ]
+    },
+    {
+      "cat": "国际",
+      "en_cat": "International",
+      "items": [
+        {
+          "id": "008-9",
+          "t": "也门妇女委员会呼吁国际行动解除塔伊兹围困",
+          "d": "也门全国妇女委员会敦促国际社会采取紧急行动解除塔伊兹围困，并停止针对妇女儿童的侵犯。围困已加剧当地人道危机。",
+          "body": [
+            "也门全国妇女委员会呼吁国际社会紧急介入，解除对塔伊兹的围困，并要求停止针对妇女和儿童的侵犯行为。声明指出持续冲突严重侵害女性权益，使她们无法获得基本安全与医疗。",
+            "塔伊兹长期处于交战方包围之中，物资进入受限，医疗、食品短缺，妇女儿童首当其冲。人道组织多次警告当地状况恶化，孕产妇和新生儿死亡率上升，暴力事件频发。",
+            "妇女委员会的呼吁将性别视角带入冲突叙事，但国际响应往往受地缘政治制约。如何让人道保护不被武器化，确保妇女参与和平进程，仍需持续施压。"
+          ],
+          "why": "当城市被围困时，最先被忽视的往往是妇女的医疗与安全需求，这份呼吁把它推到台前。",
+          "en": {
+            "t": "Yemeni women's committee urges action to lift Taiz siege",
+            "d": "Yemen's National Women's Committee called for urgent international action to lift the siege on Taiz and stop violations against women and children.",
+            "body": [
+              "The Yemeni National Women's Committee demanded international action to end the siege of Taiz and halt abuses against women and children.",
+              "The prolonged siege has caused severe shortages of food and medicine, with women and children bearing the brunt. The call aims to bring a gender perspective into conflict response."
+            ]
+          },
+          "img": "assets/img/podium.png",
+          "src": "https://www.sabanew.net/",
+          "url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE13V2ZpR1RQUmU4UXo0QlhJVWxRM1B4d1BBXzVUMUFnR3ZXS3RueHhvT1lnWU9VWTJiYUZSazhZUm1wSTcwdzZndzR3R2lPN1lE?oc=5",
+          "region": "中东"
+        }
+      ]
+    },
+    {
+      "cat": "健康与权益",
+      "en_cat": "Health & Rights",
+      "items": [
+        {
+          "id": "008-10",
+          "t": "人权观察：女性不应在分娩时被铐住",
+          "d": "人权观察发布报告称，监禁中的女性不应在分娩时被锁链束缚，呼吁废除这一侵犯人权的做法。",
+          "body": [
+            "人权观察发布声明或报告指出，女性在监禁期间分娩时被使用镣铐，这种做法应被禁止。报告呼吁各国监狱系统停止对孕妇和产后妇女使用束缚，保障其安全与尊严。",
+            "在美国多个州，法律曾允许或未明确禁止对在押分娩女性使用镣铐，尽管医学组织长期警告其危害。近年部分州已立法限制，但执行不均衡，联邦监狱与地方看守所标准也存在差异。",
+            "分娩时使用镣铐不仅关乎医疗安全，更触及尊严与平等对待。监禁不应成为剥夺基本人权的理由，对孕产妇的约束措施必须接受严格审查和公众监督。"
+          ],
+          "why": "女性在人生最脆弱的时刻仍被当作危险对象锁住，这种画面极少被公开讨论。",
+          "en": {
+            "t": "Women should never give birth in shackles, says Human Rights Watch",
+            "d": "Human Rights Watch stated that incarcerated women should not be shackled during childbirth, calling for an end to the practice.",
+            "body": [
+              "Human Rights Watch has called for a ban on shackling pregnant women during labor and childbirth in prisons.",
+              "Despite medical warnings, many jurisdictions still allow the practice. The report urges states to ensure dignified and safe childbirth for incarcerated women."
+            ]
+          },
+          "img": "assets/img/body-choice.png",
+          "src": "Human Rights Watch",
+          "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxNODVyUEk1RmZMdXNWbVdUeGc3Z3dLdmtkWU5LVkJUaUxlVTVFeFZyeE9GbktHbjNZclR4R2FRSUZ1OVNfSENCLU4yTzUydEQ2eGRnNC1mTzFJYW9rcXpRSUpPbWZQQmVCbzB5bk8xUi1YVVJHSzJFdF9RT203czU1aVVYUQ?oc=5",
+          "region": "全球"
+        }
+      ]
+    },
+    {
+      "cat": "社会",
+      "en_cat": "Society",
+      "items": [
+        {
+          "id": "008-11",
+          "t": "洪都拉斯人权部举办女性权利主题讲座",
+          "d": "洪都拉斯人权部举办了一场关于女性权利的讲座，旨在提升公众对暴力侵害妇女和性别平等的认识。",
+          "body": [
+            "洪都拉斯人权部举办了一场关于女性权利的讲座，面向公众普及女性权益相关知识。活动内容包括法律保护、暴力预防和求助渠道，政府代表和社区成员参与。",
+            "洪都拉斯长期面临高女性被杀率和家庭暴力问题，尽管有专门立法，执法与司法保护仍薄弱。此类官方讲座是扩大意识的一种手段，但无法替代结构性改革与资源投入。",
+            "单次讲座无法改变结构性问题，但若能与基层服务和司法改革衔接，可能成为改善女性处境的起点。否则容易停留在宣传层面，难以触及真正需要帮助的女性。"
+          ],
+          "why": "在暴力率极高的国家，官方出面讲女性权利，本身就说明问题严重程度。",
+          "en": {
+            "t": "Honduras ministry holds talk on women's rights",
+            "d": "Honduras' Ministry of Human Rights held a talk on women's rights, focusing on violence prevention and gender equality awareness.",
+            "body": [
+              "The Honduran Ministry of Human Rights organized a talk on women's rights, covering legal protections, violence prevention, and support channels.",
+              "Honduras faces high rates of femicide and domestic violence. While such talks raise awareness, real change depends on law enforcement and comprehensive services."
+            ]
+          },
+          "img": "assets/img/women-power.png",
+          "src": "Canal 6 Honduras",
+          "url": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxNdVQ5U2lkTHFQX29jZEVvbHQ4MXgxNmFwOUc2Ym5hMGMxNjJSSWVUVHBPazU3cHI4V3JFYldQdVpXa0xDSkxoM1lvT281WUxDdGtEeEUtZ1RMRFRnQjZYdTZoZmh3bFRwOXI2MTJfM1BHUktfVDh0WE4xUHZydHdNTERjQzMtZjc1Y0Q3bFpBazI2U25OektIWWhjWTIzc0dUR1VpZ0lxZVVxT0xUcWt6R1ZNcjMwQ0MxanhkZEh6LWRiY3JadXUwR2dwcGNkWThJVW81MWl3?oc=5",
+          "region": "拉美"
+        }
+      ]
+    }
+  ]
+},
   {
     "id": "007",
     "date": "2026-10-23",
