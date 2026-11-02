@@ -138,6 +138,11 @@ jobs:
         if: env.LLM_API_KEY != ''
         run: python tools/generate_number.py --check
 
+      # 每周自动生成「知乎发文包」：挑 3 条可讨论的新闻，生成问题建议 + 答案草稿 + UTM 链接
+      - name: ③.9 生成知乎发文包（供人工复制发布）
+        if: env.LLM_API_KEY != ''
+        run: python tools/make_zhihu_pack.py
+
       - name: ④ 提交（触发 Cloudflare 自动部署）
         if: env.LLM_API_KEY != ''
         run: |
