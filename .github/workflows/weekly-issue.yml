@@ -28,6 +28,7 @@ name: Weekly Issue (Friday)
 on:
   schedule:
     - cron: '0 1 * * 5'      # 每周五 09:00（北京时间 UTC+8）
+    - cron: '0 5 * * 5'      # 备用触发：同日 13:00（北京），首次被平台漏跑时补上
   workflow_dispatch:          # 也可在 Actions 页面手动触发
     inputs:
       force:
