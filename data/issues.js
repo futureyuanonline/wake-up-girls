@@ -7,6 +7,348 @@
    - region：全球/欧洲/北美/拉美/中东/非洲/南亚/东亚/大洋洲/中国 */
 window.ISSUES = [
 {
+  "id": "009",
+  "date": "2026-11-06",
+  "period": "2026.11.02 – 2026.11.08",
+  "title": "女性安全倒退与制度缺口：从突尼斯到全球",
+  "summary": "本期关注突尼斯、尼日利亚等地针对女性的暴力上升，英联邦与联合国报告揭示性别平等倒退，同时也有越南数字安全、韩国女农权益、女子体育转播等局部进展与结构困境。",
+  "en": {
+    "title": "Women's Safety Backlash and Institutional Gaps: From Tunisia to the World",
+    "summary": "This issue tracks rising violence against women in Tunisia and Nigeria, reports from the Commonwealth and UN revealing gender equality backlash, and local progress in Vietnam, South Korea, and women's sports."
+  },
+  "img": "assets/img/womens-rights.png",
+  "watch": {
+    "name": "克莱尔·福格斯",
+    "name_en": "Clare Foges",
+    "role": "专栏作家 / 评论员",
+    "role_en": "Columnist",
+    "region": "欧洲",
+    "why": "她撰文指出，进步左翼虽高喊平等，却在具体争议中把女性权利置于最后；其观点在英国舆论场引发讨论，提醒人们关注性别议题内部的复杂张力。",
+    "why_en": "She wrote that the progressive left, while preaching equality, places women's rights last in practice, sparking debate in UK media.",
+    "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxQT3BZRHM4MXVhV1ZpV1I1QjJqVWxvVkx5bTMxZWt5QWFIa0FGMEx0RHJUbDJPcnpSYVE5TWkyM2JHTUEtdV9YNVVZNmF4MmU3bXFXclNIWDZGc2E1S3hCUDZFZElNVDJXU1g5VGZyNU5xVFZqR3ROTzV3eFJLYV9HTlRrQUQzcWRkT3FZTXlLTGhZalhoRGEzOGFwZUJmOVBMb0JPTFd6NG5ieFlITmZjZEJ1eGJFcUZHR1FMMlpGTjNQYTFPelJjMU9B0gHPAUFVX3lxTE83eGF1TUs2eGI3VFZkR0ZlUHdLemotMUNFM2pRdHpYRFdyd3huNUN1TXpGUGRULWJPVUQzaXVqWVpQZHJBSnFpOUNFNlh0SHFGVjFGcFNqSDY1cXpxLUdiY3JoU1FTMC1zRk8zelpiVnhicVRfbF9lQWd6TGNaU3ltVFZSWEs4ZVdhYWllU2dReXR4OXdzcW5HMldzSkg1Wl9QTnVUZXd0clhrRTNNb19wZmF6cUFlaUNkNURwYmw3WURFclhlQWpDelFwdzhBNA?oc=5",
+    "img": ""
+  },
+  "picks": {
+    "film": "嘉年华",
+    "book": "82年生的金智英",
+    "art": "阿尔泰米西娅·真蒂莱斯基"
+  },
+  "sections": [
+    {
+      "cat": "国际",
+      "en_cat": "International",
+      "items": [
+        {
+          "id": "009-1",
+          "t": "英联邦报告呼吁抵制性别平等倒退",
+          "d": "一份英联邦报告建议采取行动，应对日益增长的性别平等倒退压力，指出全球女性权益面临多方挑战。",
+          "body": [
+            "英联邦发布报告，建议成员国采取行动，以应对针对性别平等成果的持续反弹。报告指出，在部分国家，女性权利受到立法、宗教保守势力和网络攻击等多重压力。",
+            "近年来，多个地区的性别平等议程遭遇阻力，从生育权、教育机会到反家暴法律都出现倒退迹象。英联邦作为跨区域组织，试图通过政策建议和同行压力推动成员国履行已有承诺。",
+            "报告的警示在于，性别平等并非线性进步，既有成果可能被迅速逆转。它提醒各国政府，保护女性权益不能只靠一次性立法，而需要持续的社会动员和制度防御。"
+          ],
+          "why": "国际组织专门就性别平等倒退发出警告，说明这不是个别国家的局部现象。",
+          "en": {
+            "t": "Commonwealth report urges action against gender equality backlash",
+            "d": "A Commonwealth report recommends coordinated action to counter growing pushback against gender equality across member states.",
+            "body": [
+              "The report warns that progress on women's rights is being reversed in several countries through legal and social backlash.",
+              "It calls on governments to defend existing commitments and strengthen accountability mechanisms against rollback."
+            ]
+          },
+          "img": "assets/img/podium.png",
+          "src": "Scoop - New Zealand News",
+          "url": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxOdmx6a09OdldVcGtnS0lhazdSSWcyMEZMTTE2Nk53R1VDOHJxNURFZE1QQVlKSm9RODJya29RUzNQMnN3RFdmbV9FTE5VQkxsQkNtVjR4dUVOX3Bua3lDY3pmcDBfLVg5Ykd0Mnc4UlJ4dmVKUkFFdWpUcDI1MjJjb3VjRi16Y2JlYmYtakR4MjJwdTZxMUZQRGUzMlpFY3Q4WlVWa1RYZnBDWG4xTDRUZ1Rjakxzb254MmhoTXczQTlTQWx3R1RkMEhZQ3VITHRnMFJrTFRR?oc=5",
+          "region": "全球"
+        },
+        {
+          "id": "009-2",
+          "t": "联合国委员会认定英国侵犯女性权利",
+          "d": "联合国委员会在一宗个案中认定英国侵犯一名女性的权利；该裁决引发对英国法律与实践的进一步审视。",
+          "body": [
+            "联合国一个委员会就一名女性提起的申诉作出认定，认为英国侵犯了她的权利。该案的具体细节尚未广泛披露，但裁决本身表明国际机制对英国国内法律提出了约束性意见。",
+            "英国在性别平等立法上历史悠久，但仍有女性在就业、生育、移民或家庭暴力等场景中遭遇制度性不公。联合国人权条约机构的意见虽不具强制执行力，却能对政策辩论和司法实践产生压力。",
+            "这一裁决使英国政府被迫面对国际法与国内现实之间的差距。它也提醒人们，即使在高收入国家，女性权利也未必得到充分保障，跨国监督机制仍有价值。"
+          ],
+          "why": "一向以法治和人权自居的英国被国际委员会裁定侵权，形成鲜明反差。",
+          "en": {
+            "t": "UN committee finds violation of woman's rights in Britain",
+            "d": "A UN committee has found that the UK violated a woman's rights, adding pressure on British authorities to review relevant policies.",
+            "body": [
+              "The finding, though not legally binding, challenges the UK's record on women's rights and may influence domestic legal debate.",
+              "It highlights that even established democracies can fail to meet international standards in individual cases."
+            ]
+          },
+          "img": "assets/img/podium.png",
+          "src": "UA.NEWS",
+          "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxNcjZfSWlnSTVqMVkyNzRDUnVSc2ZOX2NjSndCZ2xwRnVlTDNrZ0ludkphNmUwYUlYczZKVHVJYTkySjZFQ3VZV3RsLTdMT2ZPbGNydThyYTdveHdmUkgyV2h1eVFQS2x4UE9KWEdZWGRCZ3BKV3g3cktjX19jcnl3b1lRRWxNbHluZV9WTDNld3B3TEJYSXpV?oc=5",
+          "region": "欧洲"
+        },
+        {
+          "id": "009-3",
+          "t": "非洲特使促尼日利亚打击杀害女性",
+          "d": "非洲权利特使呼吁尼日利亚采取行动，应对杀害女性和男性暴力侵害妇女问题，强化法律与执法。",
+          "body": [
+            "一名非洲权利特使公开呼吁尼日利亚政府采取行动，打击杀害女性及针对女性的暴力。他强调，女性被杀案增多已经构成严重人权危机。",
+            "尼日利亚部分地区安全形势复杂，家暴、群体暴力和武装冲突中的性暴力并存。女性在冲突和非冲突环境中都面临高度风险，而法律保护与执法资源严重不足。",
+            "国际特使的呼吁将焦点放在政府责任上，要求将反杀害女性纳入公共安全议程。尼日利亚的行动不仅影响本国，也会为非洲其他地区树立先例。"
+          ],
+          "why": "特使点名尼日利亚，说明该国女性被杀问题已严重到引起区域机制介入。",
+          "en": {
+            "t": "African rights envoy calls on Nigeria to act on femicide",
+            "d": "An African rights envoy has urged Nigerian authorities to tackle femicide and male violence against women.",
+            "body": [
+              "The call highlights a serious human rights crisis, with women at risk in both conflict and domestic settings.",
+              "It demands that Nigeria prioritize gendered violence within public security and legal reform."
+            ]
+          },
+          "img": "assets/img/podium.png",
+          "src": "Naija Feminists Media",
+          "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxPa004bGdNT1RRX2VBNlpDdFNYNTRDU0ExVTVfLUZOU1NLR08yQ01zRmZDem5NdWhVeXZrRUxKUU00Zi1LYklhVy04dGZoREpHNGZDQUNwakhEQzFUYjdiLWxRbUJIU0d2Q1YtdEdQTHpORFNvdzJkVTJWZGZ1Sk41TUhWM1g0d0xZMnZmZFRLWFc4emhhXzV5bHpOODExVDRuRDhxSFJ6Mmlfby1NcDFuTWFiYXlNakZpV0loeVZnM2ZpYXFMQ2I0MHByaTBPQQ?oc=5",
+          "region": "非洲"
+        }
+      ]
+    },
+    {
+      "cat": "政策与法律",
+      "en_cat": "Policy & Law",
+      "items": [
+        {
+          "id": "009-4",
+          "t": "埃及国家人权委员会讨论反妇女儿童暴力",
+          "d": "埃及国家人权委员会就打击针对妇女和儿童的暴力举行讨论，聚焦法律执行、社会保护与跨部门协作。",
+          "body": [
+            "埃及国家人权委员会近期召开会议，讨论如何更有效应对针对妇女和儿童的暴力。会议关注现有法律框架的执行情况，以及司法、警务和社会服务之间的协调问题。",
+            "埃及近年多次被曝出性骚扰、家暴和童婚等案件，妇女权益组织持续呼吁改革。国家层面的讨论表明，暴力问题已从边缘议题进入正式政策议程，但资源投入仍待观察。",
+            "这一讨论的意义在于，官方机构开始承认系统性失败，但若仅停留在会议层面，女性受害者的处境难以真正改善。后续是否有具体行动计划，将成为评估诚意的标准。"
+          ],
+          "why": "官方人权机构主动讨论针对妇女儿童的暴力，说明该问题已进入体制视野，但在埃及并不多见。",
+          "en": {
+            "t": "Egypt's national rights council discusses violence against women and children",
+            "d": "Egypt's National Council for Human Rights held discussions on combating violence against women and children, focusing on law enforcement and protection.",
+            "body": [
+              "Egypt's National Council for Human Rights has convened to discuss measures against violence targeting women and children, including enforcement gaps and coordination.",
+              "The move signals official attention to a long-neglected issue, but activists say discussions must lead to concrete protections and resource allocation."
+            ]
+          },
+          "img": "assets/img/womens-rights.png",
+          "src": "Masrawy",
+          "url": "https://news.google.com/rss/articles/CBMiwARBVV95cUxPU1NSZDE1Y050ckpLRDFaZ2VHRGM1ZUJZYnM2TDdyZDd6N285T19YQjNwUF9Fd2R3eTBUZkZzWDg1dExCdEFKTGxEQThMZWhFd0lTOGRTMzdrREFWOGh4M084dWJSc2FVYVlkS3NqeWo2akNBVEJQd2Q1SjZMdFNrMmpyV2doMzhxR1BBSm1DN2pTM3ktOEdMdnZFUXJUSDRRbUJjclNwRHlpVHA4cmstUTBNV29oNGN1NnRUTkdsOWNsVGdPNGl0bkZwWDRsTjhpRXFrXzlROEMwUlZIelNsdDllOWJ0OXRmV0F6MkdVb3p5dDVJa1dGaTJxWmVXXzlhS2JBY3hvd2Q1RXZJNXc3cFEwVDF4RHZiMm9GS1VtTElsOUZ0THZhLUZfVzFMMHFIdWVMb3pYT3BOd3kzbk5SclliaHNOckRfN3hXQ0tCQzlNSi02Q1ROeEZwNlAtQkJuT1EyTkttNFF0T1hNc0d5dVpTbERoTnJJQnc5RGpmWDdBaUcwMjNRTm4zTFFCazRSaFEwUUpzd2tVMUVmUmJkSk5VWS1vd3BSWTQ1WFpjdGtqbkY5RDF2Zk9fVkhnTGdGMlpWWjd1WlZsQUx2VDYwdy1henpJSVRNU0tTSG1wTG1aZzBScmI1d0RPQW5wMDBTNXRtc2d6NGl0TTdwQWl0dUpkNmtqcWhSMkpQR0RSWEFpYXFfbEFaOFhQLW9fLU5McXU2MXBiOG00MXVKUS14VkQ4bVRRU2M2bXBYeU0xenPSAcYEQVVfeXFMUDczWkxCcGZUb2d3V2hDdjB0VFQxeFBpTGlmTXpQZWViMTQ2ZE83V3pDZDkwai1SZURDLXFvRnA1Qmg1ZFhNRkM0NHdMZzNnUWxDMEdJWlowT3JiWXNqcF8xMVNlQlRtNzJXWFR1YlZ6TDNmOXdCQWRYeU5vWUtRRU5IdF8taFdfUTdRcFQycTJNX09LbWdTT0ZaUjFpb1BUTmhxd01YTFJCRk9ieHN1LV95NWZyWjFqWTJkVE9TTF9qaE1Jb2tOWndTeW9QamFXOFVFM2FYeDJYRkFJYlAwOGNjcDZ1WGFPT2g2Vl9aRzdkTEk3U285RGFQcl8wYWs4MEVPOEExbHVGQ1F1TG5kTnVHa3dWUDNGQ0ZVUVpjWUhpVnlNTWpnUGdYai1iaTBQTWNGZnBTM2g5SnhwekRTcEhmNDBNTkk4OFJwakJKSHBlRWhQdGhMVnJIcmlNblVBZ3NuUUxVMlZKMi1hM0RONXJidnA0U3ZZQ2tHNXgzUmlNSkFyOEZUNnBqRW9RMmhROUxZckRuZFVSdUUtS0ZUWDRhbzhmQm5MdmVkU3o5NlFTZWhnUUNDQVdGbTNqeWNoVGRlUjVtX2MxRGZmN3dDdTdTZzQtVmljSC1JOUpGR1Jzd0xLYzZfTXN6bDItaWdLSC1nOE1TTXBUZk9uZzF6b3RKWUJHTWNBYkVNdlVsOW5rOFRoX0JUTEJYbENQckczTkFtUmc3RU5zZkd6eGxoNmEwcUI5QkMxa1Y2WkFydmIzRDVSRDBn?oc=5",
+          "region": "中东"
+        },
+        {
+          "id": "009-5",
+          "t": "韩国推女性农民权益提升与性别平等教育",
+          "d": "韩国高城地区开展女性农民权益提升和性别平等教育，改善农村女性在农业经营与社会保障中的地位。",
+          "body": [
+            "韩国高城地区推出针对女性农民的支持项目，内容包括权益提升培训和性别平等教育，意在改变农村女性在家庭和农业生产中被边缘化的状况。",
+            "在韩国农村，女性承担大量农活却极少拥有土地和经营决策权，社会保障也常依附于男性户主。随着农村人口减少，女性农民的经济角色愈发重要，但制度承认仍然不足。",
+            "将性别平等教育带入农村，是改变传统观念的尝试。若地方层面能持续投入，女性农民有望获得更公平的资源分配和参与机会。"
+          ],
+          "why": "女性在农业中的劳动长期被当作家庭辅助劳动，未进入正式统计和福利体系。",
+          "en": {
+            "t": "South Korea promotes rights and gender equality education for women farmers",
+            "d": "Goseong county in South Korea is running programs to improve women farmers' rights and provide gender equality education.",
+            "body": [
+              "The initiative addresses the undervalued role of women in agriculture, where they work heavily but hold little land or decision-making power.",
+              "It aims to change rural norms and improve women's access to resources and social security."
+            ]
+          },
+          "img": "assets/img/womens-rights.png",
+          "src": "고성신문",
+          "url": "https://news.google.com/rss/articles/CBMifEFVX3lxTE0ya2pBOExHRTNBOWFwdl9lcHExdTNfT0ZtYURkTjBGb1VZLWRZVUtsU0IyeU9EazRvY0NhN2lrUUU0dkdsWGVuaDRyU2Z4RlQ2RTdEYjBoa2R3VmpaNDA3MFpiYzVsQUJISU5wb2xpbFE2bzhsRHhfbXRiemM?oc=5",
+          "region": "东亚"
+        },
+        {
+          "id": "009-6",
+          "t": "越南国会女议员小组将深入研究性别议题",
+          "d": "越南国会女性议员小组被要求深入研究涉及妇女、儿童和性别平等的议题，以提升立法质量。",
+          "body": [
+            "越南国会中的女性议员小组计划对妇女、儿童和性别平等相关议题开展深入研究。此举旨在使立法过程更充分考虑女性经验和需求。",
+            "女性议员在决策层的比例仍低，性别议题常被简化为福利或家庭事务，缺乏结构性分析。小组的深入工作有助于在法案起草阶段引入性别视角。",
+            "这反映了一种将性别平等嵌入立法程序的尝试。若研究能转化为具体条款，则可能改善越南女性的劳动、教育和社会保障权利。"
+          ],
+          "why": "由女性议员组成的团体主动承担性别议题研究，使立法不再只是男性主导的议程。",
+          "en": {
+            "t": "Vietnamese women parliamentarians to deepen research on gender issues",
+            "d": "The women's parliamentary group in Vietnam's National Assembly plans in-depth research on women, children and gender equality.",
+            "body": [
+              "The initiative aims to bring gender perspectives into legislation, where women are underrepresented.",
+              "Deeper research could help turn equality commitments into concrete legal provisions."
+            ]
+          },
+          "img": "assets/img/womens-rights.png",
+          "src": "Vietnam.vn",
+          "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxOMmpGTkJzTHhhMldZd2JRSXpoTWxwOHJLekpVWk85OUtYcnhiT2llNEs0T1FUNTRRekJfMEtWU3FOb3hXb2NIWXh0bFhNcVRBTkNndThyZU5GdTJHdWtiendhWU5TSXU2RVEzSkFNeHczci1LTGwzczhYM3FVUlFhY2FKTHlTMTlxX0xYR0R6Z2pHbGMtMjJDVWtEYzdfOUFuZkhtdGNuSWRoUQ?oc=5",
+          "region": "东南亚"
+        }
+      ]
+    },
+    {
+      "cat": "健康与权益",
+      "en_cat": "Health & Rights",
+      "items": [
+        {
+          "id": "009-7",
+          "t": "突尼斯杀害女性案增多，家暴问题再受关注",
+          "d": "近期突尼斯多名女性被杀，案件数量上升，家庭暴力重新成为公共讨论焦点。舆论要求政府加强预防和问责。",
+          "body": [
+            "据报道，突尼斯近期出现多起女性被杀案件，数量较以往明显上升。这些事件在社交媒体和媒体上引发激烈讨论，家庭暴力议题再次回到公共议程中心。公众开始追问：为何类似案件反复发生，现有保护措施是否失效。",
+            "突尼斯法律虽然对家庭暴力有禁止规定，但实际执行长期面临警力不足、受害人举报困难等问题。许多女性在经济依赖和社会压力下难以离开暴力环境，村委会和调解机制又常把家暴当作家庭私事处理，干预滞后。",
+            "这一波舆论压力可能促使政府加强执法和庇护服务，但女性权益组织担心，没有系统改革，关注仍会很快消退。家暴是否被当作严肃犯罪对待，是衡量性别平等承诺真伪的关键。"
+          ],
+          "why": "同一时段连续曝光多起女性被杀案，说明实际暴力规模可能远高于公开记录。",
+          "en": {
+            "t": "Femicide rise in Tunisia puts domestic violence back in focus",
+            "d": "Several women have been killed recently in Tunisia, reviving public debate on domestic violence and protection failures.",
+            "body": [
+              "Reports indicate a recent increase in women killed in Tunisia, sparking renewed attention to domestic violence. The cases have triggered public demands for stronger prevention and accountability.",
+              "Tunisia has laws against domestic violence but enforcement remains weak. Many women lack safe options due to economic dependence and social pressure, and authorities often treat such cases as private family matters."
+            ]
+          },
+          "img": "assets/img/body-choice.png",
+          "src": "برلمان.كوم",
+          "url": "https://news.google.com/rss/articles/CBMiwwJBVV95cUxNdWtZM1FQd09nQWdkSWpaaHN1azNtM2dWUG9KUkNlWmFRbzBBRDZfQlY0c1RMS1pPNGMxcGVwWjdaR2lXd01xeVFINUpzUGRZZVM4bXU3QU9zaUp2cW14RmpTQnpXak9IVjVxZXRmVm9Ya1RsRWVrT0NQY1dGRjloN01zbFN0TWR3dTFlbWxOZXBxWGVMRlF3MXdBTnR1Q0tOZHJoNjBOWGVLSElQSjRLSmhnMHk4cUVSR3pVdHhKVV8tVjFfZlR5VEVPem9GbzJGQUJvaDhTSkdmci1XNDJ2UTVVRlVJQkxjQXJ1QlZTNWZ5cXI2V2swWkVEM0p0ZEhwdngyU2EtaU5pTlI1dTRLQ20xcHlGQjZOdmkzRnB4ekRRQ1JIOHJiT2ZnWmpqNHo0YW1QakNxTE9XU3hnd1RnUFM3TQ?oc=5",
+          "region": "中东"
+        },
+        {
+          "id": "009-8",
+          "t": "巴西组织要求保护监狱中的女性",
+          "d": "巴西组织“Matria”要求当局采取措施，保护被关押在Colmeia的女性，关注其安全、健康与尊严。",
+          "body": [
+            "巴西组织“Matria”公开要求政府保护被关押在Colmeia监狱的女性。该组织指出，这些女性面临安全威胁和恶劣条件，基本权利得不到保障。",
+            "巴西监狱长期过度拥挤，女性囚犯尤其容易遭受忽视、性暴力和医疗匮乏。许多被监禁女性是贫困人口或家暴受害者，司法系统对其处境缺乏敏感度。民间组织因此扮演了监督和倡导的角色。",
+            "这一呼吁凸显出，女性在司法系统末端也承受着性别不平等的后果。监狱改革若忽视性别视角，就无法真正保护女性人权。"
+          ],
+          "why": "女性囚犯的遭遇很少进入公众视野，此次公开呼吁让监狱内的性别暴力浮出水面。",
+          "en": {
+            "t": "Brazilian group demands protection for women in Colmeia prison",
+            "d": "Organization Matria is calling on authorities to protect women held in Colmeia prison, citing threats to their safety and dignity.",
+            "body": [
+              "The group highlights severe conditions and risks faced by female prisoners, including neglect and violence.",
+              "It calls for gender-sensitive reforms in Brazil's prison system, where women's specific needs are often ignored."
+            ]
+          },
+          "img": "assets/img/body-choice.png",
+          "src": "Diário Causa Operária",
+          "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxNMHVLMGo3M2ZxUnp6YWJidF9jMmVRNWp3QUFyc09yaVhVTEhKcEhYZ2Z6Tlp5TzlSUDRnOWRNa0ZBNXhUNENNUWhWMzZuT2QtTzZpaHphcXRJZVhaSV9hejd3aVNLWi1STVZaY2lmV3MyaEQ2NkNBVDRJT2d2T3dGTGhLZGtCZDFkQzdCZWRqRFJkaVE5Y0E?oc=5",
+          "region": "拉美"
+        }
+      ]
+    },
+    {
+      "cat": "科技与公益",
+      "en_cat": "Tech & Public Welfare",
+      "items": [
+        {
+          "id": "009-9",
+          "t": "玛雅语暴力测量仪助原住民妇女辨风险",
+          "d": "相关方面推出玛雅语版暴力测量仪，帮助原住民妇女识别暴力风险并了解求助电话和权利。",
+          "body": [
+            "在玛雅语地区，一份以玛雅语呈现的暴力测量仪被推广使用，目的是让原住民妇女能够识别多种暴力信号，并掌握紧急求助电话。该工具将复杂的法律概念转译为当地语言。",
+            "许多原住民妇女不熟悉官方西班牙语，也缺乏对权利和救济渠道的了解，导致家暴和性暴力持续隐蔽。服务提供商的法律文本往往没有本土语言版本，使得求助门槛极高。",
+            "语言适配不仅是翻译，更是一种赋权。它使权利信息进入偏远社区，让女性在暴力升级前能够辨认危险并作出反应，也考验地方政府是否真正回应多元文化需求。"
+          ],
+          "why": "用母语制作暴力风险工具，在官方服务普遍使用主流语言的地区很少见。",
+          "en": {
+            "t": "Mayan-language violence meter helps indigenous women know their rights",
+            "d": "A violence meter in the Mayan language has been introduced to help indigenous women identify abuse and access emergency numbers.",
+            "body": [
+              "The tool translates legal and safety information into an indigenous language, addressing a critical access gap.",
+              "Many indigenous women face language barriers that keep them from seeking help, so this initiative can improve early intervention."
+            ]
+          },
+          "img": "assets/img/workplace.png",
+          "src": "NewsDay Caribe",
+          "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTFBwN1htYlRuamFTYzR6TEkxQkJsZEZGaVlIeUQyUEJXbmtnM0ZtR1BTS3lxNFRmSnVndElMQkZhcGstTk5WSTRTQ25la2R5UHpKQ0Jub2lMRFg5a3NaenJraDlsTWhGUQ?oc=5",
+          "region": "拉美"
+        },
+        {
+          "id": "009-10",
+          "t": "越南讨论数字环境中妇女儿童安全",
+          "d": "越南举办活动，呼吁共同合作保护数字环境中的妇女和儿童安全，防范网络暴力与性剥削。",
+          "body": [
+            "越南相关方面发起活动，强调需要多方合作，保护妇女和儿童在数字环境中的安全。网络骚扰、诱骗和未经同意传播私密影像等问题日益受到关注。",
+            "越南互联网普及迅速，但数字素养和执法能力尚未同步。妇女儿童尤其容易成为网络暴力和性犯罪的目标，而举报和处理机制仍不健全。",
+            "数字安全正在成为性别平等的新前线。若网络空间任由骚扰和厌女文化滋长，女性参与公共生活将会退缩。平台责任和公共教育必须跟上技术发展。"
+          ],
+          "why": "妇女儿童在网络空间遭遇的暴力往往被当作“线上摩擦”，未受到和线下犯罪同等重视。",
+          "en": {
+            "t": "Vietnam calls for cooperation on digital safety for women and children",
+            "d": "Vietnamese events have highlighted the need to protect women and children from online violence and exploitation.",
+            "body": [
+              "Digital platforms have created new risks, including harassment and sexual exploitation, with weak accountability.",
+              "The initiative stresses cross-sector cooperation to improve digital literacy and enforcement."
+            ]
+          },
+          "img": "assets/img/workplace.png",
+          "src": "Vietnam.vn",
+          "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxPbGNmN0FrWmJGbWNENlhCVThyZGc4dWctbzdISjZJY3FmaGQ3ZDA2amtqRFoweG5tWmp4cFpVT24tZ2FXNFN1eXNXUkRGU2FwRmNGeUVielVodFRTQTVWOHJmLUJ2dUJyMEtINEllQzRMelEtRFM2X1BfbE5oZHBsbldWSUw?oc=5",
+          "region": "东南亚"
+        }
+      ]
+    },
+    {
+      "cat": "职场平等",
+      "en_cat": "Workplace Equality",
+      "items": [
+        {
+          "id": "009-11",
+          "t": "性别平等有回报，但企业行动不足",
+          "d": "分析指出，推进性别平等能为企业带来经济回报，但许多公司在承诺之后实际投入反而减少。",
+          "body": [
+            "商业分析显示，性别平等对企业绩效有正向影响，包括创新、人才留存和市场表现。然而，不少企业近期在相关项目上的投入却在收缩，承诺多于行动。",
+            "过去几年，企业纷纷发布多元与包容报告，设立相关岗位。但经济压力下，这类部门常被优先裁撤，性别平等目标成为声明而非运营指标。",
+            "若企业只把性别平等当作品牌形象，而不嵌入招聘、晋升和薪酬机制，回报将无从谈起。投资者和公众日益关注实际行动，而不是年度报告里的漂亮措辞。"
+          ],
+          "why": "声称重视平等却在削减投入，这种言行差距在企业界比想象中更普遍。",
+          "en": {
+            "t": "Gender equality pays off, but businesses are doing less",
+            "d": "Analyses show gender equality brings business benefits, yet many companies are reducing action despite public commitments.",
+            "body": [
+              "Firms often treat equality as branding rather than operational practice, cutting diversity budgets under pressure.",
+              "To realize gains, companies need to embed gender targets in hiring, pay and promotion systems."
+            ]
+          },
+          "img": "assets/img/workplace.png",
+          "src": "thephilbiznews",
+          "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxQUkM5SW5jZmxWV2RZZ2FTbk1zVHRBOUpjbHJXUk9JZUVsLUtQdUVRVFVsYXJiY2FSSkJJeU1CM0tPYmRZWF9IQXJkVmlqc1JhVmQ5U3lIWmlKSnJ4YWJTQU1YRGNNNk50cjVuQUp1MElCbF9ubC1iaDhMa1ZxaFdWcmFSNTFvaEtmZ3RQeUxsRExCU2M?oc=5",
+          "region": "全球"
+        }
+      ]
+    },
+    {
+      "cat": "体育",
+      "en_cat": "Sports",
+      "items": [
+        {
+          "id": "009-12",
+          "t": "天空体育获女子高尔夫联赛转播权",
+          "d": "天空体育获得首届女子TGL在英国和爱尔兰的独家转播权，为女子高尔夫赛事带来更高曝光。",
+          "body": [
+            "天空体育宣布获得首届女子TGL高尔夫联赛在英国和爱尔兰的独家转播权。这一合作使女子高尔夫赛事能够进入更广泛的电视观众视野，提升商业价值。",
+            "女子运动长期面临转播时间不足、赞助稀少的困境。男子赛事占据主要频道和黄金时段，女子赛事常被安排在边缘时段或仅网络播出。此次独家协议是一剂强心针，体现了媒体对女性体育市场的信心。",
+            "转播权的授予不仅关乎商业利益，也影响年轻女孩对运动的参与和职业想象。当女性运动员获得同等曝光，性别刻板印象和平等薪酬议题也会随之获得更多推动力。"
+          ],
+          "why": "女子高尔夫联赛获得主流体育频道独家转播，意味着市场开始正视女子赛事价值。",
+          "en": {
+            "t": "Sky Sports secures exclusive rights to inaugural Women's TGL",
+            "d": "Sky Sports has acquired exclusive UK and Ireland broadcast rights for the first Women's TGL golf league.",
+            "body": [
+              "The deal gives women's golf a prominent platform, addressing long-standing gaps in coverage.",
+              "Increased visibility can drive sponsorship and inspire more girls to pursue sports professionally."
+            ]
+          },
+          "img": "assets/img/women-power.png",
+          "src": "Ministry of Sport",
+          "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxOMlZsN0JMbUdiaVNmQmxXMXl5cEs4ZVQwSkI2WVp6Y0pjTmNhcTROZ29uUFpld0loMXd1SEFFM0tHblNkbDhyUWZJVlZ0bE5LN1pjZWpZbjloeEprZmNwcjJ5dFBVZTFmem1JMWNyWU9icmk4M1FwWEMyOHp0bW5fbVhGQnJ5VV9MbWlIbUZyd0duamJRakpxYjJXaTBpeWJUZHpWRGhtM25jZ0JNWmlHXy1JRHFIRzRZbnlV?oc=5",
+          "region": "欧洲"
+        }
+      ]
+    }
+  ]
+},
+{
   "id": "008",
   "date": "2026-10-30",
   "period": "2026.10.26 – 2026.11.01",

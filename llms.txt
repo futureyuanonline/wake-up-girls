@@ -3,28 +3,29 @@
 > 用证据读性别。每期从全球十个地区、用当地语言的公开来源采集女性议题新闻，写成中文摘要并附原始链接；
 > 同时维护一个女性创作作品库（电影 / 图书 / 艺术），以及一个只讲单个数字的「数字」栏目。
 
-最近更新：2026-10-30 ｜ 最新一期：第 008 期（2026.10.26 – 2026.11.01）
+最近更新：2026-11-06 ｜ 最新一期：第 009 期（2026.11.02 – 2026.11.08）
 
 ## 栏目与入口
-- 最新一期：https://yuanxiuzhong.com/i/008
+- 最新一期：https://yuanxiuzhong.com/i/009
 - 往期归档：https://yuanxiuzhong.com/archive.html
 - 作品库（171 件）：https://yuanxiuzhong.com/works.html
 - 专栏（按议题）：https://yuanxiuzhong.com/columns.html
 - 数字栏目（每期一个数字，含"它不能推出什么"）：https://yuanxiuzhong.com/numbers.html
 - sitemap：https://yuanxiuzhong.com/sitemap.xml ｜ RSS：https://yuanxiuzhong.com/feed.xml
 
-## 第 008 期全部条目（11 条，静态全文页可直读）
-- [仁川桂阳区召开女性亲善性别平等会议](https://yuanxiuzhong.com/a/008-1) — 政策与法律 · 东亚 · 来源：CNB뉴스
-- [摩洛哥研讨呼吁扩大女性决策参与以促进可持续和平](https://yuanxiuzhong.com/a/008-2) — 政策与法律 · 非洲 · 来源：إيلاف
-- [澳大利亚自由党候选人谈性别平等承诺时遭嘘声](https://yuanxiuzhong.com/a/008-3) — 政策与法律 · 大洋洲 · 来源：The Canberra Times
-- [联合国妇女署公布2026年印尼WEPs奖得主](https://yuanxiuzhong.com/a/008-4) — 职场平等 · 东南亚 · 来源：RM.ID
-- [喀拉拉邦托迪酒铺向女性开放工作权](https://yuanxiuzhong.com/a/008-5) — 职场平等 · 南亚 · 来源：Urban Acres
-- [美国多州女性权益相关选票措施受关注](https://yuanxiuzhong.com/a/008-6) — 生育权利 · 北美 · 来源：Ms. Magazine
-- [墨西哥参议院肯定米却肯州推进性与生殖权利](https://yuanxiuzhong.com/a/008-7) — 生育权利 · 拉美 · 来源：El Congresista
-- [金子文子反抗歧视题材电影在冲绳重映](https://yuanxiuzhong.com/a/008-8) — 文化 · 东亚 · 来源：沖縄タイムス社
-- [也门妇女委员会呼吁国际行动解除塔伊兹围困](https://yuanxiuzhong.com/a/008-9) — 国际 · 中东 · 来源：https://www.sabanew.net/
-- [人权观察：女性不应在分娩时被铐住](https://yuanxiuzhong.com/a/008-10) — 健康与权益 · 全球 · 来源：Human Rights Watch
-- [洪都拉斯人权部举办女性权利主题讲座](https://yuanxiuzhong.com/a/008-11) — 社会 · 拉美 · 来源：Canal 6 Honduras
+## 第 009 期全部条目（12 条，静态全文页可直读）
+- [英联邦报告呼吁抵制性别平等倒退](https://yuanxiuzhong.com/a/009-1) — 国际 · 全球 · 来源：Scoop - New Zealand News
+- [联合国委员会认定英国侵犯女性权利](https://yuanxiuzhong.com/a/009-2) — 国际 · 欧洲 · 来源：UA.NEWS
+- [非洲特使促尼日利亚打击杀害女性](https://yuanxiuzhong.com/a/009-3) — 国际 · 非洲 · 来源：Naija Feminists Media
+- [埃及国家人权委员会讨论反妇女儿童暴力](https://yuanxiuzhong.com/a/009-4) — 政策与法律 · 中东 · 来源：Masrawy
+- [韩国推女性农民权益提升与性别平等教育](https://yuanxiuzhong.com/a/009-5) — 政策与法律 · 东亚 · 来源：고성신문
+- [越南国会女议员小组将深入研究性别议题](https://yuanxiuzhong.com/a/009-6) — 政策与法律 · 东南亚 · 来源：Vietnam.vn
+- [突尼斯杀害女性案增多，家暴问题再受关注](https://yuanxiuzhong.com/a/009-7) — 健康与权益 · 中东 · 来源：برلمان.كوم
+- [巴西组织要求保护监狱中的女性](https://yuanxiuzhong.com/a/009-8) — 健康与权益 · 拉美 · 来源：Diário Causa Operária
+- [玛雅语暴力测量仪助原住民妇女辨风险](https://yuanxiuzhong.com/a/009-9) — 科技与公益 · 拉美 · 来源：NewsDay Caribe
+- [越南讨论数字环境中妇女儿童安全](https://yuanxiuzhong.com/a/009-10) — 科技与公益 · 东南亚 · 来源：Vietnam.vn
+- [性别平等有回报，但企业行动不足](https://yuanxiuzhong.com/a/009-11) — 职场平等 · 全球 · 来源：thephilbiznews
+- [天空体育获女子高尔夫联赛转播权](https://yuanxiuzhong.com/a/009-12) — 体育 · 欧洲 · 来源：Ministry of Sport
 
 ## 「数字」栏目（可引用格式）
 - ±0.10（噪声区间的半宽）：「科学家比护士更女性化」这句话，落在噪声里 — https://yuanxiuzhong.com/n/007-01
