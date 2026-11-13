@@ -98,7 +98,27 @@ if (-not $dispatched) {
     exit 0
 }
 
-Start-Sleep -Seconds 240
+$ok = $false
+for ($i = 0; $i -lt 14; $i++) {
+    Start-Sleep -Seconds 45
+    try {
+        $probe = Get-LiveJson
+        $pm = [regex]::Match($probe, '"period"\s*:\s*"([^"]+)"')
+        $pv = if ($pm.Success) { $pm.Groups[1].Value } else { '' }
+        Write-Log ('复查第 ' + ($i + 1) + ' 次：线上 ' + $pv)
+        if ($pv -eq $want) { $ok = $true; break }
+    } catch {
+        Write-Log ('复查出错: ' + $_.Exception.Message)
+    }
+}
+if ($ok) {
+    Write-Log ('补发成功: ' + $want)
+    Notify '出刊成功' ('本周一期已上线: ' + $want)
+    exit 0
+}
+Write-Log '补发后 10 分钟仍未更新，可能部署延迟'
+Notify '补发后仍未见更新' ('已触发流水线，但线上仍未更新到 ' + $want + '。请检查 Actions 与 Cloudflare 部署。')
+exit 0
 try {
     $html2 = Get-LiveJson
     $mp2 = [regex]::Match($html2, '"period"\s*:\s*"([^"]+)"')
