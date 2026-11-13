@@ -7,6 +7,290 @@
    - region：全球/欧洲/北美/拉美/中东/非洲/南亚/东亚/大洋洲/中国 */
 window.ISSUES = [
 {
+  "id": "010",
+  "date": "2026-11-13",
+  "period": "2026.11.09 – 2026.11.15",
+  "title": "全球女性权益周报：政策突破、健康风险与基层反抗",
+  "summary": "本期聚焦匈牙利批准《伊斯坦布尔公约》、英国年轻群体暴力风险评估、美国女性长途行走，以及非洲、东南亚、中东等地的性别平等行动，呈现制度推进与日常挑战并存的复杂图景。",
+  "en": {
+    "title": "Global Gender Equality Digest: Policy Progress, Health Risks, and Grassroots Resistance",
+    "summary": "This week covers Hungary's move to ratify the Istanbul Convention, a UK risk assessment on violence against young people, a women's rights walk in the US, and gender equality actions across Africa, Southeast Asia, and the Middle East."
+  },
+  "img": "assets/img/womens-rights.png",
+  "watch": {
+    "name": "Marcela Lagarde",
+    "name_en": "Marcela Lagarde",
+    "role": "女性主义学者/行动者",
+    "role_en": "Feminist scholar and activist",
+    "region": "拉美",
+    "why": "她长期参与墨西哥女性主义运动，推动将杀害女性纳入刑法，并提出“女性杀害”概念，使性别暴力获得法律命名，影响拉美多国立法与公共讨论。",
+    "why_en": "She has long worked in Mexico's feminist movement, helping to criminalize femicide and giving legal language to gender-based killings.",
+    "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxPSzItTXYzNHczVm5WMFBhM3BvTWlwRzVwY0MxdU5weUVaaS01UDhoS1ZYUjluZFpOdDU2RlYxMTNFVU1sei1XYlJyZG1oZ2I5SGJGR3JJSTZON3huMEc0OW1VZmN6WnhzcXo3S3pEZXdGcnRlMnNNVG54b1hyc1hXeE9pMEo3cUVEd0luZnUzeFMwanFTaTBYRjF1OTRRSC0wdWh0WkNzTHdSNm1ZTzZLUnJjM3dzZWEzV1pV?oc=5",
+    "img": ""
+  },
+  "picks": {
+    "film": "正发生",
+    "book": "使女的故事",
+    "art": "乔治亚·欧姬芙"
+  },
+  "sections": [
+    {
+      "cat": "政策与法律",
+      "en_cat": "Policy & Law",
+      "items": [
+        {
+          "id": "010-1",
+          "t": "匈牙利将批准《伊斯坦布尔公约》打击对女性暴力",
+          "d": "匈牙利政府宣布将批准欧洲委员会《伊斯坦布尔公约》，该公约旨在预防和打击暴力侵害妇女和家庭暴力，此前匈牙利曾长期拒绝。",
+          "body": [
+            "匈牙利政府近日表示将批准《伊斯坦布尔公约》，这是欧洲委员会为预防和打击暴力侵害妇女及家庭暴力制定的法律文书。此举意味着该国将接受公约设定的预防、保护、起诉和协调政策框架。",
+            "此前匈牙利是少数尚未批准该公约的欧盟成员国之一，国内保守派曾以“破坏传统家庭价值观”为由反对。公约要求缔约国建立庇护所、强奸危机中心和免费热线等服务，并推动警察与司法系统改革。",
+            "批准公约将有助于把性别暴力纳入匈牙利法律优先事项，但执行效果仍取决于资源投入与政治意愿。舆论认为这是回应欧洲压力与国内妇女运动的结果，能否真正改善受害者处境有待观察。"
+          ],
+          "why": "匈牙利曾是欧盟中拒绝《伊斯坦布尔公约》的少数国家，此次转向出人意料。",
+          "en": {
+            "t": "Hungary to Ratify Istanbul Convention Against Violence Toward Women",
+            "d": "Hungary has announced it will ratify the Council of Europe's Istanbul Convention on preventing and combating violence against women and domestic violence. The move follows years of resistance.",
+            "body": [
+              "Hungary's government said it would ratify the Istanbul Convention, a legal instrument designed to prevent violence against women and domestic violence, and to hold states accountable for protection and prosecution.",
+              "The decision marks a reversal after years of conservative opposition. Implementation will require funding for shelters, hotlines, and law enforcement training; rights groups urge attention to enforcement beyond formal approval."
+            ]
+          },
+          "img": "assets/img/womens-rights.png",
+          "src": "franceinfo",
+          "url": "https://news.google.com/rss/articles/CBMi8wFBVV95cUxOcW15d2dobGxfTXJfRUpRTzdvY1ZtTDR2cFNvZGhlSHVNdWEwU3pVcGtpb3FnSjJMNDJtWXZBSUFVS0MtaWFETUIwdVA1el95Z2xNc3pnRWcxYkRHTW8wLVFINE83X2hYa0hiNE9WLTZxaHdGM1VOT0FUcjk4cTZkcW5yTWRCckFvd012TV9mc01vRGN0QnVSV2VBR3FFcTViLXFHSXVUUGFCOEVidXNmRm9Sb0tkeXk5d1JRVlhfM00ydG5OTG1Kek9EN1RMTjM5QVVra2JEMkVESWVOb1VTTXlDejVrM0xUWExibkV0a0lmMFU?oc=5",
+          "region": "欧洲"
+        },
+        {
+          "id": "010-2",
+          "t": "尼日利亚女性要求土地财产政策更多参与",
+          "d": "尼日利亚女性权益组织呼吁政府在土地与财产权政策制定中增加女性代表，指出现行规则常忽视女性在农业生产和家庭资产中的实际贡献。",
+          "body": [
+            "尼日利亚多个女性团体呼吁国家在土地与财产权利政策中给予女性更大参与空间。她们指出，现有决策过程常由男性主导，导致女性难以在土地分配、继承和登记中获得公平对待。",
+            "在尼日利亚许多地区，女性承担大部分农业生产，却因习俗和法律障碍无法拥有土地。数据显示，女性获得土地所有权的比例远低于男性，这限制了她们获取贷款和改善生计的机会。",
+            "政策制定若继续忽视女性声音，不仅加剧经济不平等，也削弱减贫与粮食安全目标。分析人士认为，提高女性在土地治理中的代表性是打破贫困循环的关键步骤。"
+          ],
+          "why": "女性承担大部分农业劳动却很少拥有土地，这是长期被忽略的统计反差。",
+          "en": {
+            "t": "Nigerian Women Demand Greater Voice in Land and Property Policy",
+            "d": "Women's groups in Nigeria are urging the government to include more women in land and property rights policy-making, saying current rules overlook women's contributions.",
+            "body": [
+              "Nigerian women's organizations are calling for greater participation in land and property policy. They argue that male-dominated decision-making often excludes women from land allocation, inheritance, and registration.",
+              "In many parts of Nigeria, women do most agricultural work but face legal and customary barriers to owning land. This limits their access to credit and economic independence, and undermines food security."
+            ]
+          },
+          "img": "assets/img/womens-rights.png",
+          "src": "Punch Newspapers",
+          "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxNQ25nV3BFWUtVYWVCZS05UFFFSVhmMzM1d2F6WG5xTEhIRkhjNkV5RmhJd0FCVUg0Q082UG5hcUhGNEVmN3Y3Rks1cVR3VlZPNkx3czZzVnVoemtXMUJobnVxWExDRUlJYklibjZkMTF2Wk9KRnV1dzdkQ3N0bzZCQjFaMWI?oc=5",
+          "region": "非洲"
+        },
+        {
+          "id": "010-3",
+          "t": "阿拉伯多国仍拒绝母亲传递国籍",
+          "d": "中东多个阿拉伯国家的女性无法将国籍传给子女，而男性可以，导致无国籍风险、教育和医疗受限。妇女权利活动者呼吁修改国籍法消除歧视。",
+          "body": [
+            "在中东多个阿拉伯国家，母亲仍无法将本国国籍传给子女，而父亲却享有这一权利。这种性别歧视使许多儿童陷入无国籍状态，影响其获得教育、医疗和合法居留。",
+            "联合国和多个非政府组织长期呼吁修改国籍法，强调国籍权是基本人权。约旦、黎巴嫩等国的妇女运动持续施压，但改革进展缓慢，一些政府以国家安全或人口结构为由拒绝。",
+            "国籍不平等不仅剥夺女性公民身份完整法律地位，还使整个家庭面临行政壁垒。改变这一现状需要立法机关正视性别平等，并回应日益增长的国际人权监督。"
+          ],
+          "why": "父亲和母亲在法律上不对等，这种差别直接制造无国籍儿童。",
+          "en": {
+            "t": "Many Arab Countries Still Deny Mothers the Right to Pass Nationality",
+            "d": "In several Middle Eastern countries, women cannot transmit citizenship to their children while men can, leaving many children stateless and without basic rights.",
+            "body": [
+              "Women in several Arab states are denied the right to pass nationality to their children, unlike men. This gender-based legal gap creates statelessness and limits access to education, healthcare, and legal residence.",
+              "Rights groups and UN bodies have long urged reform, but governments often resist, citing security or demographic concerns. Activists continue to press for equal nationality laws as a fundamental human right."
+            ]
+          },
+          "img": "assets/img/womens-rights.png",
+          "src": "L'Orient Today",
+          "url": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxQUW5waXB3RnVmc3FlbnNUWDVVQVVxSUdsUGVvMVg2MHpIR0RFbGpSOC1kQUdkMUt4eTlDWV9RdTVia0kzVm5PcWZhMFpXeDR1TkI3cHN4eEgwWFBUZ2J2QkVZdFdycXluZVpCZWJueVlQY1M5SEY4LW9tc0lTZVdlSWRFNG5CNmJtSTIxTE56eUJGdHpLWEJQU0J2OVZBN0RMS1RlbVc1QnMyc3JyMUlTSk9yc05UZWxqNnlvdVdLbkxVZWhISXhQYW93S3RqX0s1RGpxNnFaUHZOQQ?oc=5",
+          "region": "中东"
+        }
+      ]
+    },
+    {
+      "cat": "健康与权益",
+      "en_cat": "Health & Rights",
+      "items": [
+        {
+          "id": "010-4",
+          "t": "英国首份VAWG风险评估：年轻人受虐风险高",
+          "d": "英国发布首份全国性暴力侵害妇女女童战略风险评估，指出年轻群体面临最严重的虐待风险，需要更有针对性的预防和干预。",
+          "body": [
+            "英国发布首份全国性暴力侵害妇女和女童战略风险评估，结论显示年轻人处于虐待风险的最前沿。评估呼吁政府与地方机构调整资源，优先保护这一群体。",
+            "这份风险评估是英国制定打击性别暴力国家战略的一部分。此前政策多关注家庭暴力和性侵，对青少年遭受亲密伴侣暴力、网络骚扰等关注不足。",
+            "报告指出，年轻女性更容易因经济依赖、社交压力和数字环境而陷入虐待关系。若不采取行动，早期伤害可能影响终身健康与社会参与。"
+          ],
+          "why": "年轻人常被视为“风险较低”的群体，这份评估推翻这一假设。",
+          "en": {
+            "t": "UK's First VAWG Risk Assessment Finds Young People at Sharp Edge of Abuse",
+            "d": "The UK has published its first national strategic risk assessment on violence against women and girls, finding that young people are at the sharp edge of abuse.",
+            "body": [
+              "The UK's first national strategic risk assessment on violence against women and girls concludes that young people face the highest risk of abuse. It calls for targeted prevention and support.",
+              "Previous policies have focused on domestic violence and sexual assault, but the assessment highlights gaps for adolescents facing intimate partner violence and online harassment, urging early intervention."
+            ]
+          },
+          "img": "assets/img/body-choice.png",
+          "src": "End Violence Against Women",
+          "url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxPbWstNUM2VEtqWTc0NnFCVmhlMWoxTzJJbERiYlc1OEZpYzJDSDdTQ2c4OU1hdDVTS0R1SDhSeTB6SjkwSGNzUVI3MFhvV2dyc0EzSThyNGlxRnhlNUQ0WFItQ2FBQXpGNXBzWmVKcWthdDVsWXhWRnliTUFPZE9wOHZteVpLQ1h2bDBfdndhMGRMcVc3S2o4cFhDclQ2TjRDZHBlSDJBT04tanhDMFRQT1U1d24yNnRCOEs1VDlTbXVGRFhqTXV4WXJjZHdIZkk?oc=5",
+          "region": "欧洲"
+        },
+        {
+          "id": "010-5",
+          "t": "津巴布韦干旱加剧女孩安全与健康风险",
+          "d": "一项研究发现，干旱导致津巴布韦女孩面临安全、教育和生殖健康威胁，学校停课、家庭生计崩溃使女孩更易辍学和早婚。",
+          "body": [
+            "一项最新研究发现，干旱正在威胁津巴布韦女孩的安全、教育和生殖健康。缺水导致学校关闭、家庭农业歉收，迫使女孩承担更多取水与家务劳动。",
+            "在气候危机背景下，女孩遭受的冲击往往被忽视。经济压力促使家庭减少对女童教育的投入，或安排早婚以减轻负担，同时性暴力风险在流离失所和资源争夺中上升。",
+            "该研究强调，应对气候灾害必须纳入性别视角，提供安全的取水点、教育支持与生殖健康服务。否则，气候适应措施可能进一步边缘化最弱势群体。"
+          ],
+          "why": "气候报道很少追问“谁受影响最重”，而这项研究把女孩置于中心。",
+          "en": {
+            "t": "Drought Threatens Girls' Safety, Education and Reproductive Health in Zimbabwe",
+            "d": "A new study finds that drought is worsening safety, education, and reproductive health risks for girls in Zimbabwe, as water scarcity disrupts schooling and household livelihoods.",
+            "body": [
+              "A study warns that drought in Zimbabwe is threatening girls' safety, education, and reproductive health. Water shortages close schools and force families to cut spending on girls' schooling.",
+              "Economic stress pushes some families into early marriage for daughters, while displacement and resource competition raise sexual violence risks. The study calls for gender-responsive climate adaptation."
+            ]
+          },
+          "img": "assets/img/body-choice.png",
+          "src": "263Chat",
+          "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTFAyOWhpVnNoUmtKYXJpTGtxLXliZGN2UWlSMGVETVJPWEtfZC1aZzUwZVg3OXJVYkhXSkZOUV9iUmNTLWVwMlQtMnZLZlV3Z1JzQ01uUE9HdlFLc2N0MFNmT0g0OEZNRFVPYWpaVA?oc=5",
+          "region": "非洲"
+        },
+        {
+          "id": "010-6",
+          "t": "印尼媒体：月经贫困是性别平等议题",
+          "d": "印尼媒体分析月经贫困如何体现性别不平等，包括卫生用品负担、月经污名、女孩缺课等，呼吁政策制定者正视这一被忽视的健康权益。",
+          "body": [
+            "印尼媒体刊文指出，月经贫困是一个被长期忽视的性别平等议题。许多低收入女性无力购买卫生巾等基本用品，不得不用旧布或树叶替代，导致感染风险增加。",
+            "月经污名使女孩在学校和社会中遭受羞辱，部分女生因缺乏卫生用品而每月缺课数日，学业落后。经济压力还迫使女性在购买食物和经期用品之间做出选择。",
+            "文章认为，解决月经贫困需要税收减免、免费供应和安全教育等多重手段。只有将经期卫生纳入公共健康与教育政策，才能减少此类性别不平等。"
+          ],
+          "why": "卫生用品被当作奢侈品征税，而它关乎每月数天的基础生活。",
+          "en": {
+            "t": "Indonesian Media: Period Poverty Is a Gender Equality Issue",
+            "d": "Indonesian media analysis argues that period poverty reflects gender inequality, citing unaffordable hygiene products, stigma, and girls missing school.",
+            "body": [
+              "An Indonesian media article explains why period poverty is a gender equality issue. Many low-income women cannot afford sanitary products and face health risks from makeshift alternatives.",
+              "Menstrual stigma leads to shame and school absenteeism among girls. The article calls for tax reduction, free supplies, and health education to address the overlooked problem."
+            ]
+          },
+          "img": "assets/img/body-choice.png",
+          "src": "IDN Times",
+          "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxNOHJGLWFkR1gtWGFyOEdPVlg5ZGFyb3Z6QjREajluQnU0cTdkTTFsSHRLNlluQm9TVkhoMFdLa1pEamhrTUM3ekhmLUZuNkFJRWdXajVPaVo3c0w5OGIwdTRua2EzNjBsakJicUpET1U0bzFST3pCeDR6bk1qQzhUWm1fU3hfQkNCSlVxQkg3eC1QbjRZWHN6VmdaeDJhMEJRMVN6eTZwYmhvN3R6QnfSAbMBQVVfeXFMT3RzZXVWUkltTnU0YW1ncEptcjFBWXYwX3VQUzFvLXBLbWZvb2V2ZmNrQURKZGhfQmMwVl9TMWEySnlRbU0xMGtzN3hnQkJkdzNsVGU0YXZmV200aU9kdGVNdmozWlppYjhYa2pZcFV4Zm5kR1ZKV2sxVVpLRDJoOVgwX0ktQm1HdWFXUERwZ3VIQVc0MEtFNDhSOVVqMUp3a0ZrT1RQM1RvNVVLTDJMUXRROEk?oc=5",
+          "region": "东南亚"
+        }
+      ]
+    },
+    {
+      "cat": "社会",
+      "en_cat": "Society",
+      "items": [
+        {
+          "id": "010-7",
+          "t": "美国女性权利长途步行抵达华盛顿集会",
+          "d": "美国一场从俄勒冈州出发的女性权利长途步行活动抵达华盛顿特区，在集会中呼吁关注女性权益，展现基层动员的持续力量。",
+          "body": [
+            "一场始于俄勒冈州、横跨美国多地的女性权利长途步行活动近日在华盛顿特区结束，参与者举行集会，呼吁保障女性权利。这场行动历时数月，吸引众多支持者沿途加入。",
+            "长途步行是美国社会运动传统之一，象征通过身体力行表达政治诉求。参与者用脚步串联不同社区，把女性在医疗、就业、安全等方面的议题带入公共讨论。",
+            "分析认为，此类草根行动虽难以立即改变政策，却能够维持议题热度并建立跨地域网络。在政治极化背景下，它展示了公民参与和集体表达的可能。"
+          ],
+          "why": "从西海岸走到首都，用身体距离丈量制度回应之间的距离。",
+          "en": {
+            "t": "Cross-Country Walk for Women's Rights Ends with D.C. Rally",
+            "d": "A long-distance walk for women's rights that began in Oregon concluded with a rally in Washington, D.C., drawing attention to women's issues across the US.",
+            "body": [
+              "A women's rights walk that started in Oregon ended in Washington, D.C., with a rally calling for protections and equality. Participants traveled for months, building support in communities along the way.",
+              "The walk follows a tradition of using physical endurance to draw attention to political demands. It focused on healthcare, employment, and safety, keeping gender issues in public view."
+            ]
+          },
+          "img": "assets/img/women-power.png",
+          "src": "Daily Kos",
+          "url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxNMlg4U0dONkU1WnVraGhEVFNOVV9ZWUhvMmxoYnNkeGlSOWNNQTlVc1Z1SkhYS1ZFVzRjWFN5aTdNd2hRNWVlY1hjQnpWTWgzNUx1LVJ3Z3BUMC0wSTI3dFpTMGlCVDQtYk9oam16a0hHYXJMYmYxa1g0bW16SVBwUFhRZnNYSG8ydW5nZjRHU0lVWmxIUzJqcHJibTEzb3pQZ2dhWDg2OXp6WHp1RjZ3NW90NE5LWkhyRTh2TVpnT3pGQXpFQi1QRkdEZEtZSFhsd05mSw?oc=5",
+          "region": "北美"
+        },
+        {
+          "id": "010-8",
+          "t": "阿富汗性别暴力与迫害16天行动启动",
+          "d": "国际特赦组织澳大利亚分部发起“16天行动”，关注阿富汗女性面临的性别暴力与系统性迫害，呼吁国际社会采取行动保护。",
+          "body": [
+            "国际特赦组织澳大利亚分部发起“16天反对性别暴力行动”，聚焦阿富汗女性遭受的暴力与迫害。行动旨在唤起国际关注，推动对塔利班政权性别压迫的问责。",
+            "自塔利班重新掌权以来，阿富汗女性在教育、就业和公共活动方面遭受全面限制，许多人被迫留在家中。针对女性权利捍卫者的袭击和任意拘留持续发生。",
+            "国际社会的关注多集中于制裁和人道援助，但对阿富汗女性权利的系统性支持不足。“16天行动”强调保护女性人权是国际法律义务，而非可有可无的慈善。"
+          ],
+          "why": "阿富汗女性被排除在几乎一切公共生活之外，却很少成为头条。",
+          "en": {
+            "t": "16 Days of Activism Against Gender Violence in Afghanistan",
+            "d": "Amnesty International Australia is marking 16 Days of Activism by highlighting violence and persecution against women in Afghanistan, calling for international action.",
+            "body": [
+              "Amnesty International Australia has launched 16 Days of Activism focusing on gender violence and persecution in Afghanistan, urging accountability for abuses against women.",
+              "Since the Taliban regained power, Afghan women face sweeping restrictions on education, work, and public life. Rights defenders are targeted, and the international community must strengthen support."
+            ]
+          },
+          "img": "assets/img/women-power.png",
+          "src": "Amnesty International Australia",
+          "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxPN1JZTzg0ZEZTU2l1bHZUeHgybmNZc0piTE5neEpJdk9aZjlwR1pOTG9IZ2E1b3NQeV9HaWhodlV1Ylo5M29HNWt4N3lkUWxrX3V6ZkVQbi1YM3dNZHpfc0ZQNC1zTGZYMm0xbFBuY21mb3VhX2Y2R05ybjIxNHlyOGpxSFZrNTZka0tYWV9Nd0RQTXFUMmd3bGdHYjdrZ3BjNVdzVA?oc=5",
+          "region": "南亚"
+        }
+      ]
+    },
+    {
+      "cat": "文化",
+      "en_cat": "Culture",
+      "items": [
+        {
+          "id": "010-9",
+          "t": "日本艺术展“悲之器”触碰性别暴力人生",
+          "d": "日本一场名为“悲之器”的艺术展通过作品呈现性别暴力幸存者的生活，为被忽视的伤痛提供表达空间。",
+          "body": [
+            "日本一场名为“悲之器”的艺术展正在展出，通过绘画、装置等形式触碰性别暴力受害者的生活经验。展览试图将私密伤痛转化为公共对话。",
+            "性别暴力在日本常被视为家庭私事，受害者难以启齿。艺术展为幸存者提供非语言表达出口，也帮助观众理解暴力对心理和身体的长期影响。",
+            "策展人认为，艺术能够打破社会沉默，促进预防教育。此类展览越来越多地出现在美术馆和社区空间，显示文化机构开始回应性别议题。"
+          ],
+          "why": "用“器”隐喻身体与记忆，让难以言说的经验获得形状。",
+          "en": {
+            "t": "Japanese Art Exhibition Touches Lives Shaped by Gender-Based Violence",
+            "d": "An art exhibition in Japan titled \"Vessels of Sorrow\" addresses the lives of those affected by gender-based violence, creating space for expression and dialogue.",
+            "body": [
+              "A Japanese art exhibition uses painting and installation to explore the lives of survivors of gender-based violence. It turns private pain into public conversation.",
+              "Gender-based violence is often treated as a private matter in Japan. The exhibition offers non-verbal expression and aims to break social silence around trauma."
+            ]
+          },
+          "img": "assets/img/womens-rights.png",
+          "src": "Vietnam.vn",
+          "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxOeTVqWS1tcHA4d29RWWVLbi1xMjJfMHZJWTNJVGg4d3BWNmZkVTkyLS1qNGtnTFg0cTBiOVpocy1KUkw5VDVydXdSMjFDa2pJSnljMUk5REhsZ0lRblJ2WWZ6VnN6WDAwNEp4ZTVmNHBPdHJCOElEYjNYLUo1QUoxQWx3UWlXUU5FQ2JJQUdmdUNwNGdyelVDbm5XMGs?oc=5",
+          "region": "东亚"
+        },
+        {
+          "id": "010-10",
+          "t": "拉美女性主义学者Marcela Lagarde遗产",
+          "d": "墨西哥女性主义学者Marcela Lagarde在女性权利建设中的贡献被回顾，她提出“女性杀害”概念并推动立法，影响拉美多国。",
+          "body": [
+            "墨西哥女性主义学者与活动家Marcela Lagarde近日再次成为媒体焦点，她长期参与女性权利运动，并将“女性杀害”概念引入拉美公共讨论与法律实践。",
+            "Lagarde呼吁将杀害女性罪写入刑法，推动墨西哥及多个拉美国家承认这是有别于一般谋杀的性别暴力形式。她的工作也被联合国相关机制引用。",
+            "她的遗产不仅限于法律条文，更在于培养了一代女性主义行动者，让“因性别而被杀害”成为可命名、可追责的社会事实。"
+          ],
+          "why": "“女性杀害”这个词在她推动下才成为拉美法律分类。",
+          "en": {
+            "t": "The Legacy of Marcela Lagarde in Building Women's Rights",
+            "d": "Mexican feminist scholar and activist Marcela Lagarde is being remembered for her role in advancing women's rights and promoting the legal recognition of femicide.",
+            "body": [
+              "Marcela Lagarde, a Mexican feminist scholar and activist, has been central to women's rights movements in Latin America. She introduced the concept of femicide into public and legal discourse.",
+              "Her work led to the criminalization of femicide in Mexico and influenced other countries. Her legacy extends to training generations of activists."
+            ]
+          },
+          "img": "assets/img/womens-rights.png",
+          "src": "cimacnoticias.com.mx",
+          "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxPSzItTXYzNHczVm5WMFBhM3BvTWlwRzVwY0MxdU5weUVaaS01UDhoS1ZYUjluZFpOdDU2RlYxMTNFVU1sei1XYlJyZG1oZ2I5SGJGR3JJSTZON3huMEc0OW1VZmN6WnhzcXo3S3pEZXdGcnRlMnNNVG54b1hyc1hXeE9pMEo3cUVEd0luZnUzeFMwanFTaTBYRjF1OTRRSC0wdWh0WkNzTHdSNm1ZTzZLUnJjM3dzZWEzV1pV?oc=5",
+          "region": "拉美"
+        }
+      ]
+    }
+  ]
+},
+{
   "id": "009",
   "date": "2026-11-06",
   "period": "2026.11.02 – 2026.11.08",
