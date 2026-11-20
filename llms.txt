@@ -3,27 +3,27 @@
 > 用证据读性别。每期从全球十个地区、用当地语言的公开来源采集女性议题新闻，写成中文摘要并附原始链接；
 > 同时维护一个女性创作作品库（电影 / 图书 / 艺术），以及一个只讲单个数字的「数字」栏目。
 
-最近更新：2026-11-15 ｜ 最新一期：第 010 期（2026.11.09 – 2026.11.15）
+最近更新：2026-11-20 ｜ 最新一期：第 011 期（2026.11.16 – 2026.11.22）
 
 ## 栏目与入口
-- 最新一期：https://yuanxiuzhong.com/i/010
+- 最新一期：https://yuanxiuzhong.com/i/011
 - 往期归档：https://yuanxiuzhong.com/archive.html
 - 作品库（171 件）：https://yuanxiuzhong.com/works.html
 - 专栏（按议题）：https://yuanxiuzhong.com/columns.html
 - 数字栏目（每期一个数字，含"它不能推出什么"）：https://yuanxiuzhong.com/numbers.html
 - sitemap：https://yuanxiuzhong.com/sitemap.xml ｜ RSS：https://yuanxiuzhong.com/feed.xml
 
-## 第 010 期全部条目（10 条，静态全文页可直读）
-- [匈牙利将批准伊斯坦布尔公约打击对女性暴力](https://yuanxiuzhong.com/a/010-1) — 政策与法律 · 欧洲 · 来源：franceinfo
-- [尼日利亚女性要求土地财产政策更多参与](https://yuanxiuzhong.com/a/010-2) — 政策与法律 · 非洲 · 来源：Punch Newspapers
-- [阿拉伯多国仍拒绝母亲传递国籍](https://yuanxiuzhong.com/a/010-3) — 政策与法律 · 中东 · 来源：L'Orient Today
-- [英国首份VAWG风险评估：年轻人受虐风险高](https://yuanxiuzhong.com/a/010-4) — 健康与权益 · 欧洲 · 来源：End Violence Against Women
-- [津巴布韦干旱加剧女孩安全与健康风险](https://yuanxiuzhong.com/a/010-5) — 健康与权益 · 非洲 · 来源：263Chat
-- [印尼媒体：月经贫困是性别平等议题](https://yuanxiuzhong.com/a/010-6) — 健康与权益 · 东南亚 · 来源：IDN Times
-- [美国女性权利长途步行抵达华盛顿集会](https://yuanxiuzhong.com/a/010-7) — 社会 · 北美 · 来源：Daily Kos
-- [阿富汗性别暴力与迫害16天行动启动](https://yuanxiuzhong.com/a/010-8) — 社会 · 南亚 · 来源：Amnesty International Australia
-- [日本艺术展“悲之器”触碰性别暴力人生](https://yuanxiuzhong.com/a/010-9) — 文化 · 东亚 · 来源：Vietnam.vn
-- [拉美女性主义学者Marcela Lagarde遗产](https://yuanxiuzhong.com/a/010-10) — 文化 · 拉美 · 来源：cimacnoticias.com.mx
+## 第 011 期全部条目（10 条，静态全文页可直读）
+- [韩国女性财团启动2027性别平等社会项目征集](https://yuanxiuzhong.com/a/011-1) — 社会 · 东亚 · 来源：더나은미래
+- [叙利亚会议呼吁共同责任以结束对妇女暴力](https://yuanxiuzhong.com/a/011-2) — 社会 · 中东 · 来源：ANHA
+- [日本作家就旧宫家养子制度提起诉讼 称构成女性歧视](https://yuanxiuzhong.com/a/011-3) — 政策与法律 · 东亚 · 来源：Yahoo!ニュース
+- [新西兰法院裁定政府薪酬公平改革侵犯女性权利](https://yuanxiuzhong.com/a/011-4) — 政策与法律 · 大洋洲 · 来源：1News
+- [墨西哥农业部门称妇女土地权利仍是重大挑战](https://yuanxiuzhong.com/a/011-5) — 政策与法律 · 拉美 · 来源：La Jornada
+- [越南宁平电力公司推动性别平等与女性职业进步](https://yuanxiuzhong.com/a/011-6) — 职场平等 · 东南亚 · 来源：Vietnam.vn
+- [澳大利亚性别薪酬差距首次降至20%以下](https://yuanxiuzhong.com/a/011-7) — 职场平等 · 大洋洲 · 来源：The West Australian
+- [巴西政府发起保护数字环境中女性安全的运动](https://yuanxiuzhong.com/a/011-8) — 科技与公益 · 拉美 · 来源：Agência Brasil
+- [阿富汗女性通过议会大厦外艺术展呈现塔利班统治下的现实](https://yuanxiuzhong.com/a/011-9) — 文化 · 南亚 · 来源：Amnesty International Australia
+- [波特兰揭幕纪念十位妇女参政论者的壁画](https://yuanxiuzhong.com/a/011-10) — 文化 · 北美 · 来源：Wisevoter
 
 ## 「数字」栏目（可引用格式）
 - ±0.10（噪声区间的半宽）：「科学家比护士更女性化」这句话，落在噪声里 — https://yuanxiuzhong.com/n/007-01

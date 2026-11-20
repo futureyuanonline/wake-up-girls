@@ -7,6 +7,296 @@
    - region：全球/欧洲/北美/拉美/中东/非洲/南亚/东亚/大洋洲/中国 */
 window.ISSUES = [
 {
+  "id": "011",
+  "date": "2026-11-20",
+  "period": "2026.11.16 – 2026.11.22",
+  "title": "全球女性权益动态：从薪酬裁决到文化行动",
+  "summary": "本期聚焦韩国、日本、越南、叙利亚、阿富汗、新西兰、澳大利亚、巴西、墨西哥与美国等地女性议题，涵盖法律诉讼、职场平等、数字安全与文化表达，呈现女性在结构性不公中的持续行动。",
+  "en": {
+    "title": "Global Women's Rights: From Pay Equity to Cultural Action",
+    "summary": "This edition highlights women's issues across East Asia, Southeast Asia, the Middle East, South Asia, Oceania, Latin America, and North America, covering legal challenges, workplace equality, digital safety, and cultural expression."
+  },
+  "img": "assets/img/womens-rights.png",
+  "watch": {
+    "name": "奥兰普·德古热",
+    "name_en": "Olympe de Gouges",
+    "role": "作家、女权活动家",
+    "role_en": "Writer and feminist activist",
+    "region": "欧洲",
+    "why": "她在1791年发表《女权与女公民权宣言》，主张女性与男性享有同等公民权利，后因此被处决。其思想成为现代女权主义的源头之一。",
+    "why_en": "She published the Declaration of the Rights of Woman and of the Female Citizen in 1791, demanding equal citizenship for women. Her ideas remain foundational to feminist thought.",
+    "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxQUEVjc18tSjkzVWE5LUpZdjVuZ1llcmRfandVOGJla0JBSjM5VDgzaGYwX3Y2bEp0YTRWeVRsZTBIR0V3SEtJdlAyc0FKc0J1THMxOWZGYXBaZG5fUWFmN2pDYTJUV3dHZGNycnAwV2VhOWlXbWR3bmQ4UFBPcmtlbDd5R29QNjdkczktQ0gtWTBhZTdnd3hpNXE2ZVhuTDh0YXdMdWQtMHBNX1hUdjQ1eVhFSzZtM1RMVWdTMEp4aHp5VzU0V3JtTVFB?oc=5",
+    "img": ""
+  },
+  "picks": {
+    "film": "《无依之地》",
+    "book": "《那不勒斯四部曲》",
+    "art": "辛迪·舍曼"
+  },
+  "sections": [
+    {
+      "cat": "社会",
+      "en_cat": "Society",
+      "items": [
+        {
+          "id": "011-1",
+          "t": "韩国女性财团启动2027性别平等社会项目征集",
+          "d": "该财团公开征集创新方案，寻找促进性别平等的新尝试，支持民间团体与个人参与社会变革。募集项目预计于2027年实施，聚焦结构性性别不公与日常实践。",
+          "body": [
+            "韩国女性财团近日宣布启动“2027性别平等社会营造项目”公开征集，面向社会广泛寻找能够推动性别平等的新尝试。征集范围包括但不限于教育、媒体、职场与社区领域，投稿者需提交具体可行的项目方案。财团表示，希望通过开放平台发现未被主流话语覆盖的性别议题与创新实践。",
+            "韩国女性财团长期致力于支持女性权益与性别平等事业，通过资助和孵化项目推动制度改善。近年韩国社会围绕性别冲突与平等立法争议不断，民间基金会的角色日益重要。此类征集通常为小额资助，但能帮助草根组织和个人启动项目，缓解资源匮乏困境。",
+            "公开征集的意义不仅在于资金支持，更在于承认性别平等需要持续的社会实验。它把改变的可能交还给普通人，而非仅依赖政府或大机构。这也反映出官方政策与民间诉求之间的落差，民间力量正在寻求自己的路径。"
+          ],
+          "why": "一个民间基金会用公开征集的方式寻找性别平等方案，说明资源与渠道仍稀缺。",
+          "en": {
+            "t": "Korean Women's Foundation launches call for gender equality projects",
+            "d": "The foundation invites public proposals for innovative initiatives to promote gender equality, supporting grassroots organizations and individuals to drive social change. Projects are expected to be implemented in 2027.",
+            "body": [
+              "The Korean Women's Foundation has announced an open call for '2027 Gender Equality Society Projects', seeking new approaches to advance gender equality. Submissions may cover education, media, workplace, and community fields, with applicants required to propose practical plans.",
+              "This call highlights the role of civil society in addressing gender inequality amid ongoing social debates. Small grants can empower grassroots initiatives that often lack stable funding and institutional support."
+            ]
+          },
+          "img": "assets/img/women-power.png",
+          "src": "더나은미래",
+          "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE5RbnA5dDBuOTVyamJzdEhNbWRxWU5ESEY3bWFqYl9EaWowcXMwWU93LXpxZDBHVXdFS09kSWdLQklxTmlnYXFMaVR0dVR6YXRhX3c?oc=5",
+          "region": "东亚"
+        },
+        {
+          "id": "011-2",
+          "t": "叙利亚会议呼吁共同责任以结束对妇女暴力",
+          "d": "一场聚焦妇女权益的会议在中东地区召开，与会者强调结束针对妇女的暴力需要全社会共同承担责任，并呼吁加强法律保护与社区干预。会议涉及冲突后地区妇女安全议题。",
+          "body": [
+            "中东地区近日举行一场以“结束对妇女暴力”为主题的会议，与会者包括地方组织与妇女代表。会议强调，家庭暴力、冲突性暴力与制度性歧视相互交织，需要政府、社区与民间团体共同行动。会议呼吁落实保护妇女的法律与政策。",
+            "中东多国长期受冲突影响，妇女在流离失所与安全危机中承受更高暴力风险。同时，法律体系对家庭暴力惩治不足，传统观念常将暴力归为私事。此次会议将焦点从“受害者责任”转向“共同责任”，试图改变归因方式。",
+            "共同责任框架的提出，意味着结束对妇女暴力不是妇女自身的问题，而是整个社会的义务。在冲突后重建中，妇女安全直接关系到和平与稳定的可持续性。会议成果能否转化为实际行动，仍有待观察。"
+          ],
+          "why": "一场会议明确使用“共同责任”来定义结束对妇女暴力，突破了个人归因。",
+          "en": {
+            "t": "Conference in Syria calls for shared responsibility to end violence against women",
+            "d": "Participants at a Middle East meeting emphasized that ending violence against women requires collective action from governments, communities, and civil society, with stronger legal protections.",
+            "body": [
+              "A conference in Syria focused on ending violence against women brought together local organizations and women's representatives. It stressed that domestic and conflict-related violence are interconnected and demand joint responsibility.",
+              "The framework shifts the burden from individual victims to society as a whole. In conflict-affected regions, women's safety is critical for sustainable peace, but legal enforcement remains weak."
+            ]
+          },
+          "img": "assets/img/women-power.png",
+          "src": "ANHA",
+          "url": "https://news.google.com/rss/articles/CBMiRkFVX3lxTE44STVTeUdtZXY1QV9pSmgtMVRKTm1SOVpVXzNmUnVQTDYtNnZuNVVUN3BUcW5oR0RyTnA4YS1ROGN0MU9sZmc?oc=5",
+          "region": "中东"
+        }
+      ]
+    },
+    {
+      "cat": "政策与法律",
+      "en_cat": "Policy & Law",
+      "items": [
+        {
+          "id": "011-3",
+          "t": "日本作家就旧宫家养子制度提起诉讼 称构成女性歧视",
+          "d": "作家小林善范向国家索赔100万日元，主张旧宫家养子制度本质上是对女性的歧视，并质疑现行皇室继承规则排除女性皇族继承权。诉讼引发对皇室制度与性别平等的讨论。",
+          "body": [
+            "日本作家小林善范近日向法院提起诉讼，要求国家赔偿100万日元，认为旧宫家养子制度涉及血统与女性歧视。他主张应恢复女性皇族的继承权利，并批评现行制度将女性排除在皇位继承之外。案件已进入司法程序。",
+            "日本皇室典范规定皇位仅由男性继承，女性皇族婚后必须脱离皇籍。近年日本社会对女性天皇的讨论逐渐升温，但保守势力仍以传统为由反对改革。小林善范的诉讼试图通过法律途径挑战这一性别不平等的制度安排。",
+            "该诉讼若被受理，将迫使司法系统回应皇室制度中的性别歧视问题。它不仅是个人维权，更触及国家象征与性别平等的张力。在宪法保障男女平等的背景下，皇室继承规则的特殊性受到拷问。"
+          ],
+          "why": "一位男性作家为女性皇族继承权提起诉讼，挑战被默认的性别规则。",
+          "en": {
+            "t": "Japanese writer sues government over imperial succession gender bias",
+            "d": "Writer Yoshinori Kobayashi seeks 1 million yen in damages, arguing the old imperial branch adoption system discriminates against women and excludes female members from succession.",
+            "body": [
+              "Yoshinori Kobayashi has filed a lawsuit against the state, claiming the old imperial branch adoption system is discriminatory and demanding 1 million yen. He contends that female imperial members should have equal succession rights.",
+              "Japan's Imperial Household Law restricts the throne to males, and women lose royal status upon marriage. This case challenges that gender inequality through the courts, reflecting broader public debate over female emperors."
+            ]
+          },
+          "img": "assets/img/womens-rights.png",
+          "src": "Yahoo!ニュース",
+          "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE5KTWFJV2F4a0cyTVV0ZnpPUmVWTkxRY0x5MEllWHRaLW9FaFB4aFJSOWtkay1Ubk9YeVdob0Z6d2dzZEFBQndxZEVYbmoxZ3VZVlMxeW1sMHNPUmxIN1dRS2xEdjdLUmZsVmlEN25hSVVCbWZaanFoUVlXVm80Y0U?oc=5",
+          "region": "东亚"
+        },
+        {
+          "id": "011-4",
+          "t": "新西兰法院裁定政府薪酬公平改革侵犯女性权利",
+          "d": "高等法院认定政府推行的薪酬公平调整方案非法损害了女性权益，特别是低薪女性主导行业的薪酬评估与补偿机制。该裁决被视为历史性胜利，要求政府重新制定公平标准。",
+          "body": [
+            "新西兰高等法院近日作出判决，确认政府在薪酬公平改革中的某些调整非法侵犯了女性权利。法院认为，政府对低薪女性主导行业的薪酬评估方法存在缺陷，导致补偿不足。该裁决具有历史意义，迫使政府重新审视相关立法。",
+            "新西兰长期存在性别薪酬差距，女性多集中于护理、教育等低薪行业。薪酬公平制度旨在通过跨行业比较，纠正女性主导行业系统性低估。然而政府此前的调整被指削弱了机制效力，引发工会和妇女组织诉讼。",
+            "法院裁决重申了同工同酬原则的宪法地位，表明薪酬公平不是可以随意缩水的政策选项。它也提醒其他国家，法律承诺若不落实为具体机制，女性仍将承受结构性不公。后续政府的执行态度是关键。"
+          ],
+          "why": "法院罕见地裁定政府薪酬政策本身违法，而非仅处理个案歧视。",
+          "en": {
+            "t": "New Zealand court rules government pay equity changes breached women's rights",
+            "d": "The High Court found the government's adjustments to pay equity legislation unlawfully harmed women, especially in female-dominated low-paid sectors. The ruling is hailed as historic.",
+            "body": [
+              "New Zealand's High Court has ruled that the government's changes to pay equity provisions unlawfully breached women's rights, particularly affecting those in female-dominated low-paid jobs. The decision requires the government to revisit its approach.",
+              "This ruling reinforces equal pay principles and challenges the tendency to weaken pay equity mechanisms. It has significant implications for how governments value work traditionally done by women."
+            ]
+          },
+          "img": "assets/img/womens-rights.png",
+          "src": "1News",
+          "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxPMHBvRmQzdXlmcTQ3OGxURXNZZ2hfRHE1RkpENENKaVRhajM4b1NEZXFkeTRLZS1YVl9lMW5VVTlxSjNJWDg1N2xBSmwwY0x6WDN6S2lPWjB6MzFLZGJxVmwteWtXa2RDU2xtZHJNV3dJSmdxMHZSYTNXbHNsOVBVOWs3SUk0RTlHNEk4bjdTT00yd21Ja2JrS2I3bVV0eXV6UVE?oc=5",
+          "region": "大洋洲"
+        },
+        {
+          "id": "011-5",
+          "t": "墨西哥农业部门称妇女土地权利仍是重大挑战",
+          "d": "墨西哥农业检察官办公室指出，农村妇女获得土地所有权与使用权的比例显著偏低，土地权利不平等阻碍女性经济独立与农业生产。机构呼吁改革土地分配与继承制度。",
+          "body": [
+            "墨西哥农业检察官办公室近日表示，保障妇女土地权利仍是农村领域的重大挑战。数据显示，女性在土地所有权和使用权中的占比远低于男性，且在继承和分配中常被排斥。官方呼吁采取措施矫正这一不平等。",
+            "在墨西哥农村，土地是生产与生计的核心资源，但传统习俗和法律实践倾向将土地传给男性。妇女即使参与农业劳动，也缺乏正式权利，难以获得贷款与技术支援。这加剧了农村贫困的女性化。",
+            "土地权利不仅关乎经济，也关乎女性在家庭与社区中的议价能力。拥有土地的女性更能抵御暴力、保障子女教育。墨西哥的挑战反映出全球南方国家普遍存在的性别与土地结构问题。"
+          ],
+          "why": "官方机构公开承认妇女土地权利不平等，并将之列为重大挑战，并不常见。",
+          "en": {
+            "t": "Mexico says women's land rights remain major challenge in agriculture",
+            "d": "The Agrarian Prosecutor's Office states that women's access to land ownership and use is significantly lower than men's, hindering economic independence. Reforms in distribution and inheritance are urged.",
+            "body": [
+              "Mexico's Agrarian Prosecutor's Office has identified women's land rights as a major challenge, noting that women hold a much smaller share of land ownership and use. Official data shows persistent exclusion in inheritance and allocation.",
+              "Land is critical for rural livelihoods, yet traditional norms favor male heirs. Without formal land rights, women face difficulties accessing credit and agricultural support, deepening feminized poverty."
+            ]
+          },
+          "img": "assets/img/womens-rights.png",
+          "src": "La Jornada",
+          "url": "https://news.google.com/rss/articles/CBMi9wFBVV95cUxQdU91cXd5cDhSdnVpSll3Ni1vRVBEVUExakFOMXh6eGd5aEc0Tjh0QXg5VzhvUkNmbGUyN2hnY0NGSHVQazJSdk9IOExNS2g1VW9VSUM5LU4yakN4MHFacTFVNXJYcE85QkZTOEI1RG83WUl5YWpsU095d0xNWXR0QjJtcEU2MkhSNkpPS1J4UVl2N3pEZ25LU0Rfdl9VYzkyMXZldlM0enAtY3NDUWx0WXdKdEdyNkZOb1h0UE9BdU5BN2NFamNUTHh2TjF6VkpxNmwtMlRjODhFWUpQSWV3b2xhRF9UQ19IMjJyQ0YyRUJJaGlnMDdv?oc=5",
+          "region": "拉美"
+        }
+      ]
+    },
+    {
+      "cat": "职场平等",
+      "en_cat": "Workplace Equality",
+      "items": [
+        {
+          "id": "011-6",
+          "t": "越南宁平电力公司推动性别平等与女性职业进步",
+          "d": "该公司在运营中引入性别主流化措施，提升女性员工参与决策与技术岗位的比例，并开展专项培训与晋升支持。此举被视为国有企业推进职场平等的实践样本。",
+          "body": [
+            "越南宁平电力公司近期推出系列措施，旨在提高性别平等并促进女性员工职业发展。具体包括增加女性在技术与管理岗位的比例、提供针对性培训以及建立公平晋升机制。公司表示，将性别平等纳入企业日常运营。",
+            "能源与电力行业长期以男性为主导，女性多集中在行政或后勤岗位，职业天花板明显。越南政府近年来倡导性别主流化，要求国有企业在用工和晋升中消除性别歧视。宁平电力公司的做法顺应这一政策方向。",
+            "企业层面的性别平等实践比法律条文更贴近日常，它直接改变女性员工的经济地位与职业预期。如果此类措施能持续并推广，可能带动整个行业的文化转变，让更多女性进入技术核心领域。"
+          ],
+          "why": "一家电力公司主动推进性别平等，在男性主导行业里显得反常。",
+          "en": {
+            "t": "Vietnam's Ninh Binh Power Company promotes gender equality",
+            "d": "The company implements gender mainstreaming measures to increase women's representation in technical and managerial roles, offering training and fair promotion opportunities.",
+            "body": [
+              "Ninh Binh Power Company in Vietnam has introduced measures to advance gender equality and women's career growth, focusing on technical and management positions. It provides targeted training and equitable promotion pathways.",
+              "The energy sector has long been male-dominated. By embedding gender equality into operations, this state-owned enterprise aligns with national policies and challenges occupational segregation in a traditionally masculine industry."
+            ]
+          },
+          "img": "assets/img/workplace.png",
+          "src": "Vietnam.vn",
+          "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxQRktjY3NlU1RkY2xfYnc3cHZUcEZsVVhnWTU1RU04d3JiMWt6TUZmdnR0ZkdabTFSQjZYejNhNDJPZHk4LUNsX1R4VzZTdllkMW9ybmhtM1lLWEhaTU02dmk4b2ZTZm9VdEQ0bTdmTG02TXdrNjUtSVg4bDYzY1RSSlhYcW9CdmpucVVIYUU3OFBKMzVxR28wbEFmU1ZNMGVtZmVfazluQmRpYkhNdFN2M3A3VQ?oc=5",
+          "region": "东南亚"
+        },
+        {
+          "id": "011-7",
+          "t": "澳大利亚性别薪酬差距首次降至20%以下",
+          "d": "最新数据显示澳大利亚全国性别薪酬差距降至20%以下，创历史新低。改善主要来自低薪女性行业薪酬调整与政策推进，但女性仍比男性平均收入低近两成，结构性差距犹存。",
+          "body": [
+            "澳大利亚统计局公布的最新数据显示，全国性别薪酬差距首次降至20%以下，这是自记录以来的最低水平。性别薪酬差距衡量男女全职平均周薪的差异，下降意味着女性相对收入有所改善。",
+            "推动差距缩小的因素包括低薪女性主导行业的薪酬调整、提高最低工资以及企业薪酬透明化措施。不过，行业性别隔离依然严重，女性在兼职和临时岗位中占比过高，抵消了部分进步。",
+            "突破20%的心理关口具有象征意义，但距离真正同工同酬仍有很长的路。薪酬差距不仅是数字，它累积成女性一生的收入劣势，影响退休储蓄与经济安全。持续的政策关注不可或缺。"
+          ],
+          "why": "首次跌破20%看似进步，但女性仍平均少拿近五分之一的收入。",
+          "en": {
+            "t": "Australia's gender pay gap drops below 20% for first time",
+            "d": "New data shows Australia's gender pay gap fell below 20 percent for the first time, aided by pay adjustments in female-dominated low-paid sectors, though structural gaps remain.",
+            "body": [
+              "Australia's national gender pay gap has dropped below 20 percent for the first time on record, according to official statistics. The improvement reflects pay rises in low-paid female-dominated industries and minimum wage increases.",
+              "Despite this milestone, occupational segregation and overrepresentation of women in part-time roles continue to drive the gap. Continued policy efforts are needed to address long-term income inequality."
+            ]
+          },
+          "img": "assets/img/workplace.png",
+          "src": "The West Australian",
+          "url": "https://news.google.com/rss/articles/CBMi_AFBVV95cUxNTExlb1VJZjJheTlCaUVsdDZWV3pYaWoyaW9rdXRTZUNkN2c5Y0FZNVpRbmJjNlB6Vk9td0VSVzRJaU11MnNrOFlOR2d1Z1VVMnZ3ZjhZSDNvRUt6cC1aRTB6OU1sQWxMRm42TUZpbE5xWm1GQUtHbC04T0FjSGFMek01Q190ZGZRYnRtRXVRMmlyS1REOWVzV3FMQXoyak9QMjA2RWJpaGNCYkxZcVJ1eFd3ZWlpNWl5YUViSVM4bm1SZkx6WVBQUXNrLVlfenhLakc1QWh3RWRZWjdxQmtGY0M4N3h3VzFyV3RJdFpoQTBsU0JYNF92MTVLSmc?oc=5",
+          "region": "大洋洲"
+        }
+      ]
+    },
+    {
+      "cat": "科技与公益",
+      "en_cat": "Tech & Philanthropy",
+      "items": [
+        {
+          "id": "011-8",
+          "t": "巴西政府发起保护数字环境中女性安全的运动",
+          "d": "巴西政府启动专项运动，旨在防范网络暴力、未经同意传播私密影像与数字跟踪等侵害女性行为。运动将通过宣传、举报渠道与法律支持，提升女性在数字空间的安全感。",
+          "body": [
+            "巴西政府近日发起一项全国性运动，重点保护女性在数字环境中的安全。运动针对网络骚扰、仇恨言论、未经同意散布私密影像及跟踪等行为，提供举报指引与法律援助。官方表示，数字暴力同样构成对女性权利的侵犯。",
+            "随着社交媒体普及，针对女性的网络暴力日益严重，巴西女性常成为攻击目标。现行法律虽有处罚条款，但执行滞后，受害者往往面临二次伤害。新运动试图通过公共教育和技术手段降低风险。",
+            "数字空间并非法外之地，对女性的网络暴力会延伸至现实生活，造成心理与人身安全威胁。政府行动表明，保护女性权益必须适应技术变迁，同时需要平台、司法与社会协同应对。"
+          ],
+          "why": "政府专门针对数字暴力发起运动，说明线上侵害已被视为公共安全问题。",
+          "en": {
+            "t": "Brazil launches campaign to protect women in digital spaces",
+            "d": "The Brazilian government has started a national campaign to combat online violence against women, including harassment, non-consensual image sharing, and digital stalking.",
+            "body": [
+              "Brazil's government launched a campaign to protect women in digital environments, addressing online harassment, hate speech, and unauthorized sharing of intimate images. It includes reporting channels and legal support.",
+              "Digital violence has become a major threat to women's safety. This initiative recognizes that online abuse is a form of gender-based violence requiring coordinated action from state, platforms, and civil society."
+            ]
+          },
+          "img": "assets/img/workplace.png",
+          "src": "Agência Brasil",
+          "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxNWXd1Z2hwaWZCWlRzamVkZ0ZzMTRUX0N6Y1dzZGg2REd4TGh2TnJYNHlOazFkV3VuaDdKYWl4ajlYVE1CcGlfcWR0a3lZNENvNnR3S0g3SnRoSnU2QWdjaHRnZjJKOWY1dGU3d21lUDR6MHE1b05HRjdlR2RNQWNrTk9mdzkwM3dvY1VmaGtudWlhQmJnaE1mYXdvXzdRc1prNlRzWWhqekpMX1pYUEdPWURmYWsxV2M1M3MxamNXaVZMZEpUa0E?oc=5",
+          "region": "拉美"
+        }
+      ]
+    },
+    {
+      "cat": "文化",
+      "en_cat": "Culture",
+      "items": [
+        {
+          "id": "011-9",
+          "t": "阿富汗女性通过议会大厦外艺术展呈现塔利班统治下的现实",
+          "d": "阿富汗妇女与女孩在议会大厦外举办艺术展示，以绘画、摄影等形式表达塔利班统治下的生活经历，揭露系统性歧视与性别隔离。活动由国际特赦组织支持，呼吁国际社会关注。",
+          "body": [
+            "阿富汗妇女与女孩近日在议会大厦外举办艺术展示，通过绘画、摄影和装置等形式，呈现塔利班统治下的真实生活。作品内容涉及教育限制、行动自由受限与家庭暴力等议题，直接呈现她们的日常困境。活动由国际特赦组织支持。",
+            "自塔利班重新掌权以来，阿富汗女性被系统性排除在公共生活之外：中学教育被禁止，工作机会大幅减少，外出需男性陪同。艺术成为她们发声的少数渠道之一，既能绕过封锁，又能触动国际受众。",
+            "这场展览将阿富汗女性的处境从新闻标题带到公共空间，迫使观众面对具体的人与故事。它也挑战了“受害者无声”的刻板印象，展示女性的主体性与创造力。国际社会的回应将影响未来的支持力度。"
+          ],
+          "why": "阿富汗女性用艺术在议会外亮相，把被禁止的声音变成可见的图像。",
+          "en": {
+            "t": "Afghan women use art outside parliament to show life under Taliban rule",
+            "d": "Afghan women and girls held an art display outside parliament, using paintings and photos to reveal daily realities of systemic discrimination and gender apartheid under Taliban rule.",
+            "body": [
+              "Afghan women and girls organized an art exhibition outside the parliament building, showcasing works that depict restricted education, limited mobility, and domestic violence under Taliban rule. Amnesty International Australia supported the event.",
+              "Art has become one of the few available channels for Afghan women to speak out. The exhibition brings their individual stories into the public sphere, pushing back against the erasure of women's agency."
+            ]
+          },
+          "img": "assets/img/womens-rights.png",
+          "src": "Amnesty International Australia",
+          "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxQZk9UWHpyMjRicFZsS01ud0ZpekRTbTdfbmsyRUZTMWNVMGN4cndWVkFsS0E1djhPN2laSlJuQ3dVLU5OeVdMUm5qMm9NbmFGS3pOOE9jdV9zSDB6MWFVUHdPNXhiRmZvM0RtRjIyQ3pUMzdPX2l1N1NUbnRoel9RR0pHa2RHQi1sM01zaEpGSGhrQi1HeUNqenhvYXBpUHJTeUxQVFd5aTgyMV9QQWVibWhmbmpwSE5iZHRQTmwyQTA5VDR6Q2p1WDNB?oc=5",
+          "region": "南亚"
+        },
+        {
+          "id": "011-10",
+          "t": "波特兰揭幕纪念十位妇女参政论者的壁画",
+          "d": "美国波特兰市揭幕一幅公共壁画，纪念十位为女性投票权斗争的先驱。壁画位于公共场所，旨在让公众记住女性参政运动历史，并激励当代性别平等行动。",
+          "body": [
+            "美国波特兰市近日揭幕一幅大型壁画，纪念十位在妇女参政运动中作出贡献的女性。壁画描绘了这些活动家的肖像与标语，安装在城市公共空间，向路人展示争取女性投票权的历史。",
+            "美国妇女在1920年获得宪法保障的投票权，但运动历经数十年，许多有色人种女性直到更晚才真正享有此权利。波特兰壁画的十位人物来自不同背景，反映了运动的多元性。此类公共艺术常被用作历史教育工具。",
+            "壁画不仅是纪念，也是对当下的提醒：投票权并非天然赋予，而是抗争结果。在部分国家与地区，女性仍无法平等参与政治。公共艺术让历史走进日常，激发对民主与平等的持续讨论。"
+          ],
+          "why": "壁画选在公共场所，让被历史课本简化处理的女性抗争变得可见。",
+          "en": {
+            "t": "Portland unveils mural honoring ten suffrage women",
+            "d": "A public mural in Portland, USA, commemorates ten women who fought for women's voting rights, bringing their stories into everyday public space.",
+            "body": [
+              "Portland has unveiled a large mural honoring ten women who played key roles in the suffrage movement. The artwork features their portraits and slogans, placed in a public space for passersby.",
+              "The mural reminds viewers that voting rights were hard-won and that the movement was diverse, though many contributions remain underrepresented. Public art serves as a living history lesson."
+            ]
+          },
+          "img": "assets/img/womens-rights.png",
+          "src": "Wisevoter",
+          "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxPZkZwZWR4RzhEYlNiMkVlbkZNRF9jbDNNOTExZUx3WGNodWdkandhNnBaa0NiaTFoeU9DejFUbzhUVFdiSnRRLXBZVWxxUlg4WmQtZjhtbmYtRUR4MmhyUW5NY3ZoWEMyU3I3TVpnVzFocHlTemZIMDJxS01hdzJ1QWJOZGMzeGJoOWRQZ2NLTzJ6aElxSWdmWW50cmtYMjg?oc=5",
+          "region": "北美"
+        }
+      ]
+    }
+  ]
+},
+{
   "id": "010",
   "date": "2026-11-13",
   "period": "2026.11.09 – 2026.11.15",
